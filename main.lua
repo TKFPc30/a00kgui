@@ -29642,7 +29642,6 @@ button.FontSize = "Size14"
 button.Text = "Esp Player"
 button.TextColor3 = whit
 button.TextWrapped = true
-
 button.MouseButton1Down:Connect(function()
 	-- ACTION IS HERE!
 	loadstring(game:HttGet("https://raw.githubusercontent.com/TKFPc30/esp-player/main/main.lua"))()
@@ -29662,7 +29661,6 @@ button.FontSize = "Size14"
 button.Text = "angle script"
 button.TextColor3 = whit
 button.TextWrapped = true
-
 button.MouseButton1Down:Connect(function()
 	-- ACTION IS HERE!
 	loadstring(game:HttpsGet("https://raw.githubusercontent.com/TKFPc30/angle-script/main/script.lua"))()
@@ -29682,7 +29680,6 @@ button.FontSize = "Size14"
 button.Text = "Ban hammer"
 button.TextColor3 = whit
 button.TextWrapped = true
-
 -- ACTION IS HERE!
 loadstring(game:HttpGet("https://raw.githubusercontent.com/TKFPc30/ban-hammer/main/script.lua"))()
 end)
