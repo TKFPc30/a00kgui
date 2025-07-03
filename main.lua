@@ -30662,7 +30662,7 @@ while true do
 		if PLAY.Character ~= nil and Delete:FindFirstChild(PLAY.Name) then
 			PLAY.Character:remove()
 		end
-	end
+	end)
 end)
 --
 local button = Instance.new("TextButton")
