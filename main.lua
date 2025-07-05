@@ -29648,7 +29648,7 @@ local RunService = game:GetService("RunService")
 local Camera = workspace.CurrentCamera
 local LocalPlayer = Players.LocalPlayer
 
--- Simpan tracer lines
+-- Store tracer lines
 local tracers = {}
 
 local function createTracer(player)
@@ -29657,7 +29657,7 @@ local function createTracer(player)
 
 	local tracer = Drawing.new("Line")
 	tracer.Thickness = 2
-	tracer.Color = Color3.fromRGB(0, 255, 0) -- Hijau
+	tracer.Color = Color3.fromRGB(0, 255, 0) -- Green
 	tracer.Transparency = 1
 	tracer.Visible = true
 	tracers[player] = tracer
@@ -29670,7 +29670,7 @@ local function removeTracer(player)
 	end
 end
 
--- Buat tracer untuk semua player
+-- Create tracers for all current players
 for _, player in ipairs(Players:GetPlayers()) do
 	createTracer(player)
 	player.CharacterAdded:Connect(function()
@@ -29694,7 +29694,7 @@ end)
 
 Players.PlayerRemoving:Connect(removeTracer)
 
--- Update setiap frame
+-- Update every frame
 RunService.RenderStepped:Connect(function()
 	local myChar = LocalPlayer.Character
 	local myHRP = myChar and myChar:FindFirstChild("HumanoidRootPart")
@@ -29722,6 +29722,8 @@ RunService.RenderStepped:Connect(function()
 		end
 	end
 end)
+
+--
 --
 local button = Instance.new("TextButton")
 button.Parent = pmi
@@ -29851,56 +29853,56 @@ local Effects2 = {}
 --|| 	  END OF CUSTOMIZATION
 --\\=================================//
 
-	local function weldBetween(a, b)
-	    local weldd = Instance.new("ManualWeld")
-	    weldd.Part0 = a
-	    weldd.Part1 = b
-	    weldd.C0 = CFrame.new()
-	    weldd.C1 = b.CFrame:inverse() * a.CFrame
-	    weldd.Parent = a
-	    return weldd
-	end
+local function weldBetween(a, b)
+	local weldd = Instance.new("ManualWeld")
+	weldd.Part0 = a
+	weldd.Part1 = b
+	weldd.C0 = CFrame.new()
+	weldd.C1 = b.CFrame:inverse() * a.CFrame
+	weldd.Parent = a
+	return weldd
+end
 
 function createaccessory(attachmentpart,mesh,texture,scale,offset,color)
-local acs = Instance.new("Part")
-acs.CanCollide = false
-acs.Anchored = false
-acs.Size = Vector3.new(0,0,0)
-acs.CFrame = attachmentpart.CFrame
-acs.Parent = Character
-acs.BrickColor = color
-    local meshs = Instance.new("SpecialMesh")
-    meshs.MeshId = mesh
-    meshs.TextureId = texture
-    meshs.Parent = acs
-    meshs.Scale = scale
-    meshs.Offset = offset
-weldBetween(attachmentpart,acs)
+	local acs = Instance.new("Part")
+	acs.CanCollide = false
+	acs.Anchored = false
+	acs.Size = Vector3.new(0,0,0)
+	acs.CFrame = attachmentpart.CFrame
+	acs.Parent = Character
+	acs.BrickColor = color
+	local meshs = Instance.new("SpecialMesh")
+	meshs.MeshId = mesh
+	meshs.TextureId = texture
+	meshs.Parent = acs
+	meshs.Scale = scale
+	meshs.Offset = offset
+	weldBetween(attachmentpart,acs)
 end
 
 function createbodypart(TYPE,COLOR,PART,OFFSET,SIZE)
-if TYPE == "Gem" then
-	local acs = CreatePart(3, Character, "Plastic", 0, 0, COLOR, "Part", VT(0,0,0))
-	acs.Anchored = false
-    acs.CanCollide = false
-	acs.CFrame = PART.CFrame
-	local acs2 = CreateMesh("SpecialMesh", acs, "FileMesh", "9756362", "", SIZE, OFFSET)
-weldBetween(PART,acs)
-elseif TYPE == "Skull" then
-	local acs = CreatePart(3, Character, "Plastic", 0, 0, COLOR, "Part", VT(0,0,0))
-	acs.Anchored = false
-    acs.CanCollide = false
-	acs.CFrame = PART.CFrame
-	local acs2 = CreateMesh("SpecialMesh", acs, "FileMesh", "4770583", "", SIZE, OFFSET)
-weldBetween(PART,acs)
-elseif TYPE == "Eye" then
-	local acs = CreatePart(3, Character, "Neon", 0, 0, COLOR, "Part", VT(0,0,0))
-	acs.Anchored = false
-    acs.CanCollide = false
-	acs.CFrame = PART.CFrame
-	local acs2 = CreateMesh("SpecialMesh", acs, "Sphere", "", "", SIZE, OFFSET)
-weldBetween(PART,acs)
-end
+	if TYPE == "Gem" then
+		local acs = CreatePart(3, Character, "Plastic", 0, 0, COLOR, "Part", VT(0,0,0))
+		acs.Anchored = false
+		acs.CanCollide = false
+		acs.CFrame = PART.CFrame
+		local acs2 = CreateMesh("SpecialMesh", acs, "FileMesh", "9756362", "", SIZE, OFFSET)
+		weldBetween(PART,acs)
+	elseif TYPE == "Skull" then
+		local acs = CreatePart(3, Character, "Plastic", 0, 0, COLOR, "Part", VT(0,0,0))
+		acs.Anchored = false
+		acs.CanCollide = false
+		acs.CFrame = PART.CFrame
+		local acs2 = CreateMesh("SpecialMesh", acs, "FileMesh", "4770583", "", SIZE, OFFSET)
+		weldBetween(PART,acs)
+	elseif TYPE == "Eye" then
+		local acs = CreatePart(3, Character, "Neon", 0, 0, COLOR, "Part", VT(0,0,0))
+		acs.Anchored = false
+		acs.CanCollide = false
+		acs.CFrame = PART.CFrame
+		local acs2 = CreateMesh("SpecialMesh", acs, "Sphere", "", "", SIZE, OFFSET)
+		weldBetween(PART,acs)
+	end
 end
 
 --//=================================\\
@@ -29980,7 +29982,7 @@ game:GetService("RunService").Heartbeat:connect(function(s, p)
 			for i = 1, math.floor(tf / frame) do
 				script.ArtificialHB:Fire()
 			end
-		lastframe = tick()
+			lastframe = tick()
 		end
 		if tossremainder then
 			tf = 0
@@ -30001,34 +30003,37 @@ end)
 --|| 	      SOME FUNCTIONS
 --\\=================================//
 
-function Raycast(POSITION, DIRECTION, RANGE, IGNOREDECENDANTS)
-	return workspace:FindPartOnRay(Ray.new(POSITION, DIRECTION.unit * RANGE), IGNOREDECENDANTS)
+-- Raycast utility
+function Raycast(position, direction, range, ignoreDescendants)
+	local ray = Ray.new(position, direction.Unit * range)
+	return workspace:FindPartOnRay(ray, ignoreDescendants)
 end
 
-function PositiveAngle(NUMBER)
-	if NUMBER >= 0 then
-		NUMBER = 0
+-- Clamp utility to allow only negative values
+function ClampToNegative(number)
+	if number >= 0 then
+		return 0
 	end
-	return NUMBER
+	return number
 end
 
-function NegativeAngle(NUMBER)
-	if NUMBER <= 0 then
-		NUMBER = 0
+-- Clamp utility to allow only positive values
+function ClampToPositive(number)
+	if number <= 0 then
+		return 0
 	end
-	return NUMBER
+	return number
 end
 
-function Swait(NUMBER)
-	if NUMBER == 0 or NUMBER == nil then
-		ArtificialHB.Event:wait()
-	else
-		for i = 1, NUMBER do
-			ArtificialHB.Event:wait()
-		end
+-- Custom wait using Heartbeat
+function Swait(frames)
+	frames = frames or 1
+	for _ = 1, frames do
+		ArtificialHB.Event:Wait()
 	end
 end
 
+-- Convert CFrame to Quaternion
 function QuaternionFromCFrame(cf)
 	local mx, my, mz, m00, m01, m02, m10, m11, m12, m20, m21, m22 = cf:components()
 	local trace = m00 + m11 + m22
@@ -30038,12 +30043,9 @@ function QuaternionFromCFrame(cf)
 		return (m21 - m12) * recip, (m02 - m20) * recip, (m10 - m01) * recip, s * 0.5
 	else
 		local i = 0
-		if m11 > m00 then
-			i = 1
-		end
-		if m22 > (i == 0 and m00 or m11) then
-			i = 2
-		end
+		if m11 > m00 then i = 1 end
+		if m22 > (i == 0 and m00 or m11) then i = 2 end
+
 		if i == 0 then
 			local s = math.sqrt(m00 - m11 - m22 + 1)
 			local recip = 0.5 / s
@@ -30052,25 +30054,29 @@ function QuaternionFromCFrame(cf)
 			local s = math.sqrt(m11 - m22 - m00 + 1)
 			local recip = 0.5 / s
 			return (m01 + m10) * recip, 0.5 * s, (m21 + m12) * recip, (m02 - m20) * recip
-		elseif i == 2 then
+		else
 			local s = math.sqrt(m22 - m00 - m11 + 1)
-			local recip = 0.5 / s return (m02 + m20) * recip, (m12 + m21) * recip, 0.5 * s, (m10 - m01) * recip
+			local recip = 0.5 / s
+			return (m02 + m20) * recip, (m12 + m21) * recip, 0.5 * s, (m10 - m01) * recip
 		end
 	end
 end
- 
+
+-- Convert Quaternion to CFrame
 function QuaternionToCFrame(px, py, pz, x, y, z, w)
 	local xs, ys, zs = x + x, y + y, z + z
 	local wx, wy, wz = w * xs, w * ys, w * zs
-	local xx = x * xs
-	local xy = x * ys
-	local xz = x * zs
-	local yy = y * ys
-	local yz = y * zs
-	local zz = z * zs
-	return CFrame.new(px, py, pz, 1 - (yy + zz), xy - wz, xz + wy, xy + wz, 1 - (xx + zz), yz - wx, xz - wy, yz + wx, 1 - (xx + yy))
+	local xx, xy, xz = x * xs, x * ys, x * zs
+	local yy, yz, zz = y * ys, y * zs, z * zs
+
+	return CFrame.new(
+		px, py, pz,
+		1 - (yy + zz), xy - wz, xz + wy,
+		xy + wz, 1 - (xx + zz), yz - wx,
+		xz - wy, yz + wx, 1 - (xx + yy)
+	)
 end
- 
+
 function QuaternionSlerp(a, b, t)
 	local cosTheta = a[1] * b[1] + a[2] * b[2] + a[3] * b[3] + a[4] * b[4]
 	local startInterp, finishInterp;
@@ -30197,9 +30203,8 @@ function CreateWave(SIZE,WAIT,CFRAME,DOESROT,ROT,COLOR,GROW)
 			end
 		end
 	end))
-end
 
-function MagicSphere(SIZE,WAIT,CFRAME,COLOR,GROW)
+function MagicSphere(SIZE,WAIT,CFRAME,COLOR)GROW()
 	local wave = CreatePart(3, Effects, "Neon", 0, 0, BRICKC(COLOR), "Effect", VT(1,1,1), true)
 	local mesh = IT("SpecialMesh",wave)
 	mesh.MeshType = "Sphere"
@@ -30359,26 +30364,26 @@ function BAN(CHARACTER)
 		end
 		BANFOLDER:remove()
 	end))
-end
 
-function BANNEAREST(POS,RANGE)
-	for i,v in ipairs(workspace:GetChildren()) do
-	local body = v:GetChildren()
-		for part = 1, #body do
-			if((body[part].ClassName == "Part" or body[part].ClassName == "MeshPart") and v ~= Character) then
-				if(body[part].Position - POS).Magnitude < RANGE then
-					if v:FindFirstChildOfClass("Humanoid") then
-						BAN(v)
-						if game.Players:FindFirstChild(v.Name) then
-							local Value = IT("BoolValue",Delete)
-							Value.Name = v.Name
+		functionBANNEAREST(POS, RANGE)
+			for i, v in workspace:GetChildren() do
+				local body = v:GetChildren()
+				for part = 1, #body do
+					local partObj = body[part]
+					if (partObj.ClassName == "Part" or partObj.ClassName == "MeshPart") and v ~= Character then
+						if partObj.Position and (partObj.Position - POS).Magnitude < RANGE then
+							if v:FindFirstChildOfClass("Humanoid") then
+								BAN(v)
+								if game.Players:FindFirstChild(v.Name) then
+									local Value = IT("BoolValue", Delete)
+									Value.Name = v.Name
+								end
+							end
 						end
 					end
 				end
 			end
 		end
-	end
-end
 
 --//=================================\\
 --||	ATTACK FUNCTIONS AND STUFF
@@ -30499,47 +30504,46 @@ end
 --||	  ASSIGN THINGS TO KEYS
 --\\=================================//
 
-function MouseDown(Mouse)
-	HOLD = true
-	if ATTACK == false then
-		BANSLAM()
-	end
-end
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local Mouse = player:GetMouse()
 
-function MouseUp(Mouse)
-HOLD = false
-end
-
-function KeyDown(Key)
-	KEYHOLD = true
-	if Key == "b" and ATTACK == false then
+UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	if gameProcessed then return end
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		HOLD = true
+		if not ATTACK then
+			BANSLAM()
+		end
+	elseif input.KeyCode == Enum.KeyCode.B and not ATTACK then
 		local pos = RootPart.Position
-		RootPart.CFrame = CF(Mouse.Hit.p+VT(0,3,0),pos)
+		RootPart.CFrame = CF(Mouse.Hit.p + VT(0, 3, 0), pos)
 		CreateSound("769380905", Torso, 10, 1)
-	end
-
-	if Key == "t" then
+	elseif input.KeyCode == Enum.KeyCode.T then
 		CreateSound("1058417264", Head, 10, 1)
 		Delete:ClearAllChildren()
 	end
-end
+end)
 
-function KeyUp(Key)
-	KEYHOLD = false
-end
+	UserInputService.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			HOLD = false
+		end
+	    end)
+		Mouse.Button1Down:connect(function(NEWKEY)
+			MouseDown(NEWKEY)
+		end)
+		Mouse.Button1Up:connect(function(NEWKEY)
+			MouseUp(NEWKEY)
+		end)
+		Mouse.KeyDown:connect(function(NEWKEY)
+			KeyDown(NEWKEY)
+		end)
+		Mouse.KeyUp:connect(function(NEWKEY)
+			KeyUp(NEWKEY)
+		end)
 
-	Mouse.Button1Down:connect(function(NEWKEY)
-		MouseDown(NEWKEY)
-	end)
-	Mouse.Button1Up:connect(function(NEWKEY)
-		MouseUp(NEWKEY)
-	end)
-	Mouse.KeyDown:connect(function(NEWKEY)
-		KeyDown(NEWKEY)
-	end)
-	Mouse.KeyUp:connect(function(NEWKEY)
-		KeyUp(NEWKEY)
-	end)
 
 --//=================================\\
 --\\=================================//
@@ -30562,7 +30566,7 @@ end
 --\\=================================//
 
 Humanoid.Changed:connect(function(Jump)
-	if Jump == "Jump" and (Disable_Jump == true) then
+	if Jump == "Jump" and (Disable_Jump) == (true) then
 		Humanoid.Jump = false
 	end
 end)
@@ -30570,6 +30574,17 @@ end)
 Speed = 23
 
 while true do
+	if HOLD == true then
+		if Speed < 30 then
+			Speed = Speed + 0.1
+		end
+	else
+		if Speed > 23 then
+			Speed = Speed - 0.5
+		end
+	end
+end
+
 	Swait()
 	ANIMATE.Parent = nil
 	local IDLEANIMATION = Humanoid:LoadAnimation(ROBLOXIDLEANIMATION)
@@ -30603,7 +30618,7 @@ while true do
 			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0 * Player_Size) * ANGLES(RAD(-40), RAD(0), RAD(-20)) * LEFTSHOULDERC0, 0.2 / Animation_Speed)
 			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, -0.3) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-5), RAD(0), RAD(-20)), 0.2 / Animation_Speed)
 			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, -0.3) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-5), RAD(0), RAD(20)), 0.2 / Animation_Speed)
-	       end
+		end
 	elseif TORSOVERTICALVELOCITY < -1 and HITFLOOR == nil then
 		ANIM = "Fall"
 		if ATTACK == false then
@@ -30657,26 +30672,27 @@ while true do
 	Humanoid.Name = MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]
 	Humanoid.PlatformStand = false
 	local GAME = game.Players:GetChildren()
-		for PLAYER = 1, #GAME do
+	for PLAYER = 1, #GAME do
 		local PLAY = GAME[PLAYER]
 		if PLAY.Character ~= nil and Delete:FindFirstChild(PLAY.Name) then
 			PLAY.Character:remove()
 		end
-	end)
-end)
+	  end
+    end
+
 --
 local button = Instance.new("TextButton")
 button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "Empty9"
 button.Position = UDim2.new(0.5,3,0,132)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "decal spam"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30685,7 +30701,7 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "Empy10"
 button.Position = UDim2.new(0,0,0,165)
 button.Size = UDim2.new(0.499,0,0,30)
 button.ZIndex = 2
@@ -30700,13 +30716,13 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "Emty"
 button.Position = UDim2.new(0.5,3,0,165)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "Empty4"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30715,13 +30731,13 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "Epty8"
 button.Position = UDim2.new(0,0,0,198)
 button.Size = UDim2.new(0.499,0,0,30)
 button.ZIndex = 3
 button.Font = tef
-button.FontSize = "Size14"
-button.Text = "Empty"
+button.FontSize = "Size141"
+button.Text = "Empty2"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30730,13 +30746,13 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "mpty7"
 button.Position = UDim2.new(0.5,3,0,198)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
-button.FontSize = "Size14"
-button.Text = "Empty"
+button.FontSize = "Size13"
+button.Text = "Empty1"
 button.TextColor3 = whit
 button.TextWrapped = true
 
@@ -30836,13 +30852,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "c00lgui"
 button.Position = UDim2.new(0.5,3,0,99)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "c00lgui"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30851,13 +30867,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "join team c00lkidd"
 button.Position = UDim2.new(0,0,0,132)
 button.Size = UDim2.new(0.499,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "join team c00lkidd"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30866,13 +30882,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "invisble"
 button.Position = UDim2.new(0.5,3,0,132)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "invisble"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30881,13 +30897,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "black"
 button.Position = UDim2.new(0,0,0,165)
 button.Size = UDim2.new(0.5,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "black"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30896,13 +30912,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "black hole"
 button.Position = UDim2.new(0.5,3,0,165)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "blackhole"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30911,13 +30927,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "banana"
 button.Position = UDim2.new(0,0,0,198)
 button.Size = UDim2.new(0.5,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "banana"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30926,13 +30942,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "hawk tuah"
 button.Position = UDim2.new(0.5,3,0,198)
 button.Size = UDim2.new(0.48,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "hawk tuah"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -31933,18 +31949,44 @@ titl.TextWrapped = true
 CurrentPage = 1
 
 function FlipPage(Way)
-	local NewPage = CurrentPage+Way
-	if pges:findFirstChild("Page"..NewPage)~=nil then
+	local NewPage = CurrentPage + Way
+	if pges:FindFirstChild("Page" .. NewPage) ~= nil then
 		CurrentPage = NewPage
 		local P = pges:GetChildren()
 		for i = 1, #P do
 			P[i].Visible = false
 		end
-		pges:findFirstChild("Page"..NewPage).Visible = true
+		pges:FindFirstChild("Page" .. NewPage).Visible = true
 	end
 end
-right.MouseButton1Down:connect(function()FlipPage(1) end)
-left.MouseButton1Down:connect(function()FlipPage(-1) end)
-page1.addonl.MouseButton1Down:connect(function()CurrentPage=6 FlipPage(-1) end)
-page5.addonr.MouseButton1Down:connect(function()CurrentPage=0 FlipPage(1) end)
+
+right.MouseButton1Down:Connect(function()
+	FlipPage(1)
+end)
+
+left.MouseButton1Down:Connect(function()
+	FlipPage(-1)
+end)
+
+page1.addonl.MouseButton1Down:Connect(function()	
+CurrentPage = 6
+	FlipPage(-1)
+end)
+
+page5.addonl.MouseButton1Down:Connect(function()	
+CurrentPage = 1
+	local P = pges:GetChildren()
+	for i = 1, #P do
+		P[i].Visible = false
+	end
+	local foundPage = pges:FindFirstChild("Page" .. CurrentPage)
+	if foundPage then
+		foundPage.Visible = true 
+	end
+	end)
+
+--Settings--
+	FlipPage(1)
+
+
 -----------------------------------------------------------------------------
