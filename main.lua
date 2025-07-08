@@ -6,8 +6,6 @@ local cka = Instance.new("ScreenGui", game.CoreGui)
 cka.Name= "CoolGui"
 local frame = Instance.new("Frame")
 frame.Parent = cka
-frame.Active = true
-frame.Draggable = true
 frame.BackgroundColor3 = blak
 frame.BorderColor3 = rede
 frame.BorderSizePixel = 3
@@ -29085,58 +29083,462 @@ button.MouseButton1Down:connect(function()
 	service:AwardPoints(game.Players.LocalPlayer.userId, service:GetAwardablePoints())
 end)
 --
+-- Warna dan font
+local blak = Color3.fromRGB(0, 0, 0)
+local rede = Color3.fromRGB(255, 0, 0)
+local whit = Color3.fromRGB(255, 255, 255)
+local tef = Enum.Font.SourceSans
+
+-- Tombol
 local button = Instance.new("TextButton")
 button.Parent = misc
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
-button.Position = UDim2.new(0,0,0,165)
-button.Size = UDim2.new(0.499,0,0,30)
+button.Name = "Rc7"
+button.Position = UDim2.new(0, 0, 0, 165)
+button.Size = UDim2.new(0.499, 0, 0, 30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "Rc7"
 button.TextColor3 = whit
 button.TextWrapped = true
-button.MouseButton1Down:connect(function()
+button.MouseButton1Down:Connect(function()
 
-end)
+	game:GetService("StarterGui"):SetCore("SendNotification",{  Title = "Rc7",      
+
+		Text = "Rc7 Made By C4N0F", -- no uh, don't touch 
+
+	})
+
+	game:GetService("StarterGui"):SetCore("SendNotification",{  
+
+		Title = "wait bro...",      
+
+		Text = "loading...",
+
+	})
+
+	wait(3)
+
+	game:GetService("StarterGui"):SetCore("SendNotification",{  
+
+		Title = "loaded!",      
+
+		Text = "Have fun exploiting!",
+
+	})
+	local RC7BYC4N0F = Instance.new("ScreenGui")
+	local Epik = Instance.new("Frame")
+	local Page1 = Instance.new("ImageLabel")
+	local Execute = Instance.new("TextButton")
+	local Open = Instance.new("TextButton")
+	local Clear = Instance.new("TextButton")
+	local ScriptBox = Instance.new("TextBox")
+	local Rocky2u = Instance.new("TextButton")
+	local Roxploit = Instance.new("TextButton")
+	local Invite = Instance.new("TextButton")
+	local Page2 = Instance.new("ImageLabel")
+	local TextButton = Instance.new("TextButton")
+	local FakeButton = Instance.new("TextBox")
+	local FakeButton_2 = Instance.new("TextBox")
+
+	--Properties:
+
+	RC7BYC4N0F.Name = "RC7BYC4N0F"
+	RC7BYC4N0F.Parent = game.CoreGui
+	RC7BYC4N0F.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	Epik.Name = "Epik"
+	Epik.Parent = RC7BYC4N0F
+	Epik.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Epik.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Epik.BorderSizePixel = 0
+	Epik.Position = UDim2.new(0.413385838, 0, 0.271186441, 0)
+	Epik.Size = UDim2.new(0, 342, 0, 383)
+
+	Page1.Name = "Page1"
+	Page1.Parent = Epik
+	Page1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Page1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Page1.BorderSizePixel = 0
+	Page1.Position = UDim2.new(-0.0028325154, 0, -0.00209495611, 0)
+	Page1.Size = UDim2.new(0, 343, 0, 383)
+	Page1.Visible = false
+	Page1.Image = "rbxassetid://128681323011046"
+
+	Execute.Name = "Execute"
+	Execute.Parent = Page1
+	Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Execute.BackgroundTransparency = 1.000
+	Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Execute.BorderSizePixel = 0
+	Execute.Position = UDim2.new(0.318181783, 0, 0.78014183, 0)
+	Execute.Size = UDim2.new(0, 94, 0, 24)
+	Execute.Font = Enum.Font.SourceSans
+	Execute.Text = ""
+	Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Execute.TextSize = 14.000
+
+	Open.Name = "Open"
+	Open.Parent = Page1
+	Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Open.BackgroundTransparency = 1.000
+	Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Open.BorderSizePixel = 0
+	Open.Position = UDim2.new(0.0426882207, 0, 0.78014183, 0)
+	Open.Size = UDim2.new(0, 95, 0, 23)
+	Open.Font = Enum.Font.SourceSans
+	Open.Text = ""
+	Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Open.TextSize = 14.000
+
+	Clear.Name = "Clear"
+	Clear.Parent = Page1
+	Clear.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Clear.BackgroundTransparency = 1.000
+	Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Clear.BorderSizePixel = 0
+	Clear.Position = UDim2.new(0.602272868, 0, 0.78014183, 0)
+	Clear.Size = UDim2.new(0, 95, 0, 24)
+	Clear.Font = Enum.Font.SourceSans
+	Clear.Text = ""
+	Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Clear.TextSize = 14.000
+
+	ScriptBox.Name = "ScriptBox"
+	ScriptBox.Parent = Page1
+	ScriptBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ScriptBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	ScriptBox.BorderSizePixel = 0
+	ScriptBox.Position = UDim2.new(0, 14, 0, 82)
+	ScriptBox.Size = UDim2.new(0, 284, 0, 215)
+	ScriptBox.Font = Enum.Font.SourceSans
+	ScriptBox.PlaceholderColor3 = Color3.fromRGB(127, 127, 127)
+	ScriptBox.PlaceholderText = "--WELCOME TO C4N0F's RC7!--"
+	ScriptBox.Text = ""
+	ScriptBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ScriptBox.TextSize = 14.000
+	ScriptBox.TextXAlignment = Enum.TextXAlignment.Left
+	ScriptBox.TextYAlignment = Enum.TextYAlignment.Top
+
+	Rocky2u.Name = "Rocky2u"
+	Rocky2u.Parent = Page1
+	Rocky2u.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Rocky2u.BackgroundTransparency = 1.000
+	Rocky2u.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Rocky2u.BorderSizePixel = 0
+	Rocky2u.Position = UDim2.new(0, 307, 0, 349)
+	Rocky2u.Size = UDim2.new(0, 28, 0, 28)
+	Rocky2u.Font = Enum.Font.SourceSans
+	Rocky2u.Text = ""
+	Rocky2u.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Rocky2u.TextSize = 14.000
+
+	Roxploit.Name = "Roxploit"
+	Roxploit.Parent = Page1
+	Roxploit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Roxploit.BackgroundTransparency = 1.000
+	Roxploit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Roxploit.BorderSizePixel = 0
+	Roxploit.Position = UDim2.new(0, 307, 0, 311)
+	Roxploit.Size = UDim2.new(0, 28, 0, 30)
+	Roxploit.Font = Enum.Font.SourceSans
+	Roxploit.Text = ""
+	Roxploit.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Roxploit.TextSize = 14.000
+
+	Invite.Name = "Invite"
+	Invite.Parent = Page1
+	Invite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Invite.BackgroundTransparency = 1.000
+	Invite.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Invite.BorderSizePixel = 0
+	Invite.Position = UDim2.new(0, 307, 0, 275)
+	Invite.Size = UDim2.new(0, 28, 0, 29)
+	Invite.Font = Enum.Font.SourceSans
+	Invite.Text = ""
+	Invite.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Invite.TextSize = 14.000
+
+	Page2.Name = "Page2"
+	Page2.Parent = Epik
+	Page2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Page2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	Page2.BorderSizePixel = 0
+	Page2.Position = UDim2.new(-0.00201255386, 0, -0.000917838071, 0)
+	Page2.Size = UDim2.new(0, 343, 0, 383)
+	Page2.Image = "rbxassetid://13695440070"
+
+	TextButton.Parent = Page2
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.BackgroundTransparency = 1.000
+	TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.BorderSizePixel = 0
+	TextButton.Position = UDim2.new(0.346590906, 0, 0.557919621, 0)
+	TextButton.Size = UDim2.new(0, 100, 0, 26)
+	TextButton.Font = Enum.Font.SourceSans
+	TextButton.Text = ""
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 14.000
+
+	FakeButton.Name = "FakeButton"
+	FakeButton.Parent = Page2
+	FakeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	FakeButton.BackgroundTransparency = 1.000
+	FakeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	FakeButton.BorderSizePixel = 0
+	FakeButton.Position = UDim2.new(0.265306115, 0, 0.477806777, 0)
+	FakeButton.Size = UDim2.new(0, 154, 0, 25)
+	FakeButton.ClearTextOnFocus = false
+	FakeButton.Font = Enum.Font.SourceSans
+	FakeButton.Text = "Password"
+	FakeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+	FakeButton.TextScaled = true
+	FakeButton.TextSize = 14.000
+	FakeButton.TextWrapped = true
+
+	FakeButton_2.Name = "FakeButton"
+	FakeButton_2.Parent = Page2
+	FakeButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	FakeButton_2.BackgroundTransparency = 1.000
+	FakeButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	FakeButton_2.BorderSizePixel = 0
+	FakeButton_2.Position = UDim2.new(0.256559759, 0, 0.394255877, 0)
+	FakeButton_2.Size = UDim2.new(0, 156, 0, 23)
+	FakeButton_2.ClearTextOnFocus = false
+	FakeButton_2.Font = Enum.Font.SourceSans
+	FakeButton_2.Text = "User"
+	FakeButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	FakeButton_2.TextScaled = true
+	FakeButton_2.TextSize = 14.000
+	FakeButton_2.TextWrapped = true
+
+	-- Scripts:
+
+	local function PFSOG_fake_script() -- Execute.LocalScript 
+		local script = Instance.new('LocalScript', Execute)
+
+		-- Execute Local Script
+
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(script.Parent.Parent.ScriptBox.Text)()
+		end)
+
+	end
+	coroutine.wrap(PFSOG_fake_script)()
+	local function FMWWFH_fake_script() -- Open.Script 
+		local script = Instance.new('Script', Open)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local message = Instance.new("Message")
+			message.Parent = game.Workspace
+			message.Text = "This is a script not a real executor dumbass"
+
+
+			task.wait(2)
+
+			message:Destroy()
+		end)
+
+	end
+	coroutine.wrap(FMWWFH_fake_script)()
+	local function WROD_fake_script() -- Clear.LocalScript 
+		local script = Instance.new('LocalScript', Clear)
+
+		-- Clear Local Script
+
+		script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.Parent.Source.Text = ''
+		end)
+
+	end
+	coroutine.wrap(WROD_fake_script)()
+	local function AWCWA_fake_script() -- Rocky2u.LocalScript 
+		local script = Instance.new('LocalScript', Rocky2u)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:GetObjects('rbxassetid://295850902')[1].Source)()
+		end)
+
+	end
+	coroutine.wrap(AWCWA_fake_script)()
+	local function FVMOUCX_fake_script() -- Roxploit.LocalScript 
+		local script = Instance.new('LocalScript', Roxploit)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:GetObjects("rbxassetid://364364477")[1].Source)()
+		end)
+
+	end
+	coroutine.wrap(FVMOUCX_fake_script)()
+	local function RASZSB_fake_script() -- Invite.Script 
+		local script = Instance.new('Script', Invite)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local message = Instance.new("Message")
+			message.Parent = game.Workspace
+			message.Text = "Join My Discord Server .gg/vyUJAeRZah"
+
+
+			task.wait(2)
+
+			message:Destroy()
+		end)
+
+	end
+	coroutine.wrap(RASZSB_fake_script)()
+	local function VLRY_fake_script() -- TextButton.LocalScript 
+		local script = Instance.new('LocalScript', TextButton)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			script.Parent.Parent.Parent.Page1.Visible = true
+			script.Parent.Parent.Parent.Page2.Visible = false
+		end)
+	end
+	coroutine.wrap(VLRY_fake_script)()
+	local function VWIO_fake_script() -- Epik.Drag 
+		local script = Instance.new('LocalScript', Epik)
+
+		local UserInputService = game:GetService("UserInputService")
+
+		local gui = script.Parent
+
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+
+		local function update(input)
+			local delta = input.Position - dragStart
+			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		end
+
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging then
+				update(input)
+			end
+		end)
+	end
+	coroutine.wrap(VWIO_fake_script)()
+	end)
 --
 local button = Instance.new("TextButton")
 button.Parent = misc
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "Esp player"
 button.Position = UDim2.new(0.5,3,0,165)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "Esp player"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
 
 end)
 --
+local blak = Color3.fromRGB(0, 0, 0)
+local rede = Color3.fromRGB(255, 0, 0)
+local whit = Color3.fromRGB(255, 255, 255)
+local tef = Enum.Font.SourceSans
+
+-- Frame GUI
+local misc = Instance.new("Frame")
+misc.Parent = game.CoreGui
+misc.BackgroundColor3 = blak
+misc.BorderColor3 = rede
+misc.BorderSizePixel = 3
+misc.Position = UDim2.new(0.01, 0, 0.05, 0)
+misc.Size = UDim2.new(0.175, 0, 0.5, 0)
+misc.ZIndex = 3
+
+-- Tombol
 local button = Instance.new("TextButton")
 button.Parent = misc
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
-button.Position = UDim2.new(0,0,0,198)
-button.Size = UDim2.new(0.499,0,0,30)
+button.Name = "fire all"
+button.Position = UDim2.new(0, 0, 0, 198)
+button.Size = UDim2.new(0.499, 0, 0, 30)
 button.ZIndex = 3
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "fire all"
 button.TextColor3 = whit
 button.TextWrapped = true
-button.MouseButton1Down:connect(function()
 
+-- Fungsi Efek
+local function activateEffects()
+	local IMAGE_ID = 74177839404670
+
+	-- Particle Effects
+	for _, part in ipairs(workspace:GetDescendants()) do
+		if part:IsA("BasePart") then
+			local emitter = Instance.new("ParticleEmitter", part)
+			emitter.Texture = "http://www.roblox.com/asset/?id=" .. IMAGE_ID
+			emitter.Rate = 200
+			emitter.Speed = NumberRange.new(1)
+			emitter.Lifetime = NumberRange.new(1)
+		end
+	end
+
+	-- Mystical Visual Effects
+	local function applyEffects(folder)
+		for _, item in ipairs(folder:GetChildren()) do
+			if item:IsA("BasePart") then
+				item.BrickColor = BrickColor.new("Really black")
+				item.TopSurface = Enum.SurfaceType.Smooth
+				item.BottomSurface = Enum.SurfaceType.Smooth
+
+				local selection = Instance.new("SelectionBox", item)
+				selection.Adornee = item
+				selection.Color = BrickColor.new("Really red")
+
+				local light = Instance.new("PointLight", item)
+				light.Color = Color3.new(1, 0, 0)
+				light.Range = 15
+				light.Brightness = 5
+
+				local fire = Instance.new("Fire", item)
+				fire.Size = 19
+				fire.Heat = 22
+			end
+			applyEffects(item)
+		end
+	end
+
+	applyEffects(workspace)
+end
+
+-- Saat tombol diklik
+button.MouseButton1Down:Connect(function()
+	activateEffects()
 end)
 --
 local button = Instance.new("TextButton")
@@ -29633,1106 +30035,58 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Esp Script"
+button.Name = "Empty"
 button.Position = UDim2.new(0,0,0,99)
 button.Size = UDim2.new(0.5,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Esp Player"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
-
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local Camera = workspace.CurrentCamera
-local LocalPlayer = Players.LocalPlayer
-
-local tracers = {}
-
-local function createTracer(player)
-	if player == LocalPlayer or tracers[player] then return end
-
-	local tracer = Drawing.new("Line")
-	tracer.Thickness = 2
-	tracer.Color = Color3.fromRGB(0, 255, 0) -- Green line
-	tracer.Transparency = 1
-	tracer.Visible = true
-	tracers[player] = tracer
-
-	player.CharacterRemoving:Connect(function()
-		tracer.Visible = false
-	end)
-
-	player.AncestryChanged:Connect(function(_, parent)
-		if not parent and tracers[player] then
-			tracers[player]:Destroy()
-			tracers[player] = nil
-		end
-	end)
-end
-
-local function removeTracer(player)
-	if tracers[player] then
-		tracers[player]:Destroy()
-		tracers[player] = nil
-	end
-end
-
--- Initialize tracers for all players already in the game
-for _, player in ipairs(Players:GetPlayers()) do
-	createTracer(player)
-	player.CharacterAdded:Connect(function()
-		wait(1)
-		createTracer(player)
-	end)
-end
-
--- Create tracer for new players
-Players.PlayerAdded:Connect(function(player)
-	createTracer(player)
-	player.CharacterAdded:Connect(function()
-		wait(1)
-		createTracer(player)
-	end)
-end)
-
--- Remove tracer when player leaves
-Players.PlayerRemoving:Connect(removeTracer)
-
--- Update tracer lines every frame
-RunService.RenderStepped:Connect(function()
-	local character = LocalPlayer.Character
-	local hrp = character and character:FindFirstChild("HumanoidRootPart")
-	if not hrp then return end
-
-	local fromScreen, onScreenStart = Camera:WorldToViewportPoint(hrp.Position)
-
-	for player, tracer in pairs(tracers) do
-		local char = player.Character
-		local targetHRP = char and char:FindFirstChild("HumanoidRootPart")
-		local humanoid = char and char:FindFirstChildOfClass("Humanoid")
-
-		if targetHRP and humanoid and humanoid.Health > 0 then
-			local toScreen, onScreenEnd = Camera:WorldToViewportPoint(targetHRP.Position)
-
-			if onScreenStart and onScreenEnd then
-				tracer.From = Vector2.new(fromScreen.X, fromScreen.Y)
-				tracer.To = Vector2.new(toScreen.X, toScreen.Y)
-				tracer.Visible = true
-			else
-				tracer.Visible = false
-			end
-		else
-			tracer.Visible = false
-		end
-	end
-end)
 --
 local button = Instance.new("TextButton")
 button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "angle script"
+button.Name = "Empty"
 button.Position = UDim2.new(0.5,3,0,99)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "angle script"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
-
 --
 local button = Instance.new("TextButton")
 button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Ban hammer"
+button.Name = "Empty"
 button.Position = UDim2.new(0,0,0,132)
 button.Size = UDim2.new(0.5,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Ban hammer"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
-
-local Player = game:GetService("Players").LocalPlayer
-local PlayerGui = Player:WaitForChild("PlayerGui")
-local Cam = workspace.CurrentCamera
-local Backpack = Player:WaitForChild("Backpack")
-local Character = Player.Character or Player.CharacterAdded:Wait()
-local Humanoid = Character:WaitForChild("Humanoid")
-local Mouse = Player:GetMouse()
-
-local RootPart = Character:WaitForChild("HumanoidRootPart")
-local Torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("UpperTorso") -- For R15 compatibility
-local Head = Character:WaitForChild("Head")
-local RightArm = Character:FindFirstChild("Right Arm") or Character:FindFirstChild("RightUpperArm")
-local LeftArm = Character:FindFirstChild("Left Arm") or Character:FindFirstChild("LeftUpperArm")
-local RightLeg = Character:FindFirstChild("Right Leg") or Character:FindFirstChild("RightUpperLeg")
-local LeftLeg = Character:FindFirstChild("Left Leg") or Character:FindFirstChild("LeftUpperLeg")
-
-local RootJoint = RootPart:FindFirstChild("RootJoint")
-local Neck = Torso and Torso:FindFirstChild("Neck")
-local RightShoulder = Torso and Torso:FindFirstChild("Right Shoulder")
-local LeftShoulder = Torso and Torso:FindFirstChild("Left Shoulder")
-local RightHip = Torso and Torso:FindFirstChild("Right Hip")
-local LeftHip = Torso and Torso:FindFirstChild("Left Hip")
-
--- Create and play the sound
-local sick = Instance.new("Sound", Character)
-sick.SoundId = "rbxassetid://462506896"
-sick.Looped = true
-sick.Pitch = 1
-sick.Volume = 5
-sick:Play()
-
-local IT = Instance.new
-local CF = CFrame.new
-local VT = Vector3.new
-local RAD = math.rad
-local C3 = Color3.new
-local UD2 = UDim2.new
-local BRICKC = BrickColor.new
-local ANGLES = CFrame.Angles
-local EULER = CFrame.fromEulerAnglesXYZ
-local COS = math.cos
-local ACOS = math.acos
-local SIN = math.sin
-local ASIN = math.asin
-local ABS = math.abs
-local MRANDOM = math.random
-local FLOOR = math.floor
-
--- Mesh creation utility function
-local function CreateMesh(MESH, PARENT, MESHTYPE, MESHID, TEXTUREID, SCALE, OFFSET)
-	local newMesh = IT(MESH)
-	if MESH == "SpecialMesh" then
-		newMesh.MeshType = MESHTYPE
-		if MESHID and MESHID ~= "" and MESHID ~= "nil" then
-			newMesh.MeshId = "http://www.roblox.com/asset/?id=" .. MESHID
-		end
-		if TEXTUREID and TEXTUREID ~= "" and TEXTUREID ~= "nil" then
-			newMesh.TextureId = "http://www.roblox.com/asset/?id=" .. TEXTUREID
-		end
-	end
-	newMesh.Offset = OFFSET or VT(0, 0, 0)
-	newMesh.Scale = SCALE or VT(1, 1, 1)
-	newMesh.Parent = PARENT
-	return newMesh
-end
-
-function CreatePart(FORMFACTOR, PARENT, MATERIAL, REFLECTANCE, TRANSPARENCY, BRICKCOLOR, NAME, SIZE, ANCHOR)
-	local newPart = Instance.new("Part")
-
-	-- FormFactor is deprecated in modern Roblox; consider removing or set to "Custom"
-	newPart.FormFactor = FORMFACTOR or Enum.FormFactor.Custom
-
-	newPart.Reflectance = REFLECTANCE or 0
-	newPart.Transparency = TRANSPARENCY or 0
-	newPart.CanCollide = false
-	newPart.Locked = true
-
-	-- Anchor logic
-	if ANCHOR == false then
-		newPart.Anchored = false
-	else
-		newPart.Anchored = true
-	end
-
-	-- BrickColor: ensure valid input; use BrickColor.new(string) or BrickColor.new(Color3)
-	newPart.BrickColor = BrickColor.new(tostring(BRICKCOLOR) or "Medium stone grey")
-
-	newPart.Name = NAME or "Part"
-	newPart.Size = SIZE or Vector3.new(1, 1, 1)
-
-	-- Position: use Torso position if available, else Vector3.zero to avoid error
-	if Torso and Torso.Position then
-		newPart.Position = Torso.Position
-	else
-		newPart.Position = Vector3.new(0, 0, 0)
-	end
-
-	newPart.Material = MATERIAL or Enum.Material.Plastic
-
-	newPart:BreakJoints()
-	newPart.Parent = PARENT or workspace
-
-	return newPart
-end
-
---//=================================\\
---||		  CUSTOMIZATION
---\\=================================//
-
-Player_Size = 1 --Size of the player.
-Animation_Speed = 3
-Frame_Speed = 1 / 60 -- (1 / 30) OR (1 / 60)
-
-local Speed = 16
-local Effects2 = {}
-
---//=================================\\
---|| 	  END OF CUSTOMIZATION
---\\=================================//
-
-local function weldBetween(part0, part1)
-	-- Cache the relative CFrame between parts at the time of weld creation
-	local weld = Instance.new("ManualWeld")
-	weld.Part0 = part0
-	weld.Part1 = part1
-	weld.C0 = part0.CFrame:inverse() * part0.CFrame -- identity, but explicit
-	weld.C1 = part1.CFrame:inverse() * part0.CFrame
-	weld.Parent = part0
-	return weld
-end
-
-local function createAccessory(attachmentPart, meshId, textureId, scale, offset, color)
-	if not attachmentPart or not attachmentPart.Parent then return end
-	if not Character then return end
-
-	local part = Instance.new("Part")
-	part.CanCollide = false
-	part.Anchored = false
-	part.Size = Vector3.new(1, 1, 1) -- default size instead of zero
-	part.CFrame = attachmentPart.CFrame
-	part.BrickColor = typeof(color) == "BrickColor" and color or BrickColor.new(color or "White")
-	part.Parent = Character
-
-	local mesh = Instance.new("SpecialMesh")
-	mesh.MeshId = meshId or ""
-	mesh.TextureId = textureId or ""
-	mesh.Scale = scale or Vector3.new(1, 1, 1)
-	mesh.Offset = offset or Vector3.new(0, 0, 0)
-	mesh.Parent = part
-
-	weldBetween(attachmentPart, part)
-end
-
-local function createBodyPart(type_, color, part, offset, size)
-	if not part or not Character then return end
-	size = size or Vector3.new(1, 1, 1)
-	offset = offset or Vector3.new(0, 0, 0)
-
-	local meshType, meshId, material
-
-	if type_ == "Gem" then
-		meshType = "FileMesh"
-		meshId = "rbxassetid://9756362"
-		material = Enum.Material.Plastic
-	elseif type_ == "Skull" then
-		meshType = "FileMesh"
-		meshId = "rbxassetid://4770583"
-		material = Enum.Material.Plastic
-	elseif type_ == "Eye" then
-		meshType = "Sphere"
-		meshId = ""
-		material = Enum.Material.Neon
-	else
-		return -- unsupported type
-	end
-
-	local newPart = CreatePart(Enum.FormFactor.Custom, Character, material, 0, 0, color, type_, Vector3.new(1, 1, 1), false)
-	newPart.Anchored = false
-	newPart.CanCollide = false
-	newPart.CFrame = part.CFrame
-
-	local newMesh = CreateMesh("SpecialMesh", newPart, meshType, meshId, "", size, offset)
-	weldBetween(part, newPart)
-end
-
-
---//=================================\\
---|| 	      USEFUL VALUES
---\\=================================//
-
-local ROOTC0 = CF(0, 0, 0) * ANGLES(RAD(-90), RAD(0), RAD(180))
-local NECKC0 = CF(0, 1, 0) * ANGLES(RAD(-90), RAD(0), RAD(180))
-local RIGHTSHOULDERC0 = CF(-0.5, 0, 0) * ANGLES(RAD(0), RAD(90), RAD(0))
-local LEFTSHOULDERC0 = CF(0.5, 0, 0) * ANGLES(RAD(0), RAD(-90), RAD(0))
-local CHANGEDEFENSE = 0
-local CHANGEDAMAGE = 0
-local CHANGEMOVEMENT = 0
-local ANIM = "Idle"
-local ATTACK = false
-local EQUIPPED = false
-local HOLD = false
-local COMBO = 1
-local Rooted = false
-local SINE = 0
-local KEYHOLD = false
-local CHANGE = 2 / Animation_Speed
-local WALKINGANIM = false
-local WALK = 0
-local VALUE1 = false
-local HITFLOOR = nil
-local VALUE2 = false
-local ROBLOXIDLEANIMATION = IT("Animation")
-ROBLOXIDLEANIMATION.Name = "Roblox Idle Animation"
-ROBLOXIDLEANIMATION.AnimationId = "http://www.roblox.com/asset/?id=180435571"
---ROBLOXIDLEANIMATION.Parent = Humanoid
-local WEAPONGUI = IT("ScreenGui", PlayerGui)
-WEAPONGUI.Name = "Weapon GUI"
-local Weapon = IT("Model")
-Weapon.Name = "Adds"
-local Delete = IT("Model",Character)
-Delete.Name = "Banlist"
-local Effects = IT("Folder", Weapon)
-Effects.Name = "Effects"
-local ANIMATOR = Humanoid.Animator
-local ANIMATE = Character.Animate
-local HITPLAYERSOUNDS = {--[["199149137", "199149186", "199149221", "199149235", "199149269", "199149297"--]]"263032172", "263032182", "263032200", "263032221", "263032252", "263033191"}
-local HITARMORSOUNDS = {"199149321", "199149338", "199149367", "199149409", "199149452"}
-local HITWEAPONSOUNDS = {"199148971", "199149025", "199149072", "199149109", "199149119"}
-local HITBLOCKSOUNDS = {"199148933", "199148947"}
-local UNANCHOR = true
-
-local SKILLTEXTCOLOR = C3(0,0,0)
-
---//=================================\\
---\\=================================//
-
-
---//=================================\\
---|| SAZERENOS' ARTIFICIAL HEARTBEAT
---\\=================================//
-
-ArtificialHB = Instance.new("BindableEvent", script)
-ArtificialHB.Name = "ArtificialHB"
-
-script:WaitForChild("ArtificialHB")
-
-frame = Frame_Speed
-tf = 0
-allowframeloss = false
-tossremainder = false
-lastframe = tick()
-script.ArtificialHB:Fire()
-
-game:GetService("RunService").Heartbeat:connect(function(s, p)
-	tf = tf + s
-	if tf >= frame then
-		if allowframeloss then
-			script.ArtificialHB:Fire()
-			lastframe = tick()
-		else
-			for i = 1, math.floor(tf / frame) do
-				script.ArtificialHB:Fire()
-			end
-			lastframe = tick()
-		end
-		if tossremainder then
-			tf = 0
-		else
-			tf = tf - frame * math.floor(tf / frame)
-		end
-	end
-end)
-
---//=================================\\
---\\=================================//
-
-
-
-
-
---//=================================\\
---|| 	      SOME FUNCTIONS
---\\=================================//
-
--- Raycast utility
-function Raycast(position, direction, range, ignoreDescendants)
-	local ray = Ray.new(position, direction.Unit * range)
-	return workspace:FindPartOnRay(ray, ignoreDescendants)
-end
-
--- Clamp utility to allow only negative values
-function ClampToNegative(number)
-	if number >= 0 then
-		return 0
-	end
-	return number
-end
-
--- Clamp utility to allow only positive values
-function ClampToPositive(number)
-	if number <= 0 then
-		return 0
-	end
-	return number
-end
-
--- Custom wait using Heartbeat
-function Swait(frames)
-	frames = frames or 1
-	for _ = 1, frames do
-		ArtificialHB.Event:Wait()
-	end
-end
-
--- Convert CFrame to Quaternion
-function QuaternionFromCFrame(cf)
-	local mx, my, mz, m00, m01, m02, m10, m11, m12, m20, m21, m22 = cf:components()
-	local trace = m00 + m11 + m22
-	if trace > 0 then 
-		local s = math.sqrt(1 + trace)
-		local recip = 0.5 / s
-		return (m21 - m12) * recip, (m02 - m20) * recip, (m10 - m01) * recip, s * 0.5
-	else
-		local i = 0
-		if m11 > m00 then i = 1 end
-		if m22 > (i == 0 and m00 or m11) then i = 2 end
-
-		if i == 0 then
-			local s = math.sqrt(m00 - m11 - m22 + 1)
-			local recip = 0.5 / s
-			return 0.5 * s, (m10 + m01) * recip, (m20 + m02) * recip, (m21 - m12) * recip
-		elseif i == 1 then
-			local s = math.sqrt(m11 - m22 - m00 + 1)
-			local recip = 0.5 / s
-			return (m01 + m10) * recip, 0.5 * s, (m21 + m12) * recip, (m02 - m20) * recip
-		else
-			local s = math.sqrt(m22 - m00 - m11 + 1)
-			local recip = 0.5 / s
-			return (m02 + m20) * recip, (m12 + m21) * recip, 0.5 * s, (m10 - m01) * recip
-		end
-	end
-end
-
--- Convert Quaternion to CFrame
-function QuaternionToCFrame(px, py, pz, x, y, z, w)
-	local xs, ys, zs = x + x, y + y, z + z
-	local wx, wy, wz = w * xs, w * ys, w * zs
-	local xx, xy, xz = x * xs, x * ys, x * zs
-	local yy, yz, zz = y * ys, y * zs, z * zs
-
-	return CFrame.new(
-		px, py, pz,
-		1 - (yy + zz), xy - wz, xz + wy,
-		xy + wz, 1 - (xx + zz), yz - wx,
-		xz - wy, yz + wx, 1 - (xx + yy)
-	)
-end
-
-function QuaternionSlerp(a, b, t)
-	local cosTheta = a[1] * b[1] + a[2] * b[2] + a[3] * b[3] + a[4] * b[4]
-	local startInterp, finishInterp;
-	if cosTheta >= 0.0001 then
-		if (1 - cosTheta) > 0.0001 then
-			local theta = ACOS(cosTheta)
-			local invSinTheta = 1 / SIN(theta)
-			startInterp = SIN((1 - t) * theta) * invSinTheta
-			finishInterp = SIN(t * theta) * invSinTheta
-		else
-			startInterp = 1 - t
-			finishInterp = t
-		end
-	else
-		if (1 + cosTheta) > 0.0001 then
-			local theta = ACOS(-cosTheta)
-			local invSinTheta = 1 / SIN(theta)
-			startInterp = SIN((t - 1) * theta) * invSinTheta
-			finishInterp = SIN(t * theta) * invSinTheta
-		else
-			startInterp = t - 1
-			finishInterp = t
-		end
-	end
-	return a[1] * startInterp + b[1] * finishInterp, a[2] * startInterp + b[2] * finishInterp, a[3] * startInterp + b[3] * finishInterp, a[4] * startInterp + b[4] * finishInterp
-end
-
-function Clerp(a, b, t)
-	local qa = {QuaternionFromCFrame(a)}
-	local qb = {QuaternionFromCFrame(b)}
-	local ax, ay, az = a.x, a.y, a.z
-	local bx, by, bz = b.x, b.y, b.z
-	local _t = 1 - t
-	return QuaternionToCFrame(_t * ax + t * bx, _t * ay + t * by, _t * az + t * bz, QuaternionSlerp(qa, qb, t))
-end
-
-function CreateFrame(PARENT, TRANSPARENCY, BORDERSIZEPIXEL, POSITION, SIZE, COLOR, BORDERCOLOR, NAME)
-	local frame = IT("Frame")
-	frame.BackgroundTransparency = TRANSPARENCY
-	frame.BorderSizePixel = BORDERSIZEPIXEL
-	frame.Position = POSITION
-	frame.Size = SIZE
-	frame.BackgroundColor3 = COLOR
-	frame.BorderColor3 = BORDERCOLOR
-	frame.Name = NAME
-	frame.Parent = PARENT
-	return frame
-end
-
-function CreateLabel(PARENT, TEXT, TEXTCOLOR, TEXTFONTSIZE, TEXTFONT, TRANSPARENCY, BORDERSIZEPIXEL, STROKETRANSPARENCY, NAME)
-	local label = IT("TextLabel")
-	label.BackgroundTransparency = 1
-	label.Size = UD2(1, 0, 1, 0)
-	label.Position = UD2(0, 0, 0, 0)
-	label.TextColor3 = TEXTCOLOR
-	label.TextStrokeTransparency = STROKETRANSPARENCY
-	label.TextTransparency = TRANSPARENCY
-	label.FontSize = TEXTFONTSIZE
-	label.Font = TEXTFONT
-	label.BorderSizePixel = BORDERSIZEPIXEL
-	label.TextScaled = false
-	label.Text = TEXT
-	label.Name = NAME
-	label.Parent = PARENT
-	return label
-end
-
-function NoOutlines(PART)
-	PART.TopSurface, PART.BottomSurface, PART.LeftSurface, PART.RightSurface, PART.FrontSurface, PART.BackSurface = 10, 10, 10, 10, 10, 10
-end
-
-
-function CreateWeldOrSnapOrMotor(TYPE, PARENT, PART0, PART1, C0, C1)
-	local NEWWELD = IT(TYPE)
-	NEWWELD.Part0 = PART0
-	NEWWELD.Part1 = PART1
-	NEWWELD.C0 = C0
-	NEWWELD.C1 = C1
-	NEWWELD.Parent = PARENT
-	return NEWWELD
-end
-
-local SOUND = IT("Sound",nil)
-
-function CreateSound(ID, PARENT, VOLUME, PITCH)
-	local NEWSOUND = nil
-	coroutine.resume(coroutine.create(function()
-		NEWSOUND = SOUND:Clone()
-		NEWSOUND.Parent = PARENT
-		NEWSOUND.Volume = VOLUME
-		NEWSOUND.Pitch = PITCH
-		NEWSOUND.SoundId = "http://www.roblox.com/asset/?id="..ID
-		Swait()
-		NEWSOUND:play()
-		game:GetService("Debris"):AddItem(NEWSOUND, 10)
-	end))
-	return NEWSOUND
-end
-
-function CFrameFromTopBack(at, top, back)
-	local right = top:Cross(back)
-	return CF(at.x, at.y, at.z, right.x, top.x, back.x, right.y, top.y, back.y, right.z, top.z, back.z)
-end
-
-function CreateWave(SIZE,WAIT,CFRAME,DOESROT,ROT,COLOR,GROW)
-	local wave = CreatePart(3, Effects, "Neon", 0, 0.5, BRICKC(COLOR), "Effect", VT(0,0,0))
-	local mesh = IT("SpecialMesh",wave)
-	mesh.MeshType = "FileMesh"
-	mesh.MeshId = "http://www.roblox.com/asset/?id=20329976"
-	mesh.Scale = SIZE
-	mesh.Offset = VT(0,0,-SIZE.X/8)
-	wave.CFrame = CFRAME
-	coroutine.resume(coroutine.create(function(PART)
-		for i = 1, WAIT do
-			Swait()
-			mesh.Scale = mesh.Scale + GROW
-			mesh.Offset = VT(0,0,-(mesh.Scale.X/8))
-			if DOESROT == true then
-				wave.CFrame = wave.CFrame * CFrame.fromEulerAnglesXYZ(0,ROT,0)
-			end
-			wave.Transparency = wave.Transparency + (0.5/WAIT)
-			if wave.Transparency > 0.99 then
-				wave:remove()
-			end
-		end
-	end))
-
-	function MagicSphere(SIZE,WAIT,CFRAME,COLOR)GROW()
-		local wave = CreatePart(3, Effects, "Neon", 0, 0, BRICKC(COLOR), "Effect", VT(1,1,1), true)
-		local mesh = IT("SpecialMesh",wave)
-		mesh.MeshType = "Sphere"
-		mesh.Scale = SIZE
-		mesh.Offset = VT(0,0,0)
-		wave.CFrame = CFRAME
-		coroutine.resume(coroutine.create(function(PART)
-			for i = 1, WAIT do
-				Swait()
-				mesh.Scale = mesh.Scale + GROW
-				wave.Transparency = wave.Transparency + (1/WAIT)
-				if wave.Transparency > 0.99 then
-					wave:remove()
-				end
-			end
-		end))
-	end
-
-	function MakeForm(PART,TYPE)
-		if TYPE == "Cyl" then
-			local MSH = IT("CylinderMesh",PART)
-		elseif TYPE == "Ball" then
-			local MSH = IT("SpecialMesh",PART)
-			MSH.MeshType = "Sphere"
-		elseif TYPE == "Wedge" then
-			local MSH = IT("SpecialMesh",PART)
-			MSH.MeshType = "Wedge"
-		end
-	end
-
-	function CheckTableForString(Table, String)
-		for i, v in pairs(Table) do
-			if string.find(string.lower(String), string.lower(v)) then
-				return true
-			end
-		end
-		return false
-	end
-
-	function CheckIntangible(Hit)
-		local ProjectileNames = {"Water", "Arrow", "Projectile", "Effect", "Rail", "Lightning", "Bullet"}
-		if Hit and Hit.Parent then
-			if ((not Hit.CanCollide or CheckTableForString(ProjectileNames, Hit.Name)) and not Hit.Parent:FindFirstChild("Humanoid")) then
-				return true
-			end
-		end
-		return false
-	end
-
-	Debris = game:GetService("Debris")
-
-	function CastZapRay(StartPos, Vec, Length, Ignore, DelayIfHit)
-		local Direction = CFrame.new(StartPos, Vec).lookVector
-		local Ignore = ((type(Ignore) == "table" and Ignore) or {Ignore})
-		local RayHit, RayPos, RayNormal = game:GetService("Workspace"):FindPartOnRayWithIgnoreList(Ray.new(StartPos, Direction * Length), Ignore)
-		if RayHit and CheckIntangible(RayHit) then
-			if DelayIfHit then
-				wait()
-			end
-			RayHit, RayPos, RayNormal = CastZapRay((RayPos + (Vec * 0.01)), Vec, (Length - ((StartPos - RayPos).magnitude)), Ignore, DelayIfHit)
-		end
-		return RayHit, RayPos, RayNormal
-	end
-
-	function turnto(position)
-		RootPart.CFrame=CFrame.new(RootPart.CFrame.p,VT(position.X,RootPart.Position.Y,position.Z)) * CFrame.new(0, 0, 0)
-	end
-
-	--//=================================\\
-	--||	     WEAPON CREATION
-	--\\=================================//
-
-	local HandlePart = CreatePart(3, Weapon, "SmoothPlastic", 0, 0, "Really black", "Handle", VT(0, 0, 0),false)
-	local HandleMesh = CreateMesh("SpecialMesh", HandlePart, "FileMesh", "10604848", "10605252", VT(1,1,1), VT(0, 2.7, 0))
-	local HandleWeld = CreateWeldOrSnapOrMotor("Weld", HandlePart, RightArm, HandlePart, CF(0,-0.8,0) * ANGLES(RAD(-90), RAD(0), RAD(0)), CF(0, 0, 0))
-
-	for _, c in pairs(Weapon:GetChildren()) do
-		if c.ClassName == "Part" then
-			c.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
-		end
-	end
-
-	Weapon.Parent = Character
-
-	Humanoid.Died:connect(function()
-		ATTACK = true
-	end)
-
-	local SKILL1FRAME = CreateFrame(WEAPONGUI, 0.5, 2, UD2(0.13, 0, 0.80, 0), UD2(0.26, 0, 0.07, 0), C3(0,0,0), C3(0, 0, 0), "Skill 1 Frame")
-	local SKILL2FRAME = CreateFrame(WEAPONGUI, 0.5, 2, UD2(0.60, 0, 0.80, 0), UD2(0.26, 0, 0.07, 0), C3(0,0,0), C3(0, 0, 0), "Skill 2 Frame")
-
-	local SKILL1TEXT = CreateLabel(SKILL1FRAME, "[CLICK+HOLD] Ban Slam", SKILLTEXTCOLOR, 7, "Garamond", 0, 2, 1, "Text 1")
-	local SKILL2TEXT = CreateLabel(SKILL2FRAME, "[B] Teleport", SKILLTEXTCOLOR, 8, "Garamond", 0, 2, 1, "Text 2")
-
-	--//=================================\\
-	--||			DAMAGING
-	--\\=================================//
-
-	function BAN(CHARACTER)
-		local BANFOLDER = IT("Folder",Effects)
-		local naeeym2 = Instance.new("BillboardGui",BANFOLDER)
-		naeeym2.AlwaysOnTop = false
-		naeeym2.Size = UDim2.new(5,35,2,35)
-		naeeym2.StudsOffset = Vector3.new(0,1,0)
-		naeeym2.Name = "AAAA"
-		local tecks2 = Instance.new("TextLabel",naeeym2)
-		tecks2.BackgroundTransparency = 1
-		tecks2.TextScaled = true
-		tecks2.BorderSizePixel = 0
-		tecks2.Text = "BANNED"
-		tecks2.Font = "Code"
-		tecks2.TextSize = 30
-		tecks2.TextStrokeTransparency = 1
-		tecks2.TextColor3 = Color3.new(1,0,0)
-		tecks2.TextStrokeColor3 = Color3.new(1,0,0)
-		tecks2.Size = UDim2.new(1,0,0.5,0)
-		tecks2.Parent = naeeym2
-		for i,v in ipairs(CHARACTER:GetChildren()) do
-			if v.ClassName == "Part" or v.ClassName == "MeshPart" then
-				if v.Name ~= "HumanoidRootPart" then
-					local BOD = v:Clone()
-					BOD.CanCollide = false
-					BOD.Anchored = true
-					BOD.CFrame = v.CFrame
-					BOD.Parent = BANFOLDER
-					BOD.Material = "Neon"
-					BOD.Color = C3(1,0,0)
-					if BOD:FindFirstChildOfClass("Decal") then
-						BOD:FindFirstChildOfClass("Decal"):remove()
-					end
-					if BOD.Name == "Head" then
-						naeeym2.Adornee = BOD
-					end
-					if BOD.ClassName == "MeshPart" then
-						BOD.TextureID = ""
-					end
-				end
-			end
-		end
-		CHARACTER:remove()
-		coroutine.resume(coroutine.create(function()
-			for i = 1, 50 do
-				Swait()
-				for i,v in ipairs(BANFOLDER:GetChildren()) do
-					if v.ClassName == "Part" or v.ClassName == "MeshPart" then
-						v.Transparency = 1
-					end
-					naeeym2.Enabled = false
-				end
-				Swait()
-				for i,v in ipairs(BANFOLDER:GetChildren()) do
-					if v.ClassName == "Part" or v.ClassName == "MeshPart" then
-						v.Transparency = 0
-					end
-					naeeym2.Enabled = true
-				end
-			end
-			BANFOLDER:remove()
-		end))
-
-		function BANNEAREST(POS, RANGE)
-		for i, v in workspace:GetChildren() do
-			local body = v:GetChildren()
-			for part = 1, #body do
-				local partObj = body[part]
-				if (partObj.ClassName == "Part" or partObj.ClassName == "MeshPart") and v ~= Character then
-					if partObj.Position and (partObj.Position - POS).Magnitude < RANGE then
-						if v:FindFirstChildOfClass("Humanoid") then
-							BAN(v)
-							if game.Players:FindFirstChild(v.Name) then
-								local Value = IT("BoolValue", Delete)
-								Value.Name = v.Name
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-
-	--//=================================\\
-	--||	ATTACK FUNCTIONS AND STUFF
-	--\\=================================//
-
-	function CreateDebreeRing(FLOOR,POSITION,SIZE,BLOCKSIZE,SWAIT)
-		if FLOOR ~= nil then
-			coroutine.resume(coroutine.create(function()
-				local PART = CreatePart(3, Effects, "Plastic", 0, 1, "Pearl", "DebreeCenter", VT(0,0,0))
-				PART.CFrame = CF(POSITION)
-				for i = 1, 45 do
-					local RingPiece = CreatePart(3, Effects, "Plastic", 0, 0, "Pearl", "DebreePart", BLOCKSIZE)
-					RingPiece.Material = FLOOR.Material
-					RingPiece.Color = FLOOR.Color
-					RingPiece.CFrame = PART.CFrame * ANGLES(RAD(0), RAD(i*8), RAD(0)) * CF(SIZE*4, 0, 0) * ANGLES(RAD(MRANDOM(-360,360)),RAD(MRANDOM(-360,360)),RAD(MRANDOM(-360,360)))
-					Debris:AddItem(RingPiece,SWAIT/100)
-				end
-				PART:remove()
-			end))
-		end
-	end
-
-	function BANSLAM()
-		ATTACK = true
-		Rooted = false
-		repeat
-			for i=0, 0.2, 0.1 / Animation_Speed do
-				Swait()
-				HandleWeld.C0 = Clerp(HandleWeld.C0, CF(0, -0.8, 0) * ANGLES(RAD(-90), RAD(-45), RAD(0)),2 / Animation_Speed)
-				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 7) * ANGLES(RAD(0), RAD(0), RAD(0)), 2 / Animation_Speed)
-				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(25), RAD(0), RAD(0)), 2 / Animation_Speed)
-				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1, 0.5, 0.5) * ANGLES(RAD(250), RAD(0), RAD(-45)) * RIGHTSHOULDERC0, 2 / Animation_Speed)
-				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1, 0.5, 0.5) * ANGLES(RAD(250), RAD(0), RAD(45)) * LEFTSHOULDERC0, 2 / Animation_Speed)
-				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 2 / Animation_Speed)
-				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 2 / Animation_Speed)
-			end
-			for i=0, 0.08, 0.1 / Animation_Speed do
-				Swait()
-				HandleWeld.C0 = Clerp(HandleWeld.C0, CF(0, -1, 0) * ANGLES(RAD(-90), RAD(-45), RAD(0)), 2 / Animation_Speed)
-				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 2) * ANGLES(RAD(75), RAD(0), RAD(0)), 2 / Animation_Speed)
-				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(-25), RAD(0), RAD(0)), 2 / Animation_Speed)
-				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1, 0.5, -1) * ANGLES(RAD(120), RAD(0), RAD(-45)) * RIGHTSHOULDERC0, 2 / Animation_Speed)
-				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1, 0.5, -1) * ANGLES(RAD(120), RAD(0), RAD(45)) * LEFTSHOULDERC0, 2 / Animation_Speed)
-				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-			end
-			for i=0, 0.08, 0.1 / Animation_Speed do
-				Swait()
-				HandleWeld.C0 = Clerp(HandleWeld.C0, CF(0, -1, 0) * ANGLES(RAD(-70), RAD(-45), RAD(0)), 2 / Animation_Speed)
-				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 2) * ANGLES(RAD(75), RAD(0), RAD(0)), 2 / Animation_Speed)
-				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(-25), RAD(0), RAD(0)), 2 / Animation_Speed)
-				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1, 0.5, -1) * ANGLES(RAD(60), RAD(0), RAD(-45)) * RIGHTSHOULDERC0, 2 / Animation_Speed)
-				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1, 0.5, -1) * ANGLES(RAD(60), RAD(0), RAD(45)) * LEFTSHOULDERC0, 2 / Animation_Speed)
-				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-			end
-			CreateSound("147722910", Effects, 10, 1)
-			BANNEAREST(RootPart.CFrame*CF(0,0,-6).p,25)
-			if HITFLOOR ~= nil then
-				CreateSound("289842971", HandlePart, 10, 1)
-				CreateSound("289842971", HandlePart, 10, 1)
-				CreateSound("289842971", HandlePart, 10, 1)
-				CreateSound("289842971", HandlePart, 10, 1)
-				CreateDebreeRing(HITFLOOR,RootPart.CFrame*CF(0,-5,-6).p,5,VT(8,8,8),35)
-			end
-			CreateWave(VT(25,0,25),45,RootPart.CFrame*CF(0,-5,-6),true,2,"Really red",VT(0,3,0))
-			CreateWave(VT(25,0,25),45,RootPart.CFrame*CF(0,-5,-6),true,-2,"Really red",VT(0,3,0))
-			for i=0, 0.1, 0.1 / Animation_Speed do
-				Swait()
-				HandleWeld.C0 = Clerp(HandleWeld.C0, CF(0, -1, 0) * ANGLES(RAD(-70), RAD(-45), RAD(0)), 2 / Animation_Speed)
-				RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 1.8) * ANGLES(RAD(75), RAD(0), RAD(0)), 2 / Animation_Speed)
-				Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(-25), RAD(0), RAD(0)), 2 / Animation_Speed)
-				RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1, 0.5, -1) * ANGLES(RAD(60), RAD(0), RAD(-45)) * RIGHTSHOULDERC0, 2 / Animation_Speed)
-				LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1, 0.5, -1) * ANGLES(RAD(60), RAD(0), RAD(45)) * LEFTSHOULDERC0, 2 / Animation_Speed)
-				RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-				LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-			end
-			if HOLD == true then
-				for i=0, 0.08, 0.1 / Animation_Speed do
-					Swait()
-					if HOLD == false then
-						break
-					end
-					HandleWeld.C0 = Clerp(HandleWeld.C0, CF(0, -1, 0) * ANGLES(RAD(-90), RAD(-45), RAD(0)), 2 / Animation_Speed)
-					RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 2) * ANGLES(RAD(75), RAD(0), RAD(0)), 2 / Animation_Speed)
-					Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(-25), RAD(0), RAD(0)), 2 / Animation_Speed)
-					RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1, 0.5, -1) * ANGLES(RAD(120), RAD(0), RAD(-45)) * RIGHTSHOULDERC0, 2 / Animation_Speed)
-					LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1, 0.5, -1) * ANGLES(RAD(120), RAD(0), RAD(45)) * LEFTSHOULDERC0, 2 / Animation_Speed)
-					RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-					LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-				end
-			end
-		until HOLD == false
-		for i=0, 1, 0.1 / Animation_Speed do
-			Swait()
-			HandleWeld.C0 = Clerp(HandleWeld.C0, CF(0, -1, 0) * ANGLES(RAD(-70), RAD(-45), RAD(0)), 2 / Animation_Speed)
-			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 1.8) * ANGLES(RAD(75), RAD(0), RAD(0)), 2 / Animation_Speed)
-			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(-25), RAD(0), RAD(0)), 2 / Animation_Speed)
-			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1, 0.5, -1) * ANGLES(RAD(60), RAD(0), RAD(-45)) * RIGHTSHOULDERC0, 2 / Animation_Speed)
-			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1, 0.5, -1) * ANGLES(RAD(60), RAD(0), RAD(45)) * LEFTSHOULDERC0, 2 / Animation_Speed)
-			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(25)), 0.5 / Animation_Speed)
-		end
-		for i=0, 5, 0.1 / Animation_Speed do
-			RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.5, 0, 0) * ANGLES(RAD(200), RAD(90), RAD(0)) * RIGHTSHOULDERC0, 0.2 / Animation_Speed)
-			HandleWeld.C0 = Clerp(HandleWeld.C0, CF(0, -0.8, 0) * ANGLES(RAD(-90), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0 - 2.5 * SIN(SINE / 12)), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(0), RAD(-12)) * LEFTSHOULDERC0, 0.15 / Animation_Speed)
-			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-		end
-		ATTACK = false
-		Rooted = false
-	end
-
-	--//=================================\\
-	--||	  ASSIGN THINGS TO KEYS
-	--\\=================================//
-
-	local UserInputService = game:GetService("UserInputService")
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local Mouse = player:GetMouse()
-
-	UserInputService.InputBegan:Connect(function(input, gameProcessed)
-		if gameProcessed then return end
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			HOLD = true
-			if not ATTACK then
-				BANSLAM()
-			end
-		elseif input.KeyCode == Enum.KeyCode.B and not ATTACK then
-			local pos = RootPart.Position
-			RootPart.CFrame = CF(Mouse.Hit.p + VT(0, 3, 0), pos)
-			CreateSound("769380905", Torso, 10, 1)
-		elseif input.KeyCode == Enum.KeyCode.T then
-			CreateSound("1058417264", Head, 10, 1)
-			Delete:ClearAllChildren()
-		end
-	end)
-
-	UserInputService.InputEnded:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			HOLD = false
-		end
-	end)
-	Mouse.Button1Down:connect(function(NEWKEY)
-		MouseDown(NEWKEY)
-	end)
-	Mouse.Button1Up:connect(function(NEWKEY)
-		MouseUp(NEWKEY)
-	end)
-	Mouse.KeyDown:connect(function(NEWKEY)
-		KeyDown(NEWKEY)
-	end)
-	Mouse.KeyUp:connect(function(NEWKEY)
-		KeyUp(NEWKEY)
-	end)
-
-
-	--//=================================\\
-	--\\=================================//
-
-
-	function unanchor()
-		if UNANCHOR == true then
-			g = Character:GetChildren()
-			for i = 1, #g do
-				if g[i].ClassName == "Part" then
-					g[i].Anchored = false
-				end
-			end
-		end
-	end
-
-
-	--//=================================\\
-	--||	WRAP THE WHOLE SCRIPT UP
-	--\\=================================//
-
-	Humanoid.Changed:connect(function(Jump)
-		if Jump == "Jump" and (Disable_Jump) == (true) then
-			Humanoid.Jump = false
-		end
-	end)
-
-	Speed = 23
-
-	while true do
-		if HOLD == true then
-			if Speed < 30 then
-				Speed = Speed + 0.1
-			end
-		else
-			if Speed > 23 then
-				Speed = Speed - 0.5
-			end
-		end
-	end
-
-	Swait()
-	ANIMATE.Parent = nil
-	local IDLEANIMATION = Humanoid:LoadAnimation(ROBLOXIDLEANIMATION)
-	IDLEANIMATION:Play()
-	SINE = SINE + CHANGE
-	local TORSOVELOCITY = (RootPart.Velocity * VT(1, 0, 1)).magnitude
-	local TORSOVERTICALVELOCITY = RootPart.Velocity.y
-	local LV = Torso.CFrame:pointToObjectSpace(Torso.Velocity - Torso.Position)
-	HITFLOOR = Raycast(RootPart.Position, (CF(RootPart.Position, RootPart.Position + VT(0, -1, 0))).lookVector, 4 * Player_Size, Character)
-	local WALKSPEEDVALUE = 6 / (Humanoid.WalkSpeed / 16)
-	if ATTACK == false then
-		RightShoulder.C0 = Clerp(RightShoulder.C0, CF(1.5, 0, 0) * ANGLES(RAD(200), RAD(90), RAD(0)) * RIGHTSHOULDERC0, 0.2 / Animation_Speed)
-		HandleWeld.C0 = Clerp(HandleWeld.C0, CF(0, -0.8, 0) * ANGLES(RAD(-90), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-	end
-	if ANIM == "Walk" and TORSOVELOCITY > 1 and ATTACK == false then
-		RootJoint.C1 = Clerp(RootJoint.C1, ROOTC0 * CF(0, 0, -0.15 * COS(SINE / (WALKSPEEDVALUE / 2)) * Player_Size) * ANGLES(RAD(0), RAD(0) - RootPart.RotVelocity.Y / 75, RAD(0)), 2 * (Humanoid.WalkSpeed / 16) / Animation_Speed)
-		Neck.C1 = Clerp(Neck.C1, CF(0 * Player_Size, -0.5 * Player_Size, 0 * Player_Size) * ANGLES(RAD(-90), RAD(0), RAD(180)) * ANGLES(RAD(2.5 * SIN(SINE / (WALKSPEEDVALUE / 2))), RAD(0), RAD(0) - Head.RotVelocity.Y / 30), 0.2 * (Humanoid.WalkSpeed / 16) / Animation_Speed)
-		RightHip.C1 = Clerp(RightHip.C1, CF(0.5 * Player_Size, 0.875 * Player_Size - 0.125 * SIN(SINE / WALKSPEEDVALUE) * Player_Size, -0.125 * COS(SINE / WALKSPEEDVALUE) * Player_Size) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(0) - RightLeg.RotVelocity.Y / 75, RAD(0), RAD(76 * COS(SINE / WALKSPEEDVALUE))), 0.2 * (Humanoid.WalkSpeed / 16) / Animation_Speed)
-		LeftHip.C1 = Clerp(LeftHip.C1, CF(-0.5 * Player_Size, 0.875 * Player_Size + 0.125 * SIN(SINE / WALKSPEEDVALUE) * Player_Size, 0.125 * COS(SINE / WALKSPEEDVALUE) * Player_Size) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(0) + LeftLeg.RotVelocity.Y / 75, RAD(0), RAD(76 * COS(SINE / WALKSPEEDVALUE))), 0.2 * (Humanoid.WalkSpeed / 16) / Animation_Speed)
-	elseif (ANIM ~= "Walk") or (TORSOVELOCITY < 1) or (ATTACK == true) then
-		RootJoint.C1 = Clerp(RootJoint.C1, ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-		Neck.C1 = Clerp(Neck.C1, CF(0 * Player_Size, -0.5 * Player_Size, 0 * Player_Size) * ANGLES(RAD(-90), RAD(0), RAD(180)) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-		RightHip.C1 = Clerp(RightHip.C1, CF(0.5 * Player_Size, 1 * Player_Size, 0 * Player_Size) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-		LeftHip.C1 = Clerp(LeftHip.C1, CF(-0.5 * Player_Size, 1 * Player_Size, 0 * Player_Size) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-	end
-	if TORSOVERTICALVELOCITY > 1 and HITFLOOR == nil then
-		ANIM = "Jump"
-		if ATTACK == false then
-			RootJoint.C0 = Clerp(RootJoint.C0, ROOTC0 * CF(0, 0, 0) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0 * Player_Size, 0 + ((1) - 1)) * ANGLES(RAD(-20), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0 * Player_Size) * ANGLES(RAD(-40), RAD(0), RAD(-20)) * LEFTSHOULDERC0, 0.2 / Animation_Speed)
-			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, -0.3) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-5), RAD(0), RAD(-20)), 0.2 / Animation_Speed)
-			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, -0.3) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-5), RAD(0), RAD(20)), 0.2 / Animation_Speed)
-		end
-	elseif TORSOVERTICALVELOCITY < -1 and HITFLOOR == nil then
-		ANIM = "Fall"
-		if ATTACK == false then
-			RootJoint.C0 = Clerp(RootJoint.C0, ROOTC0 * CF(0, 0, 0 ) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0 , 0 + ((1) - 1)) * ANGLES(RAD(20), RAD(0), RAD(0)), 0.2 / Animation_Speed)
-			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(0), RAD(-60)) * LEFTSHOULDERC0, 0.2 / Animation_Speed)
-			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1, 0) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(20)), 0.2 / Animation_Speed)
-			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1, 0) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(10)), 0.2 / Animation_Speed)
-		end
-	elseif TORSOVELOCITY < 1 and HITFLOOR ~= nil then
-		ANIM = "Idle"
-		if ATTACK == false then
-			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, 0 + 0.05 * COS(SINE / 12)) * ANGLES(RAD(0), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(0 - 2.5 * SIN(SINE / 12)), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(0), RAD(0), RAD(-12)) * LEFTSHOULDERC0, 0.15 / Animation_Speed)
-			RightHip.C0 = Clerp(RightHip.C0, CF(1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.05 * COS(SINE / 12), -0.01) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(-8), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-		end
-	elseif TORSOVELOCITY > 1 and HITFLOOR ~= nil then
-		ANIM = "Walk"
-		WALK = WALK + 1 / Animation_Speed
-		if WALK >= 15 - (5 * (Humanoid.WalkSpeed / 16 / Player_Size)) then
-			WALK = 0
-			if WALKINGANIM == true then
-				WALKINGANIM = false
-			elseif WALKINGANIM == false then
-				WALKINGANIM = true
-			end
-		end
-		--RightHip.C1 = Clerp(RightHip.C1, CF(0.5 * Player_Size, 0.875 * Player_Size - 0.125 * SIN(SINE / WALKSPEEDVALUE) * Player_Size, -0.125 * COS(SINE / WALKSPEEDVALUE) * Player_Size) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(0) - RightLeg.RotVelocity.Y / 75, RAD(0), RAD(60 * COS(SINE / WALKSPEEDVALUE))), 0.2 * (Humanoid.WalkSpeed / 16) / Animation_Speed)
-		--LeftHip.C1 = Clerp(LeftHip.C1, CF(-0.5 * Player_Size, 0.875 * Player_Size + 0.125 * SIN(SINE / WALKSPEEDVALUE) * Player_Size, 0.125 * COS(SINE / WALKSPEEDVALUE) * Player_Size) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(0) + LeftLeg.RotVelocity.Y / 75, RAD(0), RAD(60 * COS(SINE / WALKSPEEDVALUE))), 0.2 * (Humanoid.WalkSpeed / 16) / Animation_Speed)
-		if ATTACK == false then
-			RootJoint.C0 = Clerp(RootJoint.C0,ROOTC0 * CF(0, 0, -0.1) * ANGLES(RAD(5), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-			Neck.C0 = Clerp(Neck.C0, NECKC0 * CF(0, 0, 0 + ((1) - 1)) * ANGLES(RAD(5 - 8 * SIN(SINE / (WALKSPEEDVALUE / 2))), RAD(0), RAD(0)), 0.15 / Animation_Speed)
-			LeftShoulder.C0 = Clerp(LeftShoulder.C0, CF(-1.5, 0.5, 0) * ANGLES(RAD(-60 * COS(SINE / WALKSPEEDVALUE)), RAD(0), RAD(-5)) * LEFTSHOULDERC0, 0.35 / Animation_Speed)
-			RightHip.C0 = Clerp(RightHip.C0, CF(1 , -1 - 0.15 * COS(SINE / WALKSPEEDVALUE*2), -0.2+ 0.2 * COS(SINE / WALKSPEEDVALUE)) * ANGLES(RAD(0), RAD(90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(-15)), 2 / Animation_Speed)
-			LeftHip.C0 = Clerp(LeftHip.C0, CF(-1, -1 - 0.15 * COS(SINE / WALKSPEEDVALUE*2), -0.2+ -0.2 * COS(SINE / WALKSPEEDVALUE)) * ANGLES(RAD(0), RAD(-90), RAD(0)) * ANGLES(RAD(0), RAD(0), RAD(15)), 2 / Animation_Speed)
-		end
-	end
-	unanchor()
-	Humanoid.MaxHealth = "inf"
-	Humanoid.Health = "inf"
-	if Rooted == false then
-		Disable_Jump = false
-		Humanoid.WalkSpeed = Speed
-	elseif Rooted == true then
-		Disable_Jump = true
-		Humanoid.WalkSpeed = 0
-	end
-	local MATHS = {"0","1"}
-	Humanoid.Name = MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]..MATHS[MRANDOM(1,#MATHS)]
-	Humanoid.PlatformStand = false
-	local GAME = game.Players:GetChildren()
-	for PLAYER = 1, #GAME do
-		local PLAY = GAME[PLAYER]
-		if PLAY.Character ~= nil and Delete:FindFirstChild(PLAY.Name) then
-			PLAY.Character:remove()
-		end
-	end
-end
 --
 local button = Instance.new("TextButton")
 button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty9"
+button.Name = "Empty"
 button.Position = UDim2.new(0.5,3,0,132)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "decal spam"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30741,7 +30095,7 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empy10"
+button.Name = "Empty"
 button.Position = UDim2.new(0,0,0,165)
 button.Size = UDim2.new(0.499,0,0,30)
 button.ZIndex = 2
@@ -30756,13 +30110,13 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Emty"
+button.Name = "Empty"
 button.Position = UDim2.new(0.5,3,0,165)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty4"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30771,13 +30125,13 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Epty8"
+button.Name = "Empty"
 button.Position = UDim2.new(0,0,0,198)
 button.Size = UDim2.new(0.499,0,0,30)
 button.ZIndex = 3
 button.Font = tef
-button.FontSize = "Size141"
-button.Text = "Empty2"
+button.FontSize = "Size14"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30786,13 +30140,13 @@ button.Parent = pmi
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "mpty7"
+button.Name = "Empty"
 button.Position = UDim2.new(0.5,3,0,198)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
-button.FontSize = "Size13"
-button.Text = "Empty1"
+button.FontSize = "Size14"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 
@@ -30856,13 +30210,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "a00kbdy0Olan"
+button.Name = "c00lkidd"
 button.Position = UDim2.new(0.5,3,0,66)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "a00kbdy0Olan"
+button.Text = "c00lkidd"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
@@ -30892,13 +30246,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "c00lgui"
+button.Name = "Empty"
 button.Position = UDim2.new(0.5,3,0,99)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "c00lgui"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30907,13 +30261,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "join team c00lkidd"
+button.Name = "Empty"
 button.Position = UDim2.new(0,0,0,132)
 button.Size = UDim2.new(0.499,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "join team c00lkidd"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30922,13 +30276,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "invisble"
+button.Name = "Empty"
 button.Position = UDim2.new(0.5,3,0,132)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "invisble"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30937,13 +30291,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "black"
+button.Name = "Empty"
 button.Position = UDim2.new(0,0,0,165)
 button.Size = UDim2.new(0.5,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "black"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30952,13 +30306,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "black hole"
+button.Name = "Empty"
 button.Position = UDim2.new(0.5,3,0,165)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "blackhole"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30967,13 +30321,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "banana"
+button.Name = "Empty"
 button.Position = UDim2.new(0,0,0,198)
 button.Size = UDim2.new(0.5,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "banana"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -30982,13 +30336,13 @@ button.Parent = psd
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "hawk tuah"
+button.Name = "Empty"
 button.Position = UDim2.new(0.5,3,0,198)
 button.Size = UDim2.new(0.48,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "hawk tuah"
+button.Text = "Empty"
 button.TextColor3 = whit
 button.TextWrapped = true
 --
@@ -31059,7 +30413,7 @@ t3xt.Size = UDim2.new(1,0,1,0)
 t3xt.ZIndex = 2
 t3xt.Font = tef
 t3xt.FontSize = "Size14"
-t3xt.Text = "Thank you for using TKFPgui scripted! Addons coming soon! Post Ideas in the Thread!!!"
+t3xt.Text = "Thank you for using c00lgui scripted! Addons coming soon! Post Ideas in the Thread!!!"
 t3xt.TextColor3 = whit
 t3xt.TextWrapped = true
 t3xt.TextYAlignment = "Top"
@@ -31595,7 +30949,7 @@ textbx.Position = UDim2.new(0,0,0.5,0)
 textbx.Size = UDim2.new(0.99,1,0.5,-1)
 textbx.Font = tef
 textbx.FontSize = "Size14"
-textbx.Text = "a00kbdy0Olan"
+textbx.Text = "c00lkidd"
 textbx.TextColor3 = whit
 local titl = Instance.new("TextLabel")
 titl.Parent = bgt
@@ -31986,16 +31340,21 @@ titl.TextWrapped = true
 
 -----------------------------------------------------------------------------
 --Important Script to make tabs work! DONT TOUCH--
+CurrentPage = 1
 
-local tabby = script.Parent.Parent.Parent.Parent:WaitForChild("Tabs")
-local pagen = script.Parent.Parent.Parent:WaitForChild("Pages")
-local children = pagen:GetChildren()
-for i = 1, #children do
-	if children[i].ClassName == "Frame" and children[i].Name ~= "Tabs" then
-		children[i].Visible = false
+function FlipPage(Way)
+	local NewPage = CurrentPage+Way
+	if pges:findFirstChild("Page"..NewPage)~=nil then
+		CurrentPage = NewPage
+		local P = pges:GetChildren()
+		for i = 1, #P do
+			P[i].Visible = false
+		end
+		pges:findFirstChild("Page"..NewPage).Visible = true
 	end
 end
-pagen:WaitForChild("Page1").Visible = true
-tabby:WaitForChild("Tab1").BackgroundColor3 = Color3.fromRGB(255,255,255)
-end
+right.MouseButton1Down:connect(function()FlipPage(1) end)
+left.MouseButton1Down:connect(function()FlipPage(-1) end)
+page1.addonl.MouseButton1Down:connect(function()CurrentPage=6 FlipPage(-1) end)
+page5.addonr.MouseButton1Down:connect(function()CurrentPage=0 FlipPage(1) end)
 -----------------------------------------------------------------------------
