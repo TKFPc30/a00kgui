@@ -304,7 +304,7 @@ button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Monster"
+button.Text = "Fe Ink Monster V2"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
@@ -387,81 +387,41 @@ button.Parent = acg
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Kill Gui"
+button.Name = "Reanimation"
 button.Position = UDim2.new(0,0,0,99)
 button.Size = UDim2.new(0.5,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Kill Gui"
+button.Text = "Reanimation"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
-	whoownit = game.Players.LocalPlayer
-	gui = Instance.new("ScreenGui")
-	gui.Parent = whoownit.PlayerGui
-	gui.Name = "Kill"
-
-	pos = 135
-	pos2 = 10
-	pos3 = 0
-
-	enabled = false
-
-	button = Instance.new("TextButton")
-	button.Parent = gui
-	button.Size = UDim2.new(0, 100, 0, 30)
-	button.Position = UDim2.new(0, 8, 0, pos)
-	button.Text = "Kill"
-	button.MouseButton1Click:connect(function()
-		if enabled == false then 
-			enabled = true
-			local a = game.Players:GetChildren()
-			red = 0
-			green = 0.5
-			blue = 0
-			for i=1, #a do
-				wait()
-				pos2 = pos2 + 23
-				if pos2 >= 450 then
-					pos3 = pos3 + 103
-					pos2 = 33
-				end
-				if green <= 0.9 then
-					green = green + 0.46
-				elseif green >= 0.9 then
-					green = green - 0.46
-				end
-				local bu = Instance.new("TextButton")
-				bu.Parent = button
-				bu.Size = UDim2.new(0, 100, 0, 20)
-				bu.Position = UDim2.new(0, pos3, 0, pos2)
-				bu.Text = a[i].Name
-				bu.BackgroundTransparency = 1
-				bu.TextTransparency = 1
-				bu.BackgroundColor3 = Color3.new(red,green,blue)
-				coroutine.resume(coroutine.create(function()
-					for i=1, 3 do
-						wait()
-						bu.BackgroundTransparency = bu.BackgroundTransparency - 0.34
-						bu.TextTransparency = bu.BackgroundTransparency
-					end
-				end))
-				bu.MouseButton1Down:connect(function()
-					local play = game.Players:findFirstChild(bu.Text)
-					if play ~= nil then
-						play.Character.Head:Remove()
-						bu.Text = "Killed!"
-						wait(2)
-						bu.Text = a[i].Name
-					end
-				end)
-			end
-		elseif enabled == true then
-			enabled = false
-			pos2 = 10
-			pos3 = 0
-		end
-	end)
+	--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+	local Methods = loadstring(game:HttpGet("https://raw.githubusercontent.com/coolsk8rboy/The-John-Cena-Factory/main/JohnCenasMain.lua"))()
+	Methods:SetWalkSpeed(18)
+	Methods:SetIdleAnimation(14637774107, .1, 6)
+	Methods:SetWalkAnimation(14637866841, .1, 6)
+	Methods:NewAttack("L", "e", 14637910371, .1, 9)
+	Methods:NewAttack("Floss", "f", 14637998268, .1, 6)
+	Methods:NewAttack("Play", "N", 14638003545, .1, 6)
+	Methods:NewAttack("Laugh", "R", 14645273120, .1, 6)
+	Methods:NewAttack("Peter", "Q", 14645298787, .1, 6)
+	Methods:NewAttack("Kick", "T", 14645314001, .1, 6)
+	Methods:SystemMessage([[
+Controls:
+E - Take The L
+F - Floss
+N - Play with your hats
+R - Laugh
+Q - Peter Parker
+T - Kazotsky Kick
+---Innovation was here :)
+]])
+	Methods:SetScriptCreator("Innovation on scriptblox")
+	Methods:BodyPartFlingOnTouch("Left Arm")
+	Methods:RunScript()
 end)
 --
 local button = Instance.new("TextButton")
@@ -9605,17 +9565,80 @@ button.Parent = gt
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "Swords"
 button.Position = UDim2.new(0.5,3,0,132)
 button.Size = UDim2.new(0.5,-3,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "Swords"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
+	
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local localPlayer = Players.LocalPlayer
 
+	-- Create Tool
+	local tool = Instance.new("Tool")
+	tool.Name = "Sword"
+	tool.GripPos = Vector3.new(0.1, -1, 0)
+	tool.RequiresHandle = true
+
+	-- Create Handle
+	local handle = Instance.new("Part")
+	handle.Name = "Handle"
+	handle.Size = Vector3.new(0.4, 4, 0.4)
+	handle.CanCollide = false
+	handle.Anchored = false
+	handle.Parent = tool
+	tool.Parent = localPlayer.Backpack
+
+	-- Animation
+	local swingAnim = Instance.new("Animation")
+	swingAnim.AnimationId = "rbxassetid://218504594"
+	swingAnim.Parent = tool
+
+	local debounce = false
+	local canDamage = false
+	local swingTrack
+
+	tool.Equipped:Connect(function()
+		local character = localPlayer.Character
+		if not character then return end
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if not humanoid then return end
+
+		swingTrack = humanoid:LoadAnimation(swingAnim)
+
+		tool.Activated:Connect(function()
+			if debounce then return end
+			debounce = true
+
+			swingTrack:Play()
+			canDamage = true
+
+			task.delay(0.2, function() canDamage = false end)
+			task.delay(0.5, function() debounce = false end)
+		end)
+	end)
+
+	handle.Touched:Connect(function(hit)
+		if not canDamage then return end
+		local char = hit:FindFirstAncestorOfClass("Model")
+		if not char then return end
+		local humanoid = char:FindFirstChildOfClass("Humanoid")
+		if not humanoid then return end
+
+		local player = Players:GetPlayerFromCharacter(char)
+		if player and player.Name ~= localPlayer.Name then
+			-- Fire damage event
+			for i = 1, 3 do
+				ReplicatedStorage:WaitForChild("meleeEvent"):FireServer(player)
+			end
+		end
+	end)
 end)
 --
 local button = Instance.new("TextButton")
@@ -9623,16 +9646,190 @@ button.Parent = gt
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Empty"
+button.Name = "Red Sword"
 button.Position = UDim2.new(0,0,0,165)
 button.Size = UDim2.new(0.499,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Empty"
+button.Text = "Red Sword"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
+	local plr = game.Players.LocalPlayer
+	local tool = Instance.new("Tool", plr.Backpack)
+	tool.GripPos = Vector3.new(0, 0, -2)
+	tool.GripForward = Vector3.new(0, -1, 0)
+	tool.GripRight = Vector3.new(1, 0, 0)
+	tool.GripUp = Vector3.new(0, 0, 1)
+	tool.Name = "Firebrand"
+	tool.TextureId = "rbxassetid://81147983"
+	tool.RequiresHandle = true
+	tool.CanBeDropped = true
 
+	local k = Instance.new("Part", tool)
+	k.Name = "Handle"
+	k.Size = Vector3.new(1, 0.8, 6)
+	k.Anchored = false
+	k.CanCollide = false
+
+	local mesh = Instance.new("SpecialMesh", k)
+	mesh.MeshId = "rbxasset://fonts/sword.mesh"
+	mesh.TextureId = "rbxasset://textures/SwordTexture.png"
+	mesh.Scale = Vector3.new(1.5, 1.5, 1.5)
+	mesh.VertexColor = Vector3.new(0.5, 0, 0) 
+
+
+	-- Sounds
+	local Sounds = {
+		Equip = "rbxasset://sounds//unsheath.wav",    
+		Slash = "rbxasset://sounds//swordslash.wav",
+		Lunge = "rbxasset://sounds//swordlunge.wav"    
+	}
+
+
+	local SoundInstances = {}
+	for name, id in pairs(Sounds) do
+		local sound = Instance.new("Sound", k)
+		sound.SoundId = id
+		sound.Volume = 1
+		SoundInstances[name] = sound
+	end
+
+	-- Animations
+	local humanoid = plr.Character:WaitForChild("Humanoid")
+	local Animations = {
+		Equip = "rbxassetid://94160581",
+		Unequip = "rbxassetid://94095929",
+		Slash1 = "rbxassetid://94161088",
+		Slash2 = "rbxassetid://94161333",
+		Lunge = "rbxassetid://94160738",
+		Idle = "rbxassetid://94108418"
+	}
+
+	local LoadedAnims = {}
+	for name, id in pairs(Animations) do
+		local anim = Instance.new("Animation")
+		anim.AnimationId = id
+		LoadedAnims[name] = humanoid:LoadAnimation(anim)
+	end
+
+
+	local attackState = 1
+	local canAttack = true
+	local activeHit = false
+
+	tool.Equipped:Connect(function()
+		SoundInstances.Equip:Play()
+		LoadedAnims.Equip:Play()
+
+		-- Play idle animation after equip finishes
+		LoadedAnims.Equip.Stopped:Connect(function()
+			LoadedAnims.Idle:Play()
+		end)
+
+		tool.Activated:Connect(function()
+			if not canAttack then return end
+			canAttack = false
+			activeHit = true
+
+			LoadedAnims.Idle:Stop() 
+
+			if attackState == 1 then
+				SoundInstances.Slash.Pitch = 1
+				SoundInstances.Slash:Play()
+				LoadedAnims.Slash1:Play()
+			elseif attackState == 2 then
+				SoundInstances.Slash.Pitch = 1.17
+				SoundInstances.Slash:Play()
+				LoadedAnims.Slash2:Play()
+			else
+				SoundInstances.Lunge:Play()
+				LoadedAnims.Lunge:Play()
+			end
+
+			attackState = attackState % 3 + 1
+
+			wait(0.3)
+			activeHit = false
+			wait(0.3)
+			canAttack = true
+
+			LoadedAnims.Idle:Play()
+		end)
+	end)
+
+	tool.Unequipped:Connect(function()
+		LoadedAnims.Unequip:Play()
+		LoadedAnims.Idle:Stop()
+	end)
+
+	k.Touched:Connect(function(n)
+		if activeHit then
+			local o = n.Parent:FindFirstChild("Humanoid")
+			if o ~= nil then
+				local p = game.Players:FindFirstChild(n.Parent.Name)
+
+
+				local targetPart = n.Parent:FindFirstChild("HumanoidRootPart") or n.Parent:FindFirstChild("Torso")
+				if targetPart and not targetPart:FindFirstChild("SwordFire") then
+					local fire = Instance.new("Fire")
+					fire.Name = "SwordFire"
+					fire.Size = 5
+					fire.Heat = 10
+					fire.Parent = targetPart
+
+
+					game.Debris:AddItem(fire, 10)
+				end
+
+				for j = 1, 10 do
+					if p.Name ~= "FunnyVideo15" then
+						if game:GetService("ReplicatedStorage"):FindFirstChild("juisdfj0i32i0eidsuf0iok") then
+							hiddenfling = true
+						else
+							hiddenfling = true
+							local detection = Instance.new("Decal")
+							detection.Name = "juisdfj0i32i0eidsuf0iok"
+							detection.Parent = game:GetService("ReplicatedStorage")
+
+							local function fling()
+								local hrp, c, vel, movel = nil, nil, nil, 0.1
+								while true do
+									game:GetService("RunService").Heartbeat:Wait()
+									if hiddenfling then
+										local lp = game.Players.LocalPlayer
+										while hiddenfling and not (c and c.Parent and hrp and hrp.Parent) do
+											game:GetService("RunService").Heartbeat:Wait()
+											c = lp.Character
+											hrp = c:FindFirstChild("HumanoidRootPart") or c:FindFirstChild("Torso") or c:FindFirstChild("UpperTorso")
+										end
+										if hiddenfling then
+											vel = hrp.Velocity
+											hrp.Velocity = vel * 10000 + Vector3.new(0, 10000, 0)
+											game:GetService("RunService").RenderStepped:Wait()
+											if c and c.Parent and hrp and hrp.Parent then
+												hrp.Velocity = vel
+											end
+											game:GetService("RunService").Stepped:Wait()
+											if c and c.Parent and hrp and hrp.Parent then
+												hrp.Velocity = vel + Vector3.new(0, movel, 0)
+												movel = movel * -1
+											end
+										end
+									end
+								end
+							end
+
+							fling()
+						end
+					end
+				end
+			end
+		end
+
+		wait(2)
+		hiddenfling = false
+	end)
 end)
 --
 local button = Instance.new("TextButton")
