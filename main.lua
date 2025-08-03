@@ -310,7 +310,7 @@ button.Text = "Fe Ink Monster V2"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
-	
+
 --[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
@@ -368,7 +368,7 @@ button.FontSize = "Size14"
 button.Text = "Fe monster"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
-	
+
 	--[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
@@ -379,7 +379,7 @@ button.MouseButton1Down:connect(function()
 	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
 
 	wait(1)
-	
+
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TKFPc30/fe-giant-monster/main/main.lua"))()
 
 end)
@@ -8758,7 +8758,7 @@ title.Size = UDim2.new(1,0,0,30)
 title.ZIndex = 2
 title.Font = "SourceSansBold"
 title.FontSize = "Size14"
-title.Text = "Admin Commands/Guis"
+title.Text = "Monster script/Gui"
 title.TextColor3 = whit
 local title = Instance.new("TextLabel")
 title.Parent = sd
@@ -8893,7 +8893,7 @@ button.FontSize = "Size14"
 button.Text = "Fe Ender"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
-	
+
 	--[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
@@ -8922,7 +8922,7 @@ button.FontSize = "Size14"
 button.Text = "Ban Hammer"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
-	
+
 	--[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
@@ -9278,7 +9278,7 @@ button.Text = "Swords"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
-	
+
 	local Players = game:GetService("Players")
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local localPlayer = Players.LocalPlayer
