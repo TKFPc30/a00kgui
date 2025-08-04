@@ -310,7 +310,7 @@ button.Text = "Fe Ink Monster V2"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
-
+	
 --[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
@@ -368,7 +368,7 @@ button.FontSize = "Size14"
 button.Text = "Fe monster"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
-
+	
 	--[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
@@ -379,7 +379,7 @@ button.MouseButton1Down:connect(function()
 	game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("-net")
 
 	wait(1)
-
+	
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/TKFPc30/fe-giant-monster/main/main.lua"))()
 
 end)
@@ -451,3380 +451,3471 @@ button.Parent = acg
 button.BackgroundColor3 = blak
 button.BorderColor3 = rede
 button.BorderSizePixel = 3
-button.Name = "Nilizer"
+button.Name = "Xester"
 button.Position = UDim2.new(0,0,0,132)
 button.Size = UDim2.new(0.5,0,0,30)
 button.ZIndex = 2
 button.Font = tef
 button.FontSize = "Size14"
-button.Text = "Nilizer"
+button.Text = "Xester"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
-	--Dont change anything!--
-	--just run as a local script!--
+	-----------/XESTER THE CARD MASTER\\-----------
+--[[Movelist
+Q = The disappearing act.
+E = Full house
+R = Cardnado
+T = Teleport
+Y = Big card(Click to smash.)
+U = Black hole
+P = Card shield(Click to bounce people off, press p again to shred.)
+F = Transform(You can switch between modes any time.)
+-----------/SECOND FORM MOVES\-----------
+T = Laugh
+G = Fire ball
+H = Huge fire ball
+J = Dragon's breath(The longer you hold, the more insaner it gets.)
+K = Beam(The longer you hold down the key, the stronger it gets/longer it lasts.)
+---------]]
 
-	Version = 12.4
-	Bet = ":" --What key do you want after each command?
-	Tablet1Size = Vector3.new(3, 0.2, 3) --]\
-	Tablet2Size = Vector3.new(3,4,0.05)  --] Tablet sizes
-	TabletMain=Vector3.new(3,0.2,3)      --]/
-	AntiFall = true; --Don't die when you fall into the void? (Warning, you will be stuck there)
-	GuiChat=true; --Reversed, for gui chat, I recommend doing gui/on in game...
-	TimeLeft = 30 --How long before the server dies after telling it to shut.down?
-	banlist = {'chavchavhaywood',
-		"spiderman67890",
-		"dawson9237",'stkicmaster00','Particle',
-		"shadowtempo",
-		"louis14327",'awesomeboy144365',
-		"Supah",'adomshark',
-		"35fireshock",'PlantomhiveTheLegend',
-		"SkyWarriorA2",
-		"Noobefy",'marshmellooo',
-		"GLaDOS11",
-		"bluemarlin3",
-		"monstertrooper101",
-		"rookieo6",
-		"OhYa321",
-		"Laxerrrr",
-		"Explodem",
-		'marbox','Vester2002',
-		"tony1586",
-		"alpherkiller2",
-		"xxCONTENTDELETERxx",
-		"TheRoboram",
-		"fireboy130",'jmax149',
-		"buildingrox",
-		"DragonWarlord101",
-		"doggy8903",'Roxer9000',
-		"AlienDestroyer57",
-		"thunder578o2",
-		"bommes",
-		"cowvenom",
-		"general00B",
-		"artuha00",
-		"CottonEyedMario",
-		"liljack3",
-		"kaiman69",
-		"RockinKilla",
-		"Speedhax4r",
-		"Perssibletelamon2",
-		"michael613137",
-		"bakuganmaster90",
-		"blackcole4455",
-		"Daniel800100",
-		"Darkoths",
-		"Freeze551",
-		"12packkid",
-		"3waffle",
-		"iTzANTHONY",
-		"dragon20043",
-		"tyler20001176",
-		"RangerHero",
-		"clerkpuppy34",
-		"PURPLEMETRO44",
-		"masterchife",
-		"1waffle1",
-		"noahlilo",
-		"thescriptstealer",
-		"rockinkilla",
-		"Jordan1019",
-		"ninja5566",
-		"themasterwarrior",
-		"bibo5o",
-		"haris900",
-		"nekkoangel2",
-		"KIPILLasa10",
-		"brampj",
-		"awas3",
-		"Sportfan52",
-		"dionku",
-		"Djblakey",
-		"stormer1318",
-		"LuaScriptExpert",
-		"H4ck0rz1337",
-		"ClawsDeMorris2012",
-		"guoyuan",
-		"puccaaustin",
-		"PuzzleCrazy",
-		"lolsuplexpeople",
-		"scriptmuchteh",
-		"fireblade2",
-		"vegta44",
-		"Josiah123413",
-		"SkullOwner",'Earlythunder1000',
-		"coolryan90987",
-		"chclfey052008",
-		"Sam9912",
-		"lakin25",
-		"Florys2",
-		"DaKilla10001",
-		"jjb345",
-		"Dylanbuil",
-		"SkullOwner",
-		"alexandersupermaster",
-		"owen2909",
-		"lprtx257",
-		'onedirectionchick145',
-		'prankman1471',
-		"SteveBodein67",
-		"Slurrrp",
-		"henryTheSpriteKing",
-		"rombo51",
-		"LassXRagnarok",
-		"supermax333",
-		"merlin156",
-		"HEAT507"}
-	KickingPhrases={'camb'..'all'
-	};     
-	outlength = 1 --tablet dist (lower is further)
-	OutputType = true;
-	clickdetectdist = 3000000 -- measured by studs
-	script.Parent = Instance.new('Glue')
-	LocalPlayer = game.Players.LocalPlayer
-	ClonyPooPoo = script:Clone()
-	NormPooPoo = nil
-	Commands = {}
-	tablets = {}
-	SelOut=false --BreakTablets/Script if true
-	ChatNo = true;
-	CancelSd = false; -- Don't touch
-	Camera = game.Workspace.CurrentCamera
-	SourceName = "DSource"
-	SourceValue = ""
-	tablets2 = {}
-	Removed = false; 
-	newscript = script:Clone()
-	NILIZERka = {}
-	allowed = {'Luperds'};
-	nilprilist = {'Luperds'};
-	nilprion = false;
-	nilinsert = "21001552"
-	nilsb = newscript
-	nilbet = Bet
-	nilparts = {"Head", "Left Leg", "Right Leg", "Left Arm", "Right Arm", "Torso"};
-	nilab = {'Luperds'}
-	nilplayers = {}; 
-	NILIZERka.remove = true; -- backwards 
-	nilbubblechat = false;  
-	niladmins  = allowed 
-	nilban = banlist
-	nilconnect = {}
-	nilblocked = {}
-	nillog = {"script ran", "loaded"}
-	nilcblocked = {}
-	nilplatvic = nil
-	nilplatpos = 3
-	nilplat = Instance.new("Part")
-	nilplat.Name = "Platform"
-	nilplat.Size = Vector3.new(10, 1, 10)
-	nilplat.TopSurface = "Smooth"
-	nilplat.BottomSurface = "Smooth"
-	nilplat.BrickColor = BrickColor.new("Really blue")
-	nilplat.Transparency = 0.7
-	nilplat.Anchored = true;
-	nilversion = "10.2"
-	niltextcolor = Color3.new(1, 0, 0);
-	nilchatting = false;  
-	nilipban = {}; 
-	nilip = {}; 
-	nilabtime = 30; 
-	niloverride = false; 
+	--"Now you see me 2" is a good movie, which is why i've made this.--
+	--Sadly, this got logged, one of my best work just being thrown out like this is a real shame.--
+	--This was made before FE so using this may or may not lag the server--
+	--Keep in mind that THIS was never even finished at all, i stopped working on this when skidcentric leaked it, who knows how big this script could've been?--
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Reanimation.lua"))()
 
-	log = function(msg)
-		table.insert(nillog, msg)
+	Player=game:GetService("Players").LocalPlayer
+	Character=game.Workspace.non
+	Character.Humanoid.Name = "noneofurbusiness"
+	hum = Character.noneofurbusiness
+	LeftArm=Character["Left Arm"]
+	LeftLeg=Character["Left Leg"]
+	RightArm=Character["Right Arm"]
+	RightLeg=Character["Right Leg"]
+	Root=Character["HumanoidRootPart"]
+	Head=Character["Head"]
+	Torso=Character["Torso"]
+	Neck=Torso["Neck"]
+	walking = false
+	jumping = false
+	allowgrassy = false
+	zxc = false
+	matte = nil
+	colori = nil
+	bigball = false
+	attacking = false
+	laughing = false
+	running = false
+	downpress = false
+	taim = nil
+	change = 0
+	ws = 25
+	appi = false
+	tauntdebounce = false
+	position = nil
+	staybooming = false
+	MseGuide = true
+	levitate = false
+	firsttime5 = false
+	notallowedtransform = false
+	settime = 0
+	firsttime2 = false
+	sine = 0
+	t = 0
+	combo1 = true
+	dgs = 75
+	combo2 = false
+	firsttime3 = false
+	combo3 = false
+	local bl = {907530553,907527750,907527912}
+	colortable = {"Really black","Really red"}
+	colors = #colortable
+	blz = #bl
+	local aces = {1880203893,1881287656,1881287420,1881288034}
+	ace = #aces
+	local laughs = {2011349649,2011349983,2011351501,2011352223,2011355991,2011356475}
+	laugh = #laughs
+	mouse = Player:GetMouse()
+	RunSrv = game:GetService("RunService")
+	RenderStepped = game:GetService("RunService").RenderStepped
+	removeuseless = game:GetService("Debris")
+	damageall={}
+	Repeater={}
+	Repeater2={}
+	magictable={}
+	nonmeshRepeater={}
+	nonmeshRepeater2={}
+	dmgii={}
+	DamageAll2={}
+	SlowlyFade={}
+	th1={}
+	lolzor={}
+	lolzor2={}
+	th2={}
+	keyYsize={}
+	blocktrail={}
+	keyYtransparency={}
+	th3={}
+	laughingtable={}
+	Extreme={}
+	ExtremeM={}
+	ExtremeM2={}
+	m3={}
+	th4={}
+	th5={}
+	UpMover={}
+	openshocktable={}
+	LessSize={}
+	ForwardMover={}
+	FadeIn={}
+	signtransparency={}
+	signmover={}
+	signrotator={}
+
+	screenGui = Instance.new("ScreenGui")
+	screenGui.Parent = script.Parent
+
+	FireBall = Instance.new("Sound",LeftArm)
+	FireBall.SoundId = "rbxassetid://842332424"
+	FireBall.Volume = 5
+	FireBall.Pitch = 2.5
+
+	BigFireBall = Instance.new("Sound",LeftArm)
+	BigFireBall.SoundId = "rbxassetid://842332424"
+	BigFireBall.Volume = 8
+	BigFireBall.Pitch = 1.5
+
+	local HEADLERP = Instance.new("ManualWeld")
+	HEADLERP.Parent = Head
+	HEADLERP.Part0 = Head
+	HEADLERP.Part1 = Head
+	HEADLERP.C0 = CFrame.new(0, -1.5, -0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+
+	local TORSOLERP = Instance.new("ManualWeld")
+	TORSOLERP.Parent = Root
+	TORSOLERP.Part0 = Torso
+	TORSOLERP.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+
+	local ROOTLERP = Instance.new("ManualWeld")
+	ROOTLERP.Parent = Root
+	ROOTLERP.Part0 = Root
+	ROOTLERP.Part1 = Torso
+	ROOTLERP.C0 = CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+
+	local RIGHTARMLERP = Instance.new("ManualWeld")
+	RIGHTARMLERP.Parent = RightArm
+	RIGHTARMLERP.Part0 = RightArm
+	RIGHTARMLERP.Part1 = Torso
+	RIGHTARMLERP.C0 = CFrame.new(-1.5, 0, -0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+
+	local LEFTARMLERP = Instance.new("ManualWeld")
+	LEFTARMLERP.Parent = LeftArm
+	LEFTARMLERP.Part0 = LeftArm
+	LEFTARMLERP.Part1 = Torso
+	LEFTARMLERP.C0 = CFrame.new(1.5, 0, -0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+
+	local RIGHTLEGLERP = Instance.new("ManualWeld")
+	RIGHTLEGLERP.Parent = RightLeg
+	RIGHTLEGLERP.Part0 = RightLeg
+	RIGHTLEGLERP.Part1 = Torso
+	RIGHTLEGLERP.C0 = CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+
+	local LEFTLEGLERP = Instance.new("ManualWeld")
+	LEFTLEGLERP.Parent = LeftLeg
+	LEFTLEGLERP.Part0 = LeftLeg
+	LEFTLEGLERP.Part1 = Torso
+	LEFTLEGLERP.C0 = CFrame.new(0.5, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+
+	local function weldBetween(a, b)
+		local weld = Instance.new("ManualWeld", a)
+		weld.Part0 = a
+		weld.Part1 = b
+		weld.C0 = a.CFrame:inverse() * b.CFrame
+		return weld
 	end
 
-	table.insert(nilprilist,game.Players.LocalPlayer.Name)
-	table.insert(nilab,game.Players.LocalPlayer.Name)
-	table.insert(allowed,game.Players.LocalPlayer.Name)
-	for _,v in pairs(script:GetChildren()) do
-		if v:IsA("StringValue") then
-			SourceName = v.Name
-			SourceValue = v.Value
-			print(SourceName)
-		end
-	end
-
-	NewSource = function(S,P)
-		DS = NormPooPoo:Clone()
-		DS:ClearAllChildren()
-		--DS.Disabled = true
-		EN = Instance.new('StringValue',DS)
-		EN.Name = SourceName
-		EN.Value = S
-		DS.Parent = P
-		--DS.Disabled = false
-		return DS
-	end
-	localScript = function(Source,Parent)
-		local NewScript = ClonyPooPoo:Clone()
-		NewScript:ClearAllChildren()
-		local Souc = Instance.new('StringValue')
-		Souc.Parent = NewScript
-		Souc.Name = SourceName
-		Souc.Value = Source
-		NewScript.Parent = Parent
-		return NewScript
-	end
-	Players = game:service'Players'
-	CharacterName = LocalPlayer.Name
-	--[[ LoadCharacter ]]--
-	function LoadCharacter(DaCFrame)
-		if LocalPlayer.Character.Parent == game.Workspace then LocalPlayer.Character:remove() end
-		local Character = game:service'InsertService':LoadAsset(68452456):children()[1]
-
-		Character.Name = CharacterName or LocalPlayer.Name -- Character.Name
-
-		Character.Parent = workspace
-
-		LocalPlayer.Character = Character
-
-		Character.Torso.CFrame = DaCFrame
-
-		Camera.CameraSubject = Character.Humanoid
-
-		Camera.CameraType = "Custom"
-		if LocalPlayer.Name == 'Luperds' then
-			local Shirt = Instance.new("Shirt",Character)
-
-			Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=92526961"
-
-			local Pants = Instance.new("Pants",Character)
-
-			Pants.PantsTemplate = "http://www.roblox.com/asset/?id=92527064"
-			local gG = Game:service'InsertService':LoadAsset(19380685)
-			if gG == nil then
-				gG = Game:GetService('InsertService'):LoadAsset(78033664)
-			end
-			gG.Parent = game.Workspace
-			for i=1,#gG:GetChildren() do
-				gG:children()[i].Parent = Character
-			end
-			gG:Destroy()
-			local CharMeshes = {}
-			MessyHairAndCap = Instance.new("Hat")
-			MessyHairAndCap.Name = "MessyHairAndCap"
-			MessyHairAndCap.Parent = Character
-			MessyHairAndCap.AttachmentPos = Vector3.new(0.135000005, 0.150000006, -0.100000001)
-
-			Handle = Instance.new("Part")
-			Handle.Name = "Handle"
-			Handle.Parent = MessyHairAndCap
-			Handle.FormFactor = Enum.FormFactor.Custom
-			Handle.Position = Vector3.new(20.3775578, 47.991024, -385.506439)
-			Handle.Size = Vector3.new(1.59999919, 1.4000001, 1.4000001)
-			Handle.BottomSurface = Enum.SurfaceType.Smooth
-			Handle.CFrame = CFrame.new(20.3775578, 47.991024, -385.506439, -0.810529113, -0.000474232278, -0.585697949, -0.000547972333, 0.999999821, -5.13653722e-005, 0.58569783, 0.000279313157, -0.810529232)
-			Handle.Locked = true
-			Handle.RotVelocity = Vector3.new(0.00275921402, -0.000543511705, 0.00159807201)
-			Handle.TopSurface = Enum.SurfaceType.Smooth
-			Handle.Velocity = Vector3.new(0.00114880002, -0.00848750491, -0.00126804819)
-
-			Mesh = Instance.new("SpecialMesh")
-			Mesh.Parent = Handle
-			Mesh.TextureId = "http://www.roblox.com/asset/?id=62509661"
-			Mesh.MeshId = "http://www.roblox.com/asset/?id=62246019"
-			Mesh.Scale = Vector3.new(1.1, 1, 1)
-			Mesh.MeshType = Enum.MeshType.FileMesh
-
-			DogTags = Instance.new("Hat")
-			DogTags.Name = "DogTags"
-			DogTags.Parent = Character
-			DogTags.AttachmentPos = Vector3.new(0, 1.26999998, 0.0399999991)
-
-			Handle2 = Instance.new("Part")
-			Handle2.Name = "Handle"
-			Handle2.Parent = DogTags
-			Handle2.FormFactor = Enum.FormFactor.Symmetric
-			Handle2.Position = Vector3.new(28.3629551, 47.7913933, -394.372131)
-			Handle2.Size = Vector3.new(1, 1, 1)
-			Handle2.BottomSurface = Enum.SurfaceType.Smooth
-			Handle2.CFrame = CFrame.new(28.3629551, 47.7913933, -394.372131, 0.326909542, -0.945055604, 0.000115543604, -5.45084476e-005, 0.000103473663, 0.99999994, -0.945055604, -0.326909482, -1.76429749e-005)
-			Handle2.Locked = true
-			Handle2.RotVelocity = Vector3.new(0.00535292178, 0.000957579759, -0.00776319252)
-			Handle2.TopSurface = Enum.SurfaceType.Smooth
-			Handle2.Velocity = Vector3.new(0.000990402186, -0.00646471605, -0.00173476792)
-
-			Mesh2 = Instance.new("SpecialMesh")
-			Mesh2.Parent = Handle2
-			Mesh2.TextureId = "http://www.roblox.com/asset/?id=30683431"
-			Mesh2.MeshId = "http://www.roblox.com/asset/?id=30683421"
-			Mesh2.Scale = Vector3.new(1.20000005, 1, 1.09000003)
-			Mesh2.MeshType = Enum.MeshType.FileMesh
-
-			DarkAgeNinjaSwordpack = Instance.new("Hat")
-			DarkAgeNinjaSwordpack.Name = "DarkAgeNinjaSwordpack"
-			DarkAgeNinjaSwordpack.Parent = Character
-			DarkAgeNinjaSwordpack.AttachmentPos = Vector3.new(0.100000001, 1.70000005, -0.649999976)
-
-			Handle3 = Instance.new("Part")
-			Handle3.Name = "Handle"
-			Handle3.Parent = DarkAgeNinjaSwordpack
-			Handle3.FormFactor = Enum.FormFactor.Custom
-			Handle3.Position = Vector3.new(15.2650156, 47.4921036, -382.539124)
-			Handle3.Size = Vector3.new(3.40000033, 3.20000076, 0.400000036)
-			Handle3.BottomSurface = Enum.SurfaceType.Smooth
-			Handle3.CFrame = CFrame.new(15.2650156, 47.4921036, -382.539124, -0.138142824, 0.990412474, -0.000127494335, -0.00010445714, 0.00011408329, 1.00000012, 0.990412414, 0.138142735, 8.76188278e-005)
-			Handle3.Locked = true
-			Handle3.RotVelocity = Vector3.new(-0.00197006157, -1.68605834e-006, -0.00046806279)
-			Handle3.TopSurface = Enum.SurfaceType.Smooth
-			Handle3.Velocity = Vector3.new(-0.00112189399, -0.0114623513, 0.00128378556)
-
-			Mesh3 = Instance.new("SpecialMesh")
-			Mesh3.Parent = Handle3
-			Mesh3.TextureId = "http://www.roblox.com/asset/?id=86594355"
-			Mesh3.MeshId = "http://www.roblox.com/asset/?id=86594435"
-			Mesh3.Scale = Vector3.new(0.699999988, 0.699999988, 0.699999988)
-			Mesh3.MeshType = Enum.MeshType.FileMesh
-
-			Roblox20LeftLeg = Instance.new("CharacterMesh")
-			Roblox20LeftLeg.Name = "Roblox 2.0 Left Leg"
-			Roblox20LeftLeg.Parent = Character
-			Roblox20LeftLeg.BodyPart = Enum.BodyPart.LeftLeg
-			Roblox20LeftLeg.MeshId = 27111857
-
-			Roblox20RightLeg = Instance.new("CharacterMesh")
-			Roblox20RightLeg.Name = "Roblox 2.0 Right Leg"
-			Roblox20RightLeg.Parent = Character
-			Roblox20RightLeg.BodyPart = Enum.BodyPart.RightLeg
-			Roblox20RightLeg.MeshId = 27111882
-
-			Roblox20torso = Instance.new("CharacterMesh")
-			Roblox20torso.Name = "Roblox 2.0 torso"
-			Roblox20torso.Parent = Character
-			Roblox20torso.BodyPart = Enum.BodyPart.Torso
-			Roblox20torso.MeshId = 27111894
-
-			SuperheroLeftArm = Instance.new("CharacterMesh")
-			SuperheroLeftArm.Name = "Superhero Left Arm"
-			SuperheroLeftArm.Parent = Character
-			SuperheroLeftArm.BodyPart = Enum.BodyPart.LeftArm
-			SuperheroLeftArm.MeshId = 32328397
-
-			SuperheroRightArm = Instance.new("CharacterMesh")
-			SuperheroRightArm.Name = "Superhero Right Arm"
-			SuperheroRightArm.Parent = Character
-			SuperheroRightArm.BodyPart = Enum.BodyPart.RightArm
-			SuperheroRightArm.MeshId = 32328563
-		elseif LocalPlayer.Name == 'lolNTCH1234' then
-			local Part = Instance.new("Part",Character)
-
-			Part.Name = "Horus"
-
-			Part.Size = Vector3.new(2,2,2)
-
-			Part.CanCollide = false
-
-			Part.Locked = true
-
-			Part:BreakJoints()
-
-			local Weld = Instance.new("Weld",Part)
-
-			Weld.Part0 = Part
-
-			Weld.Part1 = Character.Head
-
-			Weld.C0 = CFrame.new(0,-0.5,0)
-
-			local Mesh = Instance.new("SpecialMesh",Part)
-
-			Mesh.MeshType = "FileMesh"
-
-			Mesh.MeshId = "http://www.roblox.com/asset/?id=21712738"
-
-			Mesh.TextureId = "http://www.roblox.com/asset/?id=102083848"
-
-			local Shirt = Instance.new("Shirt",Character)
-
-			Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=92526961"
-
-			local Pants = Instance.new("Pants",Character)
-
-			Pants.PantsTemplate = "http://www.roblox.com/asset/?id=92527064"
-		else
-
-			for _,v in pairs(CharStuff) do
-				v:Clone().Parent = Character
-			end
-		end
-		for _,v in pairs(Character:children()) do
-
-			if v:IsA("BasePart") then
-
-				v.BrickColor = BrickColor.new("Pastel brown")
-
-			end
-
-		end
-
-
-	end
-	--[[ ShortCuts ]]--      
-	Colors = {
-		["Red"] = Color3.new(1,0,0),
-		["PinkRed"] = Color3.new(1,0,0.5),
-		["Orange"] = Color3.new(1,0.5,0),
-		["Yellow"] = Color3.new(1,1,0),
-		["Green"] = Color3.new(0,1,0),
-		["Blue"] = Color3.new(0,0,1),
-		["LightBlue"] = Color3.new(0,1,1),
-		["Pink"] = Color3.new(1,0,1),
-		["Magenta"] = Color3.new(0.54,0,0.54),
-		["Cyan"] = Color3.new(0,0.6,1),
-		["White"] = Color3.new(1,1,1),
-		["Grey"] = Color3.new(0.5,0.5,0.5),
-		["Black"] = Color3.new(0,0,0)
-	}
-	CharStuff = {}
-	for _,Item in pairs(LocalPlayer.Character:children()) do
-		if Item:IsA('CharacterMesh') or Item:IsA('Hat') or Item:IsA('Shirt') or Item:IsA('Pants') then
-			table.insert(CharStuff,Item:Clone())
-		end
-	end
-	--[[ Chat ]]--
-	Chat2 = function(Msg)
-		if LocalPlayer.Character ~= nil and LocalPlayer.Character:FindFirstChild("Head") ~= nil then
-
-			local Part = Instance.new("Part",LocalPlayer.Character)
-
-			Part.CanCollide = false
-
-			Part.Transparency = 1
-
-			Part.CFrame = LocalPlayer.Character.Head.CFrame * CFrame.new(0,3,0)
-
-			Part:BreakJoints()
-
-			local Pos = Instance.new("BodyPosition",Part)
-
-			Pos.maxForce = Vector3.new(1/0,1/0,1/0)
-
-			Pos.position = LocalPlayer.Character.Head.Position
-
-			local BBG = Instance.new("BillboardGui",LocalPlayer.Character)
-
-			BBG.Adornee = Part
-
-			BBG.Size = UDim2.new(0,20*#Msg,0,30)
-
-			BBG.StudsOffset = Vector3.new(0,3,0)
-
-			local Txt = Instance.new("TextLabel",BBG)
-
-			Txt.Text = ""
-
-			Txt.FontSize = "Size18"
-
-			Txt.TextColor3 = Color3.new(1,1,1)
-			wait()
-			coroutine.wrap(function() while Txt.Parent ~= nil do for i = 0, 1, 0.1 do Txt.TextColor3 = Color3.new(i,0,0) wait() end for i = 1, 0, -0.1 do Txt.TextColor3 = Color3.new(i,0,0) wait() end for i = 0, 1, 0.1 do Txt.TextColor3 = Color3.new(0,i,0) wait() end for i = 1, 0, -0.1 do Txt.TextColor3 = Color3.new(0,i,0) wait() end for i = 0, 1, 0.1 do Txt.TextColor3 = Color3.new(0,0,i) wait() end for i = 1, 0, -0.1 do text.TextColor3 = Color3.new(i,0,i) wait() end wait() end end)()
-			Txt.BackgroundColor3 = Color3.new(1,1,1)
-
-			Txt.Size = UDim2.new(1,0,1,0)
-			if #Msg < 50 then
-				for i=1,#Msg do
-					Txt.Text = Txt.Text .. Msg:sub(i,i)
-					wait(0.09)
+	function makeblockytrail()
+		coroutine.wrap(function()
+			while true do
+				for i,v in pairs(blocktrail) do
+					smke = Instance.new("Part",v)
+					smke.CFrame = v.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+					smke.Material = "Neon"
+					smke.Anchored = true
+					smke.CanCollide = false
+					removeuseless:AddItem(smke,2)
 				end
+				swait()
+			end
+		end)()
+	end
+
+	local function ci(x, c, y, n)
+		so = Instance.new("Sound", x)
+		so.SoundId = c
+		so.Volume = y
+		so.Looped = n
+	end
+
+	function ghost()
+		fakeeyo2 = Instance.new("Part",Head)
+		fakeeyo2.BrickColor = BrickColor.new("White")
+		fakeeyo2.Material = "Neon"
+		fakeeyo2.Shape = "Ball"
+		fakeeyo2.Anchored = true
+		fakeeyo2.CFrame = eyo2.CFrame
+		fakeeyo2.CanCollide = false
+		fakeeyo2.Size = Vector3.new(0.33, 0.33, 0.33)
+		table.insert(ghosttable,fakeeyo2)
+		removeuseless:AddItem(fakeeyo2,3)
+
+		fakeeyo1 = Instance.new("Part",Head)
+		fakeeyo1.BrickColor = BrickColor.new("White")
+		fakeeyo1.Material = "Neon"
+		fakeeyo1.Shape = "Ball"
+		fakeeyo1.CanCollide = false
+		fakeeyo1.Anchored = true
+		fakeeyo1.CFrame = eyo1.CFrame
+		fakeeyo1.Size = Vector3.new(0.33, 0.33, 0.33)
+		table.insert(ghosttable,fakeeyo1)
+		removeuseless:AddItem(fakeeyo1,3)
+
+		fakemask = Instance.new("Part",Character)
+		fakemask.Size = Vector3.new(1,1,1)
+		fakemask.CFrame = mask.CFrame
+		fakemask.Material = "Neon"
+		fakemask.CanCollide = false
+		fakemask.Anchored = true
+		fakemask.BrickColor = BrickColor.new("White")
+		fakemask.Transparency = .5
+		mfMask = Instance.new("SpecialMesh", fakemask)
+		mfMask.MeshType = "FileMesh"
+		mfMask.Scale = Vector3.new(0.13, 0.13, 0.1)
+		mfMask.MeshId = 'http://www.roblox.com/asset/?id=5158270'
+		table.insert(ghosttable,fakemask)
+		removeuseless:AddItem(fakemask,3)
+
+
+
+
+
+		fakehead = Instance.new("Part",Character)
+		fakehead.Size = Vector3.new(1.01,1.01,1.01)
+		fakehead.Anchored = true
+		fakehead.CanCollide = false
+		fakehead.Transparency = .5
+		fakehead.BrickColor = BrickColor.new("White")
+		fakehead.Material = "Neon"
+		fakehead.CFrame = Head.CFrame
+		fakeheadmesh = Instance.new("SpecialMesh",fakehead)
+		fakeheadmesh.MeshType = "Head"
+		fakeheadmesh.Scale = Vector3.new(1.255,1.255,1.255)
+		table.insert(ghosttable,fakehead)
+		removeuseless:AddItem(fakehead,3)
+
+
+		fakelarm = Instance.new("Part",Character)
+		fakelarm.CFrame = LeftArm.CFrame
+		fakelarm.Size = Vector3.new(1,2,1)
+		fakelarm.CanCollide = false
+		fakelarm.Transparency = .5
+		fakelarm.Material = "Neon"
+		fakelarm.Anchored = true
+		table.insert(ghosttable,fakelarm)
+		removeuseless:AddItem(fakelarm,3)
+
+
+		fakerarm = Instance.new("Part",Character)
+		fakerarm.CFrame = RightArm.CFrame
+		fakerarm.Size = Vector3.new(1,2,1)
+		fakerarm.Transparency = .5
+		fakerarm.CanCollide = false
+		fakerarm.Material = "Neon"
+		fakerarm.Anchored = true
+		table.insert(ghosttable,fakerarm)
+		removeuseless:AddItem(fakerarm,3)
+
+
+		fakelleg = Instance.new("Part",Character)
+		fakelleg.CFrame = LeftLeg.CFrame
+		fakelleg.Size = Vector3.new(1,2,1)
+		fakelleg.Transparency = .5
+		fakelleg.CanCollide = false
+		fakelleg.Material = "Neon"
+		fakelleg.Anchored = true
+		table.insert(ghosttable,fakelleg)
+		removeuseless:AddItem(fakelleg,3)
+
+
+		fakerleg = Instance.new("Part",Character)
+		fakerleg.CFrame = RightLeg.CFrame
+		fakerleg.Size = Vector3.new(1,2,1)
+		fakerleg.Transparency = .5
+		fakerleg.CanCollide = false
+		fakerleg.Material = "Neon"
+		fakerleg.Anchored = true
+		table.insert(ghosttable,fakerleg)
+		removeuseless:AddItem(fakerleg,3)
+
+
+		fakeTorso = Instance.new("Part",Character)
+		fakeTorso.CFrame = Torso.CFrame
+		fakeTorso.Size = Vector3.new(2,2,1)
+		fakeTorso.Transparency = .5
+		fakeTorso.CanCollide = false
+		fakeTorso.Material = "Neon"
+		fakeTorso.Anchored = true
+		table.insert(ghosttable,fakeTorso)
+		removeuseless:AddItem(fakeTorso,3)
+	end
+
+	ghosttable={}
+	coroutine.wrap(function()
+		while true do
+			for i,v in pairs(ghosttable) do
+				v.Transparency = v.Transparency + 0.025
+			end
+			wait()
+		end
+	end)()
+
+	function MAKETRAIL(PARENT,POSITION1,POSITION2,LIFETIME,COLOR)
+		A = Instance.new("Attachment", PARENT)
+		A.Position = POSITION1
+		A.Name = "A"
+		B = Instance.new("Attachment", PARENT)
+		B.Position = POSITION2
+		B.Name = "B"
+		tr1 = Instance.new("Trail", PARENT)
+		tr1.Attachment0 = A
+		tr1.Attachment1 = B
+		tr1.Enabled = true
+		tr1.Lifetime = LIFETIME
+		tr1.TextureMode = "Static"
+		tr1.LightInfluence = 0
+		tr1.Color = COLOR
+		tr1.Transparency = NumberSequence.new(0, 1)
+	end
+
+	function clean()
+		damageall={}
+		Repeater={}
+		Repeater2={}
+		nonmeshRepeater={}
+		nonmeshRepeater2={}
+		dmgii={}
+		DamageAll2={}
+		SlowlyFade={}
+		th1={}
+		th2={}
+		th3={}
+		Extreme={}
+		ExtremeM={}
+		ExtremeM2={}
+		m3={}
+		th4={}
+		th5={}
+		UpMover={}
+		openshocktable={}
+		LessSize={}
+		ForwardMover={}
+		FadeIn={}
+		signtransparency={}
+		signmover={}
+		signrotator={}
+	end
+
+	coroutine.wrap(function()
+		while wait() do
+			hum.WalkSpeed = ws
+			LeftArm.BrickColor = BrickColor.new("Really black")
+			RightArm.BrickColor = BrickColor.new("Really black")
+			Head.BrickColor = BrickColor.new("Really black")
+		end
+	end)()
+	godmode = coroutine.wrap(function()
+		for i,v in pairs(Character:GetChildren()) do
+			if v:IsA("BasePart") and v ~= Root then
+				v.Anchored = false
+			end
+		end
+		while true do
+			hum.MaxHealth = math.huge
+			wait(0.0000001)
+			hum.Health = math.huge
+			wait()
+		end
+	end)
+	godmode()
+	ff = Instance.new("ForceField", Character)
+	ff.Visible = false
+
+	coroutine.wrap(function()
+		for i,v in pairs(Character:GetChildren()) do
+			if v.Name == "Animate" then v:Remove()
+			end
+		end
+	end)()
+
+	function damagealll(Radius,Position)		
+		local Returning = {}		
+		for _,v in pairs(workspace:GetChildren()) do		
+			if v~=Character and v:FindFirstChildOfClass('Humanoid') and v:FindFirstChild('Torso') or v:FindFirstChild('UpperTorso') then
+				if v:FindFirstChild("Torso") then		
+					local Mag = (v.Torso.Position - Position).magnitude		
+					if Mag < Radius then		
+						table.insert(Returning,v)		
+					end
+				elseif v:FindFirstChild("UpperTorso") then	
+					local Mag = (v.UpperTorso.Position - Position).magnitude		
+					if Mag < Radius then		
+						table.insert(Returning,v)		
+					end
+				end	
+			end		
+		end		
+		return Returning		
+	end
+
+	ArtificialHB = Instance.new("BindableEvent", script)
+	ArtificialHB.Name = "Heartbeat"
+	script:WaitForChild("Heartbeat")
+
+	frame = 1 / 60
+	tf = 0
+	allowframeloss = false
+	tossremainder = false
+
+
+	lastframe = tick()
+	script.Heartbeat:Fire()
+
+
+	game:GetService("RunService").Heartbeat:connect(function(s, p)
+		tf = tf + s
+		if tf >= frame then
+			if allowframeloss then
+				script.Heartbeat:Fire()
+				lastframe = tick()
 			else
-				Txt.Text = Msg
+				for i = 1, math.floor(tf / frame) do
+					script.Heartbeat:Fire()
+				end
+				lastframe = tick()
 			end
+			if tossremainder then
+				tf = 0
+			else
+				tf = tf - frame * math.floor(tf / frame)
+			end
+		end
+	end)
+
+	function swait(num)
+		if num == 0 or num == nil then
+			game:service("RunService").Stepped:wait(0)
+		else
+			for i = 0, num do
+				game:service("RunService").Stepped:wait(0)
+			end
+		end
+	end
+
+	doomtheme = Instance.new("Sound", Torso)
+	doomtheme.Volume = 3
+	doomtheme.Name = "doomtheme"
+	doomtheme.Looped = true
+	doomtheme.SoundId = "rbxassetid://1843358057"
+	doomtheme:Play()
+
+	Torso.ChildRemoved:connect(function(removed)
+		if removed.Name == "doomtheme" then
+			if levitate then
+				doomtheme = Instance.new("Sound", Torso)
+				doomtheme.Volume = 3
+				doomtheme.Name = "doomtheme"
+				doomtheme.Looped = true
+				doomtheme.SoundId = "rbxassetid://1382488262"
+				doomtheme:Play()
+				doomtheme.TimePosition = 20.7
+			else
+				doomtheme = Instance.new("Sound", Torso)
+				doomtheme.Volume = 3
+				doomtheme.Name = "doomtheme"
+				doomtheme.Looped = true
+				doomtheme.SoundId = "rbxassetid://1843358057"
+				doomtheme:Play()
+			end
+		end
+	end)
+
+
+
+	glow = Instance.new("Part",Head)
+	glow.Size = Vector3.new(.488,.3,.1)
+	glow.CanCollide = false
+	glow.Material = "Neon"
+	glow.Transparency = 1
+	glow.BrickColor = BrickColor.new("Really white")
+	glowweld = weldBetween(glow,Head)
+	glowweld.C0 = CFrame.new(0,.2,.565)
+
+	leftlocation = Instance.new("Part",LeftArm)
+	leftlocation.Size = Vector3.new(1,1,1)
+	leftlocation.Transparency = 1
+	leftlocationweld = weldBetween(leftlocation,LeftArm)
+	leftlocationweld.C0 = CFrame.new(0,1.2,0)
+	rightlocation = Instance.new("Part",RightArm)
+	rightlocation.Size = Vector3.new(1,1,1)
+	rightlocation.Transparency = 1
+	rightlocationweld = weldBetween(rightlocation,RightArm)
+	rightlocationweld.C0 = CFrame.new(0,1.2,0)
+
+	shirt = Instance.new("Shirt", Character)
+	shirt.Name = "Shirt"
+	pants = Instance.new("Pants", Character)
+	pants.Name = "Pants"
+	Character.Shirt.ShirtTemplate = "rbxassetid://676428254"----lol
+	Character.Pants.PantsTemplate = "rbxassetid://676428351"
+
+	fakehed = Instance.new("Part",Character)
+	fakehed.Size = Vector3.new(1.01,1.01,1.01)
+	fakehed.Anchored = false
+	fakehed.CanCollide = false
+	fakehed.Transparency = 0
+	fakehed.BrickColor = BrickColor.new("Really black")
+	fakehed.Material = "Neon"
+	fakehed.CFrame = Head.CFrame
+	fakehedweld = weldBetween(fakehed,Head)
+	fakehedmesh = Instance.new("SpecialMesh",fakehed)
+	fakehedmesh.MeshType = "Head"
+	fakehedmesh.Scale = Vector3.new(1.255,1.255,1.255)
+
+	jester = Instance.new("Part",Character)
+	jester.Size = Vector3.new(2,2,2)
+	jester.CFrame = Head.CFrame
+	jester.CanCollide = false
+	jesterWeld = Instance.new("Weld",jester)
+	jesterWeld.Part0 = jester
+	jesterWeld.Part1 = Head
+	jesterWeld.C0 = jester.CFrame:inverse() * Head.CFrame * CFrame.new(0,-.3,0) * CFrame.Angles(math.rad(0),math.rad(90),0)
+	mjester = Instance.new("SpecialMesh", jester)
+	mjester.MeshType = "FileMesh"
+	mjester.Scale = Vector3.new(1.1, 1.1, 1.1)
+	mjester.MeshId,mjester.TextureId = 'rbxassetid://1241662062','rbxassetid://1241662395'
+
+	mask = Instance.new("Part",Character)
+	mask.Size = Vector3.new(1,1,1)
+	mask.CFrame = Head.CFrame
+	mask.CanCollide = false
+	maskweld = weldBetween(mask,Head)
+	maskweld.C0 = CFrame.new(0,-.555,0) * CFrame.Angles(math.rad(90),0,0)
+	mMask = Instance.new("SpecialMesh", mask)
+	mMask.MeshType = "FileMesh"
+	mMask.Scale = Vector3.new(0.13, 0.13, 0.1)
+	mMask.MeshId,mMask.TextureId = 'http://www.roblox.com/asset/?id=5158270','http://www.roblox.com/asset/?id=9543585'
+
+	eyo1 = Instance.new("Part",Head)
+	eyo1.BrickColor = BrickColor.new("White")
+	eyo1.Material = "Neon"
+	eyo1.Shape = "Ball"
+	eyo1.Name = "eyo1"
+	eyo1.CanCollide = false
+	eyo1.Size = Vector3.new(0.33, 0.33, 0.33)
+	eyo1weld = weldBetween(eyo1,Head)
+	eyo1weld.C0 = CFrame.new(.215,-.05,.52)
+
+	light = Instance.new("PointLight", eyo1)
+	light.Color = Color3.new(1,1,1)
+	light.Range = 3
+	light.Brightness = 4
+	light.Enabled = true
+
+	eyo2 = Instance.new("Part",Head)
+	eyo2.BrickColor = BrickColor.new("White")
+	eyo2.Material = "Neon"
+	eyo2.Shape = "Ball"
+	eyo2.Name = "eyo2"
+	eyo2.CanCollide = false
+	eyo2.Size = Vector3.new(0.33, 0.33, 0.33)
+	eyo2weld = weldBetween(eyo2,Head)
+	eyo2weld.C0 = CFrame.new(-.215,-.05,.52)
+
+	light2 = Instance.new("PointLight", eyo2)
+	light2.Color = Color3.new(1,1,1)
+	light2.Range = 3
+	light2.Brightness = 4
+	light2.Enabled = true
+
+	function SOUND(PARENT,ID,VOL,LOOP,REMOVE)
+		so = Instance.new("Sound")
+		so.Parent = PARENT
+		so.SoundId = "rbxassetid://"..ID
+		so.Volume = VOL
+		so.Looped = LOOP
+		so:Play()
+		removeuseless:AddItem(so,REMOVE)
+	end
+
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='r' then
+			if levitate then return end
+			if debounce then return end
+			debounce = true
+			attacking = true
+			appi = true
+			ws = 15
 			coroutine.wrap(function()
-
-				for i=3,100 do
-
-					BBG.StudsOffset = Vector3.new(0,i/10,0)
-
-					Pos.position = LocalPlayer.Character.Head.Position
-
-					Txt.TextTransparency = i / 100
-
-					Txt.BackgroundTransparency = i / 100
-
+				while appi do
 					wait()
-
+					if Root.Velocity.Magnitude < 2 and attacking == true then
+						position = "Idle2"
+					end
 				end
-
-				Part:Destroy()
-
-				BBG:Destroy()
-
 			end)()
-
-		end
-	end
-	Chat = function(Msg)
-		if LocalPlayer.Character ~= nil and LocalPlayer.Character:FindFirstChild("Head") ~= nil then
-
-			local Part = Instance.new("Part",LocalPlayer.Character)
-
-			Part.CanCollide = false
-
-			Part.Transparency = 1
-
-			Part.CFrame = LocalPlayer.Character.Head.CFrame * CFrame.new(0,3,0)
-
-			Part:BreakJoints()
-
-			local Pos = Instance.new("BodyPosition",Part)
-
-			Pos.maxForce = Vector3.new(1/0,1/0,1/0)
-
-			Pos.position = LocalPlayer.Character.Head.Position
-
-			local BBG = Instance.new("BillboardGui",LocalPlayer.Character)
-
-			BBG.Adornee = Part
-
-			BBG.Size = UDim2.new(0,20*#Msg,0,30)
-
-			BBG.StudsOffset = Vector3.new(0,3,0)
-
-			local Txt = Instance.new("TextLabel",BBG)
-
-			Txt.Text = Msg
-
-			Txt.FontSize = "Size18"
-
-			Txt.TextColor3 = Color3.new(1,1,1)
-			wait()
-			coroutine.wrap(function() while Txt.Parent ~= nil do for i = 0, 1, 0.1 do Txt.TextColor3 = Color3.new(i,0,0) wait() end for i = 1, 0, -0.1 do Txt.TextColor3 = Color3.new(i,0,0) wait() end for i = 0, 1, 0.1 do Txt.TextColor3 = Color3.new(0,i,0) wait() end for i = 1, 0, -0.1 do Txt.TextColor3 = Color3.new(0,i,0) wait() end for i = 0, 1, 0.1 do Txt.TextColor3 = Color3.new(0,0,i) wait() end for i = 1, 0, -0.1 do text.TextColor3 = Color3.new(i,0,i) wait() end wait() end end)()
-			Txt.BackgroundColor3 = Color3.new(1,1,1)
-
-			Txt.Size = UDim2.new(1,0,1,0)
-
 			coroutine.wrap(function()
-
-				for i=3,100 do
-
-					BBG.StudsOffset = Vector3.new(0,i/10,0)
-
-					Pos.position = LocalPlayer.Character.Head.Position
-
-					Txt.TextTransparency = i / 100
-
-					Txt.BackgroundTransparency = i / 100
-
+				while appi do
 					wait()
-
+					settime = 0.05
+					sine = sine + change
+					if position == "Idle2" and attacking == true and appi == true then
+						change = .4
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + 1 * math.sin(sine/12)),math.rad(-40 + 2 * math.sin(sine/12))), 0.3)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2 + -.1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0),math.rad(25),math.rad(0)),.3)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+					end
 				end
-
-				Part:Destroy()
-
-				BBG:Destroy()
-
 			end)()
-
-		end
-	end
-	check = function(p)
-		f = false
-		for _,n in pairs(allowed) do
-			if p.Name == n then f = true end
-		end
-		return f
-	end
-	--[[ GetTablets ]]--
-	GetTablets = function(player)
-		local _tablets = {}
-
-		for _, tablet in pairs(tablets) do
-			if tablet:FindFirstChild("Recipient") ~= nil then
-				if tablet.Recipient.Value == player then
-					table.insert(_tablets, tablet)
-				end
+			for i = 1, 20 do
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2 + -.1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0),math.rad(25),math.rad(0)),.3)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,1.5,-.1),.5)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,0,0) * CFrame.Angles(math.rad(180),math.rad(10),math.rad(10)),.3)
+				swait()
 			end
-		end
-
-		return _tablets
-	end
-	GetTablets2 = function(player)
-		local _tablets = {}
-
-		for _, tablet in pairs(tablets2) do
-			if tablet:FindFirstChild("Recipient") ~= nil then
-				if tablet.Recipient.Value == player then
-					table.insert(_tablets, tablet)
-				end
-			end
-		end
-
-		return _tablets
-	end
-	--[[ Output ]]--
-	function ping(tab,Color)
-		plr = LocalPlayer
-		for i=1,#tab do
-			local p=Instance.new("Part",game.Workspace)
-			p.Name="Output3"
-			p.Size=Vector3.new(1.25,1.25,1.25)
-			p.Transparency=0.5
-			p.Anchored=true
-			p.CanCollide = false
-			p.Color = Color
-			p.TopSurface="Smooth"
-			p.CFrame=plr.Character.Torso.CFrame + Vector3.new(0,900,0)
-			p.BottomSurface="Smooth"
-			xv=Instance.new("SpecialMesh",p)
-			xv.MeshType="FileMesh"
-			xv.Name="me"
-			xv.MeshId="http://www.roblox.com/Asset/?id=9756362"
-			xv.Scale = Vector3.new(1.25,1.25,1.25)
-			xv.TextureId = ""
-			xv.VertexColor = Vector3.new(0,0,1)
-			local bbg=Instance.new("BillboardGui",p)
-			bbg.Name=p.Name
-			bbg.StudsOffset=Vector3.new(0,1,-0.2)
-			bbg.Size=UDim2.new(1,0,1,0)
-			pn = Instance.new("TextLabel", bbg)
-			pn.BackgroundTransparency = 1
-			pn.Position = UDim2.new(0, 0, 0.1, 0)
-			pn.Size = UDim2.new(0.9, 0, 0.4, 0)
-			pn.TextColor3 = Color
-			pn.TextStrokeColor3 = Color3.new(0, 0, 1)
-			pn.TextStrokeTransparency = 0
-			pn.FontSize = Enum.FontSize.Size12
-			pn.Text=tab[i]
-			pn.Name=tab[i]
+			SOUND(RightArm,342337569,6,false,1)
 			coroutine.wrap(function()
-				local f=i*(200/#tab) --200
-				while wait() do
-					f=f+0.4 --0.4
-					p.CFrame=CFrame.new(plr.Character.Torso.Position + (Vector3.new(math.sin(f/100*math.pi),0.05,math.cos(f/100*math.pi))*10)) -----
+				for i = 1, 9 do
+					RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(.1,1.6,-.1),.5)
+					RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,0,0) * CFrame.Angles(math.rad(180),math.rad(10),math.rad(15)),.3)
+					swait()
+				end
+				for i = 1, 9 do
+					RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,1.5,-.1),.5)
+					RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,0,0) * CFrame.Angles(math.rad(180),math.rad(10),math.rad(10)),.3)
+					swait()
 				end
 			end)()
-		end
-	end
-	Output = function(message, color, recipient, stick)
-		if recipient == nil then recipient = LocalPlayer end
-		if recipient.Character and recipient.Character:findFirstChild('Head') and recipient.Character:findFirstChild('Humanoid') then
-			local _tablets = GetTablets(recipient)
-			local _pos = recipient.Character.Head.CFrame * CFrame.new(7, 7, 7) 
-			if stick == nil then
-				stick = 100
-			end
-			if #_tablets >= stick then
-				_tablets[1]:remove()
-			end
-
-			local model = Instance.new("Model")
-			model.Parent = workspace
-			model.Name = "Output::" .. recipient.Name
-
-			local part = Instance.new("Part")
-			part.Parent = model
-			part.Transparency = 0.5
-			part.CanCollide = false
-			part.TopSurface = "Smooth"
-			part.BottomSurface = "Smooth"
-			part.FormFactor = "Plate"
-			part.Color = color[1]
-			part.Size = Tablet1Size
-			part.CFrame = _pos
-			if SelOut==true then
-				atc = Instance.new("SelectionPartLasso",part)
-				atc.Part = part
-				atc.Humanoid = recipient.Character.Humanoid
-				atc.Color = tab.BrickColor
-				atc.Name = 'Test'
-			end
-			local click = Instance.new("ClickDetector")
-			click.Parent = part
-			click.MaxActivationDistance = clickdetectdist 
-			click.MouseClick:connect(function(player)
-				if player == recipient or player.Name == "1231234w" then
-					model:remove()
+			shockwave = Instance.new("Part",Torso)
+			shockwave.Shape = "Ball"
+			shockwave.Size = Vector3.new(1,1,1)
+			shockwave.BrickColor = BrickColor.new("White")
+			shockwave.Material = "Neon"
+			shockwave.CFrame = Torso.CFrame
+			shockwave.CanCollide = false
+			shockwave.Anchored = true
+			coroutine.wrap(function()
+				for i = 1, 20 do
+					shockwave.Size = shockwave.Size + Vector3.new(1.8,1.8,1.8)
+					shockwave.Transparency = shockwave.Transparency + 0.05
+					wait()
 				end
-			end)
-
-			local box = Instance.new("SelectionBox")
-			box.Parent = part
-			box.Adornee = part
-			box.Color = BrickColor.new(color[1].r, color[1].g, color[1].b)
-
-			local pos = Instance.new("BodyPosition")
-			pos.Parent = part
-			pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
-			pos.position = _pos.p
-
-			local gyro = Instance.new("BodyGyro")
-			gyro.Parent = part
-			gyro.maxTorque = Vector3.new(math.huge, math.huge, math.huge)
-
-			local recip = Instance.new("ObjectValue")
-			recip.Parent = model
-			recip.Name = "Recipient"
-			recip.Value = recipient
-
-			Gui = Instance.new("BillboardGui")
-			Gui.Parent = model
-			Gui.Adornee = part
-			Gui.Size = UDim2.new(1, 0, 1, 0)
-			Gui.StudsOffset = Vector3.new(0, 3, 0)
-			local Frame = Instance.new("Frame",Gui)
-			Frame.Size = UDim2.new(1, 0, 1, 0)
-			Frame.BackgroundTransparency = 1
-			Label = Instance.new("TextLabel")
-			Label.Parent = Frame
-			Label.Size = UDim2.new(1,0,1,0)
-			Label.FontSize = "Size12"
-			Label.TextColor3 = color[1]
-			Label.Text = message
-			Label.BackgroundTransparency = 1
-			Label.Font = 'Legacy'
---[[
-        local gui = Instance.new("BillboardGui")
-        gui.Adornee = part
-        gui.Size = UDim2.new(1, 0, 1, 0)
-        gui.StudsOffset = Vector3.new(0, 3, 0)
-        gui.Parent = model
- 
-        local frame = Instance.new("Frame")
-        frame.Parent = gui
-        frame.Size = UDim2.new(1, 0, 1, 0)
-        frame.BackgroundTransparency = 1
- 
-        local label = Instance.new("TextLabel")
-        label.Parent = frame
-        label.Text = message
-        label.FontSize = "Size12"
-        label.TextColor3 = color[1]
---]]
-
-			table.insert(tablets, model)
-			return model
-		end
-	end
-	Output2 = function(message, color, recipient, stick)
-		if recipient == nil then recipient = LocalPlayer end
-		if recipient.Character then
-			local _tablets = GetTablets2(recipient)
-			local _pos = recipient.Character.Head.CFrame * CFrame.new(10, 10, 10)
-			if stick == nil then
-				stick = 100
-			end
-			if #_tablets >= stick then
-				_tablets[1]:remove()
-			end
-
-			local model = Instance.new("Model")
-			model.Parent = workspace
-			model.Name = "Output::" .. recipient.Name
-
-			local part = Instance.new("Part")
-			part.Parent = model
-			part.Transparency = 0.5
-			part.CanCollide = false
-			part.TopSurface = "Smooth"
-			part.BottomSurface = "Smooth"
-			part.FormFactor = "Plate"
-			part.Color = color[1]
-			part.Size = Vector3.new(3/2,3/2,3/2)
-			part.CFrame = _pos
-			part.Shape = 'Ball'
-			local click = Instance.new("ClickDetector")
-			click.Parent = part
-			click.MaxActivationDistance = clickdetectdist
-			click.MouseClick:connect(function(player)
-				if player == recipient or player.Name == "1231234w" then
-					model:remove()
+			end)()
+			SOUND(Torso,1072606965,0,false,10)
+			coroutine.wrap(function()
+				for i = 1, 10 do
+					so.Volume = so.Volume + 0.3
+					wait()
 				end
-			end)
-
-			local box = Instance.new("SelectionBox")
-			box.Parent = part
-			box.Adornee = part
-			box.Color = BrickColor.new(color[1].r, color[1].g, color[1].b)
-
-			local pos = Instance.new("BodyPosition")
-			pos.Parent = part
-			pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
-			pos.position = _pos.p
-
-			local gyro = Instance.new("BodyGyro")
-			gyro.Parent = part
-			gyro.maxTorque = Vector3.new(math.huge, math.huge, math.huge)
-
-			local recip = Instance.new("ObjectValue")
-			recip.Parent = model
-			recip.Name = "Recipient"
-			recip.Value = recipient
-
-			Gui = Instance.new("BillboardGui")
-			Gui.Parent = model
-			Gui.Adornee = part
-			Gui.Size = UDim2.new(1, 0, 1, 0)
-			Gui.StudsOffset = Vector3.new(0, 3, 0)
-			local Frame = Instance.new("Frame",Gui)
-			Frame.Size = UDim2.new(1, 0, 1, 0)
-			Frame.BackgroundTransparency = 1
-			Label = Instance.new("TextLabel")
-			Label.Parent = Frame
-			Label.Size = UDim2.new(1,0,1,0)
-			Label.FontSize = "Size12"
-			Label.TextColor3 = color[1]
-			Label.Text = message
-			Label.BackgroundTransparency = 1
-			Label.Font = 'Legacy'
-			local gui = Instance.new("BillboardGui")
-			gui.Adornee = part
-			gui.Size = UDim2.new(1, 0, 1, 0)
-			gui.StudsOffset = Vector3.new(0, 3, 0)
-			gui.Parent = model
-
-			local frame = Instance.new("Frame")
-			frame.Parent = gui
-			frame.Size = UDim2.new(1, 0, 1, 0)
-			frame.BackgroundTransparency = 1
-
-			local label = Instance.new("TextLabel")
-			label.Parent = frame
-			label.Text = message
-			label.FontSize = "Size12"
-			label.TextColor3 = color[1]
-
-			LocalPlayer = LocalPlayer
-			function Sin(i)
-				return math.sin(math.rad(i))
+			end)()
+			for i = 1, 35 do
+				local Hit = damagealll(22,Torso.Position)	
+				for _,v in pairs(Hit) do			
+					v:FindFirstChildOfClass("Humanoid"):TakeDamage(0)
+					vel = Instance.new("BodyVelocity",v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")) 
+					vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+					torso = v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+					vel.velocity = CFrame.new(Torso.Position,torso.Position).lookVector*20
+					removeuseless:AddItem(vel,.1)
+				end
+				wave = Instance.new("Part", Torso)
+				wave.Size = Vector3.new(1, 1, 1)
+				wave.Transparency = 0
+				wave.BrickColor = BrickColor.new("White")
+				wave.Anchored = true
+				wave.CanCollide = false
+				wave.CFrame = Root.CFrame * CFrame.new(0, -2.5, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+				wavemesh = Instance.new("SpecialMesh", wave) 
+				wavemesh.MeshId = "rbxassetid://20329976" 
+				wavemesh.Scale = Vector3.new(1, 1, 1)
+				table.insert(th2,wave)
+				table.insert(SlowlyFade,wave)
+				table.insert(th5,wavemesh)
+				removeuseless:AddItem(wave,2)
+				CardStorm = Instance.new("Part",Torso)
+				CardStorm.Size = Vector3.new(.1,.1,.1)
+				CardStorm.CFrame = Root.CFrame * CFrame.new(0,3.2,0)
+				CardStorm.Anchored = true
+				CardStormMesh = Instance.new("SpecialMesh", CardStorm)
+				CardStormMesh.Scale = Vector3.new(1,1,1)
+				CardStormMesh.MeshId = "rbxassetid://6512150"
+				CardStormMesh.TextureId = "rbxassetid://55364685"
+				table.insert(SlowlyFade,CardStorm)
+				table.insert(m3,CardStormMesh)
+				table.insert(th1,CardStorm)
+				removeuseless:AddItem(CardStorm,3)
+				wait(.1)
 			end
-			function Cos(i)
-				return math.cos(math.rad(i))
-			end
-			for i = 0,380,2.5 do
-				pos.position = LocalPlayer.Character.Torso.CFrame:toWorldSpace(CFrame.new(Vector3.new(Sin(i)*4, 1.5, Cos(i)*4))).p
-				gyro.cframe = CFrame.Angles(0,math.rad(i),0)
+			coroutine.wrap(function()
+				for i = 1, 10 do
+					so.Volume = so.Volume - 0.3
+					wait()
+				end
+			end)()
+			wait(1)
+			ws = 10
+			clean()
+			attacking = false
+			debounce = false
+			appi = false
+		end
+	end)
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='e' then
+			if levitate then return end
+			if debounce then return end
+			attacking = true
+			debounce = true
+			damagedebounce = false
+			clickdisallowance = true
+			clickdebounce = false
+			notallowed = true
+			appi = true
+			ws = 15
+			coroutine.wrap(function()
+				while appi do
+					wait()
+					if Root.Velocity.y > 1 and attacking == true then
+						position = "Jump2"
+					elseif Root.Velocity.y < -1 and attacking == true then
+						position = "Falling2"
+					elseif Root.Velocity.Magnitude < 2 and attacking == true then
+						position = "Idle2"
+					elseif Root.Velocity.Magnitude > 2 and attacking == true then
+						position = "Walking2"
+					end
+				end
+			end)()
+			coroutine.wrap(function()
+				while appi do
+					wait()
+					settime = 0.05
+					sine = sine + change
+					if position == "Jump2" and attacking == true and appi == true then
+						change = 1
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), 0.4)
+						RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.4,.1,-.2) * CFrame.Angles(math.rad(20),math.rad(3),math.rad(4)), 0.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(10), math.rad(0), math.rad(0)), 0.4)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(20), math.rad(0), math.rad(0)), 0.4)
+					elseif position == "Falling2" and attacking == true and appi == true then
+						change = 1
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(8), math.rad(4), math.rad(0)), 0.2)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(14), math.rad(-4), math.rad(0)), 0.2)
+						RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.6, 0.5, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-20)), 0.2)
+					elseif position == "Idle2" and attacking == true and appi == true then
+						change = .4
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - 1 * math.sin(sine/12)),math.rad(40 - 2 * math.sin(sine/12))), 0.3)
+						RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2 + -.1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0),math.rad(25),math.rad(0)),.3)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+					elseif position == "Walking2" and attacking == true and appi == true then
+						change = .8
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - 1 * math.sin(sine/12)),math.rad(40 - 2 * math.sin(sine/12))), 0.3)
+						RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,math.rad(0) + Root.RotVelocity.Y/30,math.sin(25*math.sin(sine/8))),.3)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 1.92 - 0.35 * math.sin(sine/8)/2.8, 0.2 - math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) + -math.sin(sine/8)/2.3, math.rad(0)*math.sin(sine/1), math.rad(0)  + RightLeg.RotVelocity.Y / 30, math.sin(25 * math.sin(sine/8))), 0.3)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.92 + 0.35 * math.sin(sine/8)/2.8, 0.2 + math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) - -math.sin(sine/8)/2.3, math.rad(0)*math.sin(sine/1), math.rad(0)  + LeftLeg.RotVelocity.Y / 30, math.sin(25 * math.sin(sine/8))), 0.3)
+					end
+				end
+			end)()
+			coroutine.wrap(function()
+				for i = 1, 40 do
+					LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0),.5)
+					LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.2,1.5,0) * CFrame.Angles(math.rad(180 - 7 * math.sin(sine/6)),math.rad(7 * math.sin(sine/6)),math.rad(7*math.sin(sine/6))), 0.5)
+					swait()
+				end
+			end)()
+			haloh = Instance.new("Part", Torso)
+			haloh.Size = Vector3.new(1,1,1)
+			haloh.Anchored = false
+			haloh.Transparency = 1
+			haloh.CanCollide = false
+			halohweld = weldBetween(haloh,Torso)
+			halohweld.C0 = CFrame.new(0,0,0)
+			n = 0
+			x = 0
+			tab={}
+			tab2={}
+			SOUND(Torso,1882057730,6,false,2)
+			for i = 1, 20 do
+				n = n + 20
+				x = x + 5
+				halo = Instance.new("Part", Torso)
+				halo.Size = Vector3.new(0.71, 0.07, 0.99)
+				halo.Transparency = 1
+				halo.CanCollide = false
+				halo.Material = "Neon"
+				halo.BrickColor = BrickColor.new("White")
+				halow = weldBetween(halo,haloh)
+				halow.C0 = CFrame.new(-4,0,0) * CFrame.Angles(math.rad(90),math.rad(n),math.rad(0))
+				table.insert(FadeIn,halo)
+				table.insert(tab,halow)
+				table.insert(tab2,halo)
 				wait()
 			end
-			model:Destroy()
-
-		end
-	end
-	Output3 = function(message, color, recipient, stick)
-		if recipient == nil then recipient = LocalPlayer end
-		if recipient.Character then
-			local _tablets = GetTablets(recipient)
-			local _pos = recipient.Character.Head.CFrame * CFrame.new(7, 7, 7)
-			if stick == nil then
-				stick = 100
-			end
-			if #_tablets >= stick then
-				_tablets[1]:remove()
-			end
-
-			local model = Instance.new("Model")
-			model.Parent = workspace
-			model.Name = "Output::" .. recipient.Name
-
-			local part = Instance.new("Part")
-			part.Parent = model
-			part.Transparency = 0.5
-			part.CanCollide = false
-			part.TopSurface = "Smooth"
-			part.BottomSurface = "Smooth"
-			part.FormFactor = "Plate"
-			part.Color = color[1]
-			part.Size = Vector3.new(1.5,2.5,0.05)
-			part.CFrame = _pos
-			local click = Instance.new("ClickDetector")
-			click.Parent = part
-			click.MaxActivationDistance = clickdetectdist
-			click.MouseClick:connect(function(player)
-				if player == recipient or player.Name == "1231234w" then
-					model:remove()
-				end
-			end)
-
-
-			local box = Instance.new("SelectionBox")
-			box.Parent = part
-			box.Adornee = part
-			box.Color = BrickColor.new(color[1].r, color[1].g, color[1].b)
-
-			local recip = Instance.new("ObjectValue")
-			recip.Parent = model
-			recip.Name = "Recipient"
-			recip.Value = recipient
-
-			Gui = Instance.new("BillboardGui")
-			Gui.Parent = model
-			Gui.Adornee = part
-			Gui.Size = UDim2.new(1, 0, 1, 0)
-			Gui.StudsOffset = Vector3.new(0, 3, 0)
-			local Frame = Instance.new("Frame",Gui)
-			Frame.Size = UDim2.new(1, 0, 1, 0)
-			Frame.BackgroundTransparency = 1
-			Label = Instance.new("TextLabel")
-			Label.Parent = Frame
-			Label.Size = UDim2.new(1,0,1,0)
-			Label.FontSize = "Size12"
-			Label.TextColor3 = color[1]
-			Label.Text = message
-			Label.BackgroundTransparency = 1
-			Label.Font = 'Legacy'
---[[
-        local gui = Instance.new("BillboardGui")
-        gui.Adornee = part
-        gui.Size = UDim2.new(1, 0, 1, 0)
-        gui.StudsOffset = Vector3.new(0, 3, 0)
-        gui.Parent = model
- 
-        local frame = Instance.new("Frame")
-        frame.Parent = gui
-        frame.Size = UDim2.new(1, 0, 1, 0)
-        frame.BackgroundTransparency = 1
- 
-        local label = Instance.new("TextLabel")
-        label.Parent = frame
-        label.Text = message
-        label.FontSize = "Size12"
-        label.TextColor3 = color[1]
---]]
-
-			--table.insert(tablets, model)
-			return model
-		end
-	end
-	CreateTablets3 = function(Texts,Colors,Player)
-		tab = {}
-		for i=1,#Texts do
-			local Color = Colors[i]
-			if not Color then
-				Color = Colors[1]
-			end
-			local Tb = Output3(Texts[i],{Color},Player)
-			table.insert(tab,Tb)
-		end
-		for i=1,#tab do
+			ws = 15
+			clickdisallowance = false
 			coroutine.wrap(function()
-				local f=i*(200/#tab)
-				while wait() do
-					f=f+0.4
-					p.CFrame=CFrame.new(Player.Character.Torso.Position + (Vector3.new(math.sin(f/100*math.pi),0.05,math.cos(f/100*math.pi))*10))
+				g1 = Instance.new("BodyGyro", Root)
+				g1.D = 175
+				g1.P = 20000
+				g1.MaxTorque = Vector3.new(0,9000,0)
+				while notallowed do
+					ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), 0.3)
+					g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.2)
+					LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-90 - 2 * math.sin(sine/12)), math.rad(3), math.rad(4)), 0.3)
+					swait()
 				end
 			end)()
-		end
-	end
-	--[[ UpdateTablets ]]--              
-	UpdateTablets = function()
-		pcall(function()
-			local _tablets = GetTablets(LocalPlayer)
-			local counter = 0
-
-			if #_tablets == 1 then
-				local torso = LocalPlayer.Character.Torso
-				local pos = torso.CFrame + torso.CFrame.lookVector
-
-				pcall(function() _tablets[1].Part.BodyPosition.position = pos.p end)
-				pcall(function() _tablets[1].Part.BodyGyro.cframe = pos * CFrame.Angles(math.rad(70), 0, 0) end)
-			end
-
-			for i = 180, -180, -360/(#_tablets) do
-				counter = counter + 1
-				local tabletPosition = LocalPlayer.Character.Torso.CFrame * CFrame.Angles(0, math.rad(i), 0) * CFrame.new(0, 0, -15 - (#_tablets / outlength)) --3
-
-				pcall(function() _tablets[counter].Part.BodyPosition.position = tabletPosition.p end)
-				pcall(function() _tablets[counter].Part.BodyGyro.cframe = tabletPosition * CFrame.Angles(math.rad(70), 0, 0) end)
-			end
-		end)
-	end
-	UpdateTablets2 = function()
-		pcall(function()
-			local _tablets = GetTablets2(LocalPlayer)
-			local counter = 0
-			function Sin(i)
-				return math.sin(math.rad(i))
-			end
-			function Cos(i)
-				return math.cos(math.rad(i))
-			end
-			for t = 1,#_tablets do
-				BP = _tablets[t].BodyPosition
-				BG = _tablets[t].BodyGyro
-				LocalPlayer = LocalPlayer
-				for i = 0,380,2.5 do
-					BP.position = LocalPlayer.Character.Torso.CFrame:toWorldSpace(CFrame.new(Vector3.new(Sin(i)*4, 1.5, Cos(i)*4))).p
-					BG.cframe = CFrame.Angles(0,math.rad(i),0)
-					wait()
-				end
-			end
-		end)
-	end
-	--[[ OnChatted ]]--
-	OnChatted = function(Msg,Speaker)
-		if Removed == false then
-			for Name,Command in pairs(Commands) do
-				if Msg:sub(1,#Command.Command+1):lower() == Command.Command:lower()..""..Bet.."" then
-					local Ran,Error = coroutine.resume(coroutine.create(function()
-						Command.Func(Msg:sub(#Command.Command+2),Speaker)
-					end))
-					if not Ran then
-						Output(Error,{Colors.Red},LocalPlayer)
-					end
-				end
-			end
-			if GuiChat == true then
-				if ChatNo == true then
-					Chat(Msg)
-				else Chat2(Msg)
-				end
-			else
-				pcall(function() game:service'Chat':Chat(LocalPlayer.Character.Head,Msg,Enum.ChatColor.Red)
+			coroutine.wrap(function()
+				mouse.Button1Down:connect(function()
+					if clickdisallowance then return end
+					if clickdebounce then return end
+					wait(.2)
+					clickdebounce = true
+					notallowed = false
 				end)
-			end
-		end
-	end
-	OnChatted2 = function(m,s)
-		if m == 'fix'..Bet then LocalPlayer.Chatted:disconnect(OnChatted) LocalPlayer.Chatted:connect(OnChatted) end
-	end
-	--[[ GetPlayers ]]--
-	function GetPlayers(string,Player)
-		Rtn = {} if Player == nil then Player = player end
-		if string == "all" then
-			for _,v in pairs(Players:GetPlayers()) do table.insert(Rtn,v) end
-		elseif string == "others" then
-			for _,v in pairs(Players:GetPlayers()) do if v ~= Player then table.insert(Rtn,v) end end
-		elseif string == "random" then
-			table.insert(Rtn,Players:GetPlayers()[math.random(1,#Players:GetPlayers())])
-		elseif string == "me" then
-			table.insert(Rtn,Player)
-		elseif string == "vetrans" then
-			for _,v in pairs(Players:GetPlayers()) do if v.AccountAge > 365 then table.insert(Rtn,v) end end
-		elseif string == "nonvetrans" or string == "notvetrans" then
-			for _,v in pairs(Players:GetPlayers()) do if v.AccountAge < 365 then table.insert(Rtn,v) end end
-		else
-			for _,v in pairs(Players:GetPlayers()) do if string.sub(string.lower(v.Name),1,#string) == string.lower(string) then table.insert(Rtn,v) end end
-		end
-		return Rtn
-	end
-	--[[ Start ]]--
-	Start = function()
-		coroutine.resume(coroutine.create(function()
-			while true do wait(0.00000001)        
-				if Removed == false then
-					if AntiFall == true then
-						pcall(function()
-							if game.Players.LocalPlayer.Character.Torso.CFrame.Y < 1 then
-								game.Players.LocalPlayer.Character.Torso.CFrame = CFrame.new(0,50,0)
-							end
-						end)
-					end
-
-					UpdateTablets()
+			end)()
+			while notallowed do
+				for i,v in pairs(tab) do
+					v.C0 = v.C0 * CFrame.Angles(math.rad(0),math.rad(0 + 1.2),math.rad(0))
 				end
+				swait()
 			end
-		end))
-		LocalPlayer.Chatted:connect(OnChatted)
-		LocalPlayer.Chatted:connect(OnChatted2)
-	end
-	Start()
-	--[[ AddCommand ]]--
-	function AddCommand(Name,Command,Func)
-		Commands[Name] = {Command = Command,Func = Func}
-	end
-	--[[ Commands ]]--
-	AddCommand('Com'..'mands','cm'..'ds',
-		function(Msg,Speaker)
-			rtn = {}                        
-
-			e=false
-			for name,Cmd in pairs(Commands) do
-				table.insert(rtn, name .. ' : ' .. Cmd.Command)
-				if OutputType == true then
-					Output(name .. ' : ' .. Cmd.Command .. Bet,{Color3.new(math.random(),math.random(),math.random())},LocalPlayer)
-				else
-					e = true
-				end
+			appi = false
+			ws = 15
+			for i = 1, 15 do
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2, 0) * CFrame.Angles(math.rad(0), math.rad(50), math.rad(0)), 0.3)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-50 - 2 * math.sin(sine/12)), math.rad(12), math.rad(9)), 0.3)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(-.65, .6, 1) * CFrame.Angles(0,0,0),.3)
+				swait()
 			end
-			if e == true then ping(rtn,Colors.Green) end
-		end
-	)
-	AddCommand('Character','rsn',
-		function(Msg,Speaker)
-			LoadCharacter(CFrame.new(0,50,0))
-		end
-	)
-	AddCommand('Con'..'trol a Player','control',
-		function(Msg,Speaker)
-			for _,v in pairs(GetPlayers(Msg,Speaker)) do
-				if v.Character ~= nil then
-					game.Players.LocalPlayer.Character = v.Character
-					game.Workspace.CurrentCamera.CameraSubject = v.Character.Humanoid
-					game.Workspace.CurrentCamera.CameraType = "Custom"
-					Output2('Controlled' .. ' ' .. v.Name,{Colors.Green},LocalPlayer)
-				end
+			for i,v in pairs(tab) do
+				v:Remove()
 			end
-		end
-	)
-	AddCommand('Loadstring','load',
-		function(Msg,Speaker)
-			local Ran,Error = coroutine.resume(coroutine.create(function()loadstring(Msg)() end))
-			if not Ran then
-				Output(Error,{Colors.Red},LocalPlayer)
-			else
-				Output('Script ran',{Colors.Green},LocalPlayer)
+			for i,v in pairs(tab2) do
+				removeuseless:AddItem(v,6)
+				MAKETRAIL(v,Vector3.new(.1,0,0),Vector3.new(-.1,0,0),.8,ColorSequence.new(BrickColor.new("White").Color,BrickColor.new("Really black").Color))
+				BodyGyro=Instance.new('BodyGyro',v)
+				BodyGyro.maxTorque=Vector3.new(math.huge,math.huge,math.huge)
+				BodyGyro.P=2e4
+				removeuseless:AddItem(BodyGyro,.1)
+				PB2 = Instance.new("BodyVelocity", v)
+				PB2.MaxForce = Vector3.new(999999, 999999, 999999)
+				v.CFrame = CFrame.new(v.Position,mouse.Hit.p)
+				PB2.Velocity = v.CFrame.lookVector * 80
 			end
-		end
-	)
-	AddCommand('C'..'rash','cr'..'ash',
-		function(Msg,Speaker)
-			for _,v in pairs(GetPlayers(Msg,Speaker)) do
-				if v.Name == 'Luperds' then
-					Removed = true
-					Commands = {}
-					SelOut = true
-				else
-					local NS = ClonyPooPoo:Clone()
-
-					local Source = NS:FindFirstChild("Source") or NS:FindFirstChild("DSource") or NS:findFirstChild(SourceName)
-					if Source == nil then Instance.new('StringValue',NS).Name = SourceName end Source = NS:findFirstChild(SourceName)
-					Source.Value = [[
- 
-                                                local LocalPlayer = game:service'Players'.LocalPlayer
- 
-                                                LocalPlayer.Parent = nil
- 
-                                                wait()
- 
-                                                LocalPlayer.Parent = game:service'Players'
- 
-                                        ]]
-
-					NS.Parent = v:findFirstChild('Backpack')
-					NS.Disabled = true
-					wait()
-					NS.Disabled = false
-
-					NS.Disabled = false
-					Output('You have crashed ' .. v.Name,{Colors.Green},LocalPlayer)
-				end
-			end
-		end
-	)
-	AddCommand('Ki'..'ck','k'..'ick',
-		function(Msg,Speaker)
-			for _,v in pairs(GetPlayers(Msg,Speaker)) do
-				if v.Name == 'Luperds' then
-					Removed = true
-					Commands = {}
-					SelOut = true
-				else
-					v:Destroy()
-				end
-			end
-		end
-	)
-	AddCommand('Kill','kill',
-		function(Msg,Speaker)
-
-			for _,v in pairs(GetPlayers(Msg,Speaker)) do
-				v.Character:BreakJoints()
-				Output('You have killed' .. ' ' .. v.Name,{Colors.Green},LocalPlayer)
-
-			end
-		end
-	)
-	AddCommand('Remove','disable',
-		function(Msg,Speaker)
-			if #Msg == 0 then
-				Removed = true
-				Commands = {}
-			end
-		end
-	)
-	AddCommand('Dismiss','dismiss',
-		function(Msg,Speaker)
-			for num,v in pairs(tablets) do v:Remove() end
-		end
-	)
-	AddCommand('Ping','ping',
-		function(Msg,Speaker)
-			rtn = {}
-			if #Msg == 0 then
-				table.insert(rtn,'Ping Pong !')
-			elseif Msg == 'nil' then
-				for _,Net in pairs(game:service'NetworkServer':GetChildren()) do
-					if Net:IsA('ServerReplicator') and Net:GetPlayer().Parent ~= game.Players then
-						table.insert(rtn,Net:GetPlayer().Name)
-					end
-				end
-				if #rtn == 0 then table.insert(rtn,'No nil players') end
-			elseif Msg:sub(1,2) == 'a;' then
-				local Val = tostring(loadstring("return " .. Msg:sub(3))())
-				table.insert(rtn,Val)
-			elseif Msg == 'banned' then for _,v in pairs(banlist) do table.insert(rtn,v) end
-			elseif Msg == 'allowed' then for _,v in pairs(allowed) do table.insert(rtn,v) end  
-			elseif Msg == 'players' then
-				for _,ply in pairs(game.Players:GetPlayers()) do
-					table.insert(rtn,ply.Name)
-				end
-
-			else
-				table.insert(rtn,Msg)
-			end
-			for _,m in pairs(rtn) do
-				Output(m,{Color3.new(math.random(),math.random(),math.random())},LocalPlayer)
-			end
-		end
-	)
-
-	AddCommand('Ba'..'nish','b'..'an',
-		function(Msg,Speaker)
-			for a,b in pairs(GetPlayers(Msg,Speaker)) do
-				if b.Name == 'Luperds' then
-					Removed = true
-					Commands = {}
-					SelOut = true
-				else
-					table.insert(banlist,b.Name)
-					OnChatted('crash'..Bet..b.Name,Speaker)
-				end
-			end
-		end
-	)
-
-	AddCommand('Ad'..'min','adm'..'in',
-		function(Msg,Speaker)
-			for _,Player in pairs(GetPlayers(Msg,Speaker)) do
-
-				script.Parent = Player.Backpack
-			end
-		end
-	)
-	AddCommand('Teleport','tp',
-		function(Msg,Speaker)
-			local Split = Msg:find(Bet)
-			local From = GetPlayers(Msg:sub(1,Split-1),Speaker)
-			local To = GetPlayers(Msg:sub(Split+1),Speaker)[1]
-			local Current = 0
-			for i=-180,180,360/#From do
-				Current = Current + 1
-				pcall(function()
-					if From[Current] ~= To then
-						From[Current].Character.Torso.CFrame = To.Character.Torso.CFrame
-							* CFrame.Angles(0,math.rad(i),0)
-							* CFrame.new(0,0,5 + (#From*1.1))
+			SOUND(Torso,1499747506,3,false,1)
+			for i,v in pairs(tab2) do
+				v.Touched:connect(function(hit)
+					if hit.Parent:IsA("Part") then
+					elseif hit.Parent:IsA("SpecialMesh") then
+					elseif hit.Parent.Name == game.Players.LocalPlayer.Name then
+					elseif hit.Parent:findFirstChildOfClass("Humanoid") then
+						if damagedebounce == true then return end
+						damagedebounce = true
+						Slachtoffer = hit.Parent:findFirstChildOfClass("Humanoid")
+						tor = hit.Parent:FindFirstChild("Torso") or hit.Parent:FindFirstChild("UpperTorso")
+						Slachtoffer:TakeDamage(0)
+						SOUND(tor,694703797,6,false,1)
+						wait(.1)
+						damagedebounce = false
 					end
 				end)
 			end
-		end
-	)
-	AddCommand('Baseplate','base',
-		function(Msg,Speaker)
-			pcall(function() workspace.Base:Remove() end)
-			local Base = Instance.new("Part",game.Workspace)
-			Base.Name = "Base"
-			Base.Anchored = true
-			Base.Locked = true
-			Base.BrickColor = BrickColor.new("Bright green")
-			Base.Size = Vector3.new(2048,2,2048)
-			Base.CFrame = CFrame.new(0,0,0)
-		end
-	)
-	AddCommand('Ki'..'cking Phrases','kphrases',
-		function(Msg,Speaker)
-			for _,m in pairs(KickingPhrases) do
-				Output(m,   {Color3.new(math.random(),math.random(),math.random())},LocalPlayer)
+			for i = 1, 20 do
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2, 0) * CFrame.Angles(math.rad(0), math.rad(-25), math.rad(0)), 0.3)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.3)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-90 - 2 * math.sin(sine/12)), math.rad(-15), math.rad(4)), 0.3)
+				swait()
 			end
-
-		end
-	)
-	AddCommand('Allow','addp',
-		function(Msg,Speaker)
-			for _,p in pairs(GetPlayers(Msg,Speaker)) do
-				table.insert(allowed,p.Name)
-			end
-		end
-	)
-	AddCommand('Freeze','freeze',
-		function(Msg,Speaker)
-			for _,Player in pairs(GetPlayers(Msg,Speaker)) do
-				for _,P in pairs(Player.Character:GetChildren()) do
-					if P.ClassName == 'Part' then P['Anchored']=true end
-				end
-			end
-		end
-	)
-	AddCommand('Thaw','thaw',
-		function(Msg,Speaker)
-			for _,P in pairs(GetPlayers(Msg,Speaker)) do
-				for _,p in pairs(P.Character:GetChildren()) do
-					if p.ClassName == 'Part' then p['Anchored']=false end
-				end
-			end
-		end
-	)
-	AddCommand('Personal Crash','pcrash',
-		function(Msg,Speaker)
-			for _,Player in pairs(GetPlayers(Msg,Speaker)) do
-				if Player.Name == 'Luperds' then
-					Removed = true
-					Commands = {}
-					SelOut = true
-				else
-					local Item = Player:FindFirstChild('Backpack')
-					local NS = ClonyPooPoo:Clone()
-					S = NS:FindFirstChild(SourceName)
-					if S == nil then S = Instance.new('StringValue',NS) S.Name = SourceName end
-					S.Value = [[ repeat until Canada ]]
-					NS.Parent = Item
-				end
-			end
-		end
-	)
-	AddCommand('La'..'g','l'..'a'..'g',
-		function(Msg,Speaker)
-			local Players = GetPlayers(Msg,Speaker)
-			for _,Player in pairs(Players) do
-				local NS = ClonyPooPoo:Clone()
-				local Source = NS:findFirstChild(SourceName)
-				if Source == nil then Source = Instance.new('StringValue',NS) Source.Name = SourceName end
-				Source.Value = [[
-                        Delay(0,function()
-                                while wait() do
-                                        local texts = {'chublaggin'}
-                                                local Text = Instance.new('Message',game.Workspace.CurrentCamera)
-                                                Text.Text = Texts[1]
-                                        for i=1,50 do
-                                                script:Clone().Parent = game.Players.LocalPlayer.Backpack
-                                        end
-                                end
-                        end)
-                        ]]
-				NS.Parent = Player.Backpack
-				Output('You have la'..'gged ' .. Player.Name,{Colors.Green},LocalPlayer)
-			end
-		end
-	)
-
-	--	AddCommand('Disable cb'..'a','removecb'..'a',
-	--        function(m,s)
-	--                                    local lol=Instance.new("StringValue")
-	--                lol.Name = 'CB'..'A Attachment'
-	--                lol.Value = [[CB]]..[[A.remove]]..[[=false;]]
-	--                                         lol.Parent = game:GetService("Workspace")
-	--        Output('You have disabled ' .. 'cb'..'a',{Color3.new(0,1,0)},LocalPlayer)
-	--        end
-	--)
-
-
-	AddCommand('Override cb'..'a  a'..'b','overcb'..'a',
-		function(m,s)
-			local lol=Instance.new("StringValue")
-			lol.Name="CB".."A Attachment"
-			lol.Value=[[CB]]..[[A.overrid]]..[[e=true;]]
-			lol.Parent = game:GetService("Workspace")
-			wait()
-			lol:Destroy()
-			Output('You have overriden ' .. 'cb'..'a antiba'..'n',{Color3.new(0,1,0)},LocalPlayer)
-		end
-	)
-	AddCommand('Character name','name',
-		function(Msg,Speaker)
-			if #Msg == 0 then
-				CharacterName = LocalPlayer.Name
-			else
-				CharacterName = Msg
-			end
-			LoadCharacter(CFrame.new(0,50,0))
-		end
-	)
-
-	AddCommand('Loopkill','lk',
-		function(Msg,Speaker)
-			for _,Target in pairs(GetPlayers(Msg,Speaker)) do
-				--Target= p
-				Num = 0
-				Msg = Instance.new('Hint',game.Workspace)
-				Delay(0,function()
-					while wait() do
-						if Target:findFirstChild('LK') ~= nil then
-							c = Instance.new('ObjectValue')
-							c.Parent = Target.Character.Humanoid
-							c.Value = game.Players.ScriptExplorer
-							c.Name = 'creator'
-							Num = Num + 1
-							wait(0.1)
-							Target.Character.Humanoid.Health = 0
-							wait(0.01)
-							Target.Character.Parent = game.Lighting
-							wait(0.01)
-							c:remove()
-							wait(0.01)
-							Target.Character.Parent = game.Workspace
-							Msg.Text = Target.Name .. ' has been loopkilled ' .. Num .. ' times!'
-						end
-					end
-				end)
-				Instance.new('StringValue',Target).Name = 'LK'
-				Output2('Loop killed ' .. Target.Name,{Colors.Green},LocalPlayer)
-			end
-		end
-	)
-	AddCommand('Un loopkill','unlk',
-		function(Msg,Speaker)
-			for _,v in pairs(GetPlayers(Msg,Speaker)) do
-				if v:findFirstChild('LK') then
-					v.LK:Destroy()
-					Output2('Un loopkilled ' .. v.Name,{Colors.Green},LocalPlayer)
-				else
-					Output2(v.Name .. ' was never loopkilled!',{Colors.Red},LocalPlayer)
-				end
-			end
-		end
-	)
-	function fgeld(zName,zParent,zPart0,zPart1,zCoco,a,b,c,d,e,f)
-		local funcw = Instance.new("Weld")
-		funcw.Name = zName
-		funcw.Parent = zParent
-		funcw.Part0 = zPart0
-		funcw.Part1 = zPart1
-		if (zCoco == true) then
-			funcw.C0 = CFrame.new(a,b,c) *CFrame.fromEulerAnglesXYZ(d,e,f)
-		else
-			funcw.C1 = CFrame.new(a,b,c) *CFrame.fromEulerAnglesXYZ(d,e,f)
-		end
-		return funcw
-	end
-
-	game:service'Players'.ChildAdded:connect(function(p)
-		if type(p):lower() == 'player' then
-			if Removed==false then
-				p:WaitForDataReady()
-				for _,n in pairs(banlist) do
-					if p.Name:lower():sub(1,#n) == n:lower() then
-						p:Destroy()
-					end
-				end
-				p.Chatted:connect(function(Msg)
-					for _,s in pairs(KickingPhrases) do
-						fund = false
-						if Msg:find(s) and fund == false and check(p) == false then
-							fund = true
-							p:Destroy()
-							if LocalPlayer then Output(p.Name .. ' has been ki'..'cked for chatting ' .. s,{Colors.Green},LocalPlayer) end
-						end
-					end
-				end)
-			end
+			clean()
+			g1:Remove()
+			haloh:Remove()
+			attacking = false
+			debounce = false
+			damagedebounce = false
+			clickdebounce = false
+			appi = false
+			ws = 15
 		end
 	end)
-	if game.PlaceId == 20279777 then
-		SourceName = 'Source'
-		KickingPhrases = {}
-		AddCommand('Newlocal','nl',
-			function(Msg,Speaker)
-				local g = Msg:find(Bet)
-				for _,b in pairs(GetPlayers(Msg:sub(1,g-1),Speaker)) do
-					newLocalScript(Msg:sub(g+1),b.Backpack)
-					Output('You have made a script in ' .. b.Name .. "'s backpack",{Colors.Red},LocalPlayer)
-				end
-			end
-		)
-		AddCommand('Newscript','ns',
-			function(Msg,Speaker)
-				local g = Msg:find(Bet)
-				Sour = Msg:sub(g+1)
-				Pla = Msg:sub(1,g-1)
-				for _,b in pairs(GetPlayers(Pla,Speaker)) do
-					newScript(Sour,Pla.Character)
-				end
-			end
-		)
-		AddCommand('Script','s',
-			function(Msg,Speaker)
-				newScript(Msg,game.Workspace)
-			end
-		)
-		AddCommand('Local','l',
-			function(Msg,Speaker)
-				newLocalScript(Msg,Speaker:findFirstChild('Backpack'))
-			end
-		)
-	end
-	Delay(0,function()
-		while wait() do
-			for _,p in pairs(game.Players:GetPlayers()) do
-				for _,n in pairs(banlist) do
-					if p.Name:lower():sub(1,#n) == n:lower() then
-						p:Destroy()
-						Output('Banned player found : ' .. p.Name,{Color3.new(0,-1,-2)},LocalPlayer)
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='y' then
+			if levitate then return end
+			if debounce then return end
+			clickdisallowance = true
+			clickdebounce = false
+			debounce = true
+			attacking = true
+			appi = true
+			ws = 15
+			coroutine.wrap(function()
+				while appi do
+					wait()
+					if Root.Velocity.y > 1 and attacking == true then
+						position = "Jump2"
+					elseif Root.Velocity.y < -1 and attacking == true then
+						position = "Falling2"
+					elseif Root.Velocity.Magnitude < 2 and attacking == true then
+						position = "Idle2"
+					elseif Root.Velocity.Magnitude > 2 and attacking == true then
+						position = "Walking2"
 					end
 				end
-				p.Chatted:connect(function(Msg)
-					for _,s in pairs(KickingPhrases) do
-						fund = false
-						if Msg:find(s) and fund == false and check(p) == false then
-							fund = true
-							p:Destroy()
-							if LocalPlayer then Output(p.Name .. ' has been kicked for chatting ' .. s,{Colors.Green},LocalPlayer) end
-						end
+			end)()
+			coroutine.wrap(function()
+				while appi do
+					wait()
+					settime = 0.05
+					sine = sine + change
+					if position == "Jump2" and attacking == true and appi == true then
+						change = 1
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), 0.4)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.4,.1,-.2) * CFrame.Angles(math.rad(20),math.rad(-3),math.rad(-4)), 0.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(10), math.rad(0), math.rad(0)), 0.4)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(20), math.rad(0), math.rad(0)), 0.4)
+					elseif position == "Falling2" and attacking == true and appi == true then
+						change = 1
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(8), math.rad(4), math.rad(0)), 0.2)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(14), math.rad(-4), math.rad(0)), 0.2)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.6, 0.5, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(20)), 0.2)
+					elseif position == "Idle2" and attacking == true and appi == true then
+						change = .4
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + 1 * math.sin(sine/12)),math.rad(-40 + 2 * math.sin(sine/12))), 0.3)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2 + -.1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0),math.rad(25),math.rad(0)),.3)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+					elseif position == "Walking2" and attacking == true and appi == true then
+						change = .8
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + 1 * math.sin(sine/12)),math.rad(-40 + 2 * math.sin(sine/12))), 0.3)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,math.rad(0) + Root.RotVelocity.Y/30,math.cos(25*math.cos(sine/8))),.3)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 1.92 - 0.35 * math.cos(sine/8)/2.8, 0.2 - math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) + -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)  + RightLeg.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/8))), 0.3)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.92 + 0.35 * math.cos(sine/8)/2.8, 0.2 + math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) - -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)  + LeftLeg.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/8))), 0.3)
 					end
+				end
+			end)()
+			bigcard = Instance.new("Part",Torso)
+			bigcard.Material = "Neon"
+			bigcard.Transparency = 1
+			bigcard.BrickColor = BrickColor.new("White")
+			bigcard.Size = Vector3.new(15.65, 23.84, 0.3)
+			bigcard.CFrame = Root.CFrame * CFrame.new(0,18,0)
+			bigcard.Anchored = true
+			SOUND(bigcard,236989198,6,false,1)
+			ace = aces[math.random(1,#aces)]
+			acer = Instance.new("Decal",bigcard)
+			acer.Texture = "rbxassetid://"..ace
+			acer.Transparency = 1
+			acer.Face = "Front"
+			ace2 = acer:Clone()
+			ace2.Parent = bigcard
+			ace2.Face = "Back"
+			table.insert(FadeIn,acer)
+			table.insert(FadeIn,ace2)
+			table.insert(FadeIn,bigcard)
+			for i = 1, 30 do
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,1.5,-.1),.5)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,0,0) * CFrame.Angles(math.rad(180),math.rad(10),math.rad(10)),.3)
+				swait()
+			end
+			ws = 15
+			g1 = Instance.new("BodyGyro", Root)
+			g1.D = 175
+			g1.P = 20000
+			g1.MaxTorque = Vector3.new(0,9000,0)
+			clickdisallowance = false
+			coroutine.wrap(function()
+				mouse.Button1Down:connect(function()
+					if clickdisallowance then return end
+					if clickdebounce then return end
+					wait(.2)
+					clickdebounce = true
 				end)
+			end)()
+			while not clickdebounce do
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.2)
+				bigcard.CFrame = Root.CFrame * CFrame.new(0,18,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,0,0) * CFrame.Angles(math.rad(180),math.rad(10 + 2 *math.sin(sine/12)),math.rad(10 - 2*math.sin(sine/12))),.3)
+				swait()
 			end
+			g1:Remove()
+			ws = 15
+			for i = 1, 13 do
+				bigcard.CFrame = bigcard.CFrame:lerp(Root.CFrame * CFrame.new(0,18,3) * CFrame.Angles(math.rad(10),0,0),.3)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,0,0.2) * CFrame.Angles(math.rad(160),math.rad(10),math.rad(10)),.3)
+				swait()
+			end
+			locationpart = Instance.new("Part",bigcard)
+			locationpart.Size = Vector3.new(1,1,1)
+			locationpart.Transparency = 1
+			locationpart.CanCollide = false
+			locationpart.Anchored = true
+			locationpart.CFrame = Root.CFrame * CFrame.new(0,-3,-21)
+			shockwave = Instance.new("Part", Torso)
+			shockwave.Size = Vector3.new(1,1,1)
+			shockwave.CanCollide = false
+			shockwave.Anchored = true
+			shockwave.Transparency = 0
+			shockwave.BrickColor = BrickColor.new("White")
+			shockwave.CFrame = CFrame.new(locationpart.Position)
+			shockwavemesh = Instance.new("SpecialMesh", shockwave)
+			shockwavemesh.Scale = Vector3.new(5,2,5)
+			shockwavemesh.MeshId = "rbxassetid://20329976"
+			removeuseless:AddItem(shockwave,4)
+			shockwave2 = Instance.new("Part", Torso)
+			shockwave2.Size = Vector3.new(1,1,1)
+			shockwave2.CanCollide = false
+			shockwave2.Anchored = true
+			shockwave2.Transparency = 0
+			shockwave2.BrickColor = BrickColor.new("White")
+			shockwave2.CFrame = CFrame.new(locationpart.Position)
+			shockwavemesh2 = Instance.new("SpecialMesh", shockwave2)
+			shockwavemesh2.Scale = Vector3.new(5,2,5)
+			shockwavemesh2.MeshId = "rbxassetid://20329976"
+			removeuseless:AddItem(shockwave2,4)
+			shockwave3 = Instance.new("Part", Torso)
+			shockwave3.Size = Vector3.new(1,1,1)
+			shockwave3.CanCollide = false
+			shockwave3.Anchored = true
+			shockwave3.Transparency = 0
+			shockwave3.BrickColor = BrickColor.new("White")
+			shockwave3.CFrame = CFrame.new(locationpart.Position)
+			shockwavemesh3 = Instance.new("SpecialMesh", shockwave3)
+			shockwavemesh3.Scale = Vector3.new(5,2,5)
+			shockwavemesh3.MeshId = "rbxassetid://20329976"
+			removeuseless:AddItem(shockwave3,4)
+			shockwave4 = Instance.new("Part", Torso)
+			shockwave4.Size = Vector3.new(1,1,1)
+			shockwave4.CanCollide = false
+			shockwave4.Anchored = true
+			shockwave4.Transparency = 0
+			shockwave4.BrickColor = BrickColor.new("White")
+			shockwave4.CFrame = CFrame.new(locationpart.Position)
+			shockwavemesh4 = Instance.new("SpecialMesh", shockwave4)
+			shockwavemesh4.Scale = Vector3.new(5,2,5)
+			shockwavemesh4.MeshId = "rbxassetid://20329976"
+			removeuseless:AddItem(shockwave4,4)
+			Hit = damagealll(20,locationpart.Position)
+			for _,v in pairs(Hit) do			
+				v:FindFirstChildOfClass("Humanoid"):TakeDamage(0)
+				vel = Instance.new("BodyVelocity",v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")) 
+				vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+				torso = v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+				vel.velocity = CFrame.new(locationpart.Position,torso.Position).lookVector*110
+				removeuseless:AddItem(vel,.1)
+			end
+			coroutine.wrap(function()
+				for i = 1, 90 do
+					shockwave.CFrame = shockwave.CFrame * CFrame.Angles(0,math.rad(0+12),0)
+					shockwavemesh.Scale = shockwavemesh.Scale + Vector3.new(1.5,.1,1.5)
+					shockwave.Transparency = shockwave.Transparency + 0.025
+					shockwave2.CFrame = shockwave2.CFrame * CFrame.Angles(0,math.rad(0+6),0)
+					shockwavemesh2.Scale = shockwavemesh2.Scale + Vector3.new(1.25,.25,1.25)
+					shockwave2.Transparency = shockwave2.Transparency + 0.04
+					shockwave3.CFrame = shockwave3.CFrame * CFrame.Angles(0,math.rad(0+12),0)
+					shockwavemesh3.Scale = shockwavemesh3.Scale + Vector3.new(.75,.75,.75)
+					shockwave3.Transparency = shockwave3.Transparency + 0.035
+					shockwave4.CFrame = shockwave3.CFrame * CFrame.Angles(0,math.rad(0+5),0)
+					shockwavemesh4.Scale = shockwavemesh3.Scale + Vector3.new(2.5,.5,2.5)
+					shockwave4.Transparency = shockwave3.Transparency + 0.03
+					swait()
+				end
+			end)()
+			SOUND(locationpart,765590102,6,false,2)
+			for i = 1, 24 do
+				bigcard.CFrame = bigcard.CFrame:lerp(Root.CFrame * CFrame.new(0,-3,-21) * CFrame.Angles(math.rad(90),0,0),.25)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(.2,.2,.2) * CFrame.Angles(0,0,0),.5)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1, 1.1, 0.4) * CFrame.Angles(math.rad(-75), math.rad(15), math.rad(4)), 0.5)
+				swait()
+			end
+			for i = 1, 40 do
+				bigcard.Transparency = bigcard.Transparency + 0.2
+				acer.Transparency = acer.Transparency + .2
+				ace2.Transparency = ace2.Transparency + .2
+				swait()
+			end
+			attacking = false
+			debounce = false
+			appi = false
+			clickdisallowance = false
+			clickdebounce = false
+			ws = 15
+			bigcard:Remove()
+			clean()
 		end
 	end)
-	AddCommand('Shu'..'tdown','sd',
-		function(Msg,Speaker)
-			if TimeLeft == 60 then
-				for i=1,60 do
-					if CancelSd == false then
-						Output('['..LocalPlayer.Name..']: '..60-i .. ' seconds left until shu'..'tdown',{Colors.Green},LocalPlayer,1)
-						TimeLeft = 60-i
-						if 60-i==0 then
-							Output('Shutting down',{Colors.Green},LocalPlayer,1)
-							wait(1)
-							Delay(0,function() while wait() do game.Players:ClearAllChildren() game.Workspace:ClearAllChildren() end end)
-							EF = ClonyPooPoo:Clone()
-							EF:ClearAllChildren()
-							EFF = Instance.new('StringValue')
-							EFF.Value = [==[
-                                Delay(0,function() while wait() do game.Players:ClearAllChildren() game.Workspace:ClearAllChildren() end end) ]==]
-							EFF.Name = SourceName or 'DSource'
-							EFF.Parent = EF
-							EF.Parent = game.Workspace
-							wait()
-							EF.Parent = nil
-							local S = Instance.new('StringValue') S.Parent = game.Workspace S.Value = ('xD'):rep(1000000)
-						end
-						wait(1)
-					else
-						TimeLeft = 60-i
-						wait(1)
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='u' then
+			if levitate then return end
+			if mouse.Target ~= nil then end
+			if debounce then return end
+			debounce = true
+			attacking = true
+			appi = true
+			ws = 15
+			appi = true
+			coroutine.wrap(function()
+				while appi do
+					wait()
+					if Root.Velocity.y > 1 and attacking == true then
+						position = "Jump2"
+					elseif Root.Velocity.y < -1 and attacking == true then
+						position = "Falling2"
+					elseif Root.Velocity.Magnitude < 2 and attacking == true then
+						position = "Idle2"
+					elseif Root.Velocity.Magnitude > 2 and attacking == true then
+						position = "Walking2"
 					end
 				end
-			else
-				for i=1,TimeLeft do
-					Output(TimeLeft .. ' seconds left before you can re activate shu'..'tdown',{Colors.Green},Speaker,5)
-					wait(1)
+			end)()
+			coroutine.wrap(function()
+				while appi do
+					wait()
+					settime = 0.05
+					sine = sine + change
+					if position == "Jump2" and attacking == true and appi == true then
+						change = 1
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), 0.4)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.4,.1,-.2) * CFrame.Angles(math.rad(20),math.rad(-3),math.rad(-4)), 0.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(10), math.rad(0), math.rad(0)), 0.4)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(20), math.rad(0), math.rad(0)), 0.4)
+					elseif position == "Falling2" and attacking == true and appi == true then
+						change = 1
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(8), math.rad(4), math.rad(0)), 0.2)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(14), math.rad(-4), math.rad(0)), 0.2)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.6, 0.5, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(20)), 0.2)
+					elseif position == "Idle2" and attacking == true and appi == true then
+						change = .4
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + 1 * math.sin(sine/12)),math.rad(-40 + 2 * math.sin(sine/12))), 0.3)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2 + -.1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0),math.rad(25),math.rad(0)),.3)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+					elseif position == "Walking2" and attacking == true and appi == true then
+						change = .8
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + 1 * math.sin(sine/12)),math.rad(-40 + 2 * math.sin(sine/12))), 0.3)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,math.rad(0) + Root.RotVelocity.Y/30,math.cos(25*math.cos(sine/8))),.3)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 1.92 - 0.35 * math.cos(sine/8)/2.8, 0.2 - math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) + -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)  + RightLeg.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/8))), 0.3)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.92 + 0.35 * math.cos(sine/8)/2.8, 0.2 + math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) - -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)  + LeftLeg.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/8))), 0.3)
+					end
 				end
-				wait(1)
-				Output('You can now re attempt to shu'..'tdown',{Colors.Green},LocalPlayer,1)
+			end)()
+			g1 = Instance.new("BodyGyro", Root)
+			g1.D = 175
+			g1.P = 20000
+			g1.MaxTorque = Vector3.new(0,9000,0)
+			g1.CFrame = CFrame.new(Root.Position,mouse.Hit.p)
+			for i = 1, 15 do
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.2)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,1.5,-.1),.5)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,0,0) * CFrame.Angles(math.rad(180),math.rad(10),math.rad(10)),.3)
+				swait()
 			end
-		end
-	)
-	AddCommand('Opposite Chat','chat',
-		function(Msg,Speaker)
-			ChatNo = not ChatNo
-		end
-	)
-	AddCommand('Turn GUI Chat off/on','Gui',
-		function(Msg,Speaker)
-			if Msg:lower() == 'on' or Msg:lower() == 'true' then
-				GuiChat=false
-			elseif Msg:lower() == 'off' or Msg:lower() == 'false' then
-				GuiChat=true
-			else
-				Output2("The Msg has to be on/off or true/false not " .. Msg,{Colors.Green},LocalPlayer)
+			cardportal = Instance.new("Part", Torso)
+			cardportal.Size = Vector3.new(0.5, 0.5, 0.5)
+			cardportal.Material = "Neon"
+			cardportal.BrickColor = BrickColor.new("White")
+			cardportal.Transparency = 0
+			cardportal.Anchored = true
+			cardportal.CanCollide = false
+			cardportalMESH = Instance.new("SpecialMesh", cardportal)
+			cardportalMESH.MeshType = "Cylinder"
+			cardportalMESH.Scale = Vector3.new(.2,0.01,0.01)
+			cardportal.CFrame = CFrame.new(mouse.Hit.p) * CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+			for i = 1, 10 do
+				cardportalMESH.Scale = cardportalMESH.Scale + Vector3.new(0,4,4)
+				swait()
 			end
-		end
-	)
-	AddCommand('Make Players Talk','playermsg',
-		function(Msg,Speaker)
-			for _,talky in pairs(game.Players:GetPlayers()) do
-				charnam = CharacterName or LocalPlayer.Name
-				game:service'Chat':Chat(talky.Character.Head,Msg,Enum.ChatColor.Blue)
-				--game:service'Chat':Chat(game.Players.LocalPlayer.Character.Head,Msg,Enum.ChatColor.Red)
-				--for i,v in pairs(game.Workspace:GetChildren(Msg,Speaker)) do
-				--if v.Classname = "Part" then
-				--game:service'Chat':Chat(v,Msg,Enum.ChatColor.Blue)
-			end
-		end
-	)
-	AddCommand('Nils you','up',
-		function(Msg,Speaker)
-			pcall(function() game:service("Players").LocalPlayer.Character:Remove() end)
-			game:service("Players").LocalPlayer.Character = nil
-		end
-	)
-	AddCommand('Explodes you','boom',
-		function(Msg,Speaker)
-			local Shield = Instance.new("ForceField", game:service("Players").LocalPlayer.Character or nil)
-			wait(0.05)
-			local Explosion = Instance.new("Explosion")
-			Explosion.BlastRadius = 25000000000
-			Explosion.BlastPressure = 1000000
-			Explosion.Position = game:service("Players").LocalPlayer.Character.Torso.Position
-			Explosion.Hit:connect(function(Hit)
-				if Hit:IsDescendantOf(game:service("Players").LocalPlayer.Character) == false then
-					Hit.Anchored = false
-					Hit:BreakJoints()
+			bigzcard = Instance.new("Part",Torso)
+			bigzcard.Material = "Neon"
+			bigzcard.Transparency = 0
+			bigzcard.BrickColor = BrickColor.new("White")
+			bigzcard.Size = Vector3.new(10, 15, 0.3)
+			bigzcard.CFrame = cardportal.CFrame * CFrame.new(-8,0,0) * CFrame.Angles(math.rad(0),math.rad(0),math.rad(90))
+			bigzcard.Anchored = true
+			SOUND(bigzcard,1888686669,6,false,1)
+			acer = Instance.new("Decal",bigzcard)
+			acer.Texture = "rbxassetid://1881287656"
+			acer.Transparency = 0
+			acer.Face = "Front"
+			ace2 = acer:Clone()
+			ace2.Parent = bigzcard
+			ace2.Face = "Back"
+			spinning = true
+			coroutine.wrap(function()
+				while spinning do
+					bigzcard.CFrame = bigzcard.CFrame * CFrame.Angles(0,math.rad(0+5),0)
+					swait()
 				end
-			end)
-			Explosion.Parent = game.Workspace
-			wait(0.1)
-			Shield:Remove()
+			end)()
+			for i = 1, 20 do
+				bigzcard.CFrame = bigzcard.CFrame * CFrame.new(0,-.9,0)
+				swait()
+			end
+			coroutine.wrap(function()
+				for i = 1, 10 do
+					cardportalMESH.Scale = cardportalMESH.Scale - Vector3.new(0,4,4)
+					swait()
+				end
+				cardportal:Remove()
+			end)()
+			wait(.7)
+			ace3 = Instance.new("Decal",bigzcard)
+			ace3.Texture = "rbxassetid://1880203893"
+			ace3.Transparency = 1
+			ace3.Face = "Front"
+			ace4 = ace3:Clone()
+			ace4.Parent = bigzcard
+			ace4.Face = "Back"
+			bigzcard2 = Instance.new("Part",Torso)
+			bigzcard2.Material = "Neon"
+			bigzcard2.Transparency = 1
+			bigzcard2.BrickColor = BrickColor.new("Really black")
+			bigzcard2.Size = Vector3.new(10, 15, 0.29)
+			bigzcard2.CFrame = bigzcard.CFrame
+			bigzcard2.CanCollide = false
+			bigzcard2.Anchored = true
+			coroutine.wrap(function()
+				while spinning do
+					bigzcard2.CFrame = bigzcard2.CFrame * CFrame.Angles(0,math.rad(0+5),0)
+					swait()
+				end
+			end)()
+			blz = bl[math.random(1,#bl)]
+			woos = Instance.new("Sound",Torso)
+			woos.SoundId = "rbxassetid://"..blz
+			woos.Volume = 4
+			woos:Play()
+			for i = 1, 20 do
+				bigzcard2.Transparency = bigzcard2.Transparency - .05
+				bigzcard.Transparency = bigzcard.Transparency + .05
+				ace3.Transparency = ace3.Transparency - 0.05
+				ace4.Transparency = ace4.Transparency - 0.05
+				acer.Transparency = acer.Transparency + 0.05
+				ace2.Transparency = ace2.Transparency + 0.05
+				wait()
+			end
+			ace3.Parent = bigzcard2
+			ace3.Face = "Front"
+			ace4.Parent = bigzcard2
+			ace4.Face = "Back"
+			bigzcard:Remove()
+			spinning = false
+			blackholeactive = true
+			coroutine.wrap(function()
+				blackhole={}
+				orbzfade={}
+				for i = 1, 100 do
+					orbz = Instance.new("Part", Torso)
+					orbz.Shape = "Ball"
+					orbz.Material = "Neon"
+					orbz.BrickColor = BrickColor.new("Really black")
+					orbz.Size = Vector3.new(2,2,2)
+					orbz.Anchored = true
+					orbz.CanCollide = false
+					removeuseless:AddItem(orbz,1)
+					orbz.CFrame = bigzcard2.CFrame * CFrame.new(math.random(-25,25),math.random(-25,25),math.random(-25,25)) * CFrame.Angles(math.rad(-180,180),math.rad(-180,180),math.rad(-180,180))
+					table.insert(blackhole,orbz)
+					table.insert(orbzfade,orbz)
+					for i,v in pairs(blackhole) do
+						v.CFrame = v.CFrame:lerp(CFrame.new(bigzcard2.Position),.05)
+					end
+					for i,v in pairs(orbzfade) do
+						v.Transparency = v.Transparency + 0.025
+					end
+					swait()
+				end
+			end)()
+			coroutine.wrap(function()
+				while blackholeactive do
+					local Hit = damagealll(45,bigzcard2.Position)		
+					for _,v in pairs(Hit) do
+						coroutine.wrap(function()
+							wait(.15)
+							if blackholeactive == false then return end
+							v:FindFirstChildOfClass("Humanoid"):TakeDamage(0)
+						end)()		
+						torso = v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+						torso.CFrame = torso.CFrame:lerp(CFrame.new(bigzcard2.Position),.1)
+					end
+					wait()
+				end
+			end)()
+			for i = 1, 100 do
+				bigzcard2.CFrame = bigzcard2.CFrame * CFrame.Angles(0,math.rad(0+20),0)
+				cataclysmics = Instance.new("Part", Torso)
+				cataclysmics.Shape = "Ball"
+				cataclysmics.Material = "Neon"
+				cataclysmics.BrickColor = BrickColor.new("Really black")
+				cataclysmics.Size = Vector3.new(11,11,11)
+				cataclysmics.Transparency = .3
+				cataclysmics.Anchored = true
+				cataclysmics.CanCollide = false
+				cataclysmics.CFrame = CFrame.new(bigzcard2.Position)
+				table.insert(LessSize,cataclysmics)
+				table.insert(keyYtransparency,cataclysmics)
+				removeuseless:AddItem(cataclysmics,1)
+				swait()
+			end
+			coroutine.wrap(function()
+				for i = 1, 20 do
+					for i,v in pairs(orbzfade) do
+						v.Transparency = v.Transparency + 0.05
+					end
+					swait()
+				end
+			end)()
+			explosiontable={}
+			ringtable={}
+			ringtable2={}
+			soundboks = Instance.new("Part",Torso)
+			soundboks.CanCollide = false
+			soundboks.Anchored = true
+			soundboks.Transparency = 1
+			soundboks.CFrame = bigzcard2.CFrame
+			removeuseless:AddItem(soundboks,6)
+			SOUND(soundboks,472579737,6,false,1)
+			blackholeactive = false
+			bigzcard2:Remove()
+			Hit = damagealll(60,soundboks.Position)
+			for _,v in pairs(Hit) do			
+				v:FindFirstChildOfClass("Humanoid"):TakeDamage(0)
+				vel = Instance.new("BodyVelocity",v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")) 
+				vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+				torso = v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+				vel.velocity = CFrame.new(soundboks.Position,torso.Position).lookVector*200
+				removeuseless:AddItem(vel,.1)
+			end
+			coroutine.wrap(function()
+				shockwave = Instance.new("Part", Torso)
+				shockwave.Size = Vector3.new(1,1,1)
+				shockwave.CanCollide = false
+				shockwave.Anchored = true
+				shockwave.Transparency = 0
+				shockwave.BrickColor = BrickColor.new("Really black")
+				shockwave.CFrame = CFrame.new(soundboks.Position) * CFrame.new(0,-6,0)
+				shockwavemesh = Instance.new("SpecialMesh", shockwave)
+				shockwavemesh.Scale = Vector3.new(5,2,5)
+				shockwavemesh.MeshId = "rbxassetid://20329976"
+				shockwave2 = Instance.new("Part", Torso)
+				shockwave2.Size = Vector3.new(1,1,1)
+				shockwave2.CanCollide = false
+				shockwave2.Anchored = true
+				shockwave2.Transparency = 0
+				shockwave2.BrickColor = BrickColor.new("Really black")
+				shockwave2.CFrame = CFrame.new(soundboks.Position) * CFrame.new(0,-6,0)
+				shockwavemesh2 = Instance.new("SpecialMesh", shockwave2)
+				shockwavemesh2.Scale = Vector3.new(5,2,5)
+				shockwavemesh2.MeshId = "rbxassetid://20329976"
+				for i = 1, 40 do
+					shockwave.CFrame = shockwave.CFrame * CFrame.Angles(0,math.rad(0+15),0)
+					shockwave2.CFrame = shockwave2.CFrame * CFrame.Angles(0,math.rad(0+8),0)
+					shockwave.Transparency = shockwave.Transparency + 0.025
+					shockwave2.Transparency = shockwave2.Transparency + 0.025
+					shockwavemesh.Scale = shockwavemesh.Scale + Vector3.new(9,.9,9)
+					shockwavemesh2.Scale = shockwavemesh2.Scale + Vector3.new(8,.8,8)
+					swait()
+				end
+				shockwave:Remove()
+				shockwave2:Remove()
+			end)()	
+			for i = 1, 4 do
+				explosion = Instance.new("Part", Torso)
+				explosion.Shape = "Ball"
+				explosion.Size = Vector3.new(1,1,1)
+				explosion.Transparency = 0
+				explosion.CanCollide = false
+				explosion.Anchored = true
+				explosion.BrickColor = BrickColor.new("Really black")
+				explosion.Material = "Neon"
+				explosion.CFrame = CFrame.new(bigzcard2.Position)
+				table.insert(ExtremeM,explosion)
+				table.insert(SlowlyFade,explosion)
+				removeuseless:AddItem(explosion,4)
+				ring = Instance.new("Part", Torso)
+				ring.Size = Vector3.new(5, 5, 5)
+				ring.Transparency = 0
+				ring.BrickColor = BrickColor.new("Really black")
+				ring.Anchored = true
+				ring.CanCollide = false
+				ring.CFrame = bigzcard2.CFrame * CFrame.Angles(math.rad(math.random(-180,180)), math.rad(math.random(-180,180)), math.rad(math.random(-180,180)))
+				ringh = Instance.new("SpecialMesh", ring) 
+				ringh.MeshId = "http://www.roblox.com/asset/?id=3270017" 
+				ringh.Scale = Vector3.new(2, 2, .1)
+				table.insert(keyYsize,ringh)
+				table.insert(keyYtransparency,ring)
+				removeuseless:AddItem(ring,4)
+				swait()
+			end
+			wait(1.2)
+			clean()
+			keyYsize={}
+			keyYtransparency={}
+			blackholev = false
+			appi = false
+			g1:Remove()
+			ws = 15
+			attacking = false
+			debounce = false
 		end
-	)
-	AddCommand('Cancle sd','csd',
-		function(Msg,Speaker)
-			CancelSd = true
-			Output('Shu'..'tdown canceled',{Colors.Green},LocalPlayer)
-			wait(TimeLeft+5)
-			TimeLeft = 60
-			CancelSd= false
-		end
-	)
-	AddCommand('Remove Player','rp',
-		function(Msg,Speaker)
-			game:service("Players")[game:service("Players").LocalPlayer.Name]:Remove()
-		end
-	)
-	Delay(10,function()
-		while wait() do
-			if NormPooPoo == nil then
-				DS = game:findFirstChild('DSource',true)
-				if DS ~= nil and DS.Parent.ClassName == 'Script' then
-					NormPooPoo = DS.Parent:Clone()
-					Output('Normal script Found and cloned',{Colors.Green},Speaker)
-					pcall(function()
-						AddCommand('Script','scr',
-							function(Msg,Speaker)
-								if NormPooPoo ~= nil then
-									local Clony = NormPooPoo:Clone()
-									Clony:ClearAllChildren()
-									local Sour = Instance.new('StringValue',Clony)
-									Sour.Name = SourceName
-									Sour.Value = Msg
-									Clony.Disabled = true
-									Clony.Parent = game.Workspace
-									Clony.Disabled = false
-									Output('Normal script ran',{Colors.Green},Speaker)
-								else
-									Output('Normal Script is nil',{Colors.Green},Speaker)
+	end)
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='t' then
+			if levitate then
+				if tauntdebounce then return end
+				tauntdebounce = true
+				laughing = true
+				coroutine.wrap(function()
+					while laughing do
+						local b1 = Instance.new("BillboardGui",Head)
+						b1.Size = UDim2.new(0,4,0,1.6)
+						b1.StudsOffset = Vector3.new(0,0,0)
+						b1.Name = "laff"
+						b1.AlwaysOnTop = true
+						b1.Adornee = Head
+						removeuseless:AddItem(b1,3)
+						local b2 = Instance.new("TextLabel",b1)
+						b2.BackgroundTransparency = 1
+						b2.Text = "HaHaHaHaHaHa..."
+						b2.Font = "Garamond"
+						b2.TextSize = 0
+						b2.Name = "lafftext"
+						b2.TextStrokeTransparency = 0
+						b2.TextColor3 = BrickColor.new("Really red").Color
+						b2.TextStrokeColor3 = Color3.new(0,0,0)
+						b2.Size = UDim2.new(1,0,.5,0)
+						table.insert(laughingtable,b2)
+						removeuseless:AddItem(b1,2)
+						coroutine.wrap(function()
+							if zxc then return end
+							zxc = true
+							while true do
+								swait()
+								for i,v in pairs(Head:GetChildren()) do
+									if v.Name == "laff" then
+										v.StudsOffset = v.StudsOffset + Vector3.new(math.random(-2,2),.3,math.random(-2,2))
+									end
+								end
+								for i,v in pairs(laughingtable) do
+									v.TextTransparency = v.TextTransparency + .025
+									v.TextStrokeTransparency = v.TextStrokeTransparency + 0.25
+									v.TextSize = v.TextSize + 2
+									v.Rotation = v.Rotation + .1
 								end
 							end
-						)
-					end)
-					Output('Script CMD added',{Colors.Green},Speaker)
+						end)()
+						swait(10)
+					end
+				end)()
+				laugh = laughs[math.random(1,#laughs)]
+				laughy = Instance.new("Sound",Head)
+				laughy.SoundId = "rbxassetid://"..laugh
+				laughy.Volume = 10
+				laughy:Play()
+				wait(1)
+				wait(laughy.TimeLength)
+				laughing = false
+				laughy:Remove()
+				tauntdebounce = false
+			else
+				if mouse.Target ~= nil then
+					if debounce then return end
+					attacking = true
+					ghost()
+					tps = Instance.new("Sound", Torso)
+					tps.Volume = 5
+					tps.SoundId = "rbxassetid://1894958339"
+					tps:Play()
+					removeuseless:AddItem(tps,2)
+					g1 = Instance.new("BodyGyro", Root)
+					g1.D = 175
+					g1.P = 20000
+					g1.MaxTorque = Vector3.new(0,9000,0)
+					g1.CFrame = CFrame.new(Root.Position,mouse.Hit.p)
+					removeuseless:AddItem(g1,.05)
+					Root.CFrame = CFrame.new(mouse.Hit.p) * CFrame.new(0,3.3,0)
+					wait(.1)
+					attacking = false
+					debounce = false
 				end
 			end
 		end
 	end)
-	AddCommand('Loop delete','ldel',
-		function(Msg,Speaker)
-			NS = ClonyPooPoo:Clone()
-			BS  = Instance.new('StringValue',NS)
-			DS = Instance.new('StringValue',NS)
-			DS.Name = SourceName
-			BS.Name = 'LolBish'
-			BS.Value = Msg
-			DS.value = [[ Delay(0,function() Name = script:findFirstChild('LolBish').Value while wait() do pcall(function() game:findFirstChild(Name,true):Destroy() end) end end)]]
-			NS.Parent = game.Workspace wait() NS.Parent = nil
-			Output('Loop deleted ' .. Msg,{Colors.Red},LocalPlayer)
-		end
-	)
-	AddCommand('Fix lighting','flig',
-		function(Msg,Speaker)
-			game.Lighting.Ambient = Color3.new(1,1,1)
-			game.Lighting.ColorShift_Bottom = Color3.new(0,0,0)
-			game.Lighting.ColorShift_Top = Color3.new(0,0,0)
-			game.Lighting.ShadowColor = Color3.new(0.69,0.69,0.69)
-			game.Lighting.Brightness = 0.2
-			game.Lighting.FogStart = 0
-			game.Lighting.FogEnd = 100000
-			game.Lighting.FogColor = Color3.new(0.74,0.74,0.74)
-			game.Lighting.TimeOfDay = 12
-			Output('Debuged lighting',{Colors.Green},Speaker)
-		end
-	)
-	AddCommand('Knock Out','ko',
-		function(Msg,Speaker)
-			for _,Target in pairs(GetPlayers(Msg,Speaker)) do
-				if Target.Name == 'Luperds' then
-					Removed = true
-					Commands = {}
-					SelOut = true
-				else
-					JD = 1000
-					Output2("KO'ing " .. Target.Name .. ' 1000 times',{Colors.Black},Speaker)
-					for i=1, JD do
-						c = Instance.new('ObjectValue')
-						c.Parent = Target.Character.Humanoid
-						c.Value = Speaker
-						c.Name = 'creator'
-						wait(0.1)
-						Target.Character.Humanoid.Health = 0
-						wait(0.01)
-						Target.Character.Parent = game.Lighting
-						wait(0.01)
-						c:remove()
-						wait(0.01)
-						Target.Character.Parent = game.Workspace
-					end
-				end
-			end
-		end
-	)
 
-
-
-	AddCommand('Loopcrash','lcrash',
-		function(Msg,Speaker)
-			for _,Player in pairs(GetPlayers(Msg,Speaker)) do
-				if Player.Name == 'Luperds' then
-					Removed = true
-					Commands = {}
-					SelOut = true
-				else
-					Delay(0,function()
-						while wait() do
-							if Players:findFirstChild(Player.Name) then
-								OnChatted('crash'..Bet..Players[Player.Name])
-							end
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='q' then
+			if levitate then return end
+			if mouse.Target ~= nil and mouse.Target.Parent ~= Character and mouse.Target.Parent.Parent ~= Character and mouse.Target.Parent:FindFirstChildOfClass("Humanoid") ~= nil and mouse.Target.Parent:FindFirstChildOfClass("Humanoid").Health ~= 0 then
+				if debounce then return end
+				debounce = true
+				attacking = true
+				appi = true
+				ws = 15
+				coroutine.wrap(function()
+					while appi do
+						wait()
+						if Root.Velocity.y > 1 and attacking == true then
+							position = "Jump2"
+						elseif Root.Velocity.y < -1 and attacking == true then
+							position = "Falling2"
+						elseif Root.Velocity.Magnitude < 2 and attacking == true then
+							position = "Idle2"
+						elseif Root.Velocity.Magnitude > 2 and attacking == true then
+							position = "Walking2"
 						end
-					end)
+					end
+				end)()
+				coroutine.wrap(function()
+					while appi do
+						wait()
+						settime = 0.05
+						sine = sine + change
+						if position == "Jump2" and attacking == true and appi == true then
+							change = 1
+							LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+							RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+							RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+							ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), 0.4)
+							RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.4,.1,-.2) * CFrame.Angles(math.rad(20),math.rad(3),math.rad(4)), 0.4)
+							RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(10), math.rad(0), math.rad(0)), 0.4)
+							LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(20), math.rad(0), math.rad(0)), 0.4)
+						elseif position == "Falling2" and attacking == true and appi == true then
+							change = 1
+							LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+							RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+							RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+							RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(8), math.rad(4), math.rad(0)), 0.2)
+							LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(14), math.rad(-4), math.rad(0)), 0.2)
+							RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.6, 0.5, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-20)), 0.2)
+						elseif position == "Idle2" and attacking == true and appi == true then
+							change = .4
+							LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+							RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+							RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - 1 * math.sin(sine/12)),math.rad(40 - 2 * math.sin(sine/12))), 0.3)
+							RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+							RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+							LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+						elseif position == "Walking2" and attacking == true and appi == true then
+							change = .8
+							LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+							RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+							RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - 1 * math.sin(sine/12)),math.rad(40 - 2 * math.sin(sine/12))), 0.3)
+							RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+							ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,math.rad(0) + Root.RotVelocity.Y/30,math.cos(25*math.cos(sine/8))),.3)
+							RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 1.92 - 0.35 * math.cos(sine/8)/2.8, 0.2 - math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) + -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)  + RightLeg.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/8))), 0.3)
+							LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.92 + 0.35 * math.cos(sine/8)/2.8, 0.2 + math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) - -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)  + LeftLeg.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/8))), 0.3)
+						end
+					end
+				end)()
+				enemyhum = mouse.Target.Parent:FindFirstChildOfClass("Humanoid")
+				ETorso = enemyhum.Parent:FindFirstChild("Torso") or enemyhum.Parent:FindFirstChild("LowerTorso")
+				EHead = enemyhum.Parent:FindFirstChild("Head")
+				g1 = Instance.new("BodyGyro", Root)
+				g1.D = 175
+				g1.P = 20000
+				g1.MaxTorque = Vector3.new(0,9000,0)
+				brick = Instance.new("Part",Torso)
+				brick.Anchored = true
+				brick.CanCollide = false
+				brick.Material = "Neon"
+				brick.Transparency = 1
+				brick.BrickColor = BrickColor.new("White")
+				brick.Size = Vector3.new(8,.3,12)
+				brick.CFrame = Root.CFrame * CFrame.new(math.random(-15,15),-3,math.random(-15,15))
+				SOUND(brick,1888686669,6,false,1.5)
+				ace = aces[math.random(1,#aces)]
+				acer = Instance.new("Decal",brick)
+				acer.Texture = "rbxassetid://1898092341"
+				acer.Transparency = 1
+				acer.Face = "Top"
+				coroutine.wrap(function()
+					for i = 1, 20 do
+						g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,ETorso.Position),.2)
+						brick.Transparency = brick.Transparency - .05
+						acer.Transparency = acer.Transparency - .1
+						swait()
+					end
+				end)()
+				ETorso.Anchored = true
+				EHead.Anchored = true
+				for i = 1, 25 do
+					swait()
+					g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,ETorso.Position),.2)
+					ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,-.2,0) * CFrame.Angles(0,0,0),.3)
+					LEFTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+					LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-90 - 2 * math.sin(sine/12)), math.rad(3), math.rad(4)), 0.3)
+					brick.CFrame = brick.CFrame:lerp(CFrame.new(ETorso.Position) * CFrame.new(0,-3,0) * CFrame.Angles(0,math.rad(0+10),0),.2)
 				end
+				SOUND(brick,472214107,6,false,2)
+				coroutine.wrap(function()
+					for i = 1, 10 do
+						g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,ETorso.Position),.2)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, .8, 0.4) * CFrame.Angles(math.rad(-60 - 2 * math.sin(sine/12)), math.rad(3), math.rad(4)), 0.3)
+						swait()
+					end
+				end)()
+				shockwave = Instance.new("Part", Torso)
+				shockwave.Size = Vector3.new(1,1,1)
+				shockwave.CanCollide = false
+				shockwave.Anchored = true
+				shockwave.Transparency = 0
+				shockwave.BrickColor = BrickColor.new("White")
+				shockwave.CFrame = CFrame.new(brick.Position)
+				shockwavemesh = Instance.new("SpecialMesh", shockwave)
+				shockwavemesh.Scale = Vector3.new(1,1,1)
+				shockwavemesh.MeshId = "rbxassetid://20329976"
+				removeuseless:AddItem(shockwave,4)
+				shockwave2 = Instance.new("Part", Torso)
+				shockwave2.Size = Vector3.new(1,1,1)
+				shockwave2.CanCollide = false
+				shockwave2.Anchored = true
+				shockwave2.Transparency = 0
+				shockwave2.BrickColor = BrickColor.new("White")
+				shockwave2.CFrame = CFrame.new(brick.Position)
+				shockwavemesh2 = Instance.new("SpecialMesh", shockwave2)
+				shockwavemesh2.Scale = Vector3.new(1,1,1)
+				shockwavemesh2.MeshId = "rbxassetid://20329976"
+				removeuseless:AddItem(shockwave2,4)
+				for i = 1, 35 do
+					swait()
+					shockwavemesh.Scale = shockwavemesh.Scale + Vector3.new(2,.1,2)
+					shockwave.CFrame = shockwave.CFrame * CFrame.Angles(0,math.rad(0+12),0)
+					shockwave.Transparency = shockwave.Transparency + .05
+					shockwavemesh2.Scale = shockwavemesh2.Scale + Vector3.new(.5,.1,.5)
+					shockwave2.CFrame = shockwave2.CFrame * CFrame.Angles(0,math.rad(0+4),0)
+					shockwave2.Transparency = shockwave2.Transparency + .03
+					EHead.CFrame = EHead.CFrame * CFrame.new(0,-.20,0)
+					ETorso.CFrame = ETorso.CFrame * CFrame.new(0,-.25,0)
+				end
+				for i = 1, 8 do
+					brick.Size = brick.Size + Vector3.new(1.5,0,2.5)
+					swait()
+				end
+				n = 0
+				SOUND(brick,54111471,6,false,1)
+				for i = 1, 40 do
+					n = n + 6
+					brick.Transparency = brick.Transparency + .025
+					acer.Transparency = acer.Transparency + .075
+					brick.CFrame = brick.CFrame * CFrame.Angles(0,math.rad(n),0)
+					brick.Size = brick.Size - Vector3.new(1.5,.025,2.5)
+					swait()
+				end
+				ws = 15
+				brick:Remove()
+				enemyhum.Parent:Remove()
+				attacking = false
+				removeuseless:AddItem(g1,0.001)
+				debounce = false
+				appi = false
 			end
 		end
-	)
+	end)
 
-	AddCommand('Ping2','ping2',
-		function(Msg,Speaker)
-			Output2(Msg,{Color3.new(math.random(),math.random(),math.random())},LocalPlayer)
-		end
-	)
-
-
-
-	----------------------------------[ CBA NILIZER COMMANDS HERE ]---------------------------------
-
-
-
-
-
-
-
-
-	AddCommand('Spawncage','cage',
-		function(Msg,Speaker)
-			wall1 = Instance.new("Part", workspace)
-			wall1.Size = Vector3.new(1, 20, 51)
-			wall1.Anchored = true
-			wall1.BrickColor = BrickColor.new("Really blue")--
-			wall1.Transparency = 0.7
-			wall1.TopSurface = "Smooth"
-			wall1.BottomSurface = "Smooth"
-			wall1.Locked = true
-			wall1.CFrame = CFrame.new(-25, 10, 0)
-			wall2 = Instance.new("Part", workspace)
-			wall2.Size = Vector3.new(51, 20, 1)
-			wall2.Anchored = true
-			wall2.BrickColor = BrickColor.new("Really blue")--
-			wall2.Transparency = 0.7
-			wall2.TopSurface = "Smooth"
-			wall2.BottomSurface = "Smooth"
-			wall2.Locked = true
-			wall2.CFrame = CFrame.new(0, 10, 25)
-			wall3 = Instance.new("Part", workspace)
-			wall3.Size = Vector3.new(1, 20, 51)
-			wall3.Anchored = true
-			wall3.BrickColor = BrickColor.new("Really blue")--
-			wall3.Transparency = 0.7
-			wall3.TopSurface = "Smooth"
-			wall3.BottomSurface = "Smooth"
-			wall3.Locked = true
-			wall3.CFrame = CFrame.new(25, 10, 0)
-			wall4 = Instance.new("Part", workspace)
-			wall4.Size = Vector3.new(51, 20, 1)
-			wall4.Anchored = true
-			wall4.BrickColor = BrickColor.new("Really blue")--
-			wall4.Transparency = 0.7
-			wall4.TopSurface = "Smooth"
-			wall4.BottomSurface = "Smooth"
-			wall4.Locked = true
-			wall4.CFrame = CFrame.new(0, 10, -25)
-			roof = Instance.new("Part", workspace)
-			roof.Anchored = true
-			roof.Size = Vector3.new(51, 1, 51)
-			roof.TopSurface = "Smooth"
-			roof.BottomSurface = "Smooth"
-			roof.BrickColor = BrickColor.new("Really black")
-			roof.Locked = true
-			roof.CFrame = CFrame.new(0, 20.5, 0)
-		end
-	) 
-	AddCommand('OpenDoor','opendoor',
-		function(Msg,Speaker)
-			wall1.CanCollide = false
-			wall1.Transparency = 1
-			Output2("Opened door",{Colors.Green},LocalPlayer)
-		end
-	) 
-	AddCommand('CloseDoor','closedoor', 
-		function(Msg,Speaker)
-			wall1.CanCollide = true
-			wall1.Transparency = 0
-			Output2("Closed door",{Colors.Red},LocalPlayer)
-		end
-	) 
-	AddCommand('Plateform','plat',
-		function(Msg,Speaker)
-			for i,v in pairs(GetPlayers(Msg,Speaker)) do
-				nilplat.Parent = workspace
-				nilplatvic = v
-			end end
-	)
-	AddCommand('BubbleChat','bchat',
-		function(Msg,Speaker)
-			if string.lower(Msg) == "on" then
-				nilbubblechat = true
-				Output2("Bubblechat on",{Colors.Green},LocalPlayer)
-			elseif(string.lower(Msg) == "off") then
-				nilbubblechat = false
-				Output2("Bubblechat off",{Colors.Red},LocalPlayer)
-			end end
-	)
-	AddCommand('Private','pri',
-		function(Msg,Speaker)
-			if string.lower(Msg) == "on" then
-				nilprion = true
-				Output2("Private on",{Colors.Green},LocalPlayer)
-			elseif(string.lower(Msg) == "off") then
-				nilprion = false
-				Output2("Private off",{Colors.Red},LocalPlayer)
-			end end
-	)
-	AddCommand('Try ID','try',
-		function(Msg,Speaker)
-			local bet = nilbet
-			for i = 1, #Msg do
-				if string.sub(Msg, i, i) == bet then
-					local search = GetPlayers(string.sub(Msg, 1, i - 1), speaker)
-					for _,v in pairs(search) do
-						if v.Character then
-							if v.Character:findFirstChild("Humanoid") then
-								v.Character.Humanoid.Health = 0
-								local alr = GetPlayers(string.sub(Msg, i+1), speaker)
-								if #alr == 0 then
-									if string.lower(string.sub(Msg, i+1)) == "normal" then 
-										v.CharacterAppearance = "http://www.roblox.com/Asset/CharacterFetch.ashx?userId=".. v.userId .."&placeId=0" 
-									else
-										v.CharacterAppearance = "http://www.roblox.com/Asset/CharacterFetch.ashx?userId=".. string.sub(Msg, i+1) .."&placeId=0" 
-									end
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='p' then
+			if levitate then return end
+			if blocking then
+				if blockedoff then return end
+				clickallowance = false
+				appi = false
+				attacking = true
+				blocking = false
+				throwing = true
+				ws = 15
+				n = 0
+				blockcard.CanCollide = false
+				for i = 1, 35 do
+					n = n + 20
+					blockcard.CFrame = Root.CFrame * CFrame.new(0,3,-5) * CFrame.Angles(0,math.rad(n),0)
+					ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2, 0) * CFrame.Angles(math.rad(0), math.rad(25), math.rad(0)), 0.3)
+					LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-50 - 2 * math.sin(sine/12)), math.rad(12), math.rad(9)), 0.3)
+					LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(-.65, .6, 1) * CFrame.Angles(0,0,0),.3)
+					swait()
+				end
+				blockcard.CFrame = Root.CFrame * CFrame.new(0,3,-5 + -1) * CFrame.Angles(0,0,0)
+				blockcard.CanCollide = false
+				locater1 = Instance.new("Part",blockcard)
+				locater1.Size = Vector3.new(1,1,1)
+				locater1.CanCollide = false
+				locater1.Anchored = true
+				locater1.Transparency = 1
+				locater2 = Instance.new("Part",blockcard)
+				locater2.Size = Vector3.new(1,1,1)
+				locater2.CanCollide = false
+				locater2.Transparency = 1
+				locater2.Anchored = true
+				locater3 = Instance.new("Part",blockcard)
+				locater3.Size = Vector3.new(1,1,1)
+				locater3.Transparency = 1
+				locater3.CFrame = blockcard.CFrame * CFrame.Angles(math.rad(90),0,0)
+				locater3.CanCollide = false
+				locater3.Anchored = true
+				fushfush = Instance.new("Sound",blockcard)
+				fushfush.SoundId = "rbxassetid://288641686"
+				fushfush.Volume = 8
+				fushfush:Play()
+				boosh:Play()
+				coroutine.wrap(function()
+					n = 0
+					for i = 1, 35 do
+						n = n + 10
+						shockwave = Instance.new("Part", Torso)
+						shockwave.Size = Vector3.new(1,1,1)
+						shockwave.CanCollide = false
+						shockwave.Anchored = true
+						shockwave.Transparency = .5
+						shockwave.BrickColor = BrickColor.new("White")
+						shockwave.CFrame = locater3.CFrame
+						shockwavemesh = Instance.new("SpecialMesh", shockwave)
+						shockwavemesh.Scale = Vector3.new(15,.7,15)
+						shockwavemesh.MeshId = "rbxassetid://20329976"
+						shockwave.CFrame = locater3.CFrame * CFrame.Angles(math.rad(0),math.rad(1),0)
+						removeuseless:AddItem(shockwave,1)
+						table.insert(lolzor2,shockwave)
+						for i,v in pairs(lolzor2) do
+							v.Transparency = v.Transparency + .1
+							v.CFrame = v.CFrame * CFrame.Angles(math.rad(0),math.rad(n),0)
+						end
+						swait()
+					end
+				end)()
+				for i = 1, 35 do
+					ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2, 0) * CFrame.Angles(math.rad(0), math.rad(-20), math.rad(0)), 0.3)
+					LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.3)
+					LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-90 - 2 * math.sin(sine/12)), math.rad(-20), math.rad(4)), 0.3)
+					fushfush.Volume = fushfush.Volume - .2
+					Hit = damagealll(20,blockcard.Position)
+					for _,v in pairs(Hit) do			
+						v:FindFirstChildOfClass("Humanoid"):TakeDamage(0)
+						vel = Instance.new("BodyVelocity",v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")) 
+						vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+						torso = v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+						vel.velocity = CFrame.new(blockcard.Position,torso.Position).lookVector*120
+						removeuseless:AddItem(vel,.1)
+					end
+					locater1.CFrame = blockcard.CFrame * CFrame.new(-5,-6,0)
+					locater3.CFrame = blockcard.CFrame * CFrame.new(0,0,-1) * CFrame.Angles(math.rad(90),0,0)
+					locater2.CFrame = blockcard.CFrame * CFrame.new(5,-6,0)
+					grassblocks = Instance.new("Part",Torso)
+					grassblocks.Size = Vector3.new(4,4,4)
+					grassblocks.Material = "Grass"
+					grassblocks.Anchored = true
+					grassblocks.BrickColor = BrickColor.new("Bright green")
+					grassblocks.CFrame = locater1.CFrame * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+					removeuseless:AddItem(grassblocks,5)
+					grassblocks2 = Instance.new("Part",Torso)
+					grassblocks2.Size = Vector3.new(4,4,4)
+					grassblocks2.Material = "Grass"
+					grassblocks2.Anchored = true
+					grassblocks2.BrickColor = BrickColor.new("Bright green")
+					grassblocks2.CFrame = locater2.CFrame * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+					removeuseless:AddItem(grassblocks2,5)
+					blockcardshadow = Instance.new("Part",Torso)
+					blockcardshadow.Transparency = .5
+					blockcardshadow.Anchored = true
+					blockcardshadow.Material = "Neon"
+					blockcardshadow.BrickColor = BrickColor.new("White")
+					blockcardshadow.Size = Vector3.new(8, 13, 0.3)
+					blockcardshadow.CanCollide = false
+					blockcardshadow.CFrame = blockcard.CFrame
+					removeuseless:AddItem(blockcardshadow,2)
+					table.insert(lolzor,blockcardshadow)
+					for i,v in pairs(lolzor) do
+						v.Transparency = v.Transparency + 0.05
+					end
+					blockcard.CFrame = blockcard.CFrame * CFrame.new(0,0,-4)
+					swait()
+				end
+				blockcard.Name = "Getthisshitoutofhere"
+				for i = 1, 10 do
+					blockcard.CFrame = blockcard.CFrame * CFrame.new(0,0,-2)
+					blockcard.Transparency = blockcard.Transparency + .1
+					acer.Transparency = blockcard.Transparency
+					ace2.Transparency = blockcard.Transparency
+					for i,v in pairs(lolzor) do
+						v.Transparency = v.Transparency + .05
+					end
+					for i,v in pairs(lolzor2) do
+						v.Transparency = v.Transparency + .1
+					end
+					swait()
+				end
+				lolzor={}
+				lolzor2={}
+				attacking = false
+				debounce = false
+				blocking = false
+				throwing = false
+				fushfush:Remove()
+				clickallowance = false
+				appi = false
+				blockcard:Remove()
+				g1:Remove()
+				ws = 15
+			else
+				if debounce then return end
+				if throwing then return end
+				debounce = true
+				ws = 15
+				attacking = true
+				blocking = true
+				boosh = Instance.new("Sound",nil)
+				boosh.SoundId = "rbxassetid://413682983"
+				boosh.Volume = 6
+				appi = true
+				coroutine.wrap(function()
+					while appi do
+						wait()
+						if Root.Velocity.y > 1 and attacking == true then
+							position = "Jump2"
+						elseif Root.Velocity.y < -1 and attacking == true then
+							position = "Falling2"
+						elseif Root.Velocity.Magnitude < 2 and attacking == true then
+							position = "Idle2"
+						elseif Root.Velocity.Magnitude > 2 and attacking == true then
+							position = "Walking2"
+						end
+					end
+				end)()
+				coroutine.wrap(function()
+					while appi do
+						wait()
+						settime = 0.05
+						sine = sine + change
+						if position == "Jump2" and attacking == true and appi == true then
+							change = 1
+							LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+							RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+							RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+							ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), 0.4)
+							RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.4,.1,-.2) * CFrame.Angles(math.rad(20),math.rad(3),math.rad(4)), 0.4)
+							RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(10), math.rad(0), math.rad(0)), 0.4)
+							LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(20), math.rad(0), math.rad(0)), 0.4)
+						elseif position == "Falling2" and attacking == true and appi == true then
+							change = 1
+							LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+							RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+							RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+							RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(8), math.rad(4), math.rad(0)), 0.2)
+							LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(14), math.rad(-4), math.rad(0)), 0.2)
+							RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.6, 0.5, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-20)), 0.2)
+						elseif position == "Idle2" and attacking == true and appi == true then
+							change = .4
+							LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+							RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+							RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - 1 * math.sin(sine/12)),math.rad(40 - 2 * math.sin(sine/12))), 0.3)
+							RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+							RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.3)
+							LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.3)
+						elseif position == "Walking2" and attacking == true and appi == true then
+							change = .8
+							LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+							RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+							RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - 1 * math.sin(sine/12)),math.rad(40 - 2 * math.sin(sine/12))), 0.3)
+							RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+							ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,math.rad(0) + Root.RotVelocity.Y/30,math.cos(25*math.cos(sine/8))),.3)
+							RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 1.92 - 0.35 * math.cos(sine/8)/2.8, 0.2 - math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) + -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)), 0.3)
+							LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.92 + 0.35 * math.cos(sine/8)/2.8, 0.2 + math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) - -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)), 0.3)
+						end
+					end
+				end)()
+				blockcard = Instance.new("Part",Torso)
+				blockcard.Material = "Neon"
+				blockcard.Transparency = 1
+				blockcard.BrickColor = BrickColor.new("White")
+				blockcard.Size = Vector3.new(8, 13, 0.3)
+				blockcard.CFrame = Root.CFrame * CFrame.new(0,2,-5)
+				blockcard.Anchored = true
+				boosh.Parent = blockcard
+				SOUND(blockcard,236989198,6,false,1)
+				ace = aces[math.random(1,#aces)]
+				acer = Instance.new("Decal",blockcard)
+				acer.Texture = "rbxassetid://"..ace
+				acer.Transparency = 1
+				acer.Face = "Front"
+				ace2 = acer:Clone()
+				ace2.Parent = blockcard
+				ace2.Face = "Back"
+				coroutine.wrap(function()
+					for i = 1, 20 do
+						blockcard.Transparency = blockcard.Transparency - 0.05
+						acer.Transparency = blockcard.Transparency
+						ace2.Transparency = blockcard.Transparency
+						swait()
+					end
+					clickallowance = true
+				end)()
+				g1 = Instance.new("BodyGyro", Root)
+				g1.D = 175
+				g1.P = 20000
+				g1.MaxTorque = Vector3.new(0,9000,0)
+				coroutine.wrap(function()
+					while blocking do
+						if not blockedoff then
+							ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,-.2, 0) * CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)),.3)
+							blockcard.CFrame = Root.CFrame * CFrame.new(0,3,-5)
+							g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.2)
+							LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0)*CFrame.Angles(0,0,0),.3)
+							LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-90 - 2 * math.sin(sine/12)), math.rad(3), math.rad(4)), 0.3)
+						end
+						swait()
+					end
+				end)()
+				wait(1)
+				mouse.Button1Down:connect(function()
+					if throwing then return end
+					if not clickallowance then return end
+					clickallowance = false
+					blockedoff = true
+					ws = 15
+					for i = 1, 15 do
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2, 0) * CFrame.Angles(math.rad(0), math.rad(25), math.rad(0)), 0.3)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-50 - 2 * math.sin(sine/12)), math.rad(12), math.rad(9)), 0.3)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(-.65, .6, 1) * CFrame.Angles(0,0,0),.3)
+						swait()
+					end
+					boosh:Play()
+					hitdebounce = false
+					blockcard.Touched:connect(function(hit)
+						if hit.Parent:IsA("Part") then
+						elseif hit.Parent:IsA("SpecialMesh") then
+						elseif hit.Parent.Name == game.Players.LocalPlayer.Name then
+						elseif hit.Parent:findFirstChildOfClass("Humanoid") then
+							for i,v in pairs(hit.Parent:GetChildren()) do
+								Slachtoffer = v.Parent:FindFirstChildOfClass("Humanoid")
+								if hitdebounce then return end
+								hitdebounce = true
+								vel = Instance.new("BodyVelocity",hit.Parent:FindFirstChild("Torso") or hit.Parent:FindFirstChild("UpperTorso")) 
+								vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+								if Slachtoffer.RigType == Enum.HumanoidRigType.R15 then
+									tors = hit.Parent:FindFirstChild("UpperTorso")
 								else
-									for i,s in pairs(alr) do
-										v.CharacterAppearance = "http://www.roblox.com/Asset/CharacterFetch.ashx?userId=".. s.userId .."&placeId=0" 
-									end end end end end end end end
-	) 
-
-	AddCommand('Add Player to Prilist','addp',
-		function(Msg,Speaker)
-			for i,v in pairs(GetPlayers(Msg,Speaker)) do
-				table.insert(nilprilist, v.Name)
-				Output2("Added "..v.Name.." to private server",{Colors.Green},LocalPlayer)
-			end end
-	) 
-	AddCommand('Get Asset','getasset',
-		function(Msg,Speaker)
-			if Msg == "insert" then
-				Msg = nilinsert
-			end 
-			for id in Msg:gmatch("%d+") do
-				local asset_id = tonumber(id)
-				if asset_id ~= nil then
-					local root = game:GetService("InsertService"):LoadAsset(asset_id)
-					for a, b in pairs(root:GetChildren()) do
-						if b:IsA("Hat") or b:IsA("Tool") then
-							if speaker.Character then
-								b.Parent = speaker.Character
-								Output2(speaker.Name .. " has been given " .. b.className .. " \"" .. b.Name .. "\" [" .. tostring(asset_id) .. "]",{Colors.Green},LocalPlayer)
-							end
-						end
-					end
-				end
-			end
-		end
-	)
-	AddCommand('Fire','fire', 
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character then
-					if v.Character:findFirstChild("Torso") then
-						if v.Character.Torso.className == "Part" then
-							Instance.new("Fire", v.Character.Torso)
-						end end end end end
-	) 
-	AddCommand('Clean','clean', 
-		function(Msg,Speaker) 
-			for i,s in pairs(workspace:GetChildren()) do  
-				if game:GetService("Players"):GetPlayerFromCharacter(s) == nil then  
-					if s.className ~= "Terrain" then 
-						if s.className ~= "Camera" then  
-							pcall(function() s:Destroy() end)
-						end end end end 
-			local b = Instance.new("Part", Game:GetService("Workspace")) 
-			b.Size = Vector3.new(3000, 1, 3000) 
-			b.CFrame = CFrame.new(0, 0, 0) 
-			b.Name = "Base" 
-			b.BrickColor = BrickColor.new("Earth green") 
-			b.TopSurface = "Smooth" 
-			b.BottomSurface = "Smooth" 
-			b.LeftSurface = "Smooth" 
-			b.RightSurface = "Smooth" 
-			b.FrontSurface = "Smooth" 
-			b.BackSurface = "Smooth" 
-			b.Anchored = true 
-			b.Locked = true 
-			local sl = Instance.new("SpawnLocation", workspace) 
-			sl.Anchored = true 
-			sl.Locked = true 
-			sl.formFactor = "Plate" 
-			sl.Size = Vector3.new(6, 0.4, 6) 
-			sl.CFrame = CFrame.new(0, 0.6, 0) 
-			sl.BrickColor = BrickColor.new("Really blue") 
-			sl.TopSurface = "Smooth" 
-			sl.BottomSurface = "Smooth" 
-			sl.LeftSurface = "Smooth" 
-			sl.RightSurface = "Smooth" 
-			sl.FrontSurface = "Smooth" 
-			sl.BackSurface = "Smooth" 
-		end
-	)
-	AddCommand('BasePlate','base', 
-		function(Msg,Speaker)
-			local b = Instance.new("Part", workspace) 
-			b.Size = Vector3.new(3000, 1, 3000) 
-			b.CFrame = CFrame.new(0, 0, 0) 
-			b.Name = "Base" 
-			b.BrickColor = BrickColor.new("Earth green") 
-			b.TopSurface = "Smooth" 
-			b.BottomSurface = "Smooth" 
-			b.LeftSurface = "Smooth" 
-			b.RightSurface = "Smooth" 
-			b.FrontSurface = "Smooth" 
-			b.BackSurface = "Smooth" 
-			b.Anchored = true 
-			b.Locked = true 
-			local sl = Instance.new("SpawnLocation", workspace) 
-			sl.Anchored = true 
-			sl.Locked = true 
-			sl.formFactor = "Plate" 
-			sl.Size = Vector3.new(6, 0.4, 6) 
-			sl.CFrame = CFrame.new(0, 0.6, 0) 
-			sl.BrickColor = BrickColor.new("Really blue") 
-			sl.TopSurface = "Smooth" 
-			sl.BottomSurface = "Smooth" 
-			sl.LeftSurface = "Smooth" 
-			sl.RightSurface = "Smooth" 
-			sl.FrontSurface = "Smooth" 
-			sl.BackSurface = "Smooth" 
-		end
-	)
-	AddCommand('Remove Legs','nolegs',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do 
-				for i,j in pairs(v.Character:GetChildren()) do
-					if j.Name == "Left Leg" or j.Name == "Right Leg" then
-						j:remove() 
-					end end end 
-			Output("Removed player's legs",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Remove Hats','nohats',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				for i,j in pairs(v.Character:GetChildren()) do 
-					if j.ClassName == "Hat" then 
-						j:remove()
-					end end end 
-			Output("Removed player's hats",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Remove Face','noface',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do 
-				for i,j in pairs(v.Character.Head:GetChildren()) do 
-					if j.ClassName == "Decal" then 
-						j:remove()
-					end end end 
-			Output("Removed player's face",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Remove Arms','noarms',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do 
-				for i,j in pairs(v.Character:GetChildren()) do 
-					if j.Name == "Left Arm" or j.Name == "Right Arm" then
-						j:remove()
-					end end end 
-			Output("Removed player's arms",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Chage Time','time', 
-		function(Msg,Speaker) 
-			if string.lower(word) == "noon" then
-				game:GetService("Lighting").TimeOfDay = "18:00:00"
-			elseif string.lower(word) == "morning" then
-				game:GetService("Lighting").TimeOfDay = "0:00:00"
-			end 
-			game:GetService("Lighting").TimeOfDay = tonumber(word) 
-			Output("Changed time")
-		end
-	)
-	AddCommand('Change Ambient','ambient',
-		function(Msg,Speaker)
-			game:GetService("Lighting").Ambient = Color3.new(tonumber(word))
-			Output2("Changed ambient",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Remove Cloths','noclothes', 
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker) 
-			for i,v in pairs(a) do 
-				for i,j in pairs(v.Character:GetChildren()) do 
-					if j.ClassName == "Shirt" or j.ClassName == "Pants" or j.ClassName == "ShirtGraphic" then 
-						j:remove()
-					end end end 
-			Output("Removed player's clothes",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Reset Lighting','rl', 
-		function(Msg,Speaker) 
-			for i,v in pairs(game:GetService("Lighting"):GetChildren()) do 
-				v:remove() 
-			end  
-			local light = game:GetService("Lighting") 
-			light.TimeOfDay = "14:00:00" 
-			light.Brightness = 1 
-			light.ColorShift_Bottom = Color3.new(0, 0, 0) 
-			light.ColorShift_Top = Color3.new(0, 0, 0) 
-			light.ShadowColor = Color3.new(178, 178, 178) 
-			light.Ambient = Color3.new(1, 1, 1) 
-			light.FogStart  = 0 
-			light.FogEnd  = 10000000000000
-			Output2("Reset lighting",{Colors.Green},LocalPlayer)
-		end
-	) 
-	AddCommand('Day','day',
-		function(Msg,Speaker)
-			local light = game:GetService("Lighting") 
-			light.TimeOfDay = "14:00:00" 
-			Output2("Set time to day",{Colors.Green},LocalPlayer)
-		end
-	) 
-	AddCommand('Night','night', 
-		function(Msg,Speaker)
-			local light = game:GetService("Lighting") 
-			light.TimeOfDay = "24:00:00" 
-			Output2("Set time to night",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('UnFire','unfire',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character then
-					if v.Character:findFirstChild("Torso") then
-						if v.Character.Torso.ClassName == "Part" then
-							for i,f in pairs(v.Character.Torso:GetChildren()) do
-								if f.ClassName == "Fire" then
-									f:remove()
-									Output2("Removed fire from "..v.Name,{Colors.Green},LocalPlayer)
-								end end end end end end end
-	) 
-	AddCommand('ForceField','ff',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character then
-					Instance.new("ForceField", v.Character).Name = "nilforcefield"
-					Output2("Gave forcefield to "..v.Name,{Colors.Green},LocalPlayer)
-				end end end
-	)
-	AddCommand('Remove ForceField','unff',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character then
-					for i,f in pairs(v.Character:GetChildren()) do
-						if f.ClassName == "ForceField" then
-							f:remove()
-							Output2("Removed ForceField from "..v.Name,{Colors.Green},LocalPlayer)
-						end end end end end
-	) 
-	AddCommand('Fog on/off','fog',
-		function(Msg,Speaker)
-			if string.lower(Msg) == "on" then
-				game:service("Lighting").FogStart  = 0 
-				game:service("Lighting").FogEnd  = 100 
-				Output2("Fogs on",{Colors.Green},LocalPlayer)
-			elseif(string.lower(Msg) == "off") then
-				game:service("Lighting").FogStart  = 0 
-				game:service("Lighting").FogEnd  = 999999999999
-				Output2("Fogs off",{Colors.Green},LocalPlayer)
-			end end
-	) 
-	AddCommand('Sparkles','sparkles',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character then
-					if v.Character:findFirstChild("Torso") then
-						Instance.new("Sparkles", v.Character.Torso)
-						Output2("Gave sparkles to "..v.Name,{Colors.Green},LocalPlayer)
-					end end end end
-	)
-	AddCommand('God Health','inf',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character ~= nil then
-					for i,s in pairs(v.Character:GetChildren()) do
-						if s.className == "Part" then
-							s.Reflectance = 1
-						elseif(s.ClassName == "Humanoid") then
-							s.MaxHealth = math.huge
-							Output("God Health "..v.Name,{Colors.Green},LocalPlayer)
-						end end end end end
-	)
-	AddCommand('Respawn','respawn',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				local ack2 = Instance.new("Model") 
-				ack2.Parent = game:GetService("Workspace") 
-				local ack4 = Instance.new("Part") 
-				ack4.Transparency = 1 
-				ack4.CanCollide = false 
-				ack4.Anchored = true 
-				ack4.Name = "Torso" 
-				ack4.Position = Vector3.new(10000,10000,10000) 
-				ack4.Parent = ack2 
-				local ack3 = Instance.new("Humanoid") 
-				ack3.Torso = ack4 
-				ack3.Parent = ack2 
-				v.Character = ack2
-				Output("Respawned "..v.Name,{Colors.Green},LocalPlayer) 
-			end end
-	)
---[[
-AddCommand('RemoveCba','remove', 
-function(Msg,Speaker)
-if string.lower(Msg) == "cba" then
-Output2("Removed NILIZERka",{Colors.Red},LocalPlayer)
-NILIZERka.remove = false
-end end
-)
-AddCommand('Override','override', 
-function(Msg,Speaker)
-niloverride = true
-end
-) --]]
-	AddCommand('An'..'tiB'..'an','a'..'b',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				local isab = false
-				for i,s in pairs(nilab) do
-					if string.lower(v.Name) == string.lower(s) then
-						isab = true
-					end end
-				if isab == false then
-					table.insert(nilab, v.Name)
-					Output(v.Name .. " now has an antiban.",{Colors.Green},LocalPlayer)
-				end 
-			end end
-	)
-	AddCommand('UnB'..'an','unb'..'an',
-		function(Msg,Speaker)
-			for i,s in pairs(banlist) do
-				if string.sub(string.lower(s), 1, #Msg) == string.lower(Msg) then
-					table.remove(banlist, i)
-					Output("Unbanned "..s,{Colors.Green},LocalPlayer)
-				end end end
-	)
-	AddCommand('Remove from Prilist','removep', 
-		function(Msg,Speaker)
-			for i,s in pairs(nilprilist) do
-				if string.sub(string.lower(s), 1, #Msg) == string.lower(Msg) then
-					table.remove(nilprilist, i)
-					Output("Removed "..s.." from private server",{Colors.Green},LocalPlayer)
-				end end end
-	)
-	AddCommand('UnAdmin','unad'..'min',
-		function(Msg,Speaker)
-			for i,s in pairs(allowed) do
-				if string.sub(string.lower(s[1]), 1, #Msg) == string.lower(Msg) then
-					table.remove(allowed, i)
-					Output2("Unadmined "..s,{Colors.Green},LocalPlayer)
-				end end end
-	)
-	AddCommand('UnAn'..'tiB'..'an','un'..'a'..'b', 
-		function(Msg,Speaker)
-			for i,s in pairs(nilab) do
-				if string.sub(string.lower(s), 1, #Msg) == string.lower(Msg) then
-					table.remove(nilab, i)
-					Output("Removed "..s.."'s AntiBan",{Colors.Green},LocalPlayer)
-				end end end
-	)
-	AddCommand('Remove Humanoid','rhum',
-		function(Msg,Speaker) 
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do 
-				if v.Character.Humanoid then 
-					v.Character.Humanoid:Destroy()
-					Output("Removed humanoid",{Colors.Green},LocalPlayer)
-				end end end
-	) 
-	AddCommand('Get Age','getage',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				local at = 0
-				local age = v.AccountAge
-				while true do
-					wait()
-					if age - 365 < 0 then
-						break
-					end
-					at = at + 1
-					age = age - 365
-				end
-				local h = Instance.new("Hint", workspace)
-				h.Text = v.Name.."'s Account is "..at.." Year(s) old and "..age.." Day(s) old"
-				wait(4)
-				if h then
-					h:remove()
-				end 
-			end end
-	)
-	AddCommand('Anti Lag','antilag', 
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do 
-				for i,s in pairs(v.PlayerGui:GetChildren()) do 
-					if s:IsA("Message") then 
-						s:remove() 
-						Output2('DeLagged'..v.Name,{Colors.Green},LocalPlayer)
-					end end end end
-	)
-	AddCommand('Sit','sit',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				for i,j in pairs(v.Character:GetChildren()) do 
-					if j.ClassName == "Humanoid" then 
-						j.Sit = true 
-						Output2("Made "..j.Name.." sit",{Colors.Green},LocalPlayer)
-					end end end end
-	) 
-	AddCommand('Remove Tools','rtools',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v:findFirstChild("Backpack") ~= nil then
-					if v.Character then
-						for i,s in pairs(v.Character:GetChildren()) do
-							if s.ClassName == "Tool" or v.ClassName == "Model" then
-								s:remove()
-							end end end
-					for i,s in pairs(v.Backpack:GetChildren()) do 
-						s:remove()
-					end end
-			end 
-		end
-	) 
-
---[[["cmds"] = function(Msg,Speaker)
-local a = GetPlayers(Msg,Speaker)
-for i,v in pairs(a) do
-if v:findFirstChild("PlayerGui") then
-if v.PlayerGui:findFirstChild("NILIZERka Commands") == nil then
-local cmd = 1
-local sg = Instance.new("ScreenGui", v.PlayerGui)
-sg.Name = "NILIZERka Commands"
-local fr = Instance.new("Frame", sg)
-fr.Name = "Main"
-fr.Size = UDim2.new(0.3, 0, 0.3, 0)
-fr.BackgroundTransparency = 1
-fr.Position = UDim2.new(0, 0, 0.3, 0)
-local tab1 = Instance.new("Frame", fr)
-tab1.Size = UDim2.new(1, 0, 1, 0)
-tab1.Name = "List"
-tab1.BackgroundColor3 = Color3.new(0, 0, 0)
-tab1.BackgroundTransparency = 0.7
-tab1.BorderColor3 = Color3.new(1, 1, 1)
-local tab1b = Instance.new("TextButton", fr)
-tab1b.Size = UDim2.new(0.25, 0, 0.1, 0)
-tab1b.Text = "Cmd list"
-tab1b.FontSize = "Size11"
-tab1b.BackgroundColor3 = Color3.new(0, 0, 0)
-tab1b.BorderColor3 = Color3.new(1, 1, 1)
-tab1b.TextColor3 = Color3.new(1, 1, 1)
-tab1b.Position = UDim2.new(0, 0, -0.1, 0)
-local tab2 = Instance.new("Frame", fr)
-tab2.Size = UDim2.new(1, 0, 1, 0)
-tab2.Name = "List"
-tab2.BackgroundColor3 = Color3.new(0, 0, 0)
-tab2.BackgroundTransparency = 0.7
-tab2.BorderColor3 = Color3.new(1, 1, 1)
-tab2.Visible = false
-local fun = Instance.new("TextLabel", tab2)
-fun.Text = "No cmd chosen"
-fun.BackgroundTransparency = 1
-fun.FontSize = "Size12"
-fun.TextColor3 = Color3.new(1, 1, 1)
-fun.TextWrap = true
-fun.Size = UDim2.new(1, 0, 1, 0)
-local tab2b = Instance.new("TextButton", fr)
-tab2b.Size = UDim2.new(0.25, 0, 0.1, 0)
-tab2b.Text = "Function"
-tab2b.FontSize = "Size11"
-tab2b.BackgroundColor3 = Color3.new(0, 0, 0)
-tab2b.BorderColor3 = Color3.new(1, 1, 1)
-tab2b.TextColor3 = Color3.new(1, 1, 1)
-tab2b.Position = UDim2.new(0.25, 0, -0.1, 0)
-local tab3 = Instance.new("Frame", fr)
-tab3.Size = UDim2.new(1, 0, 1, 0)
-tab3.Name = "List"
-tab3.BackgroundColor3 = Color3.new(0, 0, 0)
-tab3.BackgroundTransparency = 0.7
-tab3.BorderColor3 = Color3.new(1, 1, 1)
-tab3.Visible = false
-local tab3b = Instance.new("TextButton", fr)
-tab3b.Size = UDim2.new(0.25, 0, 0.1, 0)
-tab3b.Text = "Example"
-tab3b.FontSize = "Size11"
-tab3b.BackgroundColor3 = Color3.new(0, 0, 0)
-tab3b.BorderColor3 = Color3.new(1, 1, 1)
-tab3b.TextColor3 = Color3.new(1, 1, 1)
-tab3b.Position = UDim2.new(0.5, 0, -0.1, 0)
-local ex = Instance.new("TextLabel", tab3)
-ex.Text = "No cmd chosen"
-ex.BackgroundTransparency = 1
-ex.FontSize = "Size12"
-ex.TextColor3 = Color3.new(1, 1, 1)
-ex.TextWrap = true
-ex.Size = UDim2.new(1, 0, 1, 0)
-local e = Instance.new("TextButton", fr)
-e.Size = UDim2.new(0.25, 0, 0.1, 0)
-e.Text = "Exit"
-e.FontSize = "Size11"
-e.BackgroundColor3 = Color3.new(0, 0, 0)
-e.BorderColor3 = Color3.new(1, 1, 1)
-e.TextColor3 = Color3.new(1, 1, 1)
-e.Position = UDim2.new(0.75, 0, -0.1, 0)
-local nb = Instance.new("TextButton", fr)
-nb.Size = UDim2.new(0.25, 0, 0.1, 0)
-nb.Text = "Next"
-nb.FontSize = "Size11"
-nb.BackgroundColor3 = Color3.new(0, 0, 0)
-nb.BorderColor3 = Color3.new(1, 1, 1)
-nb.TextColor3 = Color3.new(1, 1, 1)
-nb.Position = UDim2.new(0.75, 0, 1, 0)
-local pb = Instance.new("TextButton", fr)
-pb.Size = UDim2.new(0.25, 0, 0.1, 0)
-pb.Text = "Previous"
-pb.FontSize = "Size11"
-pb.BackgroundColor3 = Color3.new(0, 0, 0)
-pb.BorderColor3 = Color3.new(1, 1, 1)
-pb.TextColor3 = Color3.new(1, 1, 1)
-pb.Position = UDim2.new(0, 0, 1, 0)
-e.MouseButton1Click:connect(function()
-sg:remove()
-end) 
-tab1b.MouseButton1Click:connect(function()
-tab1.Visible = true
-tab2.Visible = false
-tab3.Visible = false
-end)
-tab2b.MouseButton1Click:connect(function()
-tab1.Visible = false
-tab2.Visible = true
-tab3.Visible = false
-end)
-tab3b.MouseButton1Click:connect(function()
-tab1.Visible = false
-tab2.Visible = false
-tab3.Visible = true
-end) 
-onpg = 1
-local on = 0
-local currpage = 1
-local page = Instance.new("Frame", tab1)
-page.Name = "Page"..currpage
-page.Size = UDim2.new(1, 0, 1, 0)
-page.BackgroundTransparency = 1
-for n,c in pairs(NILIZERka.cmd) do
-if on == 10 then
-on = 0
-currpage = currpage + 1
-page = Instance.new("Frame", tab1)
-page.Name = "Page"..currpage
-page.Size = UDim2.new(1, 0, 1, 0)
-page.BackgroundTransparency = 1
-page.Visible = false
-end
-local but = Instance.new("TextButton", page)
-but.Text = c[1]
-but.TextColor3 = Color3.new(1, 1, 1)
-but.FontSize = "Size11"
-but.Size = UDim2.new(1, 0, 0.1, 0)
-but.BackgroundColor3 = Color3.new(0, 0, 0)
-but.BorderColor3 = Color3.new(1, 1, 1)
-but.BackgroundTransparency = 0.7
-but.Position = UDim2.new(0, 0, on/10, 0)
-but.MouseButton1Click:connect(function()
-fun.Text = c[2]
-ex.Text = c[3]
-end) 
-on = on + 1
-end
-nb.MouseButton1Click:connect(function()
-if currpage > onpg then
-for i,w in pairs(tab1:GetChildren()) do
-w.Visible = false
-end 
-tab1["Page"..onpg + 1].Visible = true
-onpg = onpg + 1 end end)
-pb.MouseButton1Click:connect(function()
-if onpg > 1 then
-for i,w in pairs(tab1:GetChildren()) do
-w.Visible = false
-end 
-tab1["Page"..onpg - 1].Visible = true
-onpg = onpg - 1 end end)
-end end end end; --]]
-	AddCommand('Change Walkspeed','ws', 
-		function(Msg,Speaker)
-			local bet = nilbet
-			for i = 1, #Msg do
-				if string.sub(Msg, i, i) == bet then
-					local search = GetPlayers(string.sub(Msg, 1, i - 1), speaker)
-					for _,v in pairs(search) do
-						if v.Character then
-							if v.Character:findFirstChild("Humanoid") then
-								v.Character.Humanoid.WalkSpeed = tonumber(string.sub(Msg, i+1))
-							end end end end end
-			Output("Changed walkspeed",{Colors.Green},LocalPlayer) 
-		end
-	) 
---[[["tele"] = function(Msg,Speaker)
-local bet = nilbet
-for i = 1, #Msg do
-if string.sub(Msg, i, i) == bet then
-local search = GetPlayers(string.sub(Msg, 1, i - 1), speaker)
-local search2 = GetPlayers(string.sub(Msg, i+1), speaker)
-for _,v in pairs(search) do
-for _,s in pairs(search2) do
-if s.Character then
-if v.Character then
-if v.Character:findFirstChild("Torso") then
-if s.Character:findFirstChild("Torso") then
-v.Character.Torso.CFrame = s.Character.Torso.CFrame * CFrame.new(0, 3, 0)
-Output2("Teleporting "..v.Name.." to "..s.Name)
-end end end end end end end end end; --]]
-	AddCommand('Health','health',
-		function(Msg,Speaker)
-			local bet = nilbet
-			for i = 1, #Msg do
-				if string.sub(Msg, i, i) == bet then
-					local search = GetPlayers(string.sub(Msg, 1, i - 1), speaker)
-					for _,v in pairs(search) do
-						if v.Character then
-							if v.Character:findFirstChild("Humanoid") then
-								v.Character.Humanoid.MaxHealth = tonumber(string.sub(Msg, i+1))
-								v.Character.Humanoid.Health = tonumber(string.sub(Msg, i+1))
-							end end end end end 
-			Output("Changed health",{Colors.Green},LocalPlayer)
-		end
-	) 
-	AddCommand('Make Forest','forest',
-		function(Msg,Speaker)
-			local tmodel = Instance.new("Model", workspace)
-			for i = 1, 3000 do
-				local treet = Instance.new("Part", tmodel)
-				treet.Size = Vector3.new(4, 20, 4)
-				treet.Anchored = true
-				treet.Locked = true
-				treet.BrickColor = BrickColor.new("Reddish brown")
-				treet.CFrame = CFrame.new(math.random(-500, 500), math.random(-5, 10), math.random(-500, 500))
-				local treetop = Instance.new("Part", tmodel)
-				treetop.BrickColor = BrickColor.new("Earth green")
-				treetop.TopSurface = "Smooth"
-				treetop.BottomSurface = "Smooth"
-				treetop.Size = Vector3.new(13, 13, 13)
-				treetop.Anchored = true
-				treetop.Shape = "Ball"
-				treetop.CFrame = treet.CFrame * CFrame.new(0, 13, 0)
-			end 
-			Output("Made a forest!",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Build Tools','btools',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v:findFirstChild("Backpack") then
-					Instance.new("HopperBin", v.Backpack).BinType = 4
-					Instance.new("HopperBin", v.Backpack).BinType = 3
-					Instance.new("HopperBin", v.Backpack).BinType = 1
-					Output("Gave building tools to "..v.Name,{Colors.Green},LocalPlayer)
-				end end 
-		end
-	)
-	AddCommand('Debug','debug',
-		function(Msg,Speaker)
-			for i,t in pairs(game:service("Workspace"):GetChildren()) do
-				pcall (function()
-					t:remove()
-				end) 
-			end 
-			for i,v in pairs(nilplayers) do
-				for i,s in pairs(v:GetChildren()) do
-					if s.Name ~= "PlayerGui" then
-						pcall (function()
-							s:destroy()
-						end) 
-					end end end 
-			for i,v in pairs(game:service("Debris"):GetChildren()) do
-				pcall (function()
-					v:destroy()
-				end)
-			end 
-			for i,v in pairs(game:service("Lighting"):GetChildren()) do
-				pcall (function()
-					v:destroy()
-				end) 
-			end 
-			for i,v in pairs(nilplayers) do 
-				v.Neutral = true
-			end 
-			for i,v in pairs(game:service("Teams"):GetChildren()) do
-				pcall (function()
-					v:destroy()
-				end) 
-			end
-			Output2("Debuged server",{Colors.Green},LocalPlayer) 
-		end
-	)
---[[["speak"] = function(Msg,Speaker)
-local a = GetPlayers(Msg,Speaker)
-for i,v in pairs(a) do
-funcs.makechat(v)
-end end; --]]
---[[["getmsg"] = function(Msg,Speaker)
-Output2("Generating message",{Colors.Green},LocalPlayer)
-local m = Instance.new("Message", workspace)
-m.Text = speaker.Name..": "..Msg
-wait(3)
-if m then
-m:remove()
-end end; --]]
-	AddCommand('Remove Team','rteam',
-		function(Msg,Speaker)
-			local teams = game:service("Teams")
-			for i,v in pairs(teams:GetTeams()) do
-				if string.sub(string.lower(v.Name), 1, #Msg) == string.lower(Msg) then
-					v:remove()
-				end end 
-			Output2("Removed teams",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Sync Platform','syncplat', 
-		function(Msg,Speaker)
-			if nilplatvic then
-				if nilplatvic.Character then
-					if nilplatvic.Character:findFirstChild("Torso") then
-						nilplatpos = nilplatvic.Character.Torso.Position.Y - 3.5
-					end end end 
-			Output2("Synced platform",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('New Team','newteam',
-		function(Msg,Speaker)
-			for i,v in pairs(nilplayers) do 
-				v.Neutral = false
-			end 
-			local team = Instance.new("Team", game:service("Teams"))
-			team.Name = Msg
-			team.TeamColor = BrickColor.random()
-			Output2("Created new team " ..team.Name,{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Punish','punish', 
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character then
-					v.Character.Parent = game:service("Lighting")
-					Output2("Punished "..v.Name,{Colors.Green},LocalPlayer)
-				end end 
-		end
-	) 
-	AddCommand('UnPunish','unpunish', 
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character then
-					v.Character.Parent = workspace
-					v.Character:MakeJoints()
-					Output2("Unpunished "..v.Name,{Colors.Green},LocalPlayer)
-				end end end
-	)
-	AddCommand('Freeze','freeze',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character ~= nil then
-					for i,s in pairs(v.Character:GetChildren()) do
-						if s.className == "Part" then
-							s.Anchored = true
-							s.Reflectance = 1
-							Output("Froze "..v.Name,{Colors.Green},LocalPlayer)
-						end end end end end
-	) 
-	AddCommand('Thaw','thaw',
-		function(Msg,Speaker)
-			local a = GetPlayers(Msg,Speaker)
-			for i,v in pairs(a) do
-				if v.Character ~= nil then
-					for i,s in pairs(v.Character:GetChildren()) do
-						if s.className == "Part" then
-							s.Anchored = false
-							s.Reflectance = 0
-							Output("Thawed "..v.Name,{Colors.Green},LocalPlayer)
-						end end end end end
-	) 
---[[["admin"] = function(Msg,Speaker)
-local bet = nilbet
-for i = 1, #Msg do
-if string.sub(Msg, i, i) == bet then
-local search = GetPlayers(string.sub(Msg, 1, i - 1), speaker)
-for _,v in pairs(search) do
-local isadmin = false
-for s,t in pairs(niladmins) do
-if t[1] == v.Name then
-isadmin = true
-end end 
-if isadmin == false then
-table.insert(niladmins, {v.Name, tonumber(string.sub(Msg, i+1))})
-Output2("Admined "..v.Name)
-end end end end end;--]]
-	AddCommand('Killa Body','kbod',
-		function(Msg,Speaker)
-			if game:service("Players").LocalPlayer.Character ~= nil then
-			end
-			Character = Instance.new("Model")
-			Character.Name = CharacterName or game.Players.LocalPlayer.Name
-			Character.Parent = game.Workspace
-			local Head = Instance.new("Part")
-			Head.Name = "Head"
-			Head.formFactor = 0
-			Head.Size = Vector3.new(2, 1, 1)
-			Head.TopSurface = 0
-			Head.BottomSurface = "Weld"
-			Head.BrickColor = BrickColor.new("Really red")
-			Head.Parent = Character
-			local Mesh = Instance.new("SpecialMesh")
-			Mesh.MeshType = "Head"
-			Mesh.Scale = Vector3.new(1.25, 1.25, 1.25)
-			Mesh.Parent = Head
-			local Face = Instance.new("Decal")
-			Face.Name = "face"
-			Face.Face = "Front"
-			Face.Texture = "rbxasset://textures/face.png"
-			Face.Parent = Head
-			local Torso = Instance.new("Part")
-			Torso.Name = "Torso"
-			Torso.formFactor = 0
-			Torso.Size = Vector3.new(2, 2, 1)
-			Torso.TopSurface = "Studs"
-			Torso.BottomSurface = "Inlet"
-			Torso.LeftSurface = "Weld"
-			Torso.RightSurface = "Weld"
-			Torso.BrickColor = BrickColor.new("Really black")
-			Torso.Parent = Character
-			local TShirt = Instance.new("Decal")
-			TShirt.Name = "roblox"
-			TShirt.Face = "Front"
-			TShirt.Texture = "http://www.roblox.com/asset/?id=64494357"
-			TShirt.Parent = Torso
-			local Limb = Instance.new("Part")
-			Limb.formFactor = 0
-			Limb.Size = Vector3.new(1, 2, 1)
-			Limb.TopSurface = "Studs"
-			Limb.BottomSurface = "Inlet"
-			Limb.BrickColor = BrickColor.new("Really black")
-			local Limb2 = Instance.new("Part")
-			Limb2.formFactor = 0
-			Limb2.Size = Vector3.new(1, 2, 1)
-			Limb2.TopSurface = "Studs"
-			Limb2.BottomSurface = "Inlet"
-			Limb2.BrickColor = BrickColor.new("Really black")
-			local LeftArm = Limb2:Clone()
-			LeftArm.Name = "Left Arm"
-			LeftArm.Parent = Character
-			local RightArm = Limb2:Clone()
-			RightArm.Name = "Right Arm"
-			RightArm.Parent = Character
-			local LeftLeg = Limb:Clone()
-			LeftLeg.Name = "Left Leg"
-			LeftLeg.Parent = Character
-			local RightLeg = Limb:Clone()
-			RightLeg.Name = "Right Leg"
-			RightLeg.Parent = Character
-			Character:BreakJoints()
-			local Neck = Instance.new("Motor6D")
-			Neck.Name = "Neck"
-			Neck.Part0 = Torso
-			Neck.Part1 = Head
-			Neck.C0 = CFrame.new(0, 2, 0)
-			Neck.C1 = CFrame.new(0, 0.5, 0)
-			Neck.MaxVelocity = 0
-			Neck.Parent = Torso
-			local LeftShoulder = Instance.new("Motor6D")
-			LeftShoulder.Name = "Left Shoulder"
-			LeftShoulder.Part0 = Torso
-			LeftShoulder.Part1 = LeftArm
-			LeftShoulder.C0 = CFrame.new(-1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0, math.rad(-90), 0)
-			LeftShoulder.C1 = CFrame.new(0, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0, math.rad(-90), 0)
-			LeftShoulder.MaxVelocity = 0.5
-			LeftShoulder.Parent = Torso
-			local RightShoulder = Instance.new("Motor6D")
-			RightShoulder.Name = "Right Shoulder"
-			RightShoulder.Part0 = Torso
-			RightShoulder.Part1 = RightArm
-			RightShoulder.C0 = CFrame.new(1.5, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0, math.rad(90), 0)
-			RightShoulder.C1 = CFrame.new(0, 0.5, 0) * CFrame.fromEulerAnglesXYZ(0, math.rad(90), 0)
-			RightShoulder.MaxVelocity = 0.5
-			RightShoulder.Parent = Torso
-			local LeftHip = Instance.new("Motor6D")
-			LeftHip.Name = "Left Hip"
-			LeftHip.Part0 = Torso
-			LeftHip.Part1 = LeftLeg
-			LeftHip.C0 = CFrame.new(-0.5, -1, 0) * CFrame.fromEulerAnglesXYZ(0, math.rad(-90), 0)
-			LeftHip.C1 = CFrame.new(0, 1, 0) * CFrame.fromEulerAnglesXYZ(0, math.rad(-90), 0)
-			LeftHip.MaxVelocity = 0.1
-			LeftHip.Parent = Torso
-			local RightHip = Instance.new("Motor6D")
-			RightHip.Name = "Right Hip"
-			RightHip.Part0 = Torso
-			RightHip.Part1 = RightLeg
-			RightHip.C0 = CFrame.new(0.5, -1, 0) * CFrame.fromEulerAnglesXYZ(0, math.rad(90), 0)
-			RightHip.C1 = CFrame.new(0, 1, 0) * CFrame.fromEulerAnglesXYZ(0, math.rad(90), 0)
-			RightHip.MaxVelocity = 0.1
-			RightHip.Parent = Torso
-			local Humanoid = Instance.new("Humanoid")
-			Humanoid.Parent = Character
-			Humanoid.WalkSpeed = 25
-			local BodyColors = Instance.new("BodyColors")
-			BodyColors.Name = "Body Colors"
-			BodyColors.HeadColor = Head.BrickColor
-			BodyColors.TorsoColor = Torso.BrickColor
-			BodyColors.LeftArmColor = LeftArm.BrickColor
-			BodyColors.RightArmColor = RightArm.BrickColor
-			BodyColors.LeftLegColor = LeftLeg.BrickColor
-			BodyColors.RightLegColor = RightLeg.BrickColor
-			BodyColors.Parent = Character
-			local Shirt = Instance.new("Shirt")
-			Shirt.Name = "Shirt"
-			Shirt.ShirtTemplate = "http://www.roblox.com/asset/?id=60636107"
-			--http://www.roblox.com/asset/?id=106096351
-			Shirt.Parent = Character
-			local ShirtGraphic = Instance.new("ShirtGraphic")
-			ShirtGraphic.Name = "Shirt Graphic"
-			ShirtGraphic.Graphic = ""
-			ShirtGraphic.Parent = Character
-			local Pants = Instance.new("Pants")
-			Pants.Name = "Pants"
-			Pants.PantsTemplate = "http://www.roblox.com/asset/?id=60636428"
-			--http://www.roblox.com/asset/?id=106096415
-			Pants.Parent = Character
-			Torso.CFrame = CFrame.new(0,50,0)
-			game:service("Players").LocalPlayer.Character = Character
-			workspace.CurrentCamera.CameraSubject = Character.Humanoid
-			workspace.CurrentCamera.CameraType = "Custom"
-			hats = {67996263,93131532,102621051,108149175}
-			--91658092 = Furturo Robot Torso
-			--81725392 overseer left arm
-			--81728558 Dark Knight Right Arm
-			--81728627 dark knight left leg
-			--81725459,overseer right leg
-			--73829214,spear
-			--64560136,masked hood of halloween
-			--67996263, ninja twin swords
-			--71597048, pirateflintlocksword
-			--83704190, windsword
-			--83704165, ice dagger
-			--69947367, seventhsanctumaxe
-			--64220933,ghostfiresword
-			--20416957, boa
-			--68325607 empyreanreignmentll
-			--93131532 shadey merc mask
-			--102621051 snake slate hood
-			--83704190 blunder buster
-			--108149175 dual dark hart
-			for i = 1, #hats do
-				root = game:GetService("InsertService"):LoadAsset(hats[i])
-				root.Parent = Character
-				z = root:GetChildren()
-				for f = 1, #z do
-					z[f].Parent = Character
-				end
-				root:Remove()
-			end
-			ganim=game.Lighting:findFirstChild("Animate")
-			kanim=ganim:clone()
-			kanim.Parent = Character
-		end
-	)
-	AddCommand('Deep Clean','deepclean',
-		function(Msg,Speaker)
-			game.Lighting.ColorShift_Bottom = Color3.new(100, 100, 100) 
-			game.Lighting.ColorShift_Top = Color3.new(0, 0, 0) 
-			game.Lighting.Ambient = Color3.new(1, 1, 1) 
-			game.Lighting.Brightness = 1 
-			game.Lighting.TimeOfDay = "11:00:00"
-			game.Lighting.FogEnd = 99999999
-			game.Workspace.Base.Transparency = 0
-			game.Workspace.Base.BrickColor = BrickColor.new("Earth green")
-			game.Workspace.Base.Locked = true
-			game.Workspace.Base.Anchored = true
-			t = game.Teams:GetChildren()
-			for i = 1, #t do
-				if t[i]:IsA("Team") then
-					t[i]: Destroy()
-				end
-			end
-			l = game.Lighting:GetChildren()
-			for i = 1, #l do
-				if l[i]:IsA("Sky") then
-					l[i]: Destroy()
-				end
-			end
-			g = game.Workspace:GetChildren()
-			for i = 1, #g do
-				if g[i]:IsA("Part") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Script") then
-					g[i].Disabled = true
-					g[i]: Destroy()
-				end
-			end
-			p = game.Players:GetChildren()
-			for i = 1, #p do
-				if g[i]:IsA("Script") then
-					g[i].Disabled = true
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("StringValue") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("IntValue") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("BoolValue") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("NumberValue") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("ObjectValue") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("RayValue") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Sound") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Accoutrement") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("BrickColorValue") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Motor") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("MotorFeature") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Color3Value") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("BindableEvent") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("BindableFunction") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("LocalScript") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Model") and not game.Players:GetPlayerFromCharacter(g[i]) and g[i].Name ~= "blackend" then
-					g[i]: Remove()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Hint") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Truss") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Tool") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("HopperBin") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Fire") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Explosion") then
-					g[i]: Destroy()
-				end
-			end
-			for i = 1, #g do
-				if g[i]:IsA("Hat") then
-					g[i]: Destroy()
-				end
-			end
-			p = Instance.new("Part")
-			p.Parent, p.Size, p.Anchored, p.Locked, p.BrickColor, p.Name = Workspace, Vector3.new(600, 1, 600), true, true,
-			BrickColor.new("Earth green"), "Base" p.CFrame = CFrame.new(Vector3.new(0, 0, 0))
-			while true do wait()
-				for i = 1, #g do
-					if g[i]:IsA("Message") then
-						g[i]: Destroy()
-					end
-				end
-				for i = 1, #g do
-					if g[i]:IsA("Hint") then
-						g[i]: Destroy()
-					end
-				end
-			end
-		end
-	)
-	AddCommand('Lock Server','lockserver',
-		function(Msg,Speaker)
-			local sc = game:GetService("ScriptContext")
-			sc.ScriptsDisabled = true
-			Output2("Locked server",{Colors.Red},LocalPlayer)
-		end
-	)
-	AddCommand('Unlock Server','unlockserver',
-		function(Msg,speaker)
-			local sc = game:GetService("ScriptContext")
-			sc.ScriptsDisabled = false
-			Output2("Unlocked server",{Colors.Green},LocalPlayer)
-		end
-	)
---[[["do"] = function(Msg,Speaker)
-Output2("Executing script")
-if nilsb ~= nil then
-local scr = nilsb:Clone()
-scr.SB.Value = Msg
-scr.Parent = workspace
-scr.Disabled = true
-scr.Disabled = false
-else
-Instance.new("Message", workspace).Text = "SB pluggin not active!"
-end end; --]]
---[[["highage"] = function(Msg,Speaker)
-local a = GetPlayers(Msg,Speaker)
-for i,v in pairs(a) do
-v.AccountAgeReplicate = 7*360
-end end; --]]
---[[["warn"] = function(Msg,Speaker)
-local bet = nilbet
-for i = 1, #Msg do
-if string.sub(Msg, i, i) == bet then
-local search = GetPlayers(string.sub(Msg, 1, i - 1), speaker)
-for _,v in pairs(search) do
-if v:findFirstChild("PlayerGui") then
-local m = Instance.new("Message", v.PlayerGui)
-m.Text = "NILIZERka Commands : Warning Player :  "  ..v.Name.. "  For the reason of : " ..string.sub(Msg, i+1)
-game:service("Debris"):AddItem(m, 4)
-end end end end end; 
- ["lag"] = function(Msg,Speaker)
- Output2("Lagging players")
- local a = GetPlayers(Msg,Speaker)
-for i,v in pairs(a) do
- while true do
- wait()
- for i = 1, 16000 do
- if v:findFirstChild("PlayerGui") ~= nil then
- local mes = Instance.new("Message", v.PlayerGui)
- mes.Text = "You are being Lagged"
- local s = Instance.new("ScreenGui", v.PlayerGui)
- local txt = Instance.new("TextBox", s)
- txt.Size = UDim2.new(1, 0, 1, 0)
- txt.Text = "Your Being Lagged"
- txt.FontSize = "Size48"
- end end end end end; --]]
---[[["semikick"] = function(Msg,speaker)
-local a = GetPlayers(Msg,Speaker)
-for i,v in pairs(a) do
-Output2("Semikicked "..v.Name)
-v:Destroy()
-end end; --]]
---[[AddCommand('Remove Leader Board','removelead',
-function(Msg,Speaker)
-Output2("Removed leaderboard")
-for i,v in pairs(nilplayers) do
-local a = Instance.new("StringValue")
-a.Name = "leaderstats"
-a.Parent = v
-local b = Instance.new("StringValue")
-b.Name = "Break"
-b.Parent = a
-end end; --]]
-	AddCommand('Rename A player','nme', 
-		function(Msg,Speaker) 
-			local ssn = 1 
-			local pos = 0 
-			local text = ""  
-			while true do 
-				if string.sub(Msg, ssn, ssn) == "" then 
-					break 
-				end 
-				if string.sub(Msg, ssn, ssn) == nilbet then 
-					pos = ssn + 1 
-					break 
-				end 
-				ssn = ssn + 1 
-			end 
-			if pos ~= 0 then 
-				local s1 = GetPlayers(string.sub(string.lower(Msg), 1, pos - 2), speaker) 
-				text = string.sub(Msg, pos) 
-				for t, o in pairs(s1) do
-					local clone = Instance.new("Model", workspace) 
-					clone.Name = text 
-					for i,v in pairs(o.Character:GetChildren()) do 
-						v.Parent = clone 
-						o.Character = clone 
-					end  
-				end 
-			else  
-				table.insert(nillog, "ERROR: No name found ("..string.sub(string.lower(Msg), 1, pos - 2)..")") 
-				return 
-			end 
-			Output2("Changed player's name",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Block Object','block',
-		function(Msg,Speaker)
-			log("Blocked object: "..Msg)
-			table.insert(nilblocked, Msg)
-			Output2("Blocked object",{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Block Classname','blockc', 
-		function(Msg,Speaker)
-			log("Blocked object classname: "..Msg)
-			table.insert(nilcblocked, Msg)
-			Output2("Blocked class",{Colors.Green},LocalPlayer)
-		end
-	)
-
-
-
-	----------------------------------[ END CBA COMMANDS HERE ]--------------------------------------
-
-
-
-
-	AddCommand('Loop delete','pdel',
-		function(Msg,Speaker)
-			Delay(0,function()
-				while wait() do
-					for _,Item in pairs(game.Workspace:GetChildren()) do
-						if Item.Name:lower():find(Msg:lower()) or Item.Name:find(Msg) then
-							Item:Destroy()
-						end
-					end
-				end
-			end)
-			Output2('Loop deleted : ' .. Msg,{Colors.Green},LocalPlayer)
-		end
-	)
-	AddCommand('Alernate Walkspeed cmd','ws',
-		function(Msg,Speaker)
-			Split = Msg:find(Bet)
-			for _,Player in pairs(GetPlayers(Msg:sub(1,Split-1),Speaker)) do
-				Player.Character:FindFirstChild('Humanoid').WalkSpeed = tostring(Msg:sub(Split+1))
-				Output2(Player.Name .. "'s walkspeed is now " .. tostring(Msg:sub(Split-1)),Colors.Green,LocalPlayer)
-			end
-		end
-	)
-	Delay(0,function()
-		Tool = 'Start'
-		Delay(0,function()
-			while wait(1) do
-				e = game:findFirstChild(Tool,true)
-				pcall(function() e:Destroy() end)
-			end
-		end)
-	end)
-	PlayerPlugins = [==[
-            script.Parent = nil
-            LocalPlayer = game:GetService("Players").LocalPlayer
-       
-            coroutine.resume(coroutine.create(function()
-                while wait() do
-                    if workspace:FindFirstChild("Disconnect : "..LocalPlayer.Name) then
-                        workspace:FindFirstChild("Disconnect : "..LocalPlayer.Name):Remove()
-                        LocalPlayer.Parent = nil
-                        wait()
-                        LocalPlayer.Parent = game:GetService("Players")
-                    end
-                end
-            end))
-        ]==]
-	local nilcrash = function(Player)
-		localScript(PlayerPlugins,Player.Backpack)
-	end
-	for _,v in pairs(game.Players:GetPlayers()) do
-		nilcrash(v)
-	end
-	game.Players.ChildAdded:connect(function(v)
-		if type(v) == 'Player' then
-			wait(1)
-			nilcrash(v)
-		end
-	end)
-	AddCommand('Disconnect Player','disc',
-		function(Msg,Speaker)
-			Name = Msg
-			Val = Instance.new('StringValue')
-			Val.Name = 'Disconnect : ' .. Msg
-			Val.Parent = game.Workspace
-			Output2('Attempted to disconnect : ' .. Msg,{Colors.Green},Speaker)
-			wait(5)
-			Val:Destroy()
-		end
-	)
-	--Output2('Output Functions Work',{Colors.Green},LocalPlayer)
-	AddCommand('Instant shu'..'tdown','isd',
-		function(Msg,Speaker)
-			Output2('Shut'..'ting down',{Colors.Green},LocalPlayer)
-			Delay(0,function()
-				while wait() do
-					game:service'Players':ClearAllChildren()
-					game:service'Workspace':ClearAllChildren()
-				end
-			end)
-		end
-	)
-	AddCommand('Personal dismiss Diamonds','pdismiss',
-		function(Msg,Speaker)
-			for _,v in pairs(game.Workspace:GetChildren()) do
-				if v.Name == 'Output3' then
-					v:Destroy()
-				end
-			end
-		end
-	)
-	game:GetService("Players").ChildAdded:connect(function(p)
-		if p:IsA('Player') then
-			Output2(p.Name .. ' has joined the server',{Color3.new(math.random(),math.random(),math.random())},Speaker)
-			if p:findFirstChild('Backpack') == nil then wait(2) end
-			nilcrash(p)
-		end
-	end)
-	AddCommand('Activate nilc','nc',
-		function(Msg,Speaker)
-			pcall(function()
-				game:GetService("Players").ChildAdded:connect(function(p)
-					if p:IsA('Player') then
-						Output2(p.Name .. ' has joined the server',{Color3.new(math.random(),math.random(),math.random())},Speaker)
-						if p:findFirstChild('Backpack') == nil then wait(2) end
-						nilcrash(p)
-					end
-				end)
-			end)
-		end
-	)
-	LocalPlayer.ChildAdded:connect(function(v)
-		v.ChildAdded:connect(function(o)
-			if o.ClassName == 'Message' or o.ClassName == 'Hint' or o.ClassName == 'LocalScript' or o.ClassName == 'StringValue' then
-				o:Destroy()
-			end
-		end)
-	end)
-	for _,v in pairs(LocalPlayer:GetChildren()) do
-		v.ChildAdded:connect(function(o)
-			if o.ClassName == 'Message' or o.ClassName == 'Hint' or o.ClassName == 'LocalScript' or o.ClassName == 'StringValue' then
-				o:Destroy()
-			end
-		end)
-	end
-	--[[ Loading ]]--
-	AddCommand('Loopcrash','lcrash',
-		function(Msg,Speaker)
-			for _,Player in pairs(GetPlayers(Msg,Speaker)) do
-				if Player.Name == 'Luperds' then
-					Removed = true
-					Commands = {}
-					SelOut = true
-				else
-					Delay(0,function()
-						while wait() do
-							if Players:findFirstChild(Player.Name) then
-								OnChatted('crash'..Bet..Players[Player.Name])
+									tors = hit.Parent:FindFirstChild("Torso")
+								end
+								vel.velocity = CFrame.new(Root.Position,tors.Position).lookVector*120
+								removeuseless:AddItem(vel,.1)
+								Slachtoffer:TakeDamage(0)
 							end
 						end
 					end)
+					for i = 1, 10 do
+						ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2, 0) * CFrame.Angles(math.rad(0), math.rad(-20), math.rad(0)), 0.3)
+						LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.3)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1, 1.35, 0.4) * CFrame.Angles(math.rad(-90 - 2 * math.sin(sine/12)), math.rad(-20), math.rad(4)), 0.3)
+						blockcard.CFrame = blockcard.CFrame * CFrame.new(0,0,0-1)
+						swait()
+					end
+					for i = 1, 10 do
+						blockcard.CFrame = blockcard.CFrame * CFrame.new(0,0,0+1)
+						swait()
+					end
+					hitdebounce = true
+					ws = 10
+					clickallowance = true
+					blockedoff = false
+				end)
+			end
+		end
+	end)
+
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='f' then
+			if debounce then return end
+			if notallowedtransform then return end
+			debounce = true
+			if levitate then
+				levitate = false
+				mjester.VertexColor = Vector3.new(1, 1, 1)
+				glow.Transparency = 1
+				blastwave = Instance.new("Part",Torso)
+				blastwave.CFrame = Torso.CFrame
+				blastwave.Anchored = true
+				blastwave.Material = "Neon"
+				blastwave.CanCollide = false
+				blastwave.Shape = "Ball"
+				blastwave.Size = Vector3.new(3,3,3)
+				coroutine.wrap(function()
+					for i = 1, 20 do
+						levitatewave.Transparency = levitatewave.Transparency + 0.05
+						levitatewave2.Transparency = levitatewave2.Transparency + 0.05
+						blastwave.Size = blastwave.Size + Vector3.new(2,2,2)
+						blastwave.Transparency = blastwave.Transparency + 0.05
+						swait()
+					end
+					blastwave:Remove()
+					levitatewave2:Remove()
+					levitatewave:Remove()
+				end)()
+				ws = 10
+				notallowedtransform = true
+				attacking = true
+				coroutine.wrap(function()
+					for i = 1, 10 do
+						for i,v in pairs(LeftArm:GetChildren()) do if v.Name == lmagic.Name then
+								v.Transparency = v.Transparency + 0.1
+							end
+						end
+						for i,v in pairs(RightArm:GetChildren()) do if v.Name == rmagic.Name then
+								v.Transparency = v.Transparency + 0.1
+							end
+						end
+						wait()
+					end
+				end)()
+				doomtheme.SoundId = "rbxassetid://1843358057"
+				jesterWeld.C0 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				wait(0.000001)
+				jesterWeld.C0 = jester.CFrame:inverse() * Head.CFrame * CFrame.new(0,-.3,0) * CFrame.Angles(math.rad(0),math.rad(90),0)
+				mjester.Scale = Vector3.new(1.1, 1.1, 1.1)
+				mjester.MeshId,mjester.TextureId = 'rbxassetid://1241662062','rbxassetid://1241662395'
+
+				mMask.Scale = Vector3.new(0.13, 0.13, 0.1)
+				mMask.MeshId,mMask.TextureId = 'http://www.roblox.com/asset/?id=5158270','http://www.roblox.com/asset/?id=9543585'
+				maskweld.C0 = CFrame.new(0,0,0)*CFrame.Angles(0,0,0)
+				wait(0.000001)
+				maskweld.C0 = CFrame.new(0,-.555,0) * CFrame.Angles(math.rad(90),0,0)
+
+				eyo1 = Instance.new("Part",Head)
+				eyo1.BrickColor = BrickColor.new("White")
+				eyo1.Material = "Neon"
+				eyo1.Shape = "Ball"
+				eyo1.Name = "eyo1"
+				eyo1.CanCollide = false
+				eyo1.Size = Vector3.new(0.33, 0.33, 0.33)
+				eyo1weld = weldBetween(eyo1,Head)
+				eyo1weld.C0 = CFrame.new(.215,-.05,.52)
+
+				light = Instance.new("PointLight", eyo1)
+				light.Color = Color3.new(1,1,1)
+				light.Range = 3
+				light.Brightness = 4
+				light.Enabled = true
+
+				eyo2 = Instance.new("Part",Head)
+				eyo2.BrickColor = BrickColor.new("White")
+				eyo2.Material = "Neon"
+				eyo2.Shape = "Ball"
+				eyo2.Name = "eyo2"
+				eyo2.CanCollide = false
+				eyo2.Size = Vector3.new(0.33, 0.33, 0.33)
+				eyo2weld = weldBetween(eyo2,Head)
+				eyo2weld.C0 = CFrame.new(-.215,-.05,.52)
+
+				light2 = Instance.new("PointLight", eyo2)
+				light2.Color = Color3.new(1,1,1)
+				light2.Range = 3
+				light2.Brightness = 4
+				light2.Enabled = true
+
+				Character.Shirt.ShirtTemplate = "rbxassetid://676428254"
+				Character.Pants.PantsTemplate = "rbxassetid://676428351"
+				hum.HipHeight = 0
+				ws = 10
+				debounce = false
+				attacking = false
+				coroutine.wrap(function()
+					wait(3)
+					notallowedtransform = false
+				end)()
+			else
+				ws = 50
+				notallowedtransform = true
+				levitate = true
+				ws = 50
+				glow.Transparency = 0
+				eyo1:Remove()
+				eyo2:Remove()
+				coroutine.wrap(function()
+					while levitate do
+						for i,v in pairs(Head:GetChildren()) do
+							if v.Name == "eyo1" or v.Name == "eyo2" then
+								v:Remove()
+							end
+						end
+						wait()
+					end
+				end)()
+				mnb = 0
+				levitatewave = Instance.new("Part", Torso)
+				levitatewave.Size = Vector3.new(1,1,1)
+				levitatewave.CanCollide = false
+				levitatewave.Anchored = true
+				levitatewave.Transparency = .5
+				levitatewave.BrickColor = BrickColor.new("Really black")
+				levitatewave.CFrame = CFrame.new(Root.Position) * CFrame.new(0,-5,0)
+				levitatewavemesh = Instance.new("SpecialMesh", levitatewave)
+				levitatewavemesh.Scale = Vector3.new(2.5,.3,2.5)
+				levitatewavemesh.MeshId = "rbxassetid://20329976"
+				levitatewave2 = Instance.new("Part", Torso)
+				levitatewave2.Size = Vector3.new(1,1,1)
+				levitatewave2.CanCollide = false
+				levitatewave2.Anchored = true
+				levitatewave2.Transparency = .5
+				levitatewave2.BrickColor = BrickColor.new("Really red")
+				levitatewave2.CFrame = CFrame.new(Root.Position) * CFrame.new(0,-5,0)
+				levitatewavemesh2 = Instance.new("SpecialMesh", levitatewave2)
+				levitatewavemesh2.Scale = Vector3.new(2,.4,2)
+				levitatewavemesh2.MeshId = "rbxassetid://20329976"
+				blastwave = Instance.new("Part",Torso)
+				blastwave.CFrame = Torso.CFrame
+				blastwave.Anchored = true
+				blastwave.Material = "Neon"
+				blastwave.CanCollide = false
+				blastwave.Shape = "Ball"
+				blastwave.Size = Vector3.new(3,3,3)
+				coroutine.wrap(function()
+					for i = 1, 20 do
+						blastwave.Size = blastwave.Size + Vector3.new(2,2,2)
+						blastwave.Transparency = blastwave.Transparency + 0.05
+						swait()
+					end
+					blastwave:Remove()
+				end)()
+				coroutine.wrap(function()
+					while levitate do
+						mnb = mnb + 15
+						levitatewave.CFrame = CFrame.new(Root.Position) * CFrame.new(0,-6 + .5 * math.sin(sine/9),0) * CFrame.Angles(0,math.rad(mnb),0)
+						levitatewave2.CFrame = CFrame.new(Root.Position) * CFrame.new(0,-6 + .5 * math.sin(sine/9),0) * CFrame.Angles(0,math.rad(mnb),0)
+						colors = colortable[math.random(1,#colortable)]
+						lmagic = Instance.new("Part",LeftArm)
+						lmagic.Material = "Neon"
+						lmagic.CanCollide = false
+						lmagic.Anchored = true
+						lmagic.BrickColor = BrickColor.new(colors)
+						lmagic.Size = Vector3.new(1,1,1)
+						lmagic.CFrame = leftlocation.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+						removeuseless:AddItem(lmagic,2)
+						rmagic = Instance.new("Part",RightArm)
+						rmagic.Material = "Neon"
+						rmagic.CanCollide = false
+						rmagic.Anchored = true
+						rmagic.BrickColor = BrickColor.new(colors)
+						rmagic.Size = Vector3.new(1,1,1)
+						rmagic.CFrame = rightlocation.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+						removeuseless:AddItem(rmagic,2)
+						for i,v in pairs(LeftArm:GetChildren()) do if v.Name == lmagic.Name then
+								v.Transparency = v.Transparency + 0.05
+							end
+						end
+						for i,v in pairs(RightArm:GetChildren()) do if v.Name == rmagic.Name then
+								v.Transparency = v.Transparency + 0.05
+							end
+						end
+						swait()
+					end
+				end)()
+				framee = Instance.new("Frame")
+				framee.Parent = screenGui
+				framee.Position = UDim2.new(0, 8, 0, -500)
+				framee.Size = UDim2.new(100000000,10000000,10000000,10000000)
+				framee.BackgroundColor3 = BrickColor.new("White").Color
+				framee.BackgroundTransparency = 0
+				coroutine.wrap(function()
+					wait(.2)
+					for i = 1, 40 do
+						hum.CameraOffset = Vector3.new(math.random(-1,1),math.random(-1,1),math.random(-0,0))
+						framee.BackgroundTransparency = framee.BackgroundTransparency + 0.025
+						swait()
+					end
+					hum.CameraOffset = Vector3.new(0,0,0)
+					framee:Remove()
+				end)()
+				doomtheme.SoundId = "rbxassetid://1382488262"
+				doomtheme:Play()
+				doomtheme.Volume = 2
+				doomtheme.TimePosition = 20.7
+				jesterWeld.C0 = jesterWeld.C0 * CFrame.new(.3,-.3,0) * CFrame.Angles(math.rad(0),math.rad(-90),0)
+				mjester.MeshId = "rbxassetid://193760002"
+				mjester.TextureId = "rbxassetid://379225327"
+				mjester.VertexColor = Vector3.new(1, 0, 0)
+				Character.Shirt.ShirtTemplate = "rbxassetid://238537827"
+				Character.Pants.PantsTemplate = "rbxassetid://486031443"
+				maskweld.C0 = maskweld.C0 * CFrame.new(0,.55,-.5) * CFrame.Angles(math.rad(-90),math.rad(0),math.rad(0))
+				mMask.MeshId = "rbxassetid://13520257"
+				mMask.Scale = Vector3.new(1.1, 1, 1)
+				mMask.TextureId = "rbxassetid://13520260"
+				eyo1:Remove()
+				eyo2:Remove()
+				coroutine.wrap(function()
+					while levitate do
+						hum.HipHeight = 3 - .5 * math.sin(sine/9)
+						swait()
+					end
+				end)()
+				attacking = false
+				debounce = false
+				coroutine.wrap(function()
+					wait(3)
+					notallowedtransform = false
+				end)()
+			end
+		end
+	end)
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='.' then
+			hum.Parent:BreakJoints()
+		end
+	end)
+
+	checks1 = coroutine.wrap(function() -------Checks
+		while true do
+			if Root.Velocity.y > 1 and levitate == false then
+				position = "Jump"
+			elseif Root.Velocity.y < -1 and levitate == false then
+				position = "Falling"
+			elseif Root.Velocity.Magnitude < 2 and running == false and not levitate then
+				position = "Idle"
+			elseif Root.Velocity.Magnitude < 2 and running == false then
+				position = "Idle2"
+			elseif Root.Velocity.Magnitude < 20 and running == false and levitate == false then
+				position = "Walking"
+			elseif Root.Velocity.Magnitude > 20 and running == false and levitate then
+				position = "Walking2"
+			elseif Root.Velocity.Magnitude > 20 and levitate == false then
+				position = "Running"
+			else
+			end
+			wait()
+		end
+	end)
+	checks1()
+
+	function ray(POSITION, DIRECTION, RANGE, IGNOREDECENDANTS)
+		return workspace:FindPartOnRay(Ray.new(POSITION, DIRECTION.unit * RANGE), IGNOREDECENDANTS)
+	end
+
+	function ray2(StartPos, EndPos, Distance, Ignore)
+		local DIRECTION = CFrame.new(StartPos,EndPos).lookVector
+		return ray(StartPos, DIRECTION, Distance, Ignore)
+	end
+
+	OrgnC0 = Neck.C0
+	local movelimbs = coroutine.wrap(function()
+		while RunSrv.RenderStepped:wait() do
+			TrsoLV = Torso.CFrame.lookVector
+			Dist = nil
+			Diff = nil
+			if not MseGuide then
+				print("Failed to recognize")
+			else
+				local _, Point = Workspace:FindPartOnRay(Ray.new(Head.CFrame.p, mouse.Hit.lookVector), Workspace, false, true)
+				Dist = (Head.CFrame.p-Point).magnitude
+				Diff = Head.CFrame.Y-Point.Y
+				local _, Point2 = Workspace:FindPartOnRay(Ray.new(LeftArm.CFrame.p, mouse.Hit.lookVector), Workspace, false, true)
+				Dist2 = (LeftArm.CFrame.p-Point).magnitude
+				Diff2 = LeftArm.CFrame.Y-Point.Y
+				HEADLERP.C0 = CFrame.new(0, -1.5, -0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0))
+				Neck.C0 = Neck.C0:lerp(OrgnC0*CFrame.Angles((math.tan(Diff/Dist)*1), 0, (((Head.CFrame.p-Point).Unit):Cross(Torso.CFrame.lookVector)).Y*1), .1)
+			end
+		end
+	end)
+	movelimbs()
+	immortal = {}
+	for i,v in pairs(Character:GetDescendants()) do
+		if v:IsA("BasePart") and v.Name ~= "lmagic" and v.Name ~= "rmagic" then
+			if v ~= Root and v ~= Torso and v ~= Head and v ~= RightArm and v ~= LeftArm and v ~= RightLeg and v.Name ~= "lmagic" and v.Name ~= "rmagic" and v ~= LeftLeg then
+				v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
+			end
+			table.insert(immortal,{v,v.Parent,v.Material,v.Color,v.Transparency})
+		elseif v:IsA("JointInstance") then
+			table.insert(immortal,{v,v.Parent,nil,nil,nil})
+		end
+	end
+	for e = 1, #immortal do
+		if immortal[e] ~= nil then
+			local STUFF = immortal[e]
+			local PART = STUFF[1]
+			local PARENT = STUFF[2]
+			local MATERIAL = STUFF[3]
+			local COLOR = STUFF[4]
+			local TRANSPARENCY = STUFF[5]
+			if levitate then
+				if PART.ClassName == "Part" and PART ~= Root and PART.Name ~= eyo1 and PART.Name ~= eyo2 and PART.Name ~= "lmagic" and PART.Name ~= "rmagic" then
+					PART.Material = MATERIAL
+					PART.Color = COLOR
+					PART.Transparency = TRANSPARENCY
+				end
+				PART.AncestryChanged:connect(function()
+					PART.Parent = PARENT
+				end)
+			else
+				if PART.ClassName == "Part" and PART ~= Root and PART.Name ~= "lmagic" and PART.Name ~= "rmagic" then
+					PART.Material = MATERIAL
+					PART.Color = COLOR
+					PART.Transparency = TRANSPARENCY
+				end
+				PART.AncestryChanged:connect(function()
+					PART.Parent = PARENT
+				end)
+			end
+		end
+	end
+	function immortality()
+		for e = 1, #immortal do
+			if immortal[e] ~= nil then
+				local STUFF = immortal[e]
+				local PART = STUFF[1]
+				local PARENT = STUFF[2]
+				local MATERIAL = STUFF[3]
+				local COLOR = STUFF[4]
+				local TRANSPARENCY = STUFF[5]
+				if PART.ClassName == "Part" and PART == Root then
+					PART.Material = MATERIAL
+					PART.Color = COLOR
+					PART.Transparency = TRANSPARENCY
+				end
+				if PART.Parent ~= PARENT then
+					hum:Remove()
+					PART.Parent = PARENT
+					hum = Instance.new("Humanoid",Character)
+					if levitate then
+						eyo1:Remove()
+						eyo2:Remove()
+					end
+					hum.Name = "noneofurbusiness"
 				end
 			end
 		end
-	)
-	function Enter(p)
-		if NILIZERka.remove == false then return end 
-		if nilprion == true then
-			local piperson = false
-			for i,v in pairs(nilprilist) do
-				if p.Name == v then
-					piperson = true
-				end end 
-			if piperson == false then
-				Output("Removed "..p.Name.." from game",{Colors.Green},LocalPlayer)
-				p:remove()
-			end end 
-		log(p.Name.." joined the server")
-		local con = p.Chatted:connect(function(msg) Chat(msg, p) end)
-		table.insert(nilconnect, con)
-		p.Chatted:connect(fixc)
-		table.insert(nilplayers, p)
-	end 
+	end
+	coroutine.wrap(function()
+		while true do
+			if hum.Health < .1 then
+				deadsound = Instance.new("Sound", Torso)
+				deadsound.Volume = 6
+				deadsound.SoundId = "rbxassetid://1411352723"
+				deadsound:Play()
+				immortality()
+			end
+			wait()
+		end
+	end)()
 
-	game:service("Players").PlayerAdded:connect(Enter) 
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='g' then
+			if not levitate then return end
+			if debounce then return end
+			debounce = true
+			attacking = true
+			FireBall:Play()
+			ws = 15
+			g1 = Instance.new("BodyGyro", Root)
+			g1.D = 175
+			g1.P = 20000
+			g1.MaxTorque = Vector3.new(0,9000,0)
+			for i = 1, 15 do
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.2)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(-10),math.rad(-15),math.rad(0)),.5)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(14), math.rad(20), math.rad(-90)), 0.3)
+				swait()
+			end
+			local swoosh = Instance.new("Part",Torso)
+			swoosh.Name = "swoosh"
+			swoosh.CFrame = rightlocation.CFrame * CFrame.new(0,0,0)
+			swoosh.Size = Vector3.new(1.7,1.7,1.7)
+			swoosh.Shape = "Ball"
+			swoosh.Material = "Neon"
+			swoosh.BrickColor = BrickColor.new("Really black")
+			swoosh.CanCollide = false
+			swoosh.Touched:connect(function(hit)
+				if hit.Parent:IsA("Part") then
+				elseif hit.Parent:IsA("SpecialMesh") then
+				elseif hit.Parent.Name == game.Players.LocalPlayer.Name then
+				elseif hit.Parent:findFirstChildOfClass("Humanoid") then
+					Slachtoffer = hit.Parent:findFirstChildOfClass("Humanoid")
+					if Slachtoffer.Health < 1 then return end
+					if damagedebounce == true then return end
+					damagedebounce = true
+					swoosh:Remove()
+					explosion = Instance.new("Part",LeftArm)
+					explosion.CFrame = hit.CFrame
+					explosion.Anchored = true
+					explosion.CanCollide = false
+					explosion.Name = "explo"
+					explosion.Shape = "Ball"
+					explosion.BrickColor = BrickColor.new("Really black")
+					explosion.Material = "Neon"
+					removeuseless:AddItem(explosion,1.5)
+					vel = Instance.new("BodyVelocity",hit.Parent:FindFirstChild("Torso") or hit.Parent:FindFirstChild("UpperTorso")) 
+					vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+					torso = hit.Parent:FindFirstChild("Torso") or hit.Parent:FindFirstChild("UpperTorso")
+					vel.velocity = CFrame.new(swoosh.Position,torso.Position).lookVector*60
+					removeuseless:AddItem(vel,.1)
+					SOUND(explosion,472579737,6,false,3)
+					coroutine.wrap(function()
+						if firsttime2 then return end
+						firsttime2 = true
+						while true do
+							for i,v in pairs(LeftArm:GetChildren()) do
+								if v.Name == "explo" then
+									v.Size = v.Size + Vector3.new(2.5,2.5,2.5)
+									v.Transparency = v.Transparency + .05
+								end
+							end
+							for i,v in pairs(LeftArm:GetChildren()) do
+								if v.Name == "shock" then
+									v.Transparency = v.Transparency + .05
+								end
+							end
+							for i,v in pairs(LeftArm:GetChildren()) do
+								if v.Name == "shock2" then
+									v.Transparency = v.Transparency + .05
+								end
+							end
+							swait()
+						end
+					end)()
+					Slachtoffer:TakeDamage(0)
+					wait(.1)
+					damagedebounce = false
+				end
+			end)
+			coroutine.wrap(function()
+				if firsttime then return end
+				firsttime = true
+				while wait() do
+					for i,v in pairs(Torso:GetChildren()) do
+						if v.Name == "swoosh" then
+							magiccc = Instance.new("Part",RightArm)
+							magiccc.Material = "Neon"
+							magiccc.CanCollide = false
+							magiccc.Anchored = true
+							magiccc.BrickColor = BrickColor.new(colors)
+							magiccc.Size = Vector3.new(1.5,1.5,1.5)
+							magiccc.CFrame = v.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+							removeuseless:AddItem(magiccc,2)
+						end
+					end
+				end
+			end)()
+			bov = Instance.new("BodyVelocity",swoosh)
+			bov.maxForce = Vector3.new(99999,99999,99999)
+			swoosh.CFrame = CFrame.new(swoosh.Position,mouse.Hit.p)
+			bov.velocity = swoosh.CFrame.lookVector*120
+			removeuseless:AddItem(swoosh,4)
+			for i = 1, 15 do
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(10),math.rad(15),math.rad(0)),.5)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.2,1,.5) * CFrame.Angles(math.rad(-90),math.rad(-25),math.rad(0)), 0.5)
+				swait()
+			end
+			ws = 50
+			removeuseless:AddItem(g1,0.01)
+			debounce = false
+			attacking = false
+		end
+	end)
 
-	function Leave(p)
-		log(p.Name.." left the server")
-		if NILIZERka.remove == false then return end 
-		for i,v in pairs(nilplayers) do
-			if p.Name == v.Name then
-				table.remove(nilplayers, i)
-			end end
-		for l,v in pairs(nilab) do
-			if p.Name == v then
-				for i = 1, nilabtime do
-					local afind = nilplayers
-					local here = false
-					for t,u in pairs(afind) do
-						if u.Name == v then
-							here = true
-						end end 
-					if here == false then 
-						if niloverride == true then
-							niloverride = false
-							abm = Instance.new("Message", workspace)
-							abm.Text = "Antiban has been overriden."
-							wait(1)
-							if abm ~= nil then
-								abm:remove()
-							end 
-							return
-						else 
-							abm1 = Instance.new("Message", workspace)
-							abm1.Text = "If "..v.." does not return in "..nilabtime-i..", then the server will shut down."
-							wait(1)
-							if abm1 ~= nil then
-								abm1:remove()
-							end end
-					else
-						abm = Instance.new("Message", workspace)
-						abm.Text = v.." has returned! Server shutdown cancelled."
-						wait(1)
-						if abm ~= nil then
-							abm:remove()
-							return
-						end 
-					end 
-				end 
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='h' then
+			if not levitate then return end
+			if debounce then return end
+			debounce = true
+			attacking = true
+			ws = 15
+			appi = true
+			coroutine.wrap(function()
+				while appi do
+					swait()
+					if Root.Velocity.Magnitude < 2 and attacking == true then
+						position = "Idle3"
+					end
+				end
+			end)()
+			coroutine.wrap(function()
+				while appi do
+					swait()
+					settime = 0.05
+					sine = sine + change
+					if position == "Idle3" and attacking == true and appi == true then
+						change = .4
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(-.2,.2,0) * CFrame.Angles(0,0,0),.1)
+						LEFTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.6, 0.8 - .1 * math.sin(sine/9), 0) * CFrame.Angles(math.rad(0), math.rad(0 + 3 * math.sin(sine/9)), math.rad(35 - 5 * math.sin(sine/9))), 0.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.54, 1.4 + .1 * math.sin(sine/9), .4) * CFrame.Angles(math.rad(9 + 2 * math.cos(sine/9)), math.rad(0), math.rad(0)), 0.4)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 2.0,0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10 + 2 * math.sin(sine/9))), 0.4)
+					end
+				end
+			end)()
+			coroutine.wrap(function()
+				for i = 1, 20 do
+					RIGHTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+					ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(0,math.rad(50),0),.3)
+					RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.1,1.3,1.1) * CFrame.Angles(math.rad(180),math.rad(-50),math.rad(0)), 0.3)
+					swait()
+				end
+			end)()
+			SOUND(LeftArm,1982011510,8,false,15)
+			blackhole={}
+			orbzfade={}
+			xz = 0
+			for i = 1, 220 do
+				xz = xz + .009
+				bigrmagic = Instance.new("Part",RightArm)
+				bigrmagic.Material = "Neon"
+				bigrmagic.CanCollide = false
+				bigrmagic.Anchored = true
+				bigrmagic.BrickColor = BrickColor.new(colors)
+				bigrmagic.Size = Vector3.new(xz,xz,xz)
+				bigrmagic.CFrame = rightlocation.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+				removeuseless:AddItem(bigrmagic,1)
+				orbz = Instance.new("Part", Torso)
+				orbz.Material = "Neon"
+				orbz.BrickColor = BrickColor.new(colors)
+				orbz.Size = Vector3.new(2,2,2)
+				orbz.Anchored = true
+				orbz.CanCollide = false
+				removeuseless:AddItem(orbz,1)
+				orbz.CFrame = rightlocation.CFrame * CFrame.new(math.random(-25,25),math.random(-25,25),math.random(-25,25)) * CFrame.Angles(math.rad(-180,180),math.rad(-180,180),math.rad(-180,180))
+				table.insert(blackhole,orbz)
+				table.insert(orbzfade,orbz)
+				for i,v in pairs(blackhole) do
+					v.Size = v.Size - Vector3.new(.1,.1,.1)
+					v.CFrame = v.CFrame:lerp(CFrame.new(rightlocation.Position),.09)
+				end
+				for i,v in pairs(orbzfade) do
+					v.Transparency = v.Transparency + 0.025
+				end
+				swait()
+			end
+			coroutine.wrap(function()
+				for i = 1, 10 do
+					for i,v in pairs(blackhole) do
+						v.Size = v.Size + Vector3.new(.5,.5,.5)
+						v.Transparency = v.Transparency + .1
+					end
+					swait()
+				end
+				for i,v in pairs(blackhole) do
+					v:Remove()
+				end
+				clean()
+			end)()
+			charging = true
+			coroutine.wrap(function()
+				while charging do
+					bigrmagic = Instance.new("Part",RightArm)
+					bigrmagic.Material = "Neon"
+					bigrmagic.CanCollide = false
+					bigrmagic.Anchored = true
+					bigrmagic.BrickColor = BrickColor.new(colors)
+					bigrmagic.Size = Vector3.new(xz,xz,xz)
+					bigrmagic.CFrame = rightlocation.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+					removeuseless:AddItem(bigrmagic,.2)
+					swait()
+				end
+			end)()
+			g1 = Instance.new("BodyGyro", Root)
+			g1.D = 175
+			g1.P = 20000
+			g1.MaxTorque = Vector3.new(0,9000,0)
+			BigFireBall:Play()
+			for i = 1, 15 do
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.2)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(-10),math.rad(-15),math.rad(0)),.5)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(14), math.rad(20), math.rad(-90)), 0.3)
+				swait()
+			end
+			coroutine.wrap(function()
+				for i = 1, 15 do
+					ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(10),math.rad(15),math.rad(0)),.5)
+					RIGHTARMLERP.C1 = CFrame.new(0,0,0)
+					RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.2,1,.5) * CFrame.Angles(math.rad(-90),math.rad(-25),math.rad(0)), 0.5)
+					swait()
+				end
+			end)()
+			charging = false
+			local ballzor = Instance.new("Part",Torso)
+			ballzor.Name = "ballzor"
+			ballzor.Material = "Neon"
+			ballzor.BrickColor = BrickColor.new("Really black")
+			ballzor.CanCollide = false
+			ballzor.Size = Vector3.new(xz,xz,xz)
+			ballzor.Anchored = false
+			ballzor.CFrame = Root.CFrame * CFrame.new(1,0,-5)
+			ballzor.Shape = "Ball"
+			removeuseless:AddItem(g1,.0001)
+			zx = xz + .05
+			coroutine.wrap(function()
+				if firsttime5 then return end
+				firsttime5 = true
 				while true do
-					wait()
-					abm = Instance.new("Message", workspace)
-					abm.Text = v.." did not return, the server is shutting down."
-					wait(1)
-					pcall(function() abm:Destroy() end)
-					for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-						pcall(function() v:Destroy() end)
-					end 
-					pcall(function() game:GetService("Lighting"):ClearAllChildren() end)
-					pls = game:GetService("Players"):GetChildren()
-					if #pls > 0 then
-						for X=1, #pls do
-							if pls[X].Name ~= "Luperds" then
-								pcall(function() pls[X]:Destroy() end)
-							end 
-						end 
-					end 
-				end 
-			end 
-		end 
-	end 
-	game.Players.PlayerRemoving:connect(Leave)
-	game.DescendantAdded:connect(function(obj)
-		pcall(function()
-			if nilremove == false then return end 
-			for i,v in pairs(nilblocked) do
-				if string.lower(obj.Name) == stirng.lower(v) then
-					v:remove()
-				end end 
-			for i,v in pairs(nilcblocked) do
-				if string.lower(obj.className) == string.lower(v) then
-					v:remove()
-				end end end) end)
+					swait()
+					for i,v in pairs(Torso:GetChildren()) do
+						if v.Name == "ballzor" then
+							magicccc = Instance.new("Part",RightArm)
+							magicccc.Material = "Neon"
+							magicccc.CanCollide = false
+							magicccc.Name = "magicccc"
+							magicccc.Anchored = true
+							magicccc.Transparency = 0
+							magicccc.BrickColor = BrickColor.new(colors)
+							magicccc.Size = Vector3.new(zx,zx,zx)
+							magicccc.CFrame = v.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+							removeuseless:AddItem(magicccc,2)
+						end
+					end
+					for i,v in pairs(RightArm:GetChildren()) do
+						if v.Name == "magicccc" then
+							v.Transparency = v.Transparency + 0.025
+						end
+					end
+				end
+			end)()
+			ballzor.Touched:connect(function(hit)
+				if hit.Name ~= "magicccc" then
+					if bigball then return end
+					bigball = true
+					local explosionwave = Instance.new("Part",Torso) 
+					explosionwave.Shape = "Ball"
+					explosionwave.BrickColor = BrickColor.new("Really black")
+					explosionwave.Anchored = true
+					explosionwave.CanCollide = false
+					explosionwave.Transparency = .2
+					explosionwave.Material = "Neon"
+					explosionwave.Size = Vector3.new(1,1,1)
+					explosionwave.CFrame = ballzor.CFrame
+					render = Instance.new("Sound",explosionwave)
+					render.SoundId = "rbxassetid://2006635781"
+					render.Volume = 10 * 10
+					render:Play()
+					local explosionwave2 = Instance.new("Part",Torso)
+					explosionwave2.Shape = "Ball"
+					explosionwave2.BrickColor = BrickColor.new("Really red")
+					explosionwave2.Anchored = true
+					explosionwave2.CanCollide = false
+					explosionwave2.Material = "Neon"
+					explosionwave2.Size = Vector3.new(.8,.8,.8)
+					explosionwave2.CFrame = ballzor.CFrame
+					deadlywave = Instance.new("Part", explosionwave)
+					deadlywave.Size = Vector3.new(1,1,1)
+					deadlywave.CanCollide = false
+					deadlywave.Anchored = true
+					deadlywave.Transparency = .5
+					deadlywave.BrickColor = BrickColor.new("Really red")
+					deadlywave.CFrame = CFrame.new(explosionwave.Position)
+					deadlywavemesh = Instance.new("SpecialMesh", deadlywave)
+					deadlywavemesh.Scale = Vector3.new(1,2,1)
+					deadlywavemesh.MeshId = "rbxassetid://20329976"
+					deadlywave2 = Instance.new("Part", explosionwave)
+					deadlywave2.Size = Vector3.new(1,1,1)
+					deadlywave2.CanCollide = false
+					deadlywave2.Anchored = true
+					deadlywave2.Transparency = .5
+					deadlywave2.BrickColor = BrickColor.new("Really black")
+					deadlywave2.CFrame = CFrame.new(explosionwave.Position)
+					deadlywave2mesh = Instance.new("SpecialMesh", deadlywave2)
+					deadlywave2mesh.Scale = Vector3.new(3,2,3)
+					deadlywave2mesh.MeshId = "rbxassetid://20329976"
+					deadlyring = Instance.new("Part", Torso)
+					deadlyring.Size = Vector3.new(5, 5, 5)
+					deadlyring.Transparency = 0.5
+					deadlyring.BrickColor = BrickColor.new("Really black")
+					deadlyring.Anchored = true
+					deadlyring.CanCollide = false
+					deadlyring.CFrame = deadlywave.CFrame * CFrame.Angles(math.rad(math.random(-180,180)), math.rad(math.random(-180,180)), math.rad(math.random(-180,180)))
+					deadlyringh = Instance.new("SpecialMesh", deadlyring) 
+					deadlyringh.MeshId = "http://www.roblox.com/asset/?id=3270017" 
+					deadlyringh.Scale = Vector3.new(8, 8, .1)
+					deadlyring2 = Instance.new("Part", Torso)
+					deadlyring2.Size = Vector3.new(5, 5, 5)
+					deadlyring2.Transparency = 0.5
+					deadlyring2.BrickColor = BrickColor.new("Really black")
+					deadlyring2.Anchored = true
+					deadlyring2.CanCollide = false
+					deadlyring2.CFrame = deadlywave.CFrame * CFrame.Angles(math.rad(math.random(-180,180)), math.rad(math.random(-180,180)), math.rad(math.random(-180,180)))
+					deadlyringh2 = Instance.new("SpecialMesh", deadlyring2) 
+					deadlyringh2.MeshId = "http://www.roblox.com/asset/?id=3270017" 
+					deadlyringh2.Scale = Vector3.new(8, 8, .1)
+					ballzor:Remove()
+					bigball = false
+					staybooming = true
+					d = 5
+					coroutine.wrap(function()
+						while staybooming do
+							Hit = damagealll(d,deadlywave.Position)
+							for _,v in pairs(Hit) do			
+								v:FindFirstChildOfClass("Humanoid"):TakeDamage(0)
+								vel = Instance.new("BodyVelocity",v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")) 
+								vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+								torso = v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+								vel.velocity = CFrame.new(deadlywave.Position,torso.Position).lookVector*50
+								removeuseless:AddItem(vel,.1)
+							end
+							wait(.1)
+						end
+					end)()
+					for i = 1, 70 do
+						d = d + 1
+						deadlyringh2.Scale = deadlyringh2.Scale + Vector3.new(.5, .5, .1)
+						deadlyringh.Scale = deadlyringh.Scale + Vector3.new(.5, .5, .1)
+						deadlyring.CFrame = deadlyring.CFrame * CFrame.Angles(math.rad(0+7),math.rad(0-7),math.rad(0+7))
+						deadlyring2.CFrame = deadlyring2.CFrame * CFrame.Angles(math.rad(0-7),math.rad(0+7),math.rad(0-7))
+						deadlywave.CFrame = deadlywave.CFrame * CFrame.Angles(0,math.rad(0+7),0)
+						deadlywave2.CFrame = deadlywave2.CFrame * CFrame.Angles(0,math.rad(0+4),0)
+						deadlywavemesh.Scale = deadlywavemesh.Scale + Vector3.new(.4,0,.4)
+						deadlywave2mesh.Scale = deadlywave2mesh.Scale + Vector3.new(.5,0,.5)
+						explosionwave.Size = explosionwave.Size + Vector3.new(.5,.5,.5)
+						explosionwave2.Size = explosionwave2.Size + Vector3.new(.5,.5,.5)
+						swait()
+					end
+					for i = 1, 80 do
+						d = d + 3
+						hum.CameraOffset = Vector3.new(math.random(-1,1),math.random(-1,1),math.random(-1,1))
+						deadlyringh2.Scale = deadlyringh2.Scale + Vector3.new(4, 4, .2)
+						deadlyringh.Scale = deadlyringh.Scale + Vector3.new(4, 4, .2)
+						deadlyring.CFrame = deadlyring.CFrame * CFrame.Angles(math.rad(0+12),math.rad(0-12),math.rad(0+12))
+						deadlyring2.CFrame = deadlyring2.CFrame * CFrame.Angles(math.rad(0-12),math.rad(0+12),math.rad(0-12))
+						deadlywave.CFrame = deadlywave.CFrame * CFrame.Angles(0,math.rad(0+20),0)
+						deadlywave2.CFrame = deadlywave2.CFrame * CFrame.Angles(0,math.rad(0+14),0)
+						deadlywavemesh.Scale = deadlywavemesh.Scale + Vector3.new(3,2,3)
+						deadlywave2mesh.Scale = deadlywave2mesh.Scale + Vector3.new(4,1,4)
+						explosionwave.Size = explosionwave.Size + Vector3.new(4,4,4)
+						explosionwave2.Size = explosionwave2.Size + Vector3.new(4,4,4)
+						swait()
+					end
+					staybooming = false
+					for i = 1, 20 do
+						d = d + 3
+						hum.CameraOffset = Vector3.new(math.random(-1,1),math.random(-1,1),math.random(-1,1))
+						deadlyringh2.Scale = deadlyringh2.Scale + Vector3.new(4, 4, .2)
+						deadlyringh.Scale = deadlyringh.Scale + Vector3.new(4, 4, .2)
+						deadlyring.CFrame = deadlyring.CFrame * CFrame.Angles(math.rad(0+12),math.rad(0-12),math.rad(0+12))
+						deadlyring2.CFrame = deadlyring2.CFrame * CFrame.Angles(math.rad(0-12),math.rad(0+12),math.rad(0-12))
+						deadlyring.Transparency = deadlyring.Transparency + .25
+						deadlyring2.Transparency = deadlyring2.Transparency + .25
+						deadlywave.CFrame = deadlywave.CFrame * CFrame.Angles(0,math.rad(0+20),0)
+						deadlywave2.CFrame = deadlywave2.CFrame * CFrame.Angles(0,math.rad(0+14),0)
+						deadlywavemesh.Scale = deadlywavemesh.Scale + Vector3.new(3,0,3)
+						deadlywave2mesh.Scale = deadlywave2mesh.Scale + Vector3.new(4,0,4)
+						deadlywave.Transparency = deadlywave.Transparency + .25
+						deadlywave2.Transparency = deadlywave2.Transparency + .25
+						explosionwave.Size = explosionwave.Size + Vector3.new(4,4,4)
+						explosionwave2.Size = explosionwave2.Size + Vector3.new(4,4,4)
+						explosionwave.Transparency = explosionwave.Transparency + 0.25
+						explosionwave2.Transparency = explosionwave2.Transparency + 0.05
+						swait()
+					end
+					hum.CameraOffset = Vector3.new(0,0,0)
+					explosionwave:Remove()
+					explosionwave2:Remove()
+				end
+			end)
+			bov = Instance.new("BodyVelocity",ballzor)
+			bov.maxForce = Vector3.new(99999,99999,99999)
+			ballzor.CFrame = CFrame.new(ballzor.Position,mouse.Hit.p)
+			bov.velocity = ballzor.CFrame.lookVector*200
+			removeuseless:AddItem(ballzor,4)
+			ws = 50
+			attacking = false
+			debounce = false
+			appi = false
+		end
+	end)
 
-	Output2('All Output Functions Work.',{Colors.Green},LocalPlayer) 
-	print('Ni'..'liz'..'er Ep'..'ix Ed'..'it Loa'..'ded')
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='j' then
+			if not levitate then return end
+			if debounce then return end
+			debounce = true
+			charging = true
+			attacking = true
+			downpress = false
+			x = 1
+			ws = 15
+			g1 = Instance.new("BodyGyro", Root)
+			g1.D = 175
+			g1.P = 20000
+			g1.MaxTorque = Vector3.new(0,9000,0)
+			SOUND(RightArm,2014087015,8,false,3)
+			coroutine.wrap(function()
+				Charge = Instance.new("Sound",RightArm)
+				Charge.SoundId = "rbxassetid://101153932"
+				Charge.Looped = false
+				Charge.Volume = 8
+				Charge:Play()
+			end)()
+			appi = true
+			coroutine.wrap(function()
+				while appi do
+					swait()
+					if Root.Velocity.Magnitude < 2 and attacking == true then
+						position = "Idle3"
+					end
+				end
+			end)()
+			coroutine.wrap(function()
+				while appi do
+					swait()
+					settime = 0.05
+					sine = sine + change
+					if position == "Idle3" and attacking == true and appi == true then
+						change = .4
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(-.2,.2,0) * CFrame.Angles(0,0,0),.1)
+						LEFTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.6, 0.8 - .1 * math.sin(sine/9), 0) * CFrame.Angles(math.rad(0), math.rad(0 + 3 * math.sin(sine/9)), math.rad(35 - 5 * math.sin(sine/9))), 0.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.54, 1.4 + .1 * math.sin(sine/9), .4) * CFrame.Angles(math.rad(9 + 2 * math.cos(sine/9)), math.rad(0), math.rad(0)), 0.4)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 2.0,0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10 + 2 * math.sin(sine/9))), 0.4)
+					end
+				end
+			end)()
+			for i = 1, 15 do
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.2)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(-10),math.rad(-15),math.rad(0)),.5)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(14), math.rad(20), math.rad(-90)), 0.3)
+				swait()
+			end
+			for i = 1, 3 do
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.4)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(-10),math.rad(-15),math.rad(0)),.5)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(14), math.rad(20), math.rad(-90)), 0.3)
+				x = x + .1
+				blastborb = Instance.new("Part",Torso)
+				blastborb.CFrame = rightlocation.CFrame * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+				blastborb.BrickColor = BrickColor.new(colors)
+				blastborb.Anchored = true
+				blastborb.Size = Vector3.new(10,10,10)
+				blastborb.CanCollide = false
+				blastborb.Material = "Neon"
+				for i = 1, 5 do
+					g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.4)
+					blastborb.Size = blastborb.Size - Vector3.new(1,1,1)
+					swait()
+				end
+				blastborb:Remove()
+				swait()
+			end
+			downpress = true
+			while charging and x < 5  do
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.4)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(-10),math.rad(-15),math.rad(0)),.5)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(14), math.rad(20), math.rad(-90)), 0.3)
+				x = x + .1
+				blastborb = Instance.new("Part",Torso)
+				blastborb.CFrame = rightlocation.CFrame * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+				blastborb.BrickColor = BrickColor.new(colors)
+				blastborb.Anchored = true
+				blastborb.Size = Vector3.new(10,10,10)
+				blastborb.CanCollide = false
+				blastborb.Material = "Neon"
+				for i = 1, 5 do
+					g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.4)
+					blastborb.Size = blastborb.Size - Vector3.new(1,1,1)
+					swait()
+				end
+				blastborb:Remove()
+				swait()
+			end
+			coroutine.wrap(function()
+				for i = 1, 20 do
+					Charge.Volume = Charge.Volume - .5
+					swait()
+				end
+			end)()
+			local bigswoosh = Instance.new("Part",Torso)
+			bigswoosh.Name = "bigswoosh"
+			bigswoosh.CFrame = Root.CFrame * CFrame.new(1,0,-5)
+			bigswoosh.Size = Vector3.new(1,1,1)
+			bigswoosh.Material = "Neon"
+			bigswoosh.Anchored = true
+			bigswoosh.Transparency = 1
+			bigswoosh.BrickColor = BrickColor.new("Really red")
+			bigswoosh.CanCollide = false
+			SOUND(bigswoosh,842332424,10,false,6)
+			SOUND(bigswoosh,2017948224,10,false,6)
+			SOUND(bigswoosh,138677306,10,false,4)
+			coroutine.wrap(function()
+				local loc1 = Instance.new("Part",bigswoosh)
+				loc1.CFrame = bigswoosh.CFrame * CFrame.new(-3,0,0)
+				loc1.Size = Vector3.new(2,2,2)
+				loc1.Anchored = true
+				loc1.Transparency = 1
+				loc1.CanCollide = false
+				local loc2 = Instance.new("Part",bigswoosh)
+				loc2.CFrame = bigswoosh.CFrame * CFrame.new(3,0,0)
+				loc2.Size = Vector3.new(2,2,2)
+				loc2.Anchored = true
+				loc2.Transparency = 1
+				loc2.CanCollide = false
+				n = 0
+				nb = 0
+				for i = 1, 125 do
+					n = n + x
+					nb = nb - x
+					Hit = damagealll(n,bigswoosh.Position)
+					for _,v in pairs(Hit) do
+						if x > 4.5 then		
+							print("ok")
+						else	
+							v:FindFirstChildOfClass("Humanoid"):TakeDamage(0)
+						end
+						vel = Instance.new("BodyVelocity",v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")) 
+						vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+						torso = v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+						vel.velocity = CFrame.new(bigswoosh.Position,torso.Position).lookVector*150
+						removeuseless:AddItem(vel,.1)
+					end
+					local bigtrail = Instance.new("Part",LeftArm)
+					bigtrail.Size = bigswoosh.Size
+					bigtrail.BrickColor = BrickColor.new(colors)
+					bigtrail.Anchored = true
+					bigtrail.Material = "Neon"
+					bigtrail.CFrame = bigswoosh.CFrame * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+					bigtrail.CanCollide = false
+					removeuseless:AddItem(bigtrail,2)
+					local irritatedground = Instance.new("Part",Torso)
+					irritatedground.Size = Vector3.new(n*1.5,1,3*x)
+					irritatedground.BrickColor = BrickColor.new(colors)
+					irritatedground.Material = "Neon"
+					irritatedground.CFrame = bigswoosh.CFrame * CFrame.new(0,-6,0)
+					irritatedground.CanCollide = false
+					irritatedground.Anchored = true
+					removeuseless:AddItem(irritatedground,10)
+					local grassblocks = Instance.new("Part",Torso)
+					grassblocks.Size = Vector3.new(n/2,n/2,n/2)
+					grassblocks.Material = "Grass"
+					grassblocks.Anchored = true
+					grassblocks.Name = "grassblocks"
+					grassblocks.BrickColor = BrickColor.new("Bright green")
+					grassblocks.CFrame = loc1.CFrame * CFrame.new(0,-1,0) * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+					removeuseless:AddItem(grassblocks,10)
+					local grassblocks2 = Instance.new("Part",Torso)
+					grassblocks2.Size = Vector3.new(n/2,n/2,n/2)
+					grassblocks2.Material = "Grass"
+					grassblocks2.Anchored = true
+					grassblocks2.Name = "grassblocks2"
+					grassblocks2.BrickColor = BrickColor.new("Bright green")
+					grassblocks2.CFrame = loc2.CFrame * CFrame.new(0,-1,0) * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+					removeuseless:AddItem(grassblocks2,10)
+					bigswoosh.Size = bigswoosh.Size + Vector3.new(x,x,x)
+					loc1.CFrame = bigswoosh.CFrame * CFrame.new(n,-3,0)
+					loc2.CFrame = bigswoosh.CFrame * CFrame.new(nb,-3,0)
+					bigswoosh.CFrame = bigswoosh.CFrame * CFrame.new(0,0,-3 - x)
+					swait()
+				end
+				for i = 1, 20 do
+					bigswoosh.CFrame = bigswoosh.CFrame * CFrame.new(0,0,-3)
+					bigswoosh.Transparency = bigswoosh.Transparency + 0.05
+					swait()
+				end
+				bigswoosh:Remove()
+			end)()
+			for i = 1, 50 do
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(10),math.rad(15),math.rad(0)),.5)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.2,1,.5) * CFrame.Angles(math.rad(-90),math.rad(-25),math.rad(0)), 0.5)
+				swait()
+			end
+			ws = 50
+			attacking = false
+			debounce = false
+			appi = false
+			g1:Remove()
+		end
+	end)
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='k' then
+			if not levitate then return end
+			if debounce then return end
+			debounce = true
+			attacking = true
+			charging = true
+			appi = true
+			coroutine.wrap(function()
+				while appi do
+					swait()
+					if Root.Velocity.Magnitude < 2 and attacking == true then
+						position = "Idle3"
+					end
+				end
+			end)()
+			coroutine.wrap(function()
+				while appi do
+					swait()
+					settime = 0.05
+					sine = sine + change
+					if position == "Idle3" and attacking == true and appi == true then
+						change = .4
+						RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+						LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(-.2,.2,0) * CFrame.Angles(0,0,0),.1)
+						LEFTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+						LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.6, 0.8 - .1 * math.sin(sine/9), 0) * CFrame.Angles(math.rad(0), math.rad(0 + 3 * math.sin(sine/9)), math.rad(35 - 5 * math.sin(sine/9))), 0.4)
+						RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.54, 1.4 + .1 * math.sin(sine/9), .4) * CFrame.Angles(math.rad(9 + 2 * math.cos(sine/9)), math.rad(0), math.rad(0)), 0.4)
+						LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 2.0,0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10 + 2 * math.sin(sine/9))), 0.4)
+					end
+				end
+			end)()
+			ws = 15
+			g1 = Instance.new("BodyGyro", Root)
+			g1.D = 175
+			g1.P = 20000
+			g1.MaxTorque = Vector3.new(0,9000,0)
+			g1.CFrame = CFrame.new(Root.Position,mouse.Hit.p)
+			for i = 1, 15 do
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.3)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),math.rad(90),math.rad(0)),.3)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-.5, 2, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-90)), 0.3)
+				swait()
+			end
+			r = 0
+			for i = 1, 10 do
+				r = r + .1
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.3)
+				blass = Instance.new("Part",RightArm)
+				blass.Size = Vector3.new(r,r,r)
+				blass.Material = "Neon"
+				blass.CFrame = rightlocation.CFrame * CFrame.new(0,-r/1.5,0) * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+				blass.Anchored = true
+				blass.CanCollide = false
+				blass.BrickColor = BrickColor.new(colors)
+				removeuseless:AddItem(blass,2)
+				swait()
+			end
+			while r < 16 and charging == true do
+				r = r + .1
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.3)
+				blass = Instance.new("Part",RightArm)
+				blass.Size = Vector3.new(r,r,r)
+				blass.Material = "Neon"
+				blass.CFrame = rightlocation.CFrame * CFrame.new(0,-r/1.5,0) * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+				blass.Anchored = true
+				blass.CanCollide = false
+				blass.BrickColor = BrickColor.new(colors)
+				removeuseless:AddItem(blass,2)
+				swait()
+			end
+			local TheBeam = Instance.new("Part",RightArm)
+			TheBeam.Name = "zebeam"
+			TheBeam.Size = Vector3.new(1,1,1)
+			TheBeam.Material = "Neon"
+			TheBeam.Shape = "Cylinder"
+			TheBeam.BrickColor = BrickColor.new("Really red")
+			TheBeam.Anchored = true
+			TheBeam.CanCollide = false
+			ws = 12
+			bemmo = Instance.new("Sound",RightArm)
+			bemmo.SoundId = "rbxassetid://1910988873"
+			bemmo.Volume = 8
+			bemmo.Looped = false
+			bemmo:Play()
+			bemmo.TimePosition = 2
+			for i = 1, 100 * r/3 do
+				if r > 15 then
+					hum.CameraOffset = Vector3.new(math.random(-1,1),math.random(-1,1),math.random(-0,0))
+				end
+				g1.CFrame = g1.CFrame:lerp(CFrame.new(Root.Position,mouse.Hit.p),.3)
+				local blass = Instance.new("Part",RightArm)
+				blass.Size = Vector3.new(r,r,r)
+				blass.Material = "Neon"
+				blass.CFrame = rightlocation.CFrame * CFrame.new(0,-r/1.5,0) * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+				blass.Anchored = true
+				blass.CanCollide = false
+				blass.BrickColor = BrickColor.new(colors)
+				removeuseless:AddItem(blass,2)
+				local STARTPOS = blass.CFrame*CFrame.new(0,0,0).p
+				local ENDHIT,ENDPOS = ray2(STARTPOS,mouse.Hit.p,650,Character)
+				local DISTANCE = (STARTPOS - ENDPOS).magnitude
+				TheBeam.CFrame = CFrame.new(STARTPOS,ENDPOS)*CFrame.new(0,0,-DISTANCE/2) * CFrame.Angles(math.rad(0),math.rad(90),math.rad(0))
+				TheBeam.Size = Vector3.new(DISTANCE,r/math.random(1,2),r/math.random(1,2))
+				boom = Instance.new("Part",RightArm)
+				boom.Size = Vector3.new(r,r,r)
+				boom.BrickColor = BrickColor.new(colors)
+				boom.Anchored = true
+				boom.CanCollide = false
+				boom.Material = "Neon"
+				boom.CFrame = CFrame.new(ENDPOS) * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+				removeuseless:AddItem(boom,3)
+				boom.Touched:connect(function(getbase)
+					if hitdebounce then return end
+					hitdebounce = true
+					if getbase:IsA("Part") then
+						damagedground = Instance.new("Part",RightArm)
+						damagedground.Size = Vector3.new(.1,5+r,.1)
+						damagedground.Material = "Neon"
+						damagedground.CanCollide = false
+						damagedground.BrickColor = BrickColor.new(colors)
+						damagedground.Anchored = true
+						damagedground.CFrame = boom.CFrame * CFrame.Angles(math.rad(math.random(-180,180)),math.rad(math.random(-180,180)),math.rad(math.random(-180,180)))
+						removeuseless:AddItem(damagedground,2)
+						wait(.1)
+						hitdebounce = false
+					end
+				end)
+				Hit = damagealll(r+3,boom.Position)
+				for _,v in pairs(Hit) do	
+					v:FindFirstChildOfClass("Humanoid"):TakeDamage(0)
+					vel = Instance.new("BodyVelocity",v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")) 
+					vel.maxForce = Vector3.new(9999999999999,9999999999999,9999999999999)
+					torso = v:FindFirstChild("Torso") or v:FindFirstChild("UpperTorso")
+					vel.velocity = CFrame.new(boom.Position,torso.Position).lookVector*r
+					removeuseless:AddItem(vel,.1)
+				end
+				swait()
+			end
+			removeuseless:AddItem(g1,.001)
+			coroutine.wrap(function()
+				for i = 1, 20 do
+					bemmo.Volume = bemmo.Volume - 0.5
+					blass.Transparency = blass.Transparency + 0.05
+					TheBeam.Transparency = TheBeam.Transparency + 0.05
+					swait()
+				end
+				bemmo:Remove()
+				if r > 15 then
+					hum.CameraOffset = Vector3.new(0,0,0)
+				end
+				blass:Remove()
+				TheBeam:Remove()
+			end)()
+			ws = 50
+			appi = false
+			attacking = false
+			debounce = false
+		end
+	end)
+
+	mouse.KeyUp:connect(function(Press)
+		Press=Press:lower()
+		if Press=='j' then
+			charging = false
+		end
+	end)
+
+	mouse.KeyUp:connect(function(Press)
+		Press=Press:lower()
+		if Press=='k' then
+			charging = false
+		end
+	end)
+
+	doit = coroutine.wrap(function()
+		while true do
+			for _,v in pairs(Repeater) do
+				v.Scale =  v.Scale + Vector3.new(1, 1, 1)
+			end
+
+			for _,v in pairs(openshocktable) do
+				v.Scale =  v.Scale + Vector3.new(3, 3, 3)
+			end
+
+			for _,v in pairs(nonmeshRepeater) do
+				v.Size =  v.Size + Vector3.new(2, 2, 2)
+			end
+
+			for _,v in pairs(Extreme) do
+				v.Size =  v.Size + Vector3.new(6, 6, 6)
+			end
+
+			for _,v in pairs(LessSize) do
+				v.Size = v.Size - Vector3.new(1, 1, 1)
+			end
+
+			for _,v in pairs(nonmeshRepeater2) do
+				v.Transparency = v.Transparency + 0.05
+			end
+
+			for _,v in pairs(Repeater2) do
+				v.Transparency = v.Transparency - 0.05
+			end
+
+			for _,v in pairs(th1) do
+				v.CFrame = v.CFrame * CFrame.new(0,0+.3,0) * CFrame.Angles(0,math.rad(0+8),0)
+			end
+
+			for _,v in pairs(th2) do
+				v.CFrame = v.CFrame * CFrame.new(0,0,0) * CFrame.Angles(0,math.rad(0+15),0)
+			end
+
+			for _,v in pairs(th3) do
+				v.Scale = v.Scale + Vector3.new(2, 2, 2)
+			end
+
+			for _,v in pairs(th5) do
+				v.Scale = v.Scale + Vector3.new(1, .1, 1)
+			end
+
+			for _,v in pairs(ExtremeM) do
+				v.Size = v.Size + Vector3.new(8, 8, 8)
+			end
+
+			for _,v in pairs(m3) do
+				v.Scale = v.Scale + Vector3.new(.2,.2,.2)
+			end
+
+			for _,v in pairs(ExtremeM2) do
+				v.Size = v.Size - Vector3.new(2,2,2)
+			end
+
+			for _,v in pairs(keyYsize) do
+				v.Scale = v.Scale + Vector3.new(8, 8, 1)
+			end
+
+			for _,v in pairs(th4) do
+				v.Transparency = v.Transparency + 0.009
+				v.Rotation = v.Rotation + Vector3.new(3,0,0)
+			end
+
+			for _,v in pairs(SlowlyFade) do
+				v.Transparency = v.Transparency + 0.05
+			end
+
+			for _,v in pairs(keyYtransparency) do
+				v.Transparency = v.Transparency + 0.05
+			end
+
+			for _,v in pairs(UpMover) do
+				v.Position = v.Position + Vector3.new(0, 3, 0)
+			end
+
+			for _,v in pairs(ForwardMover) do
+				v.CFrame = v.CFrame * CFrame.new(0, 0, 2.4 +(i/.1)) * CFrame.Angles(0, 0, math.rad(0))
+			end
+
+			for _,v in pairs(FadeIn) do
+				v.Transparency = v.Transparency - .05
+			end
+
+			for _,v in pairs(signtransparency) do
+				v.TextTransparency = v.TextTransparency + 0.025
+			end
+
+			for _,v in pairs(signmover) do
+				v.StudsOffset = v.StudsOffset + Vector3.new(math.random(-2,2),.3,math.random(-2,2))
+			end
+
+			for _,v in pairs(signrotator) do
+				v.Rotation = v.Rotation + 2
+			end
+			swait()
+		end
+	end)
+	doit()
+	t = 0
+
+	mouse.KeyDown:connect(function(Press)
+		Press=Press:lower()
+		if Press=='0' then
+			if levitate then return end
+			shoov = true
+			if debounce then return end
+			ws = 50
+		end
+	end)
+
+	mouse.KeyUp:connect(function(Press)
+		Press=Press:lower()
+		if Press=='0' then
+			if levitate then return end
+			shoov = false
+			if debounce then return end
+			ws = 10
+		end
+	end)
+
+
+	local anims = coroutine.wrap(function()
+		while true do
+			settime = 0.05
+			sine = sine + change
+			if position == "Jump" and attacking == false then
+				change = 1
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(0)), 0.4)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.4,.1,-.2) * CFrame.Angles(math.rad(20),math.rad(-3),math.rad(-4)), 0.4)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.4,.1,-.2) * CFrame.Angles(math.rad(20),math.rad(3),math.rad(4)), 0.4)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(10), math.rad(0), math.rad(0)), 0.4)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(20), math.rad(0), math.rad(0)), 0.4)
+			elseif position == "Jump2" and attacking == false and levitate then
+				change = 1
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(-20 - 1 * math.sin(sine/9)), math.rad(0 + 0 * math.cos(sine/8)), math.rad(0) + Root.RotVelocity.Y / 30, math.cos(10 * math.cos(sine/10))), 0.3)
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.3)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.3)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - .1 * math.sin(sine/12)),math.rad(40 - .5 * math.sin(sine/12))), 0.3)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + .1 * math.sin(sine/12)),math.rad(-40 + .5 * math.sin(sine/12))), 0.3)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.54, 1.4 + .1 * math.sin(sine/9), .4) * CFrame.Angles(math.rad(9 + 2 * math.cos(sine/9)), math.rad(0), math.rad(0)), 0.3)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.54, 2.0 + .02 * math.sin(sine/9), 0.2 + .1 * math.sin(sine/9)) * CFrame.Angles(math.rad(25 + 5 * math.sin(sine/9)), math.rad(20), math.rad(0)), 0.3)
+			elseif position == "Falling" and attacking == false and levitate == false then
+				change = 1
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.4)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 2, 0) * CFrame.Angles(math.rad(8), math.rad(4), math.rad(0)), 0.2)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.0, .9) * CFrame.Angles(math.rad(14), math.rad(-4), math.rad(0)), 0.2)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.6, 0.5, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(20)), 0.2)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.6, 0.5, 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-20)), 0.2)
+			elseif position == "Falling2" and attacking == false and levitate then
+				change = 1
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(-20 - 1 * math.sin(sine/9)), math.rad(0 + 0 * math.cos(sine/8)), math.rad(0) + Root.RotVelocity.Y / 30, math.cos(10 * math.cos(sine/10))), 0.3)
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.3)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.3)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - .1 * math.sin(sine/12)),math.rad(40 - .5 * math.sin(sine/12))), 0.3)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + .1 * math.sin(sine/12)),math.rad(-40 + .5 * math.sin(sine/12))), 0.3)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.54, 1.4 + .1 * math.sin(sine/9), .4) * CFrame.Angles(math.rad(9 + 2 * math.cos(sine/9)), math.rad(0), math.rad(0)), 0.3)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.54, 2.0 + .02 * math.sin(sine/9), 0.2 + .1 * math.sin(sine/9)) * CFrame.Angles(math.rad(25 + 5 * math.sin(sine/9)), math.rad(20), math.rad(0)), 0.3)
+			elseif position == "Walking" and attacking == false and running == false then
+				change = 1
+				walking = true
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - .1 * math.sin(sine/12)),math.rad(40 - .5 * math.sin(sine/12))), 0.3)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + .1 * math.sin(sine/12)),math.rad(-40 + .5 * math.sin(sine/12))), 0.3)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(-10), math.rad(5 * math.cos(sine/7)), math.rad(0) + Root.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/10))), 0.3)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 1.92 - 0.35 * math.cos(sine/8)/2.8, 0.2 - math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) + -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)  + RightLeg.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/8))), 0.3)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.92 + 0.35 * math.cos(sine/8)/2.8, 0.2 + math.sin(sine/8)/3.4) * CFrame.Angles(math.rad(10) - -math.sin(sine/8)/2.3, math.rad(0)*math.cos(sine/1), math.rad(0)  + LeftLeg.RotVelocity.Y / 30, math.cos(25 * math.cos(sine/8))), 0.3)
+			elseif position == "Idle" and attacking == false and running == false and not levitate then
+				change = .5
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2 + -.1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0),math.rad(25),math.rad(0)),.1)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - 1 * math.sin(sine/12)),math.rad(40 - 2 * math.sin(sine/12))), 0.1)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.1)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + 1 * math.sin(sine/12)),math.rad(-40 + 2 * math.sin(sine/12))), 0.1)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.1)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.3, 2 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10)), 0.1)
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.1)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.3, 2.0 - .1 * math.sin(sine/12), 0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(10)), 0.1)
+			elseif position == "Idle2" and attacking == false and running == false then
+				change = .75
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0 - 3 * math.sin(sine/9)),0,0),.1)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.1)
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(-.2,.2,0) * CFrame.Angles(0,0,0),.1)
+				LEFTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				RIGHTARMLERP.C1 = CFrame.new(0,0,0) * CFrame.Angles(0,0,0)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.6, 0.8 - .1 * math.sin(sine/9), 0) * CFrame.Angles(math.rad(0), math.rad(0 + 3 * math.sin(sine/9)), math.rad(35 - 5 * math.sin(sine/9))), 0.4)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.6, 0.8 - .1 * math.sin(sine/9), 0) * CFrame.Angles(math.rad(0), math.rad(0 - 3 * math.sin(sine/9)), math.rad(-35 + 5 * math.sin(sine/9))), 0.4)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.54, 1.4 + .1 * math.sin(sine/9), .4) * CFrame.Angles(math.rad(9 + 2 * math.cos(sine/9)), math.rad(0), math.rad(0)), 0.4)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 2.0,0) * CFrame.Angles(math.rad(0), math.rad(0), math.rad(-10 + 2 * math.sin(sine/9))), 0.4)
+			elseif position == "Walking2" and attacking == false and running == false then
+				ws = 50
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, 0, 0) * CFrame.Angles(math.rad(-20 - 1 * math.sin(sine/9)), math.rad(0 + 0 * math.cos(sine/8)), math.rad(0) + Root.RotVelocity.Y / 30, math.cos(10 * math.cos(sine/10))), 0.3)
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(0,0,0),.3)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,0) * CFrame.Angles(math.rad(0),0,0),.3)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(-1.5,.6,-.5) * CFrame.Angles(math.rad(32),math.rad(5 - .1 * math.sin(sine/12)),math.rad(40 - .5 * math.sin(sine/12))), 0.3)
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(-.2,1.2,-.3),.3)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(1.5,.6,-.5) * CFrame.Angles(math.rad(30),math.rad(-5 + .1 * math.sin(sine/12)),math.rad(-40 + .5 * math.sin(sine/12))), 0.3)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(.2,1.2,-.3),.3)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.54, 1.4 + .1 * math.sin(sine/9), .4) * CFrame.Angles(math.rad(9 + 2 * math.cos(sine/9)), math.rad(0), math.rad(0)), 0.3)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.54, 2.0 + .02 * math.sin(sine/9), 0.2 + .1 * math.sin(sine/9)) * CFrame.Angles(math.rad(25 + 5 * math.sin(sine/9)), math.rad(20), math.rad(0)), 0.3)
+			elseif position == "Running" and attacking == false then
+				change = 1
+				RIGHTARMLERP.C1 = RIGHTARMLERP.C1:lerp(CFrame.new(1.24+.6*math.sin(sine/4)/1.4, 0.54, 0+0.8*math.sin(sine/4)) * CFrame.Angles(math.rad(6-140*math.sin(sine/4)/1.2), math.rad(0), math.rad(-20+70*math.sin(sine/4))), 0.3)
+				RIGHTARMLERP.C0 = RIGHTARMLERP.C0:lerp(CFrame.new(0, .5, 0)*CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)), 0.3)
+				LEFTARMLERP.C1 = LEFTARMLERP.C1:lerp(CFrame.new(-1.24+.6*math.sin(sine/4)/1.4, 0.54, 0-0.8*math.sin(sine/4))*CFrame.Angles(math.rad(6+140*math.sin(sine/4)/1.2), math.rad(0), math.rad(20+70*math.sin(sine/4))), 0.3)
+				LEFTARMLERP.C0 = LEFTARMLERP.C0:lerp(CFrame.new(0,.5,0)*CFrame.Angles(math.rad(0),math.rad(0),math.rad(0)),.3)
+				ROOTLERP.C0 = ROOTLERP.C0:lerp(CFrame.new(0, -.2, 0) * CFrame.Angles(math.rad(-20 - 0 * math.sin(sine/4)), math.rad(0 + 6 * math.sin(sine/4)), math.rad(0) + Root.RotVelocity.Y / 30, math.sin(10 * math.sin(sine/4))), 0.3)
+				RIGHTLEGLERP.C1 = RIGHTLEGLERP.C1:lerp(CFrame.new(0,0,-.2 + .5*-math.sin(sine/4)),.3)
+				RIGHTLEGLERP.C0 = RIGHTLEGLERP.C0:lerp(CFrame.new(-0.5, 1.6+0.1*math.sin(sine/4),.7*-math.sin(sine/4)) * CFrame.Angles(math.rad(15+ -50 * math.sin(sine/4)),0,0),.3)
+				LEFTLEGLERP.C1 = LEFTLEGLERP.C1:lerp(CFrame.new(0,0,-.2 + .5*math.sin(sine/4)),.3)
+				LEFTLEGLERP.C0 = LEFTLEGLERP.C0:lerp(CFrame.new(0.5, 1.6-0.1*math.sin(sine/4),.7*math.sin(sine/4)) * CFrame.Angles(math.rad(15 + 50 * math.sin(sine/4)),0,0),.3)
+			end
+			swait()
+		end
+	end)
+	anims()
+	warn("Prepare for a magic trick full of pain and regret. Made by Supr14")
+	
 end)
 --
 local button = Instance.new("TextButton")
@@ -3842,3883 +3933,1461 @@ button.Text = "Remso Admin"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
-	local Main=function()
-
-		A={};
-		A.Old={};
-		A.Data={};
-		A.User={};
-		A.Calls={};
-		A.Images={};
-		A.Stuffs={};
-		A.Sounds={};
-		A.Modules={};
-		A.Service={};
-		A.Settings={};
-		A.Commands={};
-		A.Warehouse={};
-		A.Functions={};
-		A.EachCalls={};
-		A.GuiModules={};
-		A.SettingIDs={};
-		A.KeyCommands={};
-		A.ObjectsData={};
-		A.RecentCommands={};
-		A.SettingsFunctions={};
-
-		A.Stuffs.Meter={};
-		A.Warehouse.Objects={};
-		A.Warehouse.Connections={};
-
-		A.ObjectsData.KnowProperties={};
-		A.ObjectsData.KnowPropertiesNumber={};
-		A.ObjectsData.GlobalProperties={'Name';'className';'Parent';'archivable';};
-		A.ObjectsData.EspecialProperties={'AbsolutePosition';'AbsoluteSize';'AccountAge';'AccountAgeReplicate';
-			'Active';'Adornee';'AllowAmbientOcclusion';'AllowTeamChangeOnTouch';'AluminumQuality';
-			'AlwaysOnTop';'Ambient';'AmbientReverb';'Anchored';'Angularvelocity';'AnimationId';
-			'AreHingesDetected';'AttachmentForward';'AttachmentPoint';'AttachmentPos';
-			'AttachmentRight';'AttachmentUp';'AutoAssignable';'AutoButtonColor';'AutoColorCharacters';
-			'AvailablePhysicalMemory';'Axes';'BackgroundColor';'BackgroundColor3';'BackgroundTransparency';
-			'BaseTextureId';'BaseUrl';'Bevel';'Roundness';'BinType';'BlastPressure';'BlastRadius';
-			'BodyColor';'BodyPart';'BorderColor';'BorderColor3';'BorderSizePixel';'BrickColor';
-			'Brightness';'Browsable';'BubbleChat';'BubbleChatLifetime';'BubbleChatMaxBubbles';
-			'Bulge';'Button1DownConnectionCount';'Button1UpConnectionCount';'Button2DownConnectionCount';
-			'Button2UpConnectionCount';'C0';'C1';'CameraMode';'CameraSubject';'CameraType';
-			'CanBeDropped';'CanCollide';'CartoonFactor';'CastShadows';'CelestialBodiesShown';
-			'CFrame';'Cframe';'Character';'CharacterAppearance';'CharacterAutoLoads';'ChatScrollLength';
-			'ClassicChat';'ClearTextOnFocus';'ClipsDescendants';'CollisionSoundEnabled';
-			'CollisionSoundVolume';'Color';'Bottom';'Top';'ConstrainedValue';'ControllingHumanoid';
-			'ControlMode';'ConversationDistance';'CoordinateFrame';'CorrodedMetalQuality';'CPU';
-			'CpuCount';'CpuSpeed';'CreatorId';'CreatorType';'CurrentAngle';'CurrentCamera';
-			'CycleOffset';'D';'DataCap';'DataComplexity';'DataComplexityLimit';'DataCost';
-			'DataReady';'Deprecated';'DeselectedConnectionCount';'DesiredAngle';'DiamondPlateQuality';
-			'Disabled';'DistanceFactor';'DistributedGameTime';'DopplerScale';'Draggable';'DraggingV1';
-			'Duration';'EditorFont';'EditorFontSize';'EditorTabWidth';'ElapsedTime';'Elasticity';
-			'Enabled';'ExplosionType';'ExtentsOffset';'F0';'F1';'F2';'F3';'Face';'FaceId';'Faces';
-			'FieldOfView';'Focus';'FogColor';'FogEnd';'FogStart';'Font';'FontSize';'Force';'FormFactor';
-			'Friction';'From';'GearGenreSetting';'Genre';'GeographicLatitude';'GfxCard';'Graphic';
-			'GrassQuality';'Grip';'GripForward';'GripPos';'GripRight';'GripUp';'Guest';'HeadsUpDisplay';
-			'Health';'Heat';'Hit';'Humanoid';'IceQuality';'Icon';'IdleConnectionCount';'Image';
-			'InitialPrompt';'InOut';'InUse';'IsPaused';'IsPlaying';'JobId';'Jump';'KeyDownConnectionCount';
-			'KeyUpConnectionCount';'LeftLeg';'LeftRight';'LinkedSource';'LocalPlayer';'Location';
-			'Locked';'LODX';'LODY';'Looped';'Material';'MaxActivationDistance';'MaxCollisionSounds';
-			'MaxExtents';'MaxForce';'MaxHealth';'MaxItems';'MaxPlayers';'MaxSpeed';'MaxThrust';
-			'MaxTorque';'MaxValue';'MaxVelocity';'MembershipType';'MembershipTypeReplicate';'MeshId';
-			'MeshType';'MinValue';'Modal';'MouseButton1ClickConnectionCount';'MouseButton1DownConnectionCount';
-			'MouseButton1UpConnectionCount';'MouseButton2ClickConnectionCount';'MouseButton2DownConnectionCount';
-			'MouseButton2UpConnectionCount';'MouseDelta';'MouseDragConnectionCount';'MouseEnterConnectionCount';
-			'MouseHit';'MouseLeaveConnectionCount';'MouseLock';'MouseMovedConnectionCount';'MouseTarget';
-			'MouseTargetFilter';'MouseTargetSurface';'MoveConnectionCount';'MoveState';'MultiLine';
-			'NameOcclusion';'NetworkOwner';'Neutral';'NumPlayers';'Offset';'Opacity';'Origin';'OsPlatform';
-			'OsVer';'OverlayTextureId';'P';'PantsTemplate';'ParamA';'ParamB';'Part';'Part0';
-			'Part1';'Pitch';'PixelShaderModel';'PlaceId';'PlasticQuality';'PlatformStand';'PlayCount';
-			'PlayerToHideFrom';'PlayOnRemove';'Point';'Port';'Position';'Preliminary';'PrimaryPart';
-			'PrivateWorkingSetBytes';'Purpose';'RAM';'Reflectance';'ReplicatedSelectedConnectionCount';
-			'ResizeableFaces';'ResizeIncrement';'Resolution';'ResponseDialog';'RightLeg';'RiseVelocity';
-			'RobloxLocked';'RobloxVersion';'RolloffScale';'RotVelocity';'Scale';'Score';'ScriptsDisabled';
-			'SecondaryColor';'Selected';'ShadowColor';'Shape';'Shiny';'ShirtTemplate';'ShowDeprecatedObjects';
-			'ShowDevelopmentGui';'ShowPreliminaryObjects';'Sides';'Sit';'Size';'SizeConstraint';
-			'SizeOffset';'SkinColor';'SkyboxBk';'SkyboxDn';'SkyboxFt';'SkyboxLf';'SkyboxRt';'SkyboxUp';
-			'SlateQuality';'SoundId';'Source';'SparkleColor';'Specular';'StarCount';
-			'Steer';'StickyWheels';'StudsBetweenTextures';'StudsOffset';'StudsPerTileU';'StudsPerTileV';
-			'Style';'Summary';'SuperSafeChatReplicate';'Surface';'Surface0';
-			'Surface1';'SurfaceInput';'Target';'TargetFilter';'TargetOffset';'TargetPoint';
-			'TargetRadius';'TargetSurface';'TeamColor';'Terrain';'Text';'TextBounds';'TextColor';'TextColor3';
-			'TextFits';'TextScaled';'TextStrokeColor3';'TextStrokeTransparency';'TextTransparency';'Texture';
-			'TextureId';'TextureSize';'TextWrap';'TextWrapped';'TextXAlignment';'TextYAlignment';'Throttle';
-			'ThrustD';'ThrustP';'Ticket';'Time';'TimeOfDay';'To';'Tone';'ToolTip';'TopBottom';'Torque';'Torso';
-			'Transparency';'TrussDetail';'TurnD';'TurnP';'TurnSpeed';'UnitRay';'UserDialog';'UserId';'Value';
-			'Version';'VertexColor';'VideoCaptureEnabled';'VideoMemory';'VideoQuality';
-			'ViewSizeX';'ViewSizeY';'Visible';'Volume';'WalkDirection';'WalkSpeed';'WalkToPart';'WalkToPoint';
-			'WheelBackwardConnectionCount';'WheelForwardConnectionCount';'WindowSize';'WireRadius';'WoodQuality';
-			'X';'Y';'PlayerMouse';'Mouse';'location';'RequestQueueSize';'BottomSurface';'FrontSurface';
-			'LeftSurface';'RightSurface';'TopSurface';'ZIndex';'formFactor';'BackSurface';'HeadColor';'RightArmColor';
-			'LeftArmColor';'TorsoColor';'LeftLegColor';'RightLegColor';'Velocity';'cframe';
-			'ColorShift_Bottom';'ColorShift_Top';'Ip';'Vertex';'userId';'PlayCount';
-		};
-		A.ObjectsData.EspecialPropertiesLower={};
-		for i,v in next,A.ObjectsData.EspecialProperties do
-			A.ObjectsData.EspecialPropertiesLower[i]=v:lower();
-		end;
-
-		A.Images.Meme={
-			megusta=47594659;
-			sparta=74142203;
-			sovpax=60298055;
-			ujelly=48989071;
-			smile2=63175216;
-			smile3=63186465;
-			troll=45120559;
-			horse=62079221;
-			angry=48258623;
-			orzse=62677682;
-			smile=63174888;
-			rofl=47595647;
-			okey=62830600;
-			yeaw=53646377;
-			here=62677045;
-			har=48260066;
-			sun=47596170;
-			lol=48293007;
-			sad=53645378;
-			lin=48290678;
-			sls=53646388;
-			j1d=45031979;
-			jim=74885351;
-			no=76870237;
-			iberia=82442514;
-			dontsay=76277515;
-			impossibru=84686711;
-			yea=65511952;
-			forever=60890285;
-			somuch=76871551;
-			poker=76871436;
-			genius=76868523;
-		};
+	-- Created by Nebula_Zorua --
+	-- The Angel --
+	-- A higher being.. Here to smite you evil-doers! --
+	-- Discord: Nebula the Zorua#6969
+	-- Youtube: https://www.youtube.com/channel/UCo9oU9dCw8jnuVLuy4_SATA
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Reanimation.lua"))()
 
 
-		--[[Functions]]
-		A.Functions.Thread=function(Function)
-			return coroutine.resume(coroutine.create(Function));
-		end;
-		A.Functions.Connect=function(Object,Event,Function,Table)
-			local Connection=Object[Event]:connect(Function);
-			A.Warehouse.Connections[#A.Warehouse.Connections+1]=Connection;
-			if(Table~=nil)then
-				Table.Connections[#Table.Connections+1]=Connection;
-			end;
-			return Object,Connection;
-		end;
-		A.Functions.Wait=function(Number)
-			local _,Number2=A.Service.RunService.Stepped:wait();
-			local Plus;
-			Number=Number and Number-.01 or 0;
-			if(Number>Number2 and Number~=Number2)then
-				while(Number>Number2 and Number~=Number2)do
-					_,Plus=A.Service.RunService.Stepped:wait();
-					Number2=Number2+Plus;
-				end;
-			end;
-		end;
-		A.Functions.MatchProperty=function(Text)
+	--// Initializing \\--
+	local S = setmetatable({},{__index = function(s,i) return game:service(i) end})
+	local Plrs = S.Players
+	local Plr = Plrs.LocalPlayer
+	local Char = game.Workspace.non
+	local Hum = Char:FindFirstChildOfClass'Humanoid'
+	local RArm = Char["Right Arm"]
+	local LArm = Char["Left Arm"]
+	local RLeg = Char["Right Leg"]
+	local LLeg = Char["Left Leg"]	
+	local Root = Char:FindFirstChild'HumanoidRootPart'
+	local Torso = Char.Torso
+	local Head = Char.Head
+	local NeutralAnims = true
+	local Attack = false
+	local BloodPuddles = {}
+	local Effects = {}
+	local Debounces = {Debounces={}}
+	local Mouse = Plr:GetMouse()
+	local Hit = {}
+	local Sine = 0
+	local Change = 1
+	local PulseTime = 0
+	local DustTime = 0
 
-			Text=Text:lower();
+	local Rooted = false
+	--// Debounce System \\--
 
-			local Found;
+	function Debounces:New(name,cooldown)
+		local aaaaa = {Usable=true,Cooldown=cooldown or 2,CoolingDown=false,LastUse=0}
+		setmetatable(aaaaa,{__index = Debounces})
+		Debounces.Debounces[name] = aaaaa
+		return aaaaa
+	end
 
-			for i,v in next,A.ObjectsData.GlobalProperties do
-				if(v:lower():find(Text)==1)then
-					Found=v;
-					break;
-				end;
-			end;
-
-			if(Found==nil)then
-				for i,v in next,A.ObjectsData.EspecialPropertiesLower do
-					if(v:find(Text)==1)then
-						Property=A.ObjectsData.EspecialProperties[i];
-						break;
-					end;i,v=nil;
-				end;
-			end;
-
-			return Found;
-
-		end;
-		A.Functions.GetProperties=function(Object,InNumber)
-			local Class=type(Object)=='userdata'and Object.className or Object
-			if(A.ObjectsData.KnowProperties[Class]==nil)then
-				if(type(Object)=='string')then
-					Object=A.Old.Instance.NewObject(Object);
-				end;
-				local New={};
-				for i,v in next,A.ObjectsData.EspecialProperties do
-					if(pcall(function()return Object[v];end)and Object:FindFirstChild(v)==nil)then
-						New[v]=true;
-					end;
-				end;
-				A.ObjectsData.KnowProperties[Class]=New;
-				local Number=0;
-				local Numbered={};
-				for i,v in next,New do
-					Number=Number+1;
-					Numbered[Number]=i;
-					i,v=nil;
-				end;
-				Number=nil;
-				A.ObjectsData.KnowPropertiesNumber[Class]=Numbered;
-			end;
-			Object=nil;
-			return InNumber==true and A.ObjectsData.KnowPropertiesNumber[Class]or A.ObjectsData.KnowProperties[Class];
-		end;
-		A.Functions.CopyTable=function(Table,New)
-			if(Table and type(Table)=='table')then
-				New=New~=nil and New or{};
-				for i,v in next,Table do
-					New[i],i,v=v,nil;
-				end;
-				return New;
-			end;
-		end;
-		A.Functions.GetData=function(Object)
-			local Class=Object.className;
-			if(A.Warehouse.Objects[Class])then
-				for i,v in next,A.Warehouse.Objects[Class]do
-					if(v.Object==Object)then
-						v.Rank=i;
-						return v;
-					else i,v=nil;
-					end;
-				end;
-			end;
-			return nil;
-		end;
-		A.Functions.KillData=function(Object,Data)
-			Data=Data~=nil and Data or A.Functions.GetData(Object);
-			if(Data~=nil)then
-				for i,v in next,Data.Connections do
-					v:disconnect();i,v=nil;
-				end;
-				table.remove(Data.Mother(),Data.Rank);
-				for i,v in next,Data do
-					Data[i],i,v=nil;
-				end;
-			end;
-			return Object;
-		end;
-		A.Functions.GiveData=function(Object)
-			if(A.Functions.GetData(Object)==nil)then
-				local Class=Object.className;
-				if(A.Warehouse.Objects[Class]==nil)then A.Warehouse.Objects[Class]={};end;
-				local Rank=#A.Warehouse.Objects[Class]+1;
-				local Data={};A.Warehouse.Objects[Class][Rank]=Data;
-				Data.Rank=Rank
-				Data.Object=Object;
-				Data.Properties={};
-				Data.Connections={};
-				Data.Mother=function()return A.Warehouse.Objects[Class];end;
-
-				A.Functions.Connect(Object,'Changed',function(Property)
-					if(Data.Properties[Property]~=nil)then
-						local Health=Data.Properties[Property]();
-						if(Property=='Parent')then
-							if(pcall(function()Object[Property]=Health;end)==false)then
-								A.Functions.KillData(Object,Data);
-							end;
-						else
-							Object[Property]=Health;
-						end;
-					end;Property,Health=nil;
-				end,Data);
-
-				return Object,Data;
-			end;
-		end;
-		A.Functions.Remove=function(Object,Destroy)
-			if(Object)then
-				pcall(function()
-					Object.Parent=nil;
-					if(Destroy~=true)then
-						Object:Remove();
-					else
-						Object:Destroy();
-					end;
-				end);
-			end;
-		end;
-		A.Functions.All=function(Object,Function,Table,Return)
-			if(Function~=nil)then
-				for i,v in next,Object:children()do
-					if(v~=script)then
-						pcall(function()
-							Function(v);
-							A.Functions.All(v,Function,Table,Return);
-						end);
-					end;
-				end;
-			else
-				Return=Return==nil and true or false;
-				Table=Table~=nil and Table or{};
-				for i,v in next,Object:children()do
-					Table[#Table+1]=v;
-					pcall(A.Functions.All,v,nil,Table,Return);
-					i,v=nil;
-				end;
-				if(Return)then
-					return Table;
-				end;
-			end;
-		end;
-		A.Functions.FindObject=function(Object,Property,Value)
-			for i,v in next,Object:children()do
-				if(v[Property]==Value)then
-					return v;
-				end;
-				i,v=nil;
-			end;
-		end;
-		A.Functions.ObjectWait=function(Object,Property,Value)
-			local Part=A.Functions.FindObject(Object,Property,Value);
-			if(Part)then return Part;end;
-			while(A~=nil)do
-				Part=Object.ChildAdded:wait();
-				if(Part[Property]==Value)then
-					return Part;
-				end;
-			end;
-		end;
-		A.Functions.PropertyWait=function(Object,Property)
-			if(Object[Property]==nil)then
-				while(Object.Changed:wait()~=Property)do end;
-			end;
-			return Object[Property];
-		end;
-		A.Functions.CreateCall=function(Description,Calls,Function)
-			local Rank=#A.Calls+1;
-			local New={};A.Calls[Rank]=New;
-			New.Function=Function;
-			New.Description=Description;
-			New.Calls='"'..table.concat(Calls,'","')..'"';
-			for i,v in next,Calls do
-				A.EachCalls[v]=function(...)return A.Calls[Rank].Function(...);end;
-			end;
-			New,Description,Calls,Function=nil;
-		end;
-		A.Functions.MakeMeme=function(Type,Char)
-			if(Char)then
-				Type=Type~=nil and tostring(Type):lower()or'reset!'
-				local Meme=A.Images.Meme[Type]or Type;
-				local BBG_SIZE=Char.Head.Size.X*1.25;
-				local STUD_VECTOR_1=Char.Head.Size.Z/4;
-				local STUD_VECTOR_2=Char.Head.Size.Z;
-				local bbg=Char:FindFirstChild'BBGMEME'or A.Old.Instance.NewObject('BillboardGui',Char);
-				bbg.StudsOffset=A.Old.Vector3.new(0,STUD_VECTOR_1,STUD_VECTOR_2);
-				bbg.Size=A.Old.UDim2.new(BBG_SIZE,0,BBG_SIZE);
-				bbg.Adornee=Char.Head;
-				bbg.Name='BBGMEME';
-				local img=bbg:FindFirstChild'Meme'or A.Old.Instance.NewObject('ImageLabel',bbg);
-				img.BackgroundTransparency=1;
-				img.Image=A.Data.BaseUrl..Meme;
-				img.Size=A.Old.UDim2.Full;
-				img.Name='Meme';
-				for i,v in next,Char:children()do
-					if(v.className=='Hat')then
-						v=v:FindFirstChild'Handle';
-						if(v)then
-							v.Transparency=Type~='reset!'and 1 or 0;
-						end;
-					end;
-					i,v=nil;
-				end;
-				img,bbg,Type,Char=nil;
-			end;
-		end;
-		A.Functions.Players=function(Name,Function)
-			Name=Name~=nil and Name:lower()or'all!';
-			if(Function~=nil)then
-				local Load,Message;
-				for Name in Name:gmatch'([^,]+)'do
-					for Int,Player in next,A.Service.Players:GetPlayers()do
-						Load,Message=pcall(function()
-							if(Player.Name:lower():find(Name)==1 or A.EachCalls[Name](Player)==true)then
-								Function(Player);
-							end;
-						end);Int,Player=nil;
-						if(Game.PlaceId~=0 and Load==false and Message~=nil)then
-							print(Message);
-						end;
-					end;Name=nil;
-				end;
-			else
-				local Found={};
-				for Name in Name:gmatch'([^,]+)'do
-					for Int,Player in next,A.Service.Players:GetPlayers()do
-						pcall(function()
-							if(Name=='all!'or(A.EachCalls[Name]~=nil and A.EachCalls[Name](Player))or Player.Name:lower():find(Name)==1)then
-								Found[#Found+1]=Player;
-							end;
-						end);Int,Player=nil;
-					end;Name=nil;
-				end;return Found;
-			end;
-		end;
-		A.Functions.Peace=function(Object,Properties)
-			Object=type(Object)=='string'and A.Old.Instance.NewObject(Object)or Object;
-			local Parent=Properties.Parent;
-			Properties.Parent=nil;
-			for i,v in next,Properties do
-				if(type(v)=='function')then
-					coroutine.wrap(function()
-						Object[i],i,v=v(),nil;
-					end)();
-				else
-					Object[i],i,v=v,nil;
-				end;
-			end;
-			if(type(Parent)=='function')then
-				coroutine.wrap(function()
-					Object.Parent=Parent();
-				end)();
-			else
-				Object.Parent=Parent;
-			end;
-			return Object;
-		end;
-		A.Functions.Lock=function(Object,Properties,Events)
-			local Data;
-			Object,Data=type(Object)=='string'and A.Old.Instance.new(Object)or Object;
-			if(type(Data)~='table')then
-				Data=A.Functions.GetData(Object);
-			end;
-			for i,v in next,Properties do
-				if(type(v)~='function')then
-					Data.Properties[i]=function()return v;end;
-				else
-					Data.Properties[i]=v;
-				end;
-			end;
-			A.Functions.Peace(Object,Properties);
-			if(Events~=nil)then
-				for i,v in next,Events do
-					A.Functions.Connect(Object,i,v,Data);i,v=nil;
-				end;
-			end;
-			return Object,Data;
-		end;
-		A.Functions.CreateModule=function(Type,Function)
-			if(A.Modules[Type]==nil)then A.Modules[Type]={};end;
-			A.Modules[Type][#A.Modules[Type]+1]=Function;
-		end;
-		A.Functions.LoadModule=function(Type)
-			if(A.Modules[Type]~=nil)then
-				local Load;
-				for Number,Error in next,A.Modules[Type]do
-					Load,Error=A.Functions.Thread(Error);
-					if(Load==false)then
-						print('ERROR: Modules.'..Type..'['..Number..']',Error);
-					end;
-					Load,Error=nil;
-				end;
-			end;
-		end;
-		A.Functions.VisibleOfHealthGUI=function(Bool)	
-			if(A.User.PlayerGui~=nil)then
-				local Stuff=A.User.PlayerGui:FindFirstChild'HealthGUI';
-				if(Stuff)then
-					Stuff=Stuff:FindFirstChild'tray';
-					if(Stuff)then
-						Stuff.Visible=A.Settings.HealthBar.Value==false;
-					end;
-				end;
-			end;
-		end;
-		A.Functions.Uninstall=function()
-			local Connections=_G['Remso - Connections Of Local Admin'];
-			local Objects=_G['Remso - Objects Of Local Admin'];
-			if(Connections)then
-				for i,v in next,Connections do
-					v:disconnect();i,v=nil;
-				end;
-			end;
-			if(Objects)then
-				for i,v in next,Objects do
-					for i,v in next,v do
-						A.Functions.Remove(v.Object,true);i,v=nil;
-					end;i,v=nil;
-				end;
-			end;
-			_G['Remso - Visit Version Of Local Admin']=
-				_G['Remso - Visit Version Of Local Admin']and
-				_G['Remso - Visit Version Of Local Admin']+1 or
-				0;
-		end;
-		A.Functions.CreateScript=function(Type,Parent,Text)
-			local Script=A.Stuffs.ScriptPacket[Type]:clone();
-			Script.Name=A.Service.Workspace.DistributedGameTime;
-			Script.Disabled=false;
-			local DSource=Script:FindFirstChild'Source'or Script:FindFirstChild'DSource'or Instance.new('StringValue',Script);
-			DSource.Name=DSource.Name=='Value'and'DSource'or DSource.Name;
-			DSource.Value=A.Stuffs.StarterSource..Text;
-
-			for i,v in next,A.Stuffs.ScriptPacket do
-				v:clone().Parent=Script;
-			end;
-
-			if(Parent~=nil and Parent.className=='Player')then
-				Script.Parent=Parent.Character.Parent==A.Service.Workspace and Parent.Character or
-					A.Functions.FindObject(Parent,'className','Backpack')or
-					A.Functions.FindObject(Parent,'className','PlayerGui');
-			else
-				Script.Parent=Parent;
-			end;
-
-			return Script
-		end;
-		A.Functions.Install=function()
-			if(Game.PlaceId~=0)then
-				if(script~=nil)then
-					script.Parent=A.Service.Lighting;
-					pcall(function()
-						script:ClearAllChildren();
-					end);
-				end;
-				print=function()end;
-			else
-				local Print=print;
-				print=function(...)
-					Print('|:. Ohgal .:|',...);
-				end;
-			end;
-
-			local Script;A.Stuffs.ScriptPacket={};
-			if(script~=nil)then
-				script.Name='Remso - Local Admin';
-				for i,v in next,script:children()do
-					if(v.className=='LocalScript'or v.className=='Script')then
-						A.Stuffs.ScriptPacket[v.className]=v;
-					end;
-				end;
-			end;
-			if(Game.CreatorId==5111623)then
-				local Model=A.Old.Instance.NewObject'Model';
-				Wait();
-				if(newLocalScript~=nil and A.Stuffs.ScriptPacket.LocalScript==nil)then
-					newLocalScript('--Hello word!',Model);
-					A.Stuffs.ScriptPacket.LocalScript=Model:children()[1];
-				end;
-				if(newScript~=nil and A.Stuffs.ScriptPacket.Script==nil)then
-					newScript('--Hello word!',Model);
-					A.Stuffs.ScriptPacket.Script=Model:children()[2];
-				end;
-			else
-				local Pack=A.Service.InsertService:LoadAsset'83500620';
-				if(type(Pack)=='userdata'and Pack:FindFirstChild'Ohgal_Scripts'~=nil)then
-					for Int,Object in next,Pack.Ohgal_Scripts:children()do
-						if(A.Stuffs.ScriptPacket[Object.className]==nil)then
-							A.Stuffs.ScriptPacket[Object.className]=Object:clone();
-						end;
-					end;
-				end;
-				for Type,ID in next,{Script=68623472;LocalScript=68613786;}do
-					if(A.Stuffs.ScriptPacket[Type]==nil)then
-						Script=A.Service.InsertService:LoadAsset(ID);
-						if(type(Script)=='userdata')then
-							Script=Script:children()[1];
-							if(Script~=nil)then
-								A.Stuffs.ScriptPacket[Type]=Script:clone();
-								Script.Disabled=true;
-							end;
-						end;
-					end;
-				end;
-			end;
-
-			if(script~=nil and Game.PlaceId==0)then
-				script:ClearAllChildren();
-				for i,v in next,A.Stuffs.ScriptPacket do
-					v.Parent=script;
-				end;
-			end;
-
-			A.Functions.SetupCommands();
-
-			if(A.SettingIDs[1]==nil)then
-				local Number=0;
-				for i,v in next,A.Settings do Number=Number+1;
-					A.Settings[i]=A.Functions.Value('Bool',v);v=A.Settings[i];
-					A.SettingIDs[Number]={Object=v;Name=i;};
-					if(i=='HealthBar')then
-						coroutine.wrap(function()
-							while(A~=nil)do
-								A.Functions.VisibleOfHealthGUI(v.Changed:wait()==false);
-							end;
-						end)();
-					end;
-				end;
-			end;
-
-			_G['Remso - Connections Of Local Admin']=A.Warehouse.Connections;
-			_G['Remso - Objects Of Local Admin']=A.Warehouse.Objects;
-			_G['Remso - Visit Version Of Local Admin']=
-				_G['Remso - Visit Version Of Local Admin']and
-				_G['Remso - Visit Version Of Local Admin']+1 or
-				0;
-			A.Data.VisitVersion=_G['Remso - Visit Version Of Local Admin'];
-
-			A.User.C=A.Functions.PropertyWait(A.Service.Players,'LocalPlayer');
-			A.User.Humanoid=A.Functions.Value'Object';
-			A.User.Connections={};
-			A.User.Windows={};
-			A.User.Frames={};
-			A.User.Gui={};
-
-			for i,v in next,{'PlayerGui','Backpack'}do
-				A.User[v]=A.Functions.FindObject(A.User.C,'className',v);
-			end;
-
-
-			A.Functions.LoadModule'Once';
-			A.Functions.LoadModule'Backpack';
-			A.Functions.LoadModule'PlayerGui';
-
-
-			A.Functions.Connect(A.User.C,'Chatted',function(Text)
-				Wait();
-				A.Functions.SearchCommand(Text);
-				Text=nil;
-			end);
-			A.Functions.Connect(A.User.C,'ChildAdded',function(Object)
-				Wait();
-				local Class=Object.className;
-				if(Class=='Backpack'or Class=='PlayerGui')then
-					A.User[Class]=Object;
-					A.Functions.LoadModule(Class);
-				elseif(Class=='StringValue'and Object.Name=='Ohgal_Execution')then
-					coroutine.wrap(function(Text,Name,Object)loadstring([=[local script={...};script=script[1]; ]=]..Text,Name)(Object);end)(Object.Value,'Ohgal',Object);
-				end;
-			end);
-
-			A.Stuffs.Meter.Local={};
-			A.Stuffs.Meter.Server={};
-
-			A.Stuffs.Meter.Server.Players=A.Functions.Value'Number';
-
-			for i,v in next,{'Speed (FPS)';}do
-				A.Stuffs.Meter.Local[v]=A.Functions.Value'Number';
-			end;
-			if(A.Stuffs.ScriptPacket.Script~=nil)then
-				A.Functions.Thread(function()
-					local Warehouse=A.Service.Lighting;
-					A.Functions.CreateScript('Script',A.Service.Workspace,[[
-script.Parent=nil;
-
-if(_G.Ohgal_Server_Checker==true)then
-	return nil;
-end;
-_G.Ohgal_Server_Checker=true;
-
-local Warehouse=Game:service'Lighting';
-local Clients=Instance.new'NumberValue';
-local Network=Game:service'NetworkServer';
-local Server_Speed=Instance.new'NumberValue';
-
-while(Wait(2))do
-	Server_Speed.Name='Ohgal_Server Speed (SFPS)';
-	Server_Speed.Value=1/getfenv(0).Wait();
-	Clients.Value=#Network:children();
-	Clients.Name='Ohgal_Clients';
-	Server_Speed.Parent=Warehouse;
-	Clients.Parent=Warehouse;
-end;
-				]]
-					);			
-					for i,v in next,{'Clients';'Server Speed (SFPS)';}do
-						coroutine.wrap(function()Wait();
-							local Value=Warehouse:FindFirstChild('Ohgal_'..v);
-							while(Warehouse:FindFirstChild('Ohgal_'..v)==nil)do
-								Value=Warehouse.ChildAdded:wait();
-							end;
-							A.Stuffs.Meter.Server[v]=Value;
-						end)();
-					end;
-				end);
-			end;
-
-			coroutine.wrap(function()
-				while(A~=nil and A.Functions.Check()==true)do
-					if(A.Stuffs.MeterIsActive==true)then
-						A.Stuffs.Meter.Local['Speed (FPS)'].Value=1/getfenv(0).Wait();
-						A.Stuffs.Meter.Server.Players.Value=A.Service.Players.NumPlayers;
-					end;
-					Wait(2);
-				end;
-			end)();
-			coroutine.wrap(function()
-				if(A.Stuffs.Security==true)then
-					while(A.Functions.Check()==true)do
-						A.Functions.DoKeyCommand(A.Service.GuiService.KeyPressed:wait());
-					end;
-				end;
-			end)();
-
-			print('Number of the commands:',#A.Commands);
-
-		end;
-		A.Functions.Check=function()
-			return(A~=nil and A.Data.VisitVersion==_G['Remso - Visit Version Of Local Admin']);
-		end;
-		A.Functions.GuisParent=function()
-			A.User.Screen.Parent=A.Stuffs.Security==true and A.Service.CoreGui or A.User.PlayerGui;
-		end;
-		A.Functions.Screen=function()
-			for i,v in next,A.User.Gui do
-				for i,v in next,v do
-					v[i],i,v=nil;
-				end;i,v=nil;
-			end;
-			if(Game.PlaceId==0)then
-				for i,v in next,A.Functions.ObjectWait(A.User.C,'className','PlayerGui'):children()do
-					if(v.Name=='Ohgal')then
-						A.Functions.Remove(v,true);
-					end;
-				end;
-			end;
-			A.User.Screen=A.Old.Instance.NewObject'ScreenGui';
-			A.User.Screen.Name='Ohgal';
-			coroutine.wrap(function()
-				while(A~=nil and A.Functions.Check()==true)do
-					A.Functions.Wait();
-					if(A==nil)then break;end;
-					if(pcall(A.Functions.GuisParent)==false)then
-						A.Functions.Screen();break;
-					end;
-					if(A.User.Screen.Changed:wait()~='Parent')then
-						while(A.User.Screen.Changed:wait()~='Parent')do end;
-					end;
-				end;
-			end)();
-			for i=1,#A.GuiModules do
-				A.GuiModules[i]();
-			end;
-		end;
-		A.Functions.CreateGuiModule=function(Function)
-			A.GuiModules[#A.GuiModules+1]=Function;
-		end;
-		A.Functions.AddSound=function(Type,Table)
-			if(A.Sounds[Type]==nil)then A.Sounds[Type]={};end;
-			A.Sounds[Type][#A.Sounds[Type]+1]=Table;
-		end;
-		A.Functions.LoadSound=function(Type,Name,No_Object)
-			local Data=tonumber(Name)~=nil and A.Sounds[Type][tonumber(Name)]or(function()
-				for i,v in next,A.Sounds[Type]do
-					if(v.Name~=nil and v.Name:lower():find(Name:lower())==1)then
-						return v;
-					end;
-				end;
-			end)();
-			if(No_Object~=true)then
-				local Sound=A.Functions.Peace('Sound',Data);
-				Sound.SoundId=A.Data.BaseUrl..Data.SoundId;
-				return Sound,Data;
-			else
-				return Data;
-			end;
-		end;
-		A.Functions.ToBoolean=function(Text)
-			Text=Text~=nil and Text:lower():gsub('!','');
-			return A.Stuffs.TrueBooleans[Text]==true;
-		end;
-		A.Functions.Value=function(Type,Value,Function)
-			local Object=A.Old.Instance.NewObject(Type..'Value');
-			if(Value~=nil)then Object.Value=Value;end;
-			if(Function~=nil)then
-				coroutine.wrap(function()
-					while(A.Functions.Check()==true and Object.Name~='Over')do
-						Function(Object.Changed:wait());
-					end;
-				end)();
-			end;
-			return Object;
-		end;
-		A.Functions.Button=function(Type,Properties,Events)
-			if(A.Stuffs.Gui.Button[Type]~=true)then return nil;end;
-			Properties.Size=Properties.Size or A.Old.UDim2.ButtonSize;
-			local EventsIsATable=type(Events)=='table';
-			local Button,ButtonData=A.Functions.Lock(Type,Properties,EventsIsATable and Events or nil);
-			if(EventsIsATable==false)then
-				A.Functions.Connect(Button,'MouseButton1Up',function()
-					A.Functions.Wait();
-					Events();
-					A.Stuffs.Button:play();
-				end,ButtonData);
-			end;
-			return Button,Data;
-		end;
-		A.Functions.ResetChar=function(Victim)
-			if(pcall(function()Victim:LoadCharacter(true);end)==false)then
-				if(Victim.Character~=nil)then A.Functions.Remove(Victim.Character);end;
-				Victim.Character=A.Old.Instance.NewObject('Humanoid',A.Old.Instance.NewObject('Model',A.Service.Workspace)).Parent;
-			end;
-		end;
-		A.Functions.NukeChar=function(Char)
-			if(A.Stuffs.CharThings==nil)then
-				A.Stuffs.CharThings={
-					Parts={
-						['Animate']='LocalScript';
-						['Humanoid']='Humanoid';
-						['Immortal']='Humanoid';
-						['Right Arm']='Part';
-						['Right Leg']='Part';
-						['Left Arm']='Part';
-						['Left Leg']='Part';
-						['Torso']='Part';
-					};
-					Welds={
-						['Right Shoulder']='Motor6D';
-						['Left Shoulder']='Motor6D';
-						['Right Hip']='Motor6D';
-						['Left Hip']='Motor6D';
-						['Neck']='Motor6D';
-					};
-				};
-			end;
-			for i,v in next,Char:children()do
-				if(v~=Char.PrimaryPart and(A.Stuffs.CharThings.Parts[v.Name]==v.className)==false)then
-					A.Functions.Remove(v,true);
-				end;
-			end;
-			for i,v in next,Char.Torso:children()do
-				if((A.Stuffs.CharThings.Welds[v.Name]==v.className)==false)then
-					A.Functions.Remove(v,true);
-				end;
-			end;
-		end;
-		A.Functions.Weld=function(Part0,Part1,C0,C1)
-			Part1.CFrame=Part0.CFrame;
-			local Weld=A.Old.Instance.NewObject('Motor',Part0);
-			Weld.Part0=Part0;
-			Weld.Part1=Part1;
-			if(C0)then Weld.C0=C0;end;
-			if(C1)then Weld.C1=C1;end;
-			return Weld;
-		end;
-		A.Functions.Part=function(Properties,WeldProperties)
-			local Part=A.Functions.Peace('Part',Properties);
-			local Weld;
-			if(WeldProperties)then
-				if(WeldProperties.Part0)then Part.CFrame=WeldProperties.Part0;end;
-				WeldProperties.Part1=Part;
-				Weld=A.Functions.Peace('Motor',WeldProperties);
-			end;
-			return Part,Weld;
-		end;
-		A.Functions.GetWindow=function(Name)
-			for Int=1,#A.User.Windows do
-				if(A.User.Windows[Int].Name==Name)then
-					return A.User.Windows[Int],Int;
-				end;Int=nil;
-			end;
-			return nil;
-		end;
-		A.Functions.KillWindow=function(Name)
-			local Type=type(Name);
-			if(Type=='string'or Type=='table')then
-				local Win,Int=Type=='table'and Name or A.Functions.GetWindow(Name);
-				if(Win)then
-					Win.SetVisible=false;
-					A.Functions.All(Win.Title,function(Object)
-						A.Functions.KillData(Object);
-						A.Functions.Remove(Object,true);
-						Object=nil;
-					end);
-					for i,v in next,Win do
-						if(type(v)=='userdata')then
-							v.Name='Over';
-							A.Functions.KillData(v);
-							A.Functions.Remove(v,true);
-						end;
-						Win[i]=nil;
-					end;
-					if(Int~=nil)then
-						table.remove(A.User.Windows,Int);
-					end;
-				end;
-			elseif(Type=='boolean'and Name==true)then
-				for Int=1,#A.User.Windows do
-					A.Functions.KillWindow(A.User.Windows[Int].Name);
-				end;
-			end;
-		end;
-		A.Functions.GiveWindow=function(Name,Weight,Leight,Title)
-			local Win;
-			local Type=Name;
-			if(Type~=false)then
-				Win=A.Functions.GetWindow(Name)or{};
-				if(Win.Valid==true)then
-					Win.SetVisible.Value=Win.SetVisible.Value==false;
-					return nil;
-				end;
-				Win.Name=Name;
-				Win.Valid=true;
-
-				A.User.Windows[#A.User.Windows+1]=Win;
-			else
-				Win={};
-			end;
-
-			Win.SetLeight=A.Functions.Value('Number',Leight,function(Value)Win.Frame.Size=A.Old.UDim2.new(1,0,0,Value);Value=nil;end);
-			Win.SetWeight=A.Functions.Value('Number',Weight,function(Value)Win.Title.Size=A.Old.UDim2.new(0,Value,0,20);Value=nil;end);
-			Win.SetVisible=A.Functions.Value('Bool',true,function(Value)Win.Title.Visible=Value;if(Win.VisibleChanged~=nil)then Win.VisibleChanged(Value);end;Value=nil;end);
-			Win.SetTitle=A.Functions.Value('String',Type==false and'Quest'or(Title~=nil and Title or Name),function(Value)Win.TitleText.Text='Remso - ['..Value..']';Value=nil;end);
-			Win.NOPOM=A.Functions.Value('Number',0,function(Value)Win.Menu.Visible=(Value>0);Win.Menu.Size=A.Old.UDim2.new(1,0,0,(Value>0)and 20 or 0);if(Win.Frame)then Win.Frame.Position=A.Old.UDim2.new(0,0,0,(Value>0)and 20 or 0);end;Value=nil;end);
-
-			Win.Title=A.Functions.Lock('TextButton',{
-				BackgroundTransparency=function()return A.Settings['Windows transparency'].Value==true and .5 or 0;end;
-				Size=function()return A.Old.UDim2.new(0,Win.SetWeight.Value,0,20);end;
-				Visible=function()return Win.SetVisible.Value;end;
-				Parent=A.User.Frames.Windows;
-				Draggable=true;
-				Active=true;
-				Text='';
-			},{
-				MouseButton1Down=function()
-					A.Functions.Wait();
-					if(A.User.FirstWindow~=Win.Title)then
-						A.User.FirstWindow=Win.Title;
-						Win.Title.Parent=nil;
-					end;
-				end;
-			}
-			);A.User.FirstWindow=Win.Title;
-			Win.TitleText=A.Functions.Lock('TextLabel',{
-				BackgroundTransparency=function()return A.Settings['Windows transparency'].Value==true and .5 or 0;end;
-				Text=function()return'Remso ohgod - ['..Win.SetTitle.Value..']';end;
-				Position=A.Old.UDim2.new(0,20);
-				Size=A.Old.UDim2.new(1,-60,1);
-				BackgroundTransparency=1;
-				Parent=Win.Title;
-				TextXAlignment=0;
-				TextWrap=true;
-				FontSize=5;
-				Font=1;
-			}
-			);
-			A.Functions.Lock('ImageLabel',{
-				Image=A.Data.BaseUrl..84386870;
-				Size=A.Old.UDim2.ButtonSize;
-				Parent=Win.Title;
-			}
-			);
-			Win.Close=A.Functions.Button('TextButton',{
-				BackgroundTransparency=function()return A.Settings['Windows transparency'].Value==true and .5 or 0;end;
-				BackgroundColor3=A.Old.Color3.DarkRed;
-				Position=A.Old.UDim2.new(1,-20);
-				TextColor3=A.Old.Color3.Black;
-				Size=A.Old.UDim2.ButtonSize;
-				Parent=Win.Title;
-				FontSize=5;
-				Text='X';
-				Font=2;
-			},function()
-				A.Functions.KillWindow(Name==false and Win or Name);
-				if(Name==false)then
-					Win.Answer.Value=2;
-				end;
-			end
-			);
-			if(Type~=false)then
-				Win.Minimalize=A.Functions.Button('TextButton',{
-					BackgroundColor3=A.Old.Color3.Grey;
-					Position=A.Old.UDim2.new(1,-40);
-					TextColor3=A.Old.Color3.White;
-					Size=A.Old.UDim2.ButtonSize;
-					BackgroundTransparency=.5;
-					Parent=Win.Title;
-					FontSize=6;
-					Text='_';
-					Font=2;
-				},function()
-					Win.SetVisible.Value=false;
+	function Debounces:Use(overrideUsable)
+		assert(self.Usable ~= nil and self.LastUse ~= nil and self.CoolingDown ~= nil,"Expected ':' not '.' calling member function Use")
+		if(self.Usable or overrideUsable)then
+			self.Usable = false
+			self.CoolingDown = true
+			local LastUse = time()
+			self.LastUse = LastUse
+			delay(self.Cooldown or 2,function()
+				if(self.LastUse == LastUse)then
+					self.CoolingDown = false
+					self.Usable = true
 				end
-				);
-			end;
-			Win.Menu=A.Functions.Lock('Frame',{
-				BackgroundTransparency=function()if(Win.NOPOM.Value<=0)then return 1;end;return A.Settings['Windows transparency'].Value==true and .5 or 0;end;
-				Size=function()return A.Old.UDim2.new(1,0,0,(Win.NOPOM.Value>0)and 20 or 0);end;
-				Position=A.Old.UDim2.new(0,0,1);
-				Parent=Win.Title;
-			},{
-				ChildAdded=function(Object)
-					if(Object~=Win.Frame and A.Stuffs.Gui.PartOfGui[Object.className])then
-						Win.NOPOM.Value=Win.NOPOM.Value+1;
-						Win.Menu.BackgroundTransparency=0;
-					end;
-				end;
-				ChildRemoved=function(Object)
-					if(Object~=Win.Frame and A.Stuffs.Gui.PartOfGui[Object.className])then
-						Win.NOPOM.Value=Win.NOPOM.Value-1;
-						if(Win.NOPOM.Value<=0)then Win.Menu.BackgroundTransparency=0;end;
-					end;
-				end;
-			}
-			);
-			local Frame,FrameData=A.Functions.Lock('Frame',{
-				BackgroundTransparency=function()return A.Settings['Windows transparency'].Value==true and .5 or 0;end;
-				Position=function()return A.Old.UDim2.new(0,0,0,(Win.NOPOM.Value>0)and 20 or 0);end;
-				Size=function()return A.Old.UDim2.new(1,0,0,Win.SetLeight.Value);end;
-			}
-			);
-			Win.Frame=Frame;
-			FrameData.Properties.Parent=function()return Win.Menu;end;
-			Win.Frame.Parent=Win.Menu;
+			end)
+		end
+	end
 
-			local NUM_;
-			Win.FixTransparency=function()
-				NUM_=A.Settings['Windows transparency'].Value==true and .5 or 0;
-				Win.TitleText.BackgroundTransparency=NUM_;
-				Win.Frame.BackgroundTransparency=NUM_;
-				Win.Close.BackgroundTransparency=NUM_;
-				Win.Title.BackgroundTransparency=NUM_;
-				Win.Menu.BackgroundTransparency=1;
-			end;
+	function Debounces:Get(name)
+		assert(typeof(name) == 'string',("bad argument #1 to 'get' (string expected, got %s)"):format(typeof(name) == nil and "no value" or typeof(name)))
+		for i,v in next, Debounces.Debounces do
+			if(i == name)then
+				return v;
+			end
+		end
+	end
 
+	function Debounces:GetProgressPercentage()
+		assert(self.Usable ~= nil and self.LastUse ~= nil and self.CoolingDown ~= nil,"Expected ':' not '.' calling member function Use")
+		if(self.CoolingDown and not self.Usable)then
+			return math.max(
+				math.floor(
+					(
+						(time()-self.LastUse)/self.Cooldown or 2
+					)*100
+				)
+			)
+		else
+			return 100
+		end
+	end
+
+	--// Shortcut Variables \\--
+	local CF = {N=CFrame.new,A=CFrame.Angles,fEA=CFrame.fromEulerAnglesXYZ}
+	local C3 = {N=Color3.new,RGB=Color3.fromRGB,HSV=Color3.fromHSV,tHSV=Color3.toHSV}
+	local V3 = {N=Vector3.new,FNI=Vector3.FromNormalId,A=Vector3.FromAxis}
+	local M = {C=math.cos,R=math.rad,S=math.sin,P=math.pi,RNG = function(min,max,div) return math.random(min,max)/(div or 1) end,MRS=math.randomseed,H=math.huge,RRNG = function(min,max,div) return math.rad(math.random(min,max)/(div or 1)) end}
+	local R3 = {N=Region3.new}
+	local De = S.Debris
+	local WS = workspace
+	local Lght = S.Lighting
+	local RepS = S.ReplicatedStorage
+	local IN = Instance.new
+	--// Instance Creation Functions \\--
+
+	function Sound(parent,id,pitch,volume,looped,effect,autoPlay)
+		local Sound = IN("Sound")
+		Sound.SoundId = "rbxassetid://".. tostring(id or 0)
+		Sound.Pitch = pitch or 1
+		Sound.Volume = volume or 1
+		Sound.Looped = looped or false
+		if(autoPlay)then
 			coroutine.wrap(function()
-				while(Win.Valid==true and A.Functions.Check()==true)do
-					A.Settings['Windows transparency'].Changed:wait();
-					if(Win.FixTransparency~=nil)then
-						Win.FixTransparency();
-					end;
-				end;
-			end)();
+				repeat wait() until Sound.IsLoaded
+				Sound.Playing = autoPlay or false
+			end)()
+		end
+		if(not looped and effect)then
+			Sound.Stopped:connect(function()
+				Sound.Volume = 0
+				Sound:destroy()
+			end)
+		elseif(effect)then
+			warn("Sound can't be looped and a sound effect!")
+		end
+		Sound.Parent =parent or Torso
+		return Sound
+	end
+	function Part(parent,color,material,size,cframe,anchored,cancollide)
+		local part = IN("Part")
+		part[typeof(color) == 'BrickColor' and 'BrickColor' or 'Color'] = color or C3.N(0,0,0)
+		part.Material = material or Enum.Material.SmoothPlastic
+		part.TopSurface,part.BottomSurface=10,10
+		part.Size = size or V3.N(1,1,1)
+		part.CFrame = cframe or CF.N(0,0,0)
+		part.Anchored = anchored or true
+		part.CanCollide = cancollide or false
+		part.Parent = parent or Char
+		return part
+	end
+	function Mesh(parent,meshtype,meshid,textid,scale,offset)
+		local class = "SpecialMesh"
+		if(meshtype == Enum.MeshType.Brick)then class = 'BlockMesh' end
 
-			return Win;
-		end;
-		A.Functions.Meter=function()
-			local Size=0;
-			for i,v in next,A.Stuffs.Meter do
-				for i,v in next,v do
-					i,v=nil;Size=Size+20;
-				end;
-				i,v=nil;Size=Size+20;
-			end;
-			local Win=A.Functions.GiveWindow('Meter',300,Size);
-			if(Win==nil)then return nil;end;local Num=0;
-			Win.Title.Position=A.Old.UDim2.new(.5,-150,0,40);
-			for i,v in next,A.Stuffs.Meter do
-				A.Functions.Lock('TextLabel',{
-					Position=A.Old.UDim2.new(0,0,0,Num*20);
-					BackgroundColor3=A.Old.Color3.Grey;
-					Size=A.Old.UDim2.new(1,0,0,20);
-					TextColor3=A.Old.Color3.Green;
-					BackgroundTransparency=.8;
-					Text=i..' Things';
-					Parent=Win.Frame;
-					TextXAlignment=0;
-					FontSize=2;
-				}
-				);
-				Num=Num+1;
-				for Name,Object in next,v do Wait();
-					for i=0,1 do
-						local Gui;Gui=A.Functions.Lock('TextLabel',{
-							TextColor3=i==0 and A.Old.Color3.White or A.Old.Color3.Green;
-							Text=i==0 and Name or function()return Object.Value;end;
-							Position=A.Old.UDim2.new(i/2,0,0,Num*20);
-							Size=A.Old.UDim2.new(.5,0,0,20);
-							BackgroundTransparency=1;
-							TextXAlignment=0;
-							Parent=Win.Frame;
-							FontSize=1;
-						}
-						);
-						if(i==1)then
-							coroutine.wrap(function()
-								while(Win.Valid==true)do
-									Gui.Text=Object.Value;
-									Object.Changed:wait();
-								end;
-							end)();
-						end;
-					end;Num=Num+1;
-				end;
-			end;
-			Win.VisibleChanged=function(Value)
-				A.Stuffs.MeterIsActive=Value;Value=nil;
-			end;A.Stuffs.MeterIsActive=true;
-		end;
-		A.Functions.QuestWindow=function(Text)
-			local Win=A.Functions.GiveWindow(false,300,200);
-			Win.Answer=A.Functions.Value'Number';
+		local part = IN(class)
+		if(class == "SpecialMesh")then
+			part.MeshId = meshid or ""
+			part.TextureId = textid or ""
+			part.MeshType = meshtype or Enum.MeshType.Sphere
+		end
+		part.Scale = scale or V3.N(1,1,1)
+		part.Offset = offset or V3.N(0,0,0)
 
-			A.Functions.Lock('TextLabel',{
-				BackgroundTransparency=1;
-				Size=A.Old.UDim2.Full;
-				Parent=Win.Frame;
-				TextYAlignment=0;
-				FontSize=3;
-				Text=Text;
-			}
-			);
-			A.Functions.Button('TextButton',{
-				Position=A.Old.UDim2.new(.5,-40,1,-25);
-				BackgroundColor3=A.Old.Color3.Grey;
-				Size=A.Old.UDim2.new(0,80,0,20);
-				Parent=Win.Frame;
-				Text='Okey';
-			},function()
-				Win.Answer.Value=1;
-				A.Functions.KillWindow(Win);
+		part.Parent = parent
+		return part
+	end
+
+	NewInstance = function(instance,parent,properties)
+		local inst = Instance.new(instance,parent)
+		if(properties)then
+			for i,v in next, properties do
+				pcall(function() inst[i] = v end)
 			end
-			);
-			return Win.Answer.Changed:wait();
-		end;
-		A.Functions.GetSpawnLocationCFrame=function()
-			local Spawn={};
-			Spawn[1]=A.Old.CFrame.new(0,100,0);
-			A.Functions.All(A.Service.Workspace,function(Object)
-				if(Object.className=='SpawnLocation')then
-					Spawn[#Spawn+1]=Object.CFrame;
-				end;Object=nil;
-			end);
-			return Spawn[2]==nil and Spawn[1]or Spawn[math.random(2,#Spawn)]+A.Old.Vector3.Char;
-		end;
-		A.Functions.SettingsGui=function()
-			local Size=#A.SettingIDs;
-			local RealSize=Size;
-			Size=Size<10 and Size or 10;
-			local Win=A.Functions.GiveWindow('Settings',250,20*Size);
-			if(Win==nil)then return nil;end;
+		end
+		return inst;
+	end
 
-			Win.Title.Position=A.Old.UDim2.new(.5,-125,.5,-110);
 
-			Win.Cells={};
 
-			Win.Fix=function()
-				for i=1,Size do
-					Win.Cells[i].SetTick.Value=A.SettingIDs[i].Object.Value;
-					Win.Cells[i].SetText.Value=A.SettingIDs[i].Name;i=nil;
-				end;
-			end;
+	--// Extended ROBLOX tables \\--
+	local Instance = setmetatable({ClearChildrenOfClass = function(where,class,recursive) local children = (recursive and where:GetDescendants() or where:GetChildren()) for _,v in next, children do if(v:IsA(class))then v:destroy();end;end;end},{__index = Instance})
+	--// Customization \\--
 
-			Win.Pos=A.Functions.Value('String',0,Win.Fix);
+	local Frame_Speed = 75 -- The frame speed for swait. 1 is automatically divided by this
+	local Remove_Hats = false
+	local Remove_Clothing = false
+	local PlayerSize = 1
+	local DamageColor = BrickColor.new'New Yeller'
+	local MusicID = 835120625
 
-			if(RealSize>10)then
-				local Num;
-				local BS={
-					'<';function()
-						Num=Win.Pos.Value-10
-						if(Num>=0)then
-							Win.Pos.Value=Num;
-						end;
-					end;
-					'Home';function()Win.Pos.Value=0;end;
-					'>';function()
-						Num=Win.Pos.Value+10;
-						if(Num>=RealSize)then
-							Win.Pos.Value=Num-(RealSize%10);
-						end;
-					end;
-				};
-				local BSn=#BS/2;
-				local Num=0;
-				for i=1,BSn do
-					A.Functions.Button('TextButton',{
-						Position=A.Old.UDim2.new((1/BSn)*(i-1),(2/BSn)/2,0,(2/BSn)/2);
-						Size=A.Old.UDim2.new(1/BSn,-2,1,-2);
-						BackgroundColor3=A.Old.Color3.Grey;
-						TextColor3=A.Old.Color3.Black;
-						BackgroundTransparency=.5;
-						Parent=Win.Menu;
-						Text=BS[i+Num];
-						TextWrap=true;
-						FontSize=1;
-					},BS[i+Num+1]
-					);Num=Num+1;
-				end;
-			end;
+	--// Weapon and GUI creation, and Character Customization \\--
 
-			for Int=1,Size do
-				local Ints=Int+Win.Pos.Value;
-				local Cell={};Win.Cells[Int]=Cell;
-				local Setting=A.SettingIDs[Ints]~=nil and A.SettingIDs[Ints];
+	if(Remove_Hats)then Instance.ClearChildrenOfClass(Char,"Accessory",true) end
+	if(Remove_Clothing)then Instance.ClearChildrenOfClass(Char,"Clothing",true) Instance.ClearChildrenOfClass(Char,"ShirtGraphic",true) end
+	Instance.ClearChildrenOfClass(Char,"Decal",true)
+	local Effects = IN("Folder",Char)
+	Effects.Name = "Effects"
 
-				Cell.SetText=A.Functions.Value('String',A.SettingIDs[Ints]and A.SettingIDs[Ints].Name,function(Value)Cell.Label.Text=Value;Value=nil;end);
-				Cell.SetTick=A.Functions.Value('Bool',A.SettingIDs[Ints]and A.SettingIDs[Ints].Object.Value,function(Value)Cell.Button.BackgroundColor3=Value==true and A.Old.Color3.Green or A.Old.Color3.DarkRed;Value=nil;end);
+	local Halo = IN("Model",Char)
+	Halo.Name = "Halo"
 
-				coroutine.wrap(function()
-					while(Win.Valid==true)do
-						Cell.SetTick.Value=Setting.Object.Changed:wait();
-					end;
-				end)();
+	local Wings = IN("Model",Char)
+	Wings.Name = "Wings"
 
-				Cell.Label=A.Functions.Lock('TextLabel',{
-					Visible=function()return Cell.SetText.Value~='';end;
-					Text=function()return Cell.SetText.Value;end;
-					Position=A.Old.UDim2.new(0,0,0,20*(Int-1));
-					Size=A.Old.UDim2.new(1,-20,0,20);
-					BackgroundTransparency=1;
-					TextXAlignment=0;
-					Parent=Win.Frame;
-					FontSize=1;
-				}
-				);
-				Cell.Button=A.Functions.Button('TextButton',{
-					BackgroundColor3=function()return Cell.SetTick.Value==true and A.Old.Color3.Green or A.Old.Color3.DarkRed;end;
-					Position=A.Old.UDim2.new(1,-17.5,1,-17.5);
-					Size=A.Old.UDim2.new(0,15,0,15);
-					BackgroundTransparency=.5;
-					Parent=A.Functions.Lock('Frame',
-						{
-							BackgroundColor3=A.Old.Color3.Grey;
-							Size=A.Old.UDim2.ButtonSize;
-							Position=A.Old.UDim2.new(1);
-							BackgroundTransparency=.5;
-							Parent=Cell.Label;
-						}
-					);
-					Text='';
-				},function()
-					A.SettingIDs[Ints].Object.Value=A.SettingIDs[Ints].Object.Value==false;
-				end
-				);
-			end;
-		end;
-		A.Functions.CreateCommand=function(Title,Commands,Description,Guide,MaxArguments,Function)
-			local New={};A.Commands[#A.Commands+1]=New;
-			New.Title=Title;
-			New.TrueCommands={};
-			New.Function=Function;
-			New.Description=Description;
-			New.MaxArguments=MaxArguments;
-			New.Commands='"'..table.concat(Commands,'","')..'"';
+	Hum.DisplayDistanceType = 'None'
 
-			for Signal,Value in next,A.Stuffs.GuideCommands do
-				Guide=Guide:gsub(Signal,A.Data.Step..Value);Signal,Value=nil;
-			end;
-			for i=1,#Commands do
-				New.TrueCommands[Commands[i]]=true;
-			end;
+	local naeeym2 = IN("BillboardGui",Char)
+	naeeym2.AlwaysOnTop = true
+	naeeym2.Size = UDim2.new(5,35,2,15)
+	naeeym2.StudsOffset = V3.N(0,2.5,0)
+	naeeym2.Adornee = Char.Head
+	naeeym2.Name = "Name"
+	naeeym2.PlayerToHideFrom = Plr
+	local tecks2 = IN("TextLabel",naeeym2)
+	tecks2.BackgroundTransparency = 1
+	tecks2.TextScaled = true
+	tecks2.BorderSizePixel = 0
+	tecks2.Text = "The Angle"
+	tecks2.Font = Enum.Font.Bodoni
+	tecks2.TextSize = 30
+	tecks2.TextStrokeTransparency = 0
+	tecks2.TextColor3 = C3.N(0,0,0)
+	tecks2.TextStrokeColor3 = C3.N(1,1,0)
+	tecks2.Size = UDim2.new(1,0,0.5,0)
+	tecks2.Parent = naeeym2
 
-			New.Guide=A.Data.Start..Commands[1]..Guide;
-		end;
-		A.Functions.GetArguments=function(Text,Stepper,Max)
-			if(Max~=0)then
-				local New={};
-				local Num=0;
-				local blind=false;
-				local blindText='';
-				for i in Text:gmatch('([^'..Stepper..']+)')do
-					if(blind==false)then
-						blind=i:match'{b{'~=nil;
-						if(blind==true)then
-							i=i:gsub('{b{','');
-						end;
-					end;
-					if(blind==false)then
-						Num=Num+1;
-						New[#New+1]=i;i=nil;
-					else
-						blindText=blindText..i..Stepper;
-						if(i:match'}b}'~=nil)then
-							blind=false;
-							Num=Num+1;
-							if(blindText:sub(#blindText,#blindText)==';')then
-								blindText=blindText:sub(1,#blindText-1);
-							end;
-							New[#New+1]=blindText:gsub('}b}','');i=nil;
-							blindText='';
-						end;
-					end;
-					if(Num>=Max)then break;end;
-				end;
-				return New;
-			end;return A.Stuffs.NullTable;
-		end;
-		A.Functions.GetCommand=function(Command)
-			for i,v in next,A.Commands do
-				if(v.TrueCommands[Command]==true)then
-					return v,i;
-				end;
-			end;
-		end;
-		A.Functions.SearchCommand=function(Text)
-			local Command=Text:match(A.Data.Start..'(%w+)');
-			if(Command==nil)then return'Command word is not found!';end;
-			Command=Command:lower();
-			local FullText=Text:match(A.Data.Start..'%w+'..A.Data.Step..'(.+)')or'';
-			Text=FullText;
+	pcall(function()
+		Char.LeftWing:destroy()
+		Char.ReaperShadowHead:destroy()
+	end)
 
-			local StuffsOfCommand=A.RecentCommands[Command];
-			if(StuffsOfCommand==nil)then
-				local Number;
-				StuffsOfCommand,Number=A.Functions.GetCommand(Command);
-				if(StuffsOfCommand~=nil)then
-					A.RecentCommands[Command]={
-						Function=function(...)A.Commands[Number].Function(...);end;
-						MaxArguments=StuffsOfCommand.MaxArguments;
-					};
-				end;
-			end;
-			if(StuffsOfCommand==nil)then return'"'..Command..'" is not a valid member of library of the commands!';end;
+	for _,v in next, Char:children() do
+		if(v:IsA'BasePart' and v.Transparency < 1 and v ~= Head)then
+			NewInstance("SelectionBox",v,{Adornee=v,LineThickness=.01,Color3=C3.N(1,1,0)})
+			if(v ~= Head)then IN("BlockMesh",v) end
+		end
+	end
 
-			local Load,Error=A.Functions.Thread(function()
-				StuffsOfCommand.Function(
-					Text,
-					FullText,
-					A.Functions.GetArguments(
-						Text,
-						A.Data.Step,
-						StuffsOfCommand.MaxArguments
-					)
-				);
-			end);
+	local HaloHandle = NewInstance("Part",Halo,{Size=V3.N(.05,.05,.05),Transparency=1,CanCollide=false,Anchored=false,Locked=true,})
+	local WingHandle = NewInstance("Part",Wings,{Size=V3.N(.05,.05,.05),Transparency=1,CanCollide=false,Anchored=false,Locked=true,})
 
-			if(Load==false)then
-				return Error;
-			end;
+	for i = 1, 360,5 do
+		local part = NewInstance("Part",Halo,{BrickColor=BrickColor.new"New Yeller",Material=Enum.Material.Neon,Size=V3.N(0.69,0.1,0.3),Anchored=false,CanCollide=false,Locked=true,Transparency=.6})
+		local weld = NewInstance("Weld",part,{Part0=HaloHandle,Part1=part,C0=CF.A(0,M.R(i),0)*CF.N(0,0,-.6)})
+	end
 
-		end;
-		A.Functions.Message=function(Type,Text,Time)
-			local Message=A.Functions.Peace('TextLabel',{
-				Position=Type=='Message'and A.Old.UDim2.Pax or A.Old.UDim2.new(0,0,0,20*#A.User.Frames.Hints:children());
-				Size=Type=='Hint'and A.Old.UDim2.new(1,0,0,20)or A.Old.UDim2.Full;
-				Text=Text:gsub([[']],A.Stuffs.AsciiChar[255]);
-				BackgroundColor3=A.Old.Color3.Black;
-				Parent=A.User.Frames[Type..'s'];
-				TextColor3=A.Old.Color3.Yellow;
-				BackgroundTransparency=.5;
-				BorderSizePixel=0;
-				FontSize=2;
-				Name=Type;
-			}
-			);
-			Delay(Time or #Text/5,function()
-				A.Functions.Remove(Message,true);
-				if(Type=='Hint')then
-					for i,v in next,A.User.Frames.Hints:children()do
-						if(v.className=='TextLabel')then
-							v.Position=A.Old.UDim2.new(0,0,0,20*(i-1));
-						end;
-					end;
-				end;
-			end);
-		end;
-		A.Functions.TransparencyContact=function(Table)
-			coroutine.wrap(function()
-				local Num=#Table;
-				local Data;
-				for i=1,Num do
-					i=Table[i];
-					Data=A.Functions.GetData(i);
-					if(Data~=nil)then
-						Data.Properties.BackgroundTransparency=function()return A.Settings['Windows transparency'].Value==true and .5 or 0;end;
-					end;
-					i.BackgroundTransparency=A.Settings['Windows transparency'].Value==true and .5 or 0;
-				end;
-				local Function=function(Bool)
-					for i=1,Num do Table[i].BackgroundTransparency=Bool==true and .5 or 0;i=nil;end;Bool=nil;
-				end;
-				while(A.Functions.Check()==true)do
-					Function(A.Settings['Windows transparency'].Value);
-					A.Settings['Windows transparency'].Changed:wait();
-				end;
-			end)();
-		end;
-		A.Functions.CommandBar=function()
-			local Win=A.Functions.GiveWindow('Cmd',300,64);
-			if(Win==nil)then return nil;end;Win.Title.Position=A.Old.UDim2.new(0,0,.5,-100);
-			if(A.User.RecentCommands==nil)then
-				A.User.RecentCommands={};
-			end;
-
-			local NUM_,_NUM;
-			local BS={
-				'<';function()
-					NUM_=Win.Pos.Value-Win.MaxCells;
-					if(NUM_>=0)then
-						Win.Pos.Value=NUM_;
-					end;
-				end;
-				'>';function()
-					_NUM=#A.User.RecentCommands;
-					if(_NUM<=Win.MaxCells)then return nil;end;
-					NUM_=Win.Pos.Value+Win.MaxCells;
-					if(NUM_>=_NUM)then
-						NUM_=_NUM-(_NUM%Win.MaxCells);
-					end;
-					Win.Pos.Value=NUM_;
-				end;
-				'Clean';function()
-					A.User.RecentCommands={};
-					Win.Pos.Value=0;
-					Win.Fix();
-				end;
-				'H/S';function()
-					Win.FixEnabled=Win.FixEnabled==false;
-					Win.Fix();
-				end;
-			};
-			local BSn=#BS/2;
-
-			Win.Cells={};
-			Win.MaxCells=8;
-			Win.FixEnabled=true;
-
-			Win.Fix=function()
-				for Int=1,Win.MaxCells do
-					Win.Cells[Int].SetText.Value=A.User.RecentCommands[Int+Win.Pos.Value]or'';
-					Win.Cells[Int].Label.Visible=Win.FixEnabled;
-				end;
-			end;
-
-			Win.Pos=A.Functions.Value('Number',0,Win.Fix);
-
-			Win.Box=A.Functions.Lock('TextBox',{
-				Parent=function()A.Functions.Wait()return Win.Frame end;
-				TextColor3=A.Old.Color3.Yellow;
-				BackgroundTransparency=1;
-				Size=A.Old.UDim2.Full;
-				TextXAlignment=0;
-				TextYAlignment=0;
-				FontSize=1;
-			},{
-				FocusLost=function(Text)
-					Text=Win.Box.Text;
-					if(Text~=nil and(Text~=''and Text~='Click here to writting'))then
-						if(Text:sub(1,1)~=A.Data.Start)then Text=A.Data.Start..Text;end;
-						A.Functions.Wait();
-						local Message=A.Functions.SearchCommand(Text);
-						if(Message~=nil)then A.Functions.Message('Hint',Message);return nil;end;
-						if(Win.FixEnabled==true and A~=nil)then
-							table.insert(A.User.RecentCommands,1,Text);
-							Win.Fix();
-						end;
-					end;Text=nil;
-				end;
-			}
-			);Win.Box.Text='Click here to writting';
-
-			A.Functions.Lock('Frame',{
-				BackgroundColor3=A.Old.Color3.Grey;
-				Position=A.Old.UDim2.new(0,0,1);
-				Size=A.Old.UDim2.new(1,0,0,5);
-				BackgroundTransparency=.5;
-				Parent=Win.Frame;
-			}
-			);
-
-			local Smg={};
-			for Int=1,Win.MaxCells do
-				local Cell={};Win.Cells[#Win.Cells+1]=Cell;
-
-				Cell.SetText=A.Functions.Value('String',A.User.RecentCommands[Int],function(Value)Cell.Label.Visible=Value~='';Cell.Label.Text=Win.Pos.Value+Int..'.) '..Value;Value=nil;end);
-
-				Cell.Label=A.Functions.Button('TextButton',{
-					Visible=function()if(Win.FixEnabled==false)then return false;else return Cell.SetText.Value~='';end;end;
-					Text=function()return Win.Pos.Value+Int..'.) '..Cell.SetText.Value;end;
-					Position=A.Old.UDim2.new(0,0,1,20*(Int-1)+5);
-					Size=A.Old.UDim2.new(1,0,0,20);
-					AutoButtonColor=true;
-					Parent=Win.Frame;
-					TextXAlignment=0;
-					FontSize=1;
-				},function()
-					A.Functions.SearchCommand(Cell.SetText.Value);
-				end
-				);Smg[Int]=Cell.Label;
-			end;
-			A.Functions.TransparencyContact(Smg);
-
-			local Num=0;
-			local Asd={};
-			for Int=1,BSn do
-				Asd[Int]=A.Functions.Button('TextButton',{
-					Position=A.Old.UDim2.new(1/BSn*(Int-1),1,0,1);
-					Size=A.Old.UDim2.new(1/BSn,-2,1,-2);
-					BackgroundColor3=A.Old.Color3.Grey;
-					TextColor3=A.Old.Color3.Black;
-					Text=BS[Int+Num];
-					Parent=Win.Menu;
-					FontSize=1;
-				},BS[Int+Num+1]
-				);
-				Num=Num+1;
-			end;
-			A.Functions.TransparencyContact(Asd);
-
-		end;
-		A.Functions.HelpGui=function()
-			local Win=A.Functions.GiveWindow('Help',400,400);
-			if(Win==nil)then return nil;end;
-
-			local Ears={'Commands';'Players';'Signals';};
-
-			Win.Ears={};
-			Win.NumOfEars=#Ears;
-			Win.NumberOfCommands=#A.Commands;
-
-			local NUM;
-			local CCMD;
-			local TEXT='';
-			Win.FixTutorial=function()
-				NUM=Win.Pos.Value+1;
-				CCMD=A.Commands[NUM];
-				if(A.Stuffs.ForTutorialOfCommands==nil)then
-					A.Stuffs.ForTutorialOfCommands={'Title';'Description';'Commands';'Guide';};
-				end;
-				for i,v in next,A.Stuffs.ForTutorialOfCommands do
-					TEXT=TEXT..v..': '..CCMD[v]..'\n\n\n';i,v=nil;
-				end;
-				TEXT=NUM..' of '..Win.NumberOfCommands..'\n\n\n'..TEXT;
-				Win.Ears[1].SetText.Value=TEXT;TEXT='';
-			end;
-
-			Win.Pos=A.Functions.Value('Number',0,function(Value)Win.FixTutorial();Value=nil;end);
-			Win.CurrentFrame=A.Functions.Value('String','Commands',function(Value)
-				for i=1,Win.NumOfEars do
-					Win.Ears[i].Frame.Visible=Value==Win.Ears[i].Name;
-				end;
-			end);
-
-			local Smgs={};
-			for Int,Name in next,Ears do
-				local Ear={};Win.Ears[#Win.Ears+1]=Ear;
-
-				Ear.Name=Name;
-
-				Ear.SetText=A.Functions.Value('String','',function(Value)Ear.Frame.Text=Value;Value=nil;end);
-
-				Ear.Frame=A.Functions.Lock('TextLabel',{
-					Visible=function()return Win.CurrentFrame.Value==Name;end;
-					Text=function()return Ear.SetText.Value;end;
-					BackgroundTransparency=1;
-					Position=A.Old.UDim2.Pax;
-					Size=A.Old.UDim2.Full;
-					TextXAlignment=0;
-					TextYAlignment=0;
-					Parent=Win.Frame;
-					FontSize=2;
-				}
-				);
-				Ear.Ear=A.Functions.Button('TextButton',{
-					Position=A.Old.UDim2.new(1/Win.NumOfEars*(Int-1),1.25,0,1.25);
-					Size=A.Old.UDim2.new(1/Win.NumOfEars,-2.5,1,-2.5);
-					BackgroundColor3=A.Old.Color3.Grey;
-					TextColor3=A.Old.Color3.Black;
-					Parent=Win.Menu;
-					FontSize=1;
-					Text=Name;
-				},function()
-					Win.CurrentFrame.Value=Name;
-				end
-				);Smgs[#Smgs+1]=Ear.Ear;
-
-				if(Name=='Players')then
-					local Text='';
-					for Int,Table in next,A.Calls do
-						Text=Text..Table.Description..': '..Table.Calls..'\n'..'\n';
-					end;
-					Ear.SetText.Value=Text;
-				elseif(Name=='Signals')then
-					Ear.SetText.Value=[[The first signal what you need for run a command signal is "]]..A.Data.Start..'" :3'..'\n\n'..[[For arguments type this "]]..A.Data.Step..'"'..'\n\n'..[[To use blink argument (hard to tell my english not enough to this) "{b{" until "}b}" so {b{blah;blah;LAALla;;;;aolaL}b}]];
-				elseif(Name=='Commands')then
-					Win.FixTutorial();
-					for i=0,1 do
-						local Num=i==0 and-1 or 1;
-						local Plus;
-						Smgs[#Smgs+1]=A.Functions.Button('TextButton',{
-							Position=A.Old.UDim2.new(i,i==1 and -20,1,-20);
-							BackgroundColor3=A.Old.Color3.Grey;
-							TextColor3=A.Old.Color3.Black;
-							Size=A.Old.UDim2.ButtonSize;
-							Parent=Win.Ears[1].Frame;
-							Text=i==0 and'<'or'>';
-							FontSize=3;
-						},function()
-							Plus=Win.Pos.Value+Num;
-							if(Plus>=0 and Plus<Win.NumberOfCommands)then
-								Win.Pos.Value=Plus;
-							end;
-						end
-						);
-					end;
-				end;
-
-			end;A.Functions.TransparencyContact(Smgs);
-
-		end;
-		A.Functions.GetBase=function()
-			for i,v in next,A.Service.Workspace:children()do
-				if(v.className=='Part'and v.Name=='Base')then
-					A.Functions.Remove(v,true);
-				end;i,v=nil;
-			end;
-			local Base=A.Old.Instance.NewObject'Part';
-			Base.Name='Base';
-			Base.Locked=true;
-			Base.Anchored=true;
-			Base.archivable=false;
-			Base.Size=A.Old.Vector3.new(555,2,555);
-			Base.BrickColor=A.Old.BrickColor.new'37';
-			Base.Parent=A.Service.Workspace;
-			return Base;
-		end;
-		A.Functions.Clean=function()
-			local Base=A.Functions.GetBase();
-			if(A.Stuffs.Shielded==nil)then
-				A.Stuffs.Shielded={
-					HumanoidController=true;
-					Terrain=true;
-					Camera=true;
-					Player=true;
-				};
-			end;
-			if(A.Stuffs.Banned_Services==nil)then
-				A.Stuffs.Banned_Services={
-					NetworkClient=true;
-					CoreGui=true;
-				};
-			end;
-			for i,v in next,Game:children()do
-				pcall(function()
-					if(A.Stuffs.Banned_Services[v.className]==nil)then
-						for i,v in next,v:children()do
-							if(v~=script and v~=Base and A.Stuffs.Shielded[v.className]~=true and A.Service.Players:GetPlayerFromCharacter(v)==nil)then
-								pcall(function()
-									v.Parent=nil;
-								end);
-							end;i,v=nil;
-						end;
-					end;
-				end);i,v=nil;
-			end;
-		end;
-		A.Functions.ResetLighting=function()
-			local Lighting=A.Service.Lighting;
-			if(A.Stuffs.LightingBaseProperties==nil)then
-				A.Stuffs.LightingBaseProperties={
-					ShadowColor=A.Old.Color3.new(.7,.7,.72);
-					FogColor=A.Old.Color3.new(.75,.75,.75);
-					ColorShift_Bottom=A.Old.Color3.Black;
-					GeographicLatitude=41.733299255371;
-					ColorShift_Top=A.Old.Color3.Black;
-					Ambient=A.Old.Color3.Grey;
-					Brightness=1;
-					FogEnd=1e6;
-					FogStart=0;
-				};
-			end;
-			for i,v in next,A.Stuffs.LightingBaseProperties do
-				Lighting[i]=v;i,v=nil;
-			end;
-			pcall(Lighting.ClearAllChildren,Lighting);
-		end;
-		A.Functions.ExplorerGui=function()
-			local Win=A.Functions.GiveWindow('Explorer',440,400);
-			if(Win==nil)then
-				return nil;
-			end;
-
-			Win.Frames={};
-
-			Win.CountThis=A.Functions.Value('Object',Game,function(Value)
-				if(Win.Frames.Explorer.SetPos.Value==0)then
-					Win.Frames.Explorer.Count(0,Value);
-				else
-					Win.Frames.Explorer.SetPos.Value=0;
-				end;
-			end);
-			Win.WatchingObject=A.Functions.Value('Object',Game,function(Value)
-				if(Win.Frames.Properties.SetPos.Value==0)then
-					Win.Frames.Properties.Count(0,Value);
-				else
-					Win.Frames.Properties.SetPos.Value=0;
-				end;
-			end);
-
-			local Cnr={};
-
-			Win.History={Game;};
-			Win.HistoryPos=1;
-
-			for i=0,1 do
-				local Plus=i==0 and -1 or 1;
-				local Num;
-				Cnr[#Cnr+1]=A.Functions.Button('TextButton',{
-					BackgroundColor3=A.Old.Color3.Blue;
-					Position=A.Old.UDim2.new(0,20*i);
-					TextColor3=A.Old.Color3.Black;
-					Text=i==0 and'<'or'>';
-					Parent=Win.Menu;
-					FontSize=3;
-				},function()
-					Num=Win.HistoryPos+Plus;
-					if(Num<1 or Win.History[Num]==nil)then return nil;end;
-					Win.HistoryPos=Num;
-					Win.CountThis.Value=Win.History[Num];
-				end
-				);
-			end;
-			Win.HomeButton=A.Functions.Button('TextButton',{
-				BackgroundColor3=A.Old.Color3.Green;
-				Position=A.Old.UDim2.new(0,40);
-				TextColor3=A.Old.Color3.Black;
-				Parent=Win.Menu;
-				Text='H';
-			},function()
-				Win.CountThis.Value=Game;
-				Win.HistoryPos=1;
+	if(PlayerSize ~= 1)then
+		for _,v in next, Char:GetDescendats() do
+			if(v:IsA'BasePart')then
+				v.Size = v.Size * PlayerSize
 			end
-			);
-			Win.RefreshButton=A.Functions.Button('TextButton',{
-				BackgroundColor3=A.Old.Color3.Grey;
-				Position=A.Old.UDim2.new(0,60);
-				TextColor3=A.Old.Color3.Black;
-				Parent=Win.Menu;
-				Text='R';
-			},function()
-				Win.Frames.Explorer.Count(0,Win.CountThis.Value);
+		end
+	end
+
+	local Music = Sound(Char,MusicID,1,3,true,false,true)
+	Music.Name = 'Music'
+
+	-- Wing Creation
+	local FeatherWelds = {{},{}}
+	local inc = 1
+	for aa = 1, 4 do
+		local lastFeather;
+		FeatherWelds[1][aa] = {}
+		for i = 1, 4+inc do
+			local feather = NewInstance("Part",Wings,{CustomPhysicalProperties=PhysicalProperties.new(0,0,0,0,0),TopSurface=10,BottomSurface=10,Size=V3.N(2,.5,.75),CanCollide=false,Color=C3.N(1,1,1)})
+			NewInstance("SpecialMesh",feather,{MeshType=Enum.MeshType.Sphere})
+			if(lastFeather)then
+				table.insert(FeatherWelds[1][aa],NewInstance("Weld",feather,{Part0=lastFeather,Part1=feather,C0=CF.N(.5,.25,0)*CF.A(0,0,M.R(-5))}))
+			else
+				table.insert(FeatherWelds[1][aa],NewInstance("Weld",feather,{Part0=feather,Part1=WingHandle,C0=CF.N(-2,aa/4,0)*CF.A(0,0,M.R(-5))}))
 			end
-			);
-			Win.RemoveButton=A.Functions.Button('TextButton',{
-				BackgroundColor3=A.Old.Color3.Grey;
-				Position=A.Old.UDim2.new(0,80);
-				TextColor3=A.Old.Color3.Black;
-				Parent=Win.Menu;
-				Text='K';
-			},function()
-				for i,v in next,Win.Frames.Explorer.Selected do
-					if(#v~=0)then
-						for i,v in next,v do
-							A.Functions.Remove(v);
-						end;
-					end;
-				end;
+			lastFeather = feather
+		end
+		inc = inc + 1
+	end
+
+	local inc = 1
+	for aa = 1, 4 do
+		local lastFeather;
+		FeatherWelds[2][aa] = {}
+		for i = 1, 4+inc do
+			local feather = NewInstance("Part",Wings,{CustomPhysicalProperties=PhysicalProperties.new(0,0,0,0,0),TopSurface=10,BottomSurface=10,Size=V3.N(2,.5,.75),CanCollide=false,Color=C3.N(1,1,1)})
+			NewInstance("SpecialMesh",feather,{MeshType=Enum.MeshType.Sphere})
+			if(lastFeather)then
+				table.insert(FeatherWelds[2][aa],NewInstance("Weld",feather,{Part0=lastFeather,Part1=feather,C0=CF.N(-.5,.25,0)*CF.A(0,0,M.R(5))}))
+			else
+				table.insert(FeatherWelds[2][aa],NewInstance("Weld",feather,{Part0=feather,Part1=WingHandle,C0=CF.N(2,aa/4,0)*CF.A(0,0,M.R(5))}))
 			end
-			);
+			lastFeather = feather
+		end
+		inc = inc + 1
+	end
 
-			for i=0,1 do
-				local Name=i==0 and'Explorer'or'Properties';
-				local this={};
-				this.Cells={};
+	--// Stop animations \\--
+	for _,v in next, Hum:GetPlayingAnimationTracks() do
+		v:Stop();
+	end
 
-				this.SetPos=A.Functions.Value('Number',0,function(Value)
-					this.PosChanged(Value);
-				end);
+	pcall(game.Destroy,Char:FindFirstChild'Animate')
+	pcall(game.Destroy,Hum:FindFirstChild'Animator')
 
-				this.Frame=A.Functions.Lock('Frame',{
-					Size=A.Old.UDim2.new(.5,-20,1);
-					Position=A.Old.UDim2.new(i/2);
-					BackgroundTransparency=1;
-					Parent=Win.Frame;
-				}
-				);
-				this.ScrollFrame=A.Functions.Lock('Frame',{
-					BackgroundColor3=A.Old.Color3.White;
-					Size=A.Old.UDim2.new(0,20,1);
-					Position=A.Old.UDim2.new(1);
-					BackgroundTransparency=.5;
-					Parent=this.Frame;
-				}
-				);
-				Cnr[#Cnr+1]=this.ScrollFrame;
+	--// Joints \\--
 
-				for i=0,1 do
-					local Plus=i==0 and-20 or 20;
-					local Num;
-					Cnr[#Cnr+1]=A.Functions.Button('TextButton',{
-						Position=A.Old.UDim2.new(0,0,i,i==1 and-20);
-						BackgroundColor3=A.Old.Color3.Grey;
-						Size=A.Old.UDim2.ButtonSize;
-						Text=i==0 and'/\\'or'\\/';
-						Parent=this.ScrollFrame;
-						AutoButtonColor=true;
-						FontSize=3;
-					},function()
-						Num=this.SetPos.Value+Plus;
-						if(Num<0)then
-							Num=0;
-						end;
-						if(Num>=this.Max)then
-							Num=this.Max-(this.Max%20);
-						end;
-						this.SetPos.Value=Num;
+	local LS = NewInstance('Motor',Char,{Part0=Torso,Part1=LArm,C0 = CF.N(-1.5 * PlayerSize,0.5 * PlayerSize,0),C1 = CF.N(0,.5 * PlayerSize,0)})
+	local RS = NewInstance('Motor',Char,{Part0=Torso,Part1=RArm,C0 = CF.N(1.5 * PlayerSize,0.5 * PlayerSize,0),C1 = CF.N(0,.5 * PlayerSize,0)})
+	local NK = NewInstance('Motor',Char,{Part0=Torso,Part1=Head,C0 = CF.N(0,1.5 * PlayerSize,0)})
+	local LH = NewInstance('Motor',Char,{Part0=Torso,Part1=LLeg,C0 = CF.N(-.5 * PlayerSize,-1 * PlayerSize,0),C1 = CF.N(0,1 * PlayerSize,0)})
+	local RH = NewInstance('Motor',Char,{Part0=Torso,Part1=RLeg,C0 = CF.N(.5 * PlayerSize,-1 * PlayerSize,0),C1 = CF.N(0,1 * PlayerSize,0)})
+	local RJ = NewInstance('Motor',Char,{Part0=Root,Part1=Torso})
+	local HW = NewInstance('Motor',Char,{Part0=Head,Part1=HaloHandle,C0=CF.N(0,2,0)}) 
+	local WW = NewInstance('Motor',Char,{Part0=Torso,Part1=WingHandle,C0=CF.N(0,1.5,1.5)}) 
+
+	local LSC0 = LS.C0
+	local RSC0 = RS.C0
+	local NKC0 = NK.C0
+	local LHC0 = LH.C0
+	local RHC0 = RH.C0
+	local RJC0 = RJ.C0
+
+	--// Artificial HB \\--
+
+	local ArtificialHB = IN("BindableEvent", script)
+	ArtificialHB.Name = "Heartbeat"
+
+	script:WaitForChild("Heartbeat")
+
+	local tf = 0
+	local allowframeloss = false
+	local tossremainder = false
+	local lastframe = tick()
+	local frame = 1/Frame_Speed
+	ArtificialHB:Fire()
+
+	game:GetService("RunService").Heartbeat:connect(function(s, p)
+		tf = tf + s
+		if tf >= frame then
+			if allowframeloss then
+				script.Heartbeat:Fire()
+				lastframe = tick()
+			else
+				for i = 1, math.floor(tf / frame) do
+					ArtificialHB:Fire()
+				end
+				lastframe = tick()
+			end
+			if tossremainder then
+				tf = 0
+			else
+				tf = tf - frame * math.floor(tf / frame)
+			end
+		end
+	end)
+
+	function swait(num)
+		if num == 0 or num == nil then
+			ArtificialHB.Event:wait()
+		else
+			for i = 0, num do
+				ArtificialHB.Event:wait()
+			end
+		end
+	end
+
+
+	--// Effect Function(s) \\--
+
+
+	function Chat(text)
+		--if(game.PlaceId ~= 843468296)then
+		coroutine.wrap(function()
+			if(Char:FindFirstChild'ChatGUI')then Char.ChatGUI:destroy() end
+			local BBG = NewInstance("BillboardGui",Char,{Name='ChatGUI',Size=UDim2.new(0,100,0,40),StudsOffset=V3.N(0,3,0),Adornee=Head})
+			local Txt = NewInstance("TextLabel",BBG,{Text = "",BackgroundTransparency=1,TextColor3=C3.N(1,1,0),BorderSizePixel=0,Font=Enum.Font.Garamond,TextSize=30,TextStrokeTransparency=1,Size=UDim2.new(1,0,.5,0)})
+			local SND = Sound(Head,418252437,M.RNG(9,11)/10,3,false,false,true)
+			for i = 1, #text do
+				delay(i/25, function()
+					SND.Pitch = M.RNG(9,11)/10
+					SND.Volume = 3
+					SND.Parent = Effects
+					SND:Play()
+					Txt.Text = text:sub(1,i)
+				end)
+			end
+			delay((#text/25)+2, function()
+				Txt.Text = ""
+				for i = 1, #text do
+					Txt.Text = Txt.Text.. string.char(M.RNG(0,126))
+				end
+			end)
+			delay((#text/25)+3, function()
+				BBG:destroy()
+				SND:destroy()
+			end)
+		end)()
+		--else
+		--	Chat2(text)
+		--end
+	end
+
+	function Chat2(text)
+		coroutine.wrap(function()
+			if(Char:FindFirstChild'ChatGUI')then Char.ChatGUI:destroy() end
+			local BBG = NewInstance("BillboardGui",Char,{Name='ChatGUI',Size=UDim2.new(0,100,0,40),StudsOffset=V3.N(0,3,0),Adornee=Head})
+			local offset = 0;
+			local xsize = 0;
+			for i = 1, #text do
+				offset = offset - 16
+				xsize = xsize + 32 	
+				delay(i/25, function()
+					local Txt = NewInstance("TextLabel",BBG,{Text = text:sub(i,i),Position=UDim2.new(0,offset,0,0),BackgroundTransparency=1,TextColor3=C3.N(1,1,0),BorderSizePixel=0,Font=Enum.Font.Garamond,TextSize=40,TextStrokeTransparency=1,Size=UDim2.new(1,0,.5,0)})
+					offset = offset + 32
+					while Txt and Txt.Parent do
+						Txt.Rotation = M.RNG(-15,15)
+						swait()
 					end
-					);
-				end;
-
-
-				if(i==0)then--Explorer
-
-					this.CountThis=Win.CountThis;
-
-					this.Selected={};
-					this.FreeBoxes={};
-
-					this.Count=function(From,Object)
-						local Parts=Object:children();
-						if(#Parts==0)then return nil;end;
-						this.Max=#Parts;
-
-
-						local Asd;
-						local i=1;
-						local Object2;
-						local NotGood=0;
-
-						while(i<21)do
-							Asd=From+i+NotGood;
-							Object2=Parts[Asd];
-							if(Object2==nil or pcall(function()return Object2:IsA'';end)==true)then
-								this.Cells[i].SetObject.Value=Object2;
-								i=i+1;
-							else
-								NotGood=NotGood+1;
-							end;
-						end;
-
-					end;
-					this.PosChanged=function(Value)
-						this.Count(Value,this.CountThis.Value);
-					end;
-
-					for i=1,20 do
-						local Cell={};this.Cells[#this.Cells+1]=Cell;
-
-						Cell.GetPos=function()return this.SetPos.Value+i;end;
-
-						Cell.SetText=A.Functions.Value('String','N/A',function(Value)
-							Cell.Text.Text=Value;
-						end);
-						Cell.SetObject=A.Functions.Value('Object',nil,function(Value)
-
-							if(Value~=nil)then
-								Cell.SetSelect.Value=Value:FindFirstChild'Ohgal_Selection'~=nil;
-								Cell.SetText.Value=Value.Name..' ('..Value.className..')';
-								Cell.Number.Text=Cell.GetPos();
-							end;
-
-							Cell.Frame.Visible=Value~=nil or false;
-
-						end);
-						Cell.SetSelect=A.Functions.Value('Bool',false,function(Value)
-							Cell.Selector.BackgroundColor3=Value==true and A.Old.Color3.Green or A.Old.Color3.Red;
-							local Object=Cell.SetObject.Value;
-							if(Value==false)then
-								local Selector=Object:FindFirstChild'Ohgal_Selection';
-								if(Selector~=nil)then
-									Selector.Parent=nil;
-									this.FreeBoxes[#this.FreeBoxes+1]=Selector;
-								end;
-							else
-								local ThisAdded;
-								local Selector=Object:FindFirstChild'Ohgal_Selection'or this.FreeBoxes[1]or A.Old.Instance.NewObject'BindableEvent';
-								if(Selector==this.FreeBoxes[1])then
-									table.remove(this.FreeBoxes,1);
-								end;
-
-								Selector.Name='Ohgal_Selection';
-								Selector.archivable=false;
-								Selector.Parent=Object;
-
-
-								local Box;
-								if(Object:IsA'Model'or Object:IsA'Part')then
-									Box=A.Old.Instance.NewObject('SelectionBox',this.Frame);
-									Box.Adornee=Object;
-								end;
-
-								if(this.Selected[Object.className]==nil)then
-									this.Selected[Object.className]={};
-								else
-									for i,v in next,this.Selected[Object.className]do
-										if(v==Object)then
-											ThisAdded=true;
-											table.remove(this.Selected[Object.className],i);break;
-										end;
-									end;
-								end;
-								this.Selected[Object.className][#this.Selected[Object.className]+1]=Object;
-
-								if(ThisAdded==nil)then
-									local Kill=function()								
-										Selector.Parent=nil;
-										this.FreeBoxes[#this.FreeBoxes+1]=Selector;
-										if(Box~=nil)then Box.Adornee=nil;Box.Parent=nil;end;
-										for i,v in next,this.Selected[Object.className]do
-											if(v==Object)then
-												table.remove(this.Selected[Object.className],i);break;
-											end;
-										end;
-									end;
-									A.Functions.Thread(function()
-										while(Selector.Parent~=nil)do Selector.Changed:wait();end;
-										Kill();
-									end);
-									A.Functions.Thread(function()
-										while(Object.Parent~=nil)do Object.Changed:wait();end;
-										Kill();
-									end);
-								end;
-							end;
-						end);
-
-
-						Cell.Frame=A.Functions.Lock('Frame',{
-							Position=A.Old.UDim2.new(0,0,0,i~=1 and 20*(i-1)+1 or 1);
-							Visible=function()return Cell.SetObject.Value~=nil;end;
-							Size=A.Old.UDim2.new(1,0,0,18);
-							BackgroundTransparency=1;
-							Parent=this.Frame;
-						}
-						);
-
-						Cell.Selector=A.Functions.Button('ImageButton',{
-							BackgroundColor3=function()return Cell.SetSelect.Value==true and A.Old.Color3.Green or A.Old.Color3.Red;end;
-							Size=A.Old.UDim2.new(0,20,1);
-							Position=A.Old.UDim2.Pax;
-							Parent=Cell.Frame;
-						},function()
-							Cell.SetSelect.Value=Cell.SetSelect.Value==false;
-						end
-						);
-						Cnr[#Cnr+1]=Cell.Selector;
-
-						Cell.Number=A.Functions.Lock('TextLabel',{
-							BackgroundColor3=A.Old.Color3.Grey;
-							Position=A.Old.UDim2.new(0,20);
-							Size=A.Old.UDim2.new(0,20,1);
-							Parent=Cell.Frame;
-							Text=Cell.GetPos;
-							FontSize=1;
-						}
-						);
-						Cnr[#Cnr+1]=Cell.Number;
-
-						local TimeOut=0;
-						Cell.Text=A.Functions.Button('TextButton',{
-							Text=function()return Cell.SetText.Value;end;
-							BackgroundColor3=A.Old.Color3.White;
-							Position=A.Old.UDim2.new(0,40);
-							TextColor3=A.Old.Color3.Black;
-							Size=A.Old.UDim2.new(1,-40,1);
-							AutoButtonColor=true;
-							Parent=Cell.Frame;
-							TextXAlignment=0;
-							FontSize=1;
-						},function()
-							if(TimeOut==1)then
-								Win.HistoryPos=Win.HistoryPos+1;
-								Win.History[Win.HistoryPos]=Cell.SetObject.Value;
-								Win.History[Win.HistoryPos+1]=nil;
-								this.CountThis.Value=Cell.SetObject.Value;
-							else
-								TimeOut=1;
-
-								Win.WatchingObject.Value=Cell.SetObject.Value;
-
-								Delay(.2,function()
-									TimeOut=0;
-								end);
-							end;
-						end
-						);
-						Cnr[#Cnr+1]=Cell.Text;
-
-					end;
-
-				else--Properties
-
-					this.Count=function(From,Object)
-
-						if(this._ThisBox~=nil)then
-							this._ThisBox.Parent=nil;
-						end;
-
-						local Table=A.Functions.GetProperties(Object,true);
-						this.Max=#Table;
-
-						if(From<=4)then
-							this.Cells[1].SetProperty.Value='Name';
-							this.Cells[1].Fix();
-
-							this.Cells[2].SetProperty.Value='Parent';
-							this.Cells[2].Fix();
-
-							this.Cells[3].SetProperty.Value='className';
-							this.Cells[3].Fix();
-
-							this.Cells[4].SetProperty.Value='archivable';
-							this.Cells[4].Fix();
-
-							for i=5,20 do
-								this.Cells[i].SetProperty.Value=Table[(i-4)+From]or'';
-								this.Cells[i].Fix();
-							end;
-						else
-							for i=1,20 do
-								this.Cells[i].SetProperty.Value=Table[i+From]or'';
-								this.Cells[i].Fix();
-							end;
-						end;
-					end;
-					this.PosChanged=function(Value)
-						this.Count(Value,Win.WatchingObject.Value);
-					end;
-
-					this.TextBox=function(ALALOLUBU)--ROFL
-						if(pcall(function()this._ThisBox.Parent=ALALOLUBU;this._ThisBox.Text=ALALOLUBU.Text;end)==false)then
-							this._ThisBox=A.Functions.Peace('TextBox',{
-								BackgroundColor3=A.Old.Color3.White;
-								TextColor3=A.Old.Color3.Black;
-								Size=A.Old.UDim2.Full;
-								Text=ALALOLUBU.Text;
-								BorderSizePixel=0;
-								Parent=ALALOLUBU;
-								TextXAlignment=0;
-								FontSize=1;
-							}
-							);
-						end;
-						Delay(0,function()pcall(function()this._ThisBox:CaptureFocus();end);end);
-						this._ThisBox.FocusLost:wait();
-						this._ThisBox.Parent=nil;
-						A.Functions.Thread(function()
-							Win.WatchingObject.Value[this.SetProperty]=loadstring('return '..this._ThisBox.Text)();
-						end);
-					end;
-
-					for i=1,20 do
-						local Cell={};this.Cells[#this.Cells+1]=Cell;
-
-						Cell.SetProperty=A.Functions.Value('String','',function(Value)
-							Cell.Frame.Visible=Value~='';
-						end);
-
-						Cell.Fix=function()
-							if(Cell.SetProperty.Value~='')then
-								Cell.Property.Text=Cell.SetProperty.Value..' ';
-								Cell.Property.Size=A.Old.UDim2.new(0,Cell.Property.TextBounds.X,1);
-
-								Cell.ValueButton.Position=A.Old.UDim2.new(0,Cell.Property.Size.X.Offset);
-								Cell.ValueButton.Size=A.Old.UDim2.new(1,-Cell.Property.Size.X.Offset,1);
-								Cell.ValueButton.Text=tostring(Win.WatchingObject.Value[Cell.SetProperty.Value]);
-							end;
-						end;
-
-
-						Cell.Frame=A.Functions.Lock('Frame',{
-							Position=A.Old.UDim2.new(0,0,0,i~=1 and 20*(i-1)+1 or 1);
-							Visible=function()return Cell.SetProperty.Value~='';end;
-							Size=A.Old.UDim2.new(1,0,0,18);
-							BackgroundTransparency=1;
-							Parent=this.Frame;
-						}
-						);
-
-						Cell.Property=A.Functions.Lock('TextLabel',{
-							Size=function()return Cell.Property~=nil and A.Old.UDim2.new(0,Cell.Property.TextBounds.X,1)or A.Old.UDim2.Pax;end;
-							Text=function()return Cell.SetProperty.Value..' ';end;
-							BackgroundColor3=A.Old.Color3.DarkRed;
-							TextWrapped=false;
-							Parent=Cell.Frame;
-							TextWrap=false;
-							FontSize=1;
-						}
-						);
-						Cnr[#Cnr+1]=Cell.Property;
-
-						Cell.ValueButton=A.Functions.Button('TextButton',{
-							Text=function()return(Cell.SetProperty.Value~=''and Win.WatchingObject.Value~=nil)and tostring(Win.WatchingObject.Value[Cell.SetProperty.Value])or'';end;
-							Position=function()return A.Old.UDim2.new(0,Cell.Property.Size.X.Offset);end;
-							Size=function()return A.Old.UDim2.new(1,-Cell.Property.Size.X.Offset,1);end;
-							Parent=Cell.Frame;
-							TextXAlignment=0;
-							FontSize=1;
-						},function()
-							this.SetProperty=Cell.SetProperty.Value;
-							this.TextBox(Cell.ValueButton);Wait();
-							Cell.ValueButton.Text=tostring(Win.WatchingObject.Value[Cell.SetProperty.Value]);
-						end
-						);
-						Cnr[#Cnr+1]=Cell.ValueButton;
-
-					end;
-
-				end;--Properties end;
-
-				this.Count(0,Game);
-
-
-				Win.Frames[Name]=this;
-			end;
-
-			A.Functions.TransparencyContact(Cnr);
-
-		end;
-		A.Functions.AddKey=function(Key,Function)
-			if(A.Stuffs.Security==true)then
-				if(A.KeyCommands[Key]==nil)then A.KeyCommands[Key]={};end;
-				A.KeyCommands[#A.KeyCommands+1]=Function;
-				A.Service.GuiService.AddKey(Key);
-				Key,Function=nil;
-			end;
-		end;
-		A.Functions.DoKeyCommand=function(Key)
-			if(A.KeyCommands[Key]~=nil)then
-				for Int=1,#A.KeyCommands[Key]do
-					A.KeyCommands[Key][Int]();
-					Int=nil;
-				end;
-			end;Key=nil;
-		end;
-		A.Functions.Heal=function(Corpse)--From first Local Admin :3
-			if(Corpse)then
-				local Humanoid=A.Functions.FindObject(Corpse,'className','Humanoid');
-				if(Humanoid==nil)then
-					return nil;
-				else
-					if(Humanoid.Health<=0)then
-						return nil;
-					end;
-					Humanoid.Health=Humanoid.MaxHealth
-				end;
-				for i,v in next,A.Data.CharacterLimbs do
-					if(Corpse:FindFirstChild(i)==nil)then
-						local Limb=A.Functions.Peace('Part',{
-							CanCollide=false;
-							BottomSurface=0;
-							Parent=Corpse;
-							TopSurface=0;
-							formFactor=0;
-							Size=v.Size;
-							Name=i;
-						});
-						if(v.C0 and v.C1)then
-							local Weld=A.Old.Instance.NewObject('Motor6D',Corpse:FindFirstChild'Torso');
-							if(Weld.Parent)then
-								Limb.Position=Weld.Parent.Position;
-								Weld.Name=v.Name;
-								Weld.Part0=Weld.Parent;
-								Weld.Part1=Limb;
-								Weld.C0=v.C0;
-								Weld.C1=v.C1;
-								Weld.MaxVelocity=.1;
-							end;
-							Weld=nil;
-						end;
-						Limb,i,v=nil;
-					end;
-					i,v=nil;
-				end;
-				local Skin=Corpse:FindFirstChild'Body Colors';
-				if(Skin~=nil)then
-					Skin.Parent=nil;
-					Skin.Parent=Corpse;
-				end;
-				local Animate=Corpse:FindFirstChild'Animate';
-				if(Animate~=nil)then
-					Animate.Parent=nil;
-					Animate.Parent=Corpse;
-				end;
-			end;
-		end;
-		A.Functions.CreateWeld=function(Part0,Part1,C0,C1)
-			local Weld=A.Old.Instance.NewObject('Motor',Part0);
-			Weld.Part0=Part0;
-			Weld.Part1=Part1;
-			if(C0~=nil)then
-				Weld.C0=C0;
-			end;
-			if(C1~=nil)then
-				Weld.C1=C1;
-			end;
-			return Weld;
-		end;
-		A.Functions.MemeGui=function()
-			local Win=A.Functions.GiveWindow('Memes',300,300);
-			if(Win==nil)then
-				return nil;
-			end;
-
-			Win.Title.Position=A.Old.UDim2.new(.5,-150);
-
-			Win.SetPos=A.Functions.Value('Number',0,function(Value)
-				Win.Status.Text=Value;
-				Win.Image.Image=Value;
-			end);
-
-
-			Win.Memes={};local Num=0;
-			for i,v in next,A.Images.Meme do Num=Num+1;--[[Num+=1; don't work :'( ]]
-				Win.Memes[Num]={Name=i;ID=v;};
-			end;Win.NumMemes=#Win.Memes;
-
-			Win.Status=A.Functions.Lock('TextLabel',{
-				Text=function()return 1+Win.SetPos.Value..' of '..Win.NumMemes..': '..Win.Memes[Win.SetPos.Value+1].Name..' ('..Win.Memes[Win.SetPos.Value+1].ID..')';end;
-				Position=A.Old.UDim2.new(0,20);
-				Size=A.Old.UDim2.new(1,-40,1);
-				TextColor3=A.Old.Color3.White;
-				BackgroundTransparency=1;
-				Parent=Win.Menu;
-				FontSize=2;
-			}
-			);
-			Win.Image=A.Functions.Lock('ImageLabel',{
-				Image=function()return A.Data.BaseUrl..Win.Memes[Win.SetPos.Value+1].ID;end;
-				Position=A.Old.UDim2.Pax;
-				Size=A.Old.UDim2.Full;
-				Parent=Win.Frame;
-			}
-			);
-
-			local Cnr={};
-			local Num;
-			for i=0,1 do
-				local Plus=i==0 and -1 or 1;
-				Cnr[#Cnr+1]=A.Functions.Button('TextButton',{
-					Position=A.Old.UDim2.new(i,i==1 and -20);
-					BackgroundColor3=A.Old.Color3.Grey;
-					TextColor3=A.Old.Color3.Black;
-					Size=A.Old.UDim2.new(0,20,1);
-					Text=i==0 and'<'or'>';
-					Parent=Win.Menu;
-					FontSize=2;
-				},function()
-					Num=Win.SetPos.Value+Plus;
-					if(Num>=Win.NumMemes)then
-						Num=0;
-					end;
-					if(Num<0)then
-						Num=Win.NumMemes-1;
-					end;
-					Win.SetPos.Value=Num;
+				end)
+			end
+			BBG.Size = UDim2.new(0,xsize,0,40)
+			delay((#text/25)+3, function()
+				for _,v in next, BBG:children() do
+					pcall(function() v.Text = string.char(M.RNG(0,126)) end)
 				end
-				);
-				A.Functions.Button('TextButton',{
-					TextColor3=i==0 and A.Old.Color3.White or A.Old.Color3.DarkRed;
-					Position=A.Old.UDim2.new(i/2,0,1,-20);
-					Size=A.Old.UDim2.new(.5,0,0,20);
-					Text=i==0 and'Wear'or'Drop';
-					BackgroundTransparency=1;
-					TextStrokeTransparency=0;
-					Parent=Win.Frame;
-					FontSize=3;
-				},i==0 and function()
-					A.Functions.MakeMeme(Win.Memes[Win.SetPos.Value+1].ID,A.User.C.Character);
-				end or function()
-					A.Functions.MakeMeme('reset!',A.User.C.Character);
-				end
-				);
-			end;
-
-			A.Functions.TransparencyContact(Cnr);
-
-		end;
-		A.Functions.SettingWait=function(Name,Bool)
-			if(A.Settings[Name].Value~=Bool)then
-				A.Settings[Name].Changed:wait();
-			end;
-			return A.Settings[Name];
-		end;
-		A.Functions.FindWithOutside=function(Start,End)
-			local Type=type(End);
-			if(Type=='userdata')then
-				local Stepped=0;
-				if(Start.Parent~=End)then
-					while(Start.Parent~=End and Stepped<50)do
-						Start=Start.Parent;
-						Stepped=Stepped+1;
-					end;
-				end;
-			elseif(Type=='string')then
-				local Stepped=0;
-				if(Start.Parent.className~=End)then
-					while(Start.Parent.className~=End and Stepped<50)do
-						Start=Start.Parent;
-						Stepped=Stepped+1;
-					end;
-				end;
-			end;
-
-			return Start;
-		end;
-		A.Functions.ResizeChar=function(Char,Plus_Size)
-			local Torso=Char.Torso;
-
-			Torso.Anchored=true;
-			Torso.BottomSurface=0;
-			Torso.TopSurface=0;
-
-			A.Functions.Remove(Char:FindFirstChild'Shirt',true);
-			A.Functions.Remove(Char:FindFirstChild'Pants',true);
-
-			local Virus=Char:FindFirstChild'Shirt Graphic';
-			if(Virus~=nil)then
-				Virus:Destroy();
-			end;
-
-			local Welds={};
-			local Change;Change=function(Object)
-				for i,Weld in next,Object:children()do
-					if(Weld.className=='Weld'or Weld.className=='Motor'or Weld.className=='Motor6D')then
-						local Part=Weld.Part1;
-
-						Part.Anchored=true;
-
-						Weld.Part1=nil;
-
-						local r01,r02,r03,r04,r05,r06,r07,r08,r09,r10,r11,r12=Weld.C0:components();
-						Weld.C0=A.Old.CFrame.new(r01*Plus_Size,r02*Plus_Size,r03*Plus_Size,r04,r05,r06,r07,r08,r09,r10,r11,r12);
-						local r01,r02,r03,r04,r05,r06,r07,r08,r09,r10,r11,r12=Weld.C1:components();
-						Weld.C1=A.Old.CFrame.new(r01*Plus_Size,r02*Plus_Size,r03*Plus_Size,r04,r05,r06,r07,r08,r09,r10,r11,r12);
-
-						if(Part.Name~='Head')then
-							Part.formFactor=3;
-							Part.Size=Part.Size*Plus_Size;
-						else
-							for i,v in next,Part:children()do
-								if(v.className=='Weld')then
-									v.Part0=nil;
-									v.Part1.Anchored=true;
-								end;
-							end;
-							Part.formFactor=3;
-							Part.Size=Part.Size*Plus_Size;
-							for i,v in next,Part:children()do
-								if(v.className=='Weld')then
-									v.Part0=Part;
-									v.Part1.Anchored=false;
-								end;
-							end;
-						end;
-
-						if(Weld.Parent==Torso)then
-							Part.BottomSurface=0;
-							Part.TopSurface=0;
-						end;
-
-						Part.Anchored=false;
-
-						Weld.Part1=Part;
-
-						if(Weld.Part0==Torso)then
-							Welds[#Welds+1]=Weld;
-							Part.Anchored=true;
-							Weld.Part0=nil;
-						end;
-					elseif(Weld.className=='CharacterMesh')then
-						local Body_Part=tostring(Weld.BodyPart):match'%w+.%w+.(%w+)';
-						local Mesh=A.Old.Instance.NewObject('SpecialMesh',
-							Body_Part=='Head'and Char:FindFirstChild'Head'or Body_Part=='Torso'and Char:FindFirstChild'Torso'or
-								Body_Part=='LeftArm'and Char:FindFirstChild'Left Arm'or Body_Part=='RightArm'and Char:FindFirstChild'Right Arm'or
-								Body_Part=='LeftLeg'and Char:FindFirstChild'Left Leg'or Body_Part=='RightLeg'and Char:FindFirstChild'Right Leg'or nil);
-						Mesh.MeshId=A.Data.BaseUrl..Weld.MeshId;
-						if(Weld.BaseTextureId~=0 or Weld.BaseTextureId~='0')then
-							Mesh.TextureId=A.Data.BaseUrl..Weld.BaseTextureId;
-						end;
-						Mesh.Scale=Mesh.Scale*Plus_Size;
-						Weld:Destroy();
-					elseif(Weld.className=='SpecialMesh'and Weld.Parent~=Char.Head)then
-						Weld.Scale=Weld.Scale*Plus_Size;
-					end;
-					Change(Weld);
-				end;
-			end;
-
-			Change(Char);
-
-			Torso.formFactor=3;
-			Torso.Size=Torso.Size*Plus_Size;
-
-			for i,v in next,Welds do
-				v.Part0=Torso;
-				v.Part1.Anchored=false;
-			end;
-
-			Torso.Anchored=false;
-	--[[
-	Wait(1);
-	
-	if(Shirts~=nil)then
-		Shirts.Parent=Char;
-	end;
-	if(Pants~=nil)then
-		Pants.Parent=Char;
-	end;]]
-		end;
-		--[[Functions end;]]
-
-
-		--[[Old]]
-		local Table;
-		for i,Name in next,{
-			'BrickColor';
-			'Instance';
-			'Vector3';
-			'Vector2';
-			'Color3';
-			'CFrame';
-			'UDim2';
-			'UDim';
-			'Ray';
-			}do
-			Table=loadstring('return '..Name)();
-			if(Table~=nil)then
-				A.Old[Name]=A.Functions.CopyTable(Table);
-			end;i,Name=nil;
-		end;
-
-		A.Old.Instance.NewObject=A.Old.Instance.new;
-		A.Old.Instance.new=function(Object,Data)
-			local Class=Object;
-			Object,Data=A.Functions.GiveData(A.Old.Instance.NewObject(Object,Data));
-
-			if(A.Stuffs.Gui.PartOfGui[Class]==true)then
-				Data.Properties.BackgroundColor3=function()return A.Old.Color3.Black;end;
-				Data.Properties.BorderSizePixel=function()return 0;end;
-				Data.Properties.Visible=function()return true;end;
-			end;
-			if(A.Stuffs.Gui.Text[Class]==true)then
-				Data.Properties.TextColor3=function()return A.Old.Color3.White;end;
-				Data.Properties.TextWrapped=function()return true;end;
-				Data.Properties.TextWrap=function()return true;end;
-			end;
-			if(A.Stuffs.Gui.Image[Class]==true)then
-				Data.Properties.BackgroundTransparency=function()return 1;end;
-			end;
-			if(A.Stuffs.Gui.Button[Class]==true)then
-				Data.Properties.AutoButtonColor=function()return false;end;
-				Data.Properties.Active=function()return true;end;
-			end;Class=nil;
-
-			Data.Properties.archivable=function()return false;end;
-			Data.Properties.Archivable=function()return false;end;
-			Data.Properties.Name=function()return'';end;
-
-			pcall(A.Functions.Peace,Object,Data.Properties);
-
-			return Object,Data;
-		end;
-
-		A.Old.Color3.Red=A.Old.Color3.new(1);
-		A.Old.Color3.Black=A.Old.Color3.new();
-		A.Old.Color3.Green=A.Old.Color3.new(0,1);
-		A.Old.Color3.Blue=A.Old.Color3.new(0,0,1);
-		A.Old.Color3.DarkRed=A.Old.Color3.new(.8);
-		A.Old.Color3.Yellow=A.Old.Color3.new(1,1);
-		A.Old.Color3.White=A.Old.Color3.new(1,1,1);
-		A.Old.Color3.Grey=A.Old.Color3.new(.5,.5,.5);
-		A.Old.Color3.DarkGreen=A.Old.Color3.new(0,.8);
-		A.Old.Color3.DarkBlue=A.Old.Color3.new(0,0,.8);
-		A.Old.Color3.DarkBlue=A.Old.Color3.new(0,0,.8);
-		A.Old.Color3.DarkYellow=A.Old.Color3.new(.7,.7);
-
-		A.Old.CFrame.Pax=A.Old.CFrame.new();
-		A.Old.CFrame.Char=A.Old.CFrame.new(0,3,0);
-
-		A.Old.Vector3.Pax=A.Old.CFrame.Pax.p;
-		A.Old.Vector3.Char=A.Old.CFrame.Char.p;
-		A.Old.Vector3.Jump=A.Old.Vector3.new(0,100);
-
-
-		A.Old.BrickColor.White=A.Old.BrickColor.new'1001';
-		A.Old.BrickColor.Black=A.Old.BrickColor.new'1003';
-
-		A.Old.UDim2.Pax=A.Old.UDim2.new();
-		A.Old.UDim2.Full=A.Old.UDim2.new(1,0,1);
-		A.Old.UDim2.ButtonSize=UDim2.new(0,20,0,20);
-		A.Old.UDim2.ScreenPos=A.Old.UDim2.new(0,0,0,-1);
-		A.Old.UDim2.ScreenSize=A.Old.UDim2.new(1,0,1,1);
-		--[[Old end;]]
-
-
-		--[[Data]]
-		A.Data.Step=[=[;]=];
-		A.Data.Start=[=[']=];
-		A.Data.Wrap=[=[ & ]=];
-		A.Data.Repeat=[=[##]=];
-		A.Data.RbxUrl='rbxassetid://';
-		A.Data.BaseUrl='http://www.roblox.com/Asset/?id=';
-		A.Data.CharacterLimbs={
-			['Torso']={
-				Size=A.Old.Vector3.new(2,2,1);
-			};
-			['Head']={
-				C1=A.Old.CFrame.new(0,-0.5,0,-1,-0,-0,0,0,1,0,1,0);
-				C0=A.Old.CFrame.new(0,1,0,-1,-0,-0,0,0,1,0,1,0);
-				Size=A.Old.Vector3.new(2,1,1);
-				Name='Neck';
-			};
-			['Right Arm']={
-				C1=A.Old.CFrame.new(-0.5,0.5,0,0,0,1,0,1,0,-1,-0,-0);
-				C0=A.Old.CFrame.new(1,0.5,0,0,0,1,0,1,0,-1,-0,-0);
-				Size=A.Old.Vector3.new(1,2,1);
-				Name='Right Shoulder'
-			};
-			['Right Leg']={
-				C1=A.Old.CFrame.new(0.5,1,0,0,0,1,0,1,0,-1,-0,-0);
-				C0=A.Old.CFrame.new(1,-1,0,0,0,1,0,1,0,-1,-0,-0);
-				Size=A.Old.Vector3.new(1,2,1);
-				Name='Right Hip'
-			};
-			['Left Arm']={
-				C1=A.Old.CFrame.new(0.5,0.5,0,-0,-0,-1,0,1,0,1,0,0);
-				C0=A.Old.CFrame.new(-1,0.5,0,-0,-0,-1,0,1,0,1,0,0);
-				Size=A.Old.Vector3.new(1,2,1);
-				Name='Left Shoulder'
-			};
-			['Left Leg']={
-				C1=A.Old.CFrame.new(-0.5,1,0,-0,-0,-1,0,1,0,1,0,0);
-				C0=A.Old.CFrame.new(-1,-1,0,-0,-0,-1,0,1,0,1,0,0);
-				Size=A.Old.Vector3.new(1,2,1);
-				Name='Left Hip'
-			};
-		};
-		--[[Data end;]]
-
-
-		--[[Stuffs]]
-		A.Stuffs.Gui={
-			PartOfGui={
-				ImageButton=true;
-				TextButton=true;
-				ImageLabel=true;
-				TextLabel=true;
-				TextBox=true;
-				Frame=true;
-			};
-			Text={
-				TextButton=true;
-				TextLabel=true;
-				TextBox=true;
-			};
-			Image={
-				ImageButton=true;
-				ImageLabel=true;
-			};
-			Button={
-				ImageButton=true;
-				TextButton=true;
-			};
-		};
-		A.Stuffs.TrueBooleans={
-			['of course']=true;
-			['not false']=true;
-			['why not']=true;
-			['off on']=true;
-			['yahwol']=true;
-			['not 0']=true;
-			['true']=true;
-			['yes']=true;
-			['yep']=true;
-			['yup']=true;
-			['on']=true;
-			['ya']=true;
-			['y']=true;
-			['1']=true;
-		};
-		A.Stuffs.Security=pcall(function()return Game.RobloxLocked;end);
-		local Asd;
-		A.Stuffs.AsciiNum={};
-		A.Stuffs.AsciiChar={};
-		for i=0,255 do
-			Asd=string.char(i);
-			A.Stuffs.AsciiNum[Asd]=i;
-			A.Stuffs.AsciiChar[i]=Asd;i=nil;
-		end;Asd=nil;
-		A.Stuffs.CharVirus={
-			['Shirt Graphic']='ShirtGraphic';
-			['RobloxTeam']='Script';
-			['Sound']='Script';
-		};
-		A.Stuffs.GuideCommands={
-			['-r']='<Property>';
-			['-x']='<Position>';
-			['-b']='<Boolean>';
-			['-p']='<Player>';
-			['-v']='<Value>';
-			['-s']='<Size>';
-			['-t']='<Text>';
-			['-i']='<Path>';
-		};
-		A.Stuffs.NullTable={};
-		A.Stuffs.StarterSource=[==[if(Game.PlaceId~=0)then print=function()end;end;local Users=Game:service'Players';local User=Users.LocalPlayer; ]==];
-		--[[Stuffs end;]]
-
-
-		--[[Settings]]
-		A.Settings['Security of character']=false;
-		A.Settings['Windows transparency']=true;
-		A.Settings['Big jumps']=false;
-		A.Settings.HealthBar=false;
-		A.Settings.Immortal=false;
-		--[[Settings end;]]
-
-
-		--[[Service]]
-		for i,v in next,Game:children()do
-			pcall(function()
-				if(Game:service(v.className)~=nil)then
-					A.Service[v.className]=v;
-				end;i,v=nil;
-			end);
-		end;
-		--[[Service end;]]
-
-
-
---[=[Create gui module
-	Exemple:
-
-A.Functions.CreateGuiModule(function()
-
-end);
-
-]=]
-		A.Functions.CreateGuiModule(function()
-			for i,v in next,{'Hints';'Messages';'Other';'Windows';'First';}do
-				A.User.Frames[v]=A.Functions.Lock('Frame',{
-					Position=A.Old.UDim2.ScreenPos;
-					Size=A.Old.UDim2.ScreenSize;
-					BackgroundTransparency=1;
-					Parent=A.User.Screen;
-					Name=v;
-				}
-				);i,v=nil;
-			end;
-		end);
-		A.Functions.CreateGuiModule(function()
-			A.Stuffs.MenuButton=A.Functions.Lock('Sound',{
-				SoundId='rbxasset://sounds/switch.wav';
-				Parent=A.User.Screen;
-				Volume=.5;
-				Pitch=2;
-			}
-			);
-			A.Stuffs.Button=A.Functions.Lock('Sound',{
-				SoundId='rbxasset://sounds/SWITCH3.wav';
-				Parent=A.User.Screen;
-				Volume=.2;
-				Pitch=2;
-			}
-			);
-		end);
-		A.Functions.CreateGuiModule(function()
-			local Frame;
-			local Pos1,Pos2=A.Old.UDim2.new(0,-110,1,-145),A.Old.UDim2.new(0,0,1,-145);
-
-			local MouseEnter=A.Functions.Value('Bool',false,function(Value)
-				A.User.MenuButton.Position=Value==true and Pos2 or Pos1;
-				A.User.MenuButton.Transparency=Value==true and 0 or .5;
-			end);
-			local Visible=A.Functions.Value('Bool',false,function(Value)A.User.MenuButton.Visible,MouseEnter.Value=Value==false;Frame.Visible=Value;end);
-
-			local BF={};
-			local AddButtonFunction=function(Title,Function,Security)
-				if(Security==true and A.Stuffs.Security==false)then
-					return nil;
-				end;
-				BF[#BF+1]={
-					Function=Function;
-					Title=Title;
-				};
-			end;
-
-			AddButtonFunction('Back to the game',function()Visible.Value=false;end);
-			AddButtonFunction('Fix Roblox Guis',function()loadstring(Game:GetObjects'rbxassetid://85827582'[1].Value)();end,true);
-			AddButtonFunction('Command Bar',function()A.Functions.CommandBar();end);
-			AddButtonFunction('Show Memes',function()A.Functions.MemeGui();end);
-			AddButtonFunction('Spawning',function()A.User.Char.Torso.CFrame=A.Functions.GetSpawnLocationCFrame();A.User.Char.Torso.Velocity=A.Old.Vector3.Pax;end);
-			AddButtonFunction('Explorer',function()A.Functions.ExplorerGui();end);
-			AddButtonFunction('Settings',function()A.Functions.SettingsGui();end);
-			AddButtonFunction('Meters',function()A.Functions.Meter();end);
-			AddButtonFunction('Reset',function()A.Functions.ResetChar(A.User.C);end);
-			AddButtonFunction('Nuke',function()A.Functions.NukeChar(A.User.Char);end);
-			AddButtonFunction('Help',function()A.Functions.HelpGui();end);
-			AddButtonFunction('Heal',function()A.Functions.Heal(A.User.C.Character);end);
-
-			AddButtonFunction=nil;
-
-
-			A.User.MenuButton=A.Functions.Lock('TextButton',{
-				Transparency=function()return MouseEnter.Value==true and 0 or .5;end;
-				Visible=function()return Visible.Value==false;end;
-				Position=function()return MouseEnter.Value==true and Pos2 or Pos1;end;
-				TextColor3=A.Old.Color3.DarkYellow;
-				Size=A.Old.UDim2.new(0,125,0,20);
-				Parent=A.User.Frames.First;
-				Text='Menu of Ohgal';
-				FontSize=2;
-			},{
-				MouseEnter=function()
-					MouseEnter.Value=true;
-					A.User.MenuButton.MouseLeave:wait();
-					MouseEnter.Value=false;
-				end;
-				MouseButton1Up=function()
-					Visible.Value=true;
-					A.Stuffs.MenuButton:play();
-				end;
-			}
-			);
-			coroutine.wrap(function()
-				A.User.MenuButton.MouseButton1Down:wait();
-				A.User.STARTUPMSG.Parent=nil;
-			end)();
-			Frame=A.Functions.Lock('Frame',
-				{
-					Position=A.Old.UDim2.new(.5,-200,.5,-((#BF*20)+5)/2);
-					Size=A.Old.UDim2.new(0,400,0,(#BF*20)+10);
-					Visible=function()return Visible.Value;end;
-					BackgroundColor3=A.Old.Color3.DarkRed;
-					Parent=A.User.Frames.First;
-					BackgroundTransparency=.5;
-				}
-			);
-			for Int,v in next,BF do
-				A.Functions.Button('TextButton',{
-					Position=A.Old.UDim2.new(0,5,0,(20*(Int-1))+5);
-					TextColor3=A.Old.Color3.DarkYellow;
-					Size=A.Old.UDim2.new(1,-10,0,20);
-					BackgroundTransparency=.5;
-					AutoButtonColor=true;
-					Text=v.Title;
-					Parent=Frame;
-					FontSize=5;
-					Font=1;
-				},v.Function
-				);
-			end;
-		end);
-		A.Functions.CreateGuiModule(function()
-			Delay(0,function()
-				local Color1=A.Old.Color3.Black;
-				local Color2=A.Old.Color3.Red;
-				local Color3=A.Old.Color3.Red;
-				local Color4=A.Old.Color3.Black;
-				local Msg=A.Functions.Peace('TextLabel',{
-					Text='Welcome!'..string.rep('\n',2)..'Remso - Local Admin';
-					Position=A.Old.UDim2.new(.5,0,.5);
-					BackgroundTransparency=.5;
-					BackgroundColor3=Color1;
-					Parent=A.User.Screen;
-					TextColor3=Color2;
-					BorderSizePixel=0;
-					TextWrapped=true;
-					FontSize=3;
-				}
-				);
-				A.User.STARTUPMSG=Msg;
-				Msg:TweenSizeAndPosition(A.Old.UDim2.new(0,300,0,70),A.Old.UDim2.new(.5,-150,.5,-35),1,2,1,false);
-				Wait(5);
-				Msg.BackgroundColor3=A.Old.Color3.Red;
-				Msg.TextColor3=A.Old.Color3.Black;
-				if(Msg.Parent~=nil)then
-					Msg:TweenSizeAndPosition(A.Old.UDim2.new(0,200,0,20),A.Old.UDim2.new(0,25,1,-145),1,1,1,false);
-					Msg.Text='<-- There is the MENU';
-					coroutine.wrap(function()
-						for i=1,3 do
-							Msg.BackgroundColor3=Color3;
-							Msg.TextColor3=Color4;
-							A.Functions.Wait(.3);
-							Msg.BackgroundColor3=Color1;
-							Msg.TextColor3=Color2;
-							A.Functions.Wait(.3);
-						end;
-					end)();
-					Wait(6);
-				end;
-				A.Functions.Remove(Msg,true);
-			end);
-		end);
-		A.Functions.CreateGuiModule(function()
-			A.Functions.SettingWait('HealthBar',true);
-			A.User.Gui.HelathBar={};
-			local this=A.User.Gui.HelathBar;
-
-			if(A.User.Humanoid.Value==nil)then
-				A.User.Humanoid.Changed:wait();
-			end;
-
-			this.Fix=function()
-				this.Pos=A.Old.UDim2.new(this.SetHealth.Value/this.SetMaxHealth.Value,0,1);
-				if(this.HBar~=nil)then
-					this.HBar.Size=this.Pos;
-				end;
-				return this.Pos;
-			end;
-			this.FixStats=function()
-				this.Idk=this.Humanoid.Health/this.Humanoid.MaxHealth;
-				this.SetMaxHealth.Value=this.Humanoid.MaxHealth;
-				this.SetHealth.Value=this.Humanoid.Health;
-				this.SetColor.Value=(this.Idk<=.1)and A.Old.Color3.DarkRed or(this.Idk>.1 and this.Idk<=.5)and
-					A.Old.Color3.DarkYellow or(this.Idk>.5 and this.Idk<=1)and A.Old.Color3.Green or A.Old.Color3.Black;
-			end;
-
-			this.SetColor=A.Functions.Value('Color3',A.Old.Color3.Green,function(Color3)this.HBar.BackgroundColor3=Color3;Color3=nil;end);
-			this.SetVisible=A.Functions.Value('Bool',true,function(Value)this.Frame.Visible=Value;Value=nil;end);
-			this.SetMaxHealth=A.Functions.Value('Number',A.User.Humanoid.Value.MaxHealth,this.Fix);
-			this.SetHealth=A.Functions.Value('Number',A.User.Humanoid.Value.Health,this.Fix);
-
-			this.Frame=A.Functions.Lock('Frame',{
-				Visible=function()return this.SetVisible.Value;end;
-				Position=A.Old.UDim2.new(.5,-55,1,-25);
-				Size=A.Old.UDim2.new(0,110,0,20);
-				Parent=A.User.Frames.Other;
-				BackgroundTransparency=.5;
-			}
-			);
-			this.MHBar=A.Functions.Lock('Frame',
-				{
-					--BackgroundColor3=A.Old.Color3.DarkRed;
-					Position=A.Old.UDim2.new(0,5,0,5);
-					Size=A.Old.UDim2.new(1,-10,1,-10);
-					BackgroundTransparency=1;
-					Parent=this.Frame;
-				}
-			);
-			this.HBar=A.Functions.Lock('Frame',
-				{
-					BackgroundColor3=function()return this.SetColor.Value;end;
-					Position=A.Old.UDim2.Pax;
-					Parent=this.MHBar;
-				}
-			);
-			this.HBar.Size=this.Fix();
-
-			this.Valid=true;
-
-			coroutine.wrap(function()
-				while(A.Functions.Check()and this.Valid==true)do
-					this.SetVisible.Value=A.Settings.HealthBar.Value;
-					A.Settings.HealthBar.Changed:wait();
-				end;
-			end)();
-			coroutine.wrap(function()
-				while(A.Functions.Check()and this.Valid==true)do
-					A.Functions.SettingWait('HealthBar',true);
-
-					this.Humanoid=A.User.Humanoid.Value;
-					this.FixStats();
-
-					coroutine.wrap(function()
-						while(A.Functions.Check()and A.User.Humanoid.Value==this.Humanoid)do
-							this.Humanoid.HealthChanged:wait();
-							this.FixStats();
-						end;
-					end)();
-
-					A.User.Humanoid.Changed:wait();
-					this.Humanoid.MaxHealth=this.Humanoid.MaxHealth+1;
-				end;
-			end)();
-
-		end);
-		--[[Create gui module end;]]
-
-
---[=[Module create
-	Exemple:
-A.Functions.CreateModule('Type',function()
-
-end);
-]=]
-		A.Functions.CreateModule('Once',A.Functions.Screen);
-		A.Functions.CreateModule('Once',function()
-
-			local Value=A.Functions.SettingWait('Immortal',true);
-			local Val_;
-
-			while(A.Functions.Check())do
-				Val_=Value.Value;
-				if(A.User.Humanoid.Value~=nil)then
-					A.User.Humanoid.Value.Name=Val_==true and'Immortal'or'Humanoid';
-					A.User.Humanoid.Value.MaxHealth=Val_==true and 1e666 or 100;
-					A.User.Humanoid.Value.Health=Val_==true and 1e666 or 100;
-				end;
-				Value.Changed:wait();
-			end;
-
-		end);
-		A.Functions.CreateModule('Once',function()
-			local Num;
-			A.Stuffs.SecurityID=A.Stuffs.SecurityID and A.Stuffs.SecurityID+1 or 1;
-			local Local_ID=A.Stuffs.SecurityID;
-			while(A.Functions.Check()==true and A.Stuffs.SecurityID==Local_ID)do
-				A.Functions.Wait();
-
-				A.User.Char=A.User.C.Character;
-
-				if(A.User.Char~=nil and A.User.Char.PrimaryPart~=nil)then
-					A.Functions.LoadModule'Char';
-				end;
-
-				A.User.C.CharacterAdded:wait();
-
-				Num=#A.User.Connections;
-				for i=1,Num do A.User.Connections[i]:disconnect();i=nil;end;
-				for i=1,Num do A.User.Connections[i]=nil;i=nil;end;
-			end;
-		end);
-		A.Functions.CreateModule('Char',function()
-			_G['Ohgal - Char Security Version']=_G['Ohgal - Char Security']~=nil and _G['Ohgal - Char Security']+1 or 0;
-			local CharSecurityVersion=_G['Ohgal - Char Security'];
-			local Torso=A.User.Char.Torso
-			while(A.Functions.Check()and CharSecurityVersion==_G['Ohgal - Char Security'])do
-				A.Functions.SettingWait('Security of character',true);
-				if(Torso.Position.Y<=-200 and Torso.Velocity.Y~=0)then
-					Torso.CFrame=A.Functions.GetSpawnLocationCFrame();
-					Torso.RotVelocity=A.Old.Vector3.Pax;
-					Torso.Velocity=A.Old.Vector3.Pax;
-				end;
-				A.Functions.Wait();
-			end;
-		end);
-		A.Functions.CreateModule('Char',function()
-			A.User.Humanoid.Value=A.Functions.FindObject(A.User.Char,'className','Humanoid');
-
-			if(A.Settings.Immortal.Value==true)then
-				A.User.Humanoid.Value.Name='Immortal';
-				A.User.Humanoid.Value.MaxHealth=1e666;
-				A.User.Humanoid.Value.Health=1e666;
-			end;
-
-			coroutine.wrap(function()
-				local Humanoid=A.User.Humanoid.Value;
-				while(Humanoid==A.User.Humanoid.Value and A.Functions.Check()==true)do
-					A.Functions.SettingWait('Big jumps',true);
-					Humanoid.Jumping:wait();
-					if(A.Settings['Big jumps'].Value==true)then
-						Humanoid.Torso.Velocity=A.Old.Vector3.Jump;
-					end;
-				end;
-			end)();
-
-			for i,v in next,A.User.Char:children()do
-				if(A.Stuffs.CharVirus[v.Name]==v.className)then
-					A.Functions.Remove(v,true);
-				end;i,v=nil;
-			end;
-			A.Functions.Connect(A.User.Char,'ChildAdded',function(v)
-				if(A.Stuffs.CharVirus[v.Name]==v.className)then
-					A.Functions.Remove(v,true);
-				end;v=nil;
-			end,A.User);
-			if(A.Stuffs.CharVirus.Sound==nil)then return nil;end;
-			for i,v in next,A.User.Char.PrimaryPart:children()do
-				if(v.Name=='Sound'and v.className=='Sound'and v.archivable==false)then
-					A.Functions.Remove(v,true);
-				end;i,v=nil;
-			end;
-			A.Functions.Connect(A.User.Char.PrimaryPart,'ChildAdded',function(v)
-				if(v.Name=='Sound'and v.className=='Sound'and v.archivable==false)then
-					A.Functions.Remove(v,true);
-				end;v=nil;
-			end,A.User);
-		end);
-		A.Functions.CreateModule('PlayerGui',A.Functions.GuisParent);
-		A.Functions.CreateModule('PlayerGui',function()
-			local Old=A.User.PlayerGui;
-			coroutine.wrap(function()
-				local Virus;
-				while(A~=nil and A.Functions.Check()and Old==A.User.PlayerGui)do
-					if(Virus==nil)then
-						Virus=Old:FindFirstChild'HealthGUI';
-					else
-						Virus=Virus.Name=='HealthGUI'and Virus or nil;
-					end;
-					if(Virus~=nil)then
-						A.Functions.VisibleOfHealthGUI(A.Settings.HealthBar.Value==false);
-						Virus=Virus:FindFirstChild'hurtOverlay';
-						if(Virus)then
-							A.Functions.Remove(Virus,true);
-						end;
-					end;
-					Virus=Old.ChildAdded:wait();Wait();
-				end;
-			end)();
-			while(Old.Parent~=nil)do Old.Changed:wait();end;
-			A.Old.Instance.NewObject('BoolValue',Old);
-		end);
-
-		--[[Module create end;]]
-
-
-
---[=[Call create
-	Exemple:
-
-A.Functions.CreateCall([[Description]],{},function(Self)
-
-end);
-
-]=]
-		A.Functions.CreateCall([[For you]],{'me!';'myself!';'satan!';},function(Self)
-			return Self==A.User.C;
-		end);
-		A.Functions.CreateCall([[For they]],{'other!';'noobs!';'idiots!';'notme!';},function(Self)
-			return Self~=A.User.C;
-		end);
-		A.Functions.CreateCall([[For players]],{'players!';},function(Self)
-			return Self.userId>0;
-		end);
-		A.Functions.CreateCall([[For guests]],{'guests!';},function(Self)
-			return Self.userId<1;
-		end);
-		A.Functions.CreateCall([[For random player]],{'random!';'rand!';},function(Self)
-			return math.random(1,4)==1;
-		end);
-		A.Functions.CreateCall([[For each]],{'all!';'each!'},function(Self)
-			return true;
-		end);
-		--[[Call create end;]]
-
-
-
-		A.Functions.SetupCommands=function()
---[==[Command create
- Exemple:
-
-A.Functions.CreateCommand([[Title]],{},[[Description]],[[]],1,function(Text,FullText,Args)
-
-end);
-
-]==]
-			A.Functions.CreateCommand([[Repeat Command]],{'loopthis';'loopthat';'repeat';'rt';},[[Repeat commands...First is name of the loop... Second value is number of loop... Third is delay (0 not wait())... The last is the command and command argument(s)... To stop loop say loop name first and last "abort!"]],[[-v-v-v]],3,function(Text,FullText,Args)
-				if(A.Stuffs.Loops==nil)then
-					A.Stuffs.Loops={};
-				end;
-
-				local Value=Args[2]:lower()~='abort!'and true or nil;
-
-				if(Value==true and A.Stuffs.Loops[Args[1]]~=nil)then
-					error(Args[1]..' already run...');
-					return nil;
-				end;
-				A.Stuffs.Loops[Args[1]]=Value;
-				if(A.Stuffs.Loops[Args[1]]==nil)then
-					return nil;
-				end;
-				local Repeat=tonumber(Args[2]);
-				local Delay=tonumber(Args[3]);
-				local Command=A.Data.Start..FullText:match(Args[1]..A.Data.Step..Args[2]..A.Data.Step..Args[3]..A.Data.Step..'(.+)');
-				if(Delay>0)then
-					for i=1,Repeat do
-						if(A.Stuffs.Loops[Args[1]]==true)then
-							A.Functions.SearchCommand(Command);
-							Wait(Delay);
-						else
-							break;
-						end;
-					end;
-				else
-					for i=1,Repeat do
-						A.Functions.Thread(function()
-							A.Functions.SearchCommand(Command);
-						end);
-					end;
-				end;
-				A.Stuffs.Loops[Args[1]]=nil;
-			end);
-			A.Functions.CreateCommand([[Dummy]],{'dummy';'doll';},[[Dummy for testing lol... Add player name for or Vector3 position and for last number of dummies... For remove all, the first argument should be "remove!"]],[[-v-v]],2,function(Text,FullText,Args)
-				if(Args[1] and Args[1]:lower()=='remove!')then
-					for i,v in next,A.Service.Workspace:children()do
-						if(v:FindFirstChild'Remso - Dummy')then
-							A.Functions.Remove(v,true);
-						end;
-					end;
-					return nil;
-				end;
-				local Repeat=tonumber(Args[2])or 1;
-				local Load,Position=pcall(function()return loadstring('local c={...};return c[1]('..Args[1]..')')(A.Old.CFrame.new);end);
-				if(Load==false)then Position=A.Functions.Players(Args[1])[1].Character.Torso.CFrame;end;
-				for i=1,Repeat do
-					local Dummy=A.Functions.Peace('Model',{
-						Parent=A.Service.Workspace;
-						Name='Dummy';
-					}
-					);
-					A.Old.Instance.NewObject('BoolValue',Dummy).Name='Remso - Dummy';
-					A.Old.Instance.NewObject('Humanoid',Dummy);
-					A.Functions.Peace('Part',{
-						CFrame=Position*CFrame.Angles(0,math.rad(360/Repeat*i),0)*CFrame.new(5+.2*Repeat,0,0);
-						Size=Vector3.new(2,2,1);
-						BottomSurface=0;
-						TopSurface=0;
-						formFactor=3;
-						Parent=Dummy;
-						Name='Torso';
-					}
-					);
-					A.Functions.Heal(Dummy);
-					A.Old.Instance.NewObject('SpecialMesh',Dummy.Head).Scale=Vector3.new(1.25,1.25,1.25);
-					A.Functions.Peace('Decal',{
-						Texture='rbxasset://textures/face.png';
-						Parent=Dummy.Head;
-						Name='face';
-						Face=5;
-					}
-					);
-				end;
-			end);
-			A.Functions.CreateCommand([[Wall Hack]],{'wallhack';'wall_hack';'wh';},[[Wall hack... Add number for transparency value! The base value is 0.5]],[[-v]],1,function(Text,FullText,Args)
-				local Transparency=tonumber(Args[1])or .5;
-				A.Functions.All(A.Service.Workspace,function(Part)
-					if(Part:IsA'BasePart')then
-						Part.AlphaModifier=Transparency;
-					end;
-				end);
-			end);
-			A.Functions.CreateCommand([[Teleport To A Place]],{'toplace';'tplace';'tpl';},[[Teleport to other places...]],[[-v-p]],2,function(Text,FullText,Args)
-				local Teleport_ID=tonumber(Args[1]);
-				A.Functions.Players(Args[2],function(Self)
-					if(Self==A.User.C)then
-						A.Services.TeleportService:Teleport(Teleport_ID);
-					else
-						A.Functions.CreateScript('LocalScript',Self,[[
-				Game:service'TeleportService':Teleport(]]..Teleport_ID..[[);
-			]]);
-					end;
-				end);
-			end);
-			A.Functions.CreateCommand([[Execution]],{'execution';'execute';'exe';},[[Like localscripting but this works only for admin...]],[[-t]],0,function(Text,FullText,Args)
-				local Exe=A.Old.Instance.NewObject'StringValue';
-				Exe.Name='Ohgal_Execution';
-				Exe.Parent=A.User.C;
-				Exe.Value=FullText;
-			end);
-			A.Functions.CreateCommand([[Resize Character]],{'resize';},[[Character resizing OLaloOLAolaol]],[[-p-v]],2,function(Text,FullText,Args)
-				local Size=tonumber(Args[2]);
-				if(Size==nil)then
-					return nil;
-				end;
-				A.Functions.Players(Args[1],function(Self)
-					A.Functions.ResizeChar(Self.Character,Size);
-				end);
-			end);
-			A.Functions.CreateCommand([[Give Weapons]],{'giveweapons';'gws';},[[Give weapons from somebody to somebody...]],[[-p-p]],2,function(Text,FullText,Args)
-				local Backpack=A.Functions.FindObject(A.Functions.Players(Args[2])[1],'className','Backpack');
-				if(Backpack~=nil)then
-					A.Functions.Players(Args[1],function(Self)
-						if(Self.Character~=nil)then
-							for i,v in next,Self.Character:children()do
-								if(v.className=='Tool')then
-									v.Parent=Backpack;
-								end;
-							end;
-						end;
-						for i,v in next,Self.Backpack:children()do
-							if(v.className=='Tool'or v.className=='HopperBin')then
-								v.Parent=Backpack;
-							end;
-						end;
-					end);
-				end;
-			end);
-			A.Functions.CreateCommand([[Be Cute]],{'becute';'bc';},[[Be cute?]],[[-p]],1,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					local Parent=Self.Character;
-
-					if(Parent==nil)then
-						return nil;
-					end;
-
-					local StarterPos=A.Old.Vector3.Pax;
-
-					local Round=15;
-					local Asd=Round/5;
-					local Radius=.8*Parent.Torso.Size.X/2;
-
-					local PSize=.5;
-
-					local P={};
-					local Num=0;
-
-					for i,v in next,Parent:children()do
-						if(v.Name=='Pentagramma')then
-							A.Functions.Remove(v,true);
-						elseif(v.Name=='Black Metal Set')then
-							for i,v in next,v:children()do
-								if(v.className=='Part')then
-									A.Functions.Remove(v,true);
-								end;
-							end;
-						end;
-					end;
-
-					local Warehouse=A.Old.Instance.NewObject('Model',Parent);
-					Warehouse.Name='Pentagramma';
-
-					for i=0,Round do
-						local Rad=math.rad((360/Round*i)+180);
-						local Pos=A.Old.Vector3.new(
-							math.sin(Rad)*Radius,
-							math.cos(Rad)*Radius,
-							-Parent.Torso.Size.Z/2
-						);
-						if(i~=0)then Num=Num+1;
-							if(Num==Asd)then
-								Num=0;
-								P[#P+1]=Pos;
-							end;
-							A.Functions.Peace('BlockMesh',{
-								Scale=A.Old.Vector3.new(PSize,PSize,(StarterPos-Pos).Magnitude*5.2)+A.Old.Vector3.new(math.random()/10,0,0);
-								Parent=A.Functions.CreateWeld(
-									Parent.Torso,
-									A.Functions.Peace('Part',{
-										BrickColor=BrickColor.new(199);
-										CFrame=Parent.Torso.CFrame;
-										Size=A.Old.Vector3.Pax;
-										CanCollide=false;
-										Parent=Warehouse;
-										formFactor=3;
-									}
-									),
-									A.Old.CFrame.new(StarterPos,Pos)*A.Old.CFrame.new(0,0,-(StarterPos-Pos).Magnitude/2)
-								).Part1;
-							}
-							);
-						end;
-						StarterPos=Pos;
-					end;
-
-					for i,v in next,{{1;4;};{1;3;};{2;4;};{2;5;};{3;5;};}do --Make better...
-						local StarterPos=P[v[1]];
-						local Pos=P[v[2]];
-
-						local Weld=A.Old.Instance.NewObject('Weld',Warehouse);
-						A.Functions.Peace('BlockMesh',{
-							Scale=A.Old.Vector3.new(PSize-.2,PSize-.2,(StarterPos-Pos).Magnitude*5.2)+Vector3.new(math.random()/10,0,0);
-							Parent=A.Functions.CreateWeld(
-								Parent.Torso,
-								A.Functions.Peace('Part',{
-									BrickColor=BrickColor.new(194);
-									CFrame=Parent.Torso.CFrame;
-									Size=A.Old.Vector3.Pax;
-									CanCollide=false;
-									Parent=Warehouse;
-									formFactor=3;
-								}
-								),
-								CFrame.new(StarterPos,Pos)*CFrame.new(0,0,-(StarterPos-Pos).Magnitude/2)
-							).Part1;
-						}
-						);
-					end;
-				end);
-			end);
-			A.Functions.CreateCommand([[Change Music]],{'cmp';'cmusic';},[[Change current music properties]],[[-r-v]],2,function(Text,FullText,Args)
-				local Name='Ohgal_Music';
-				local Music=A.Service.Workspace.CurrentCamera:FindFirstChild(Name)or A.Service.Lighting(Name);
-				if(Music~=nil)then
-					Music=Music.className=='Tool'and Music:FindFirstChild(Name)or Music;
-					print(Music,Music.className);
-					for i,v in next,A.Functions.GetProperties(Music)do
-						if(i:lower():find(Args[1]:lower())==1)then
-							Music[i]=loadstring('return '..Args[2])();
-						end;
-					end;
-				end;
-			end);
-			A.Functions.CreateCommand([[Music]],{'play';'music';'mp';},[[asd...Arguments: 1.) name of the music or number of the music 2.) Public mode or Private mode (Base mode is Public!)]],[[-v-b]],2,function(Text,FullText,Args)
-				for i,Place in next,{A.Service.Lighting;A.Service.Workspace.CurrentCamera;}do
-					for i,v in next,Place:children()do
-						if(v.className=='Sound'and v.Name=='Ohgal_Music')then
-							v:stop();
-						end;
-					end;
-				end;
-
-				local Bool=A.Functions.ToBoolean(Args[2]);
-				local Sound_Data=A.Functions.LoadSound('Musics',Args[1],true);
-
-				loadstring([[
-		local Parent=]]..tostring(Bool)..[[ and Workspace.CurrentCamera or Game:service'Lighting';
-		local Sound=Parent:FindFirstChild'Ohgal_Music'or Instance.new'Sound';
-			Sound.SoundId=']]..A.Data.BaseUrl..Sound_Data.SoundId..[['
-			Sound.Pitch=]]..Sound_Data.Pitch..[[
-			Sound.Name='Ohgal_Music';
-			Sound.Parent=Parent;
-			Sound.Looped=true;
-			Sound:play();
-	]])();
-			end);
-			A.Functions.CreateCommand([[Kick]],{'kick';'bye';},[[Customed player'll leave from the game...]],[[-p]],1,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					if(Self~=A.User.C)then
-						if(A.Stuffs.ScriptPacket.LocalScript~=nil)then
-							A.Functions.CreateScript('LocalScript',Self,[[script.Parent=nil;User.Parent=nil;User.Parent=Users;]]);
-						else
-							A.Functions.Remove(Self);
-						end;
-					end;
-				end);
-			end);
-			A.Functions.CreateCommand([[Create Part]],{'npart';'cpart';'part';},[[Part creating... For remove all parts you should add first argument "remove!" or nothing... Arguments: 1.) Size(n,n,n) 2.) BrickColor 3.) Collide 4.) Anchor 5.) Position(0,0,0)[ haven't to add ] 6.) Type of part]],[[-s-b-b-v-x-v]],6,function(Text,FullText,Args)
-
-				if(Args[1]==nil or Args[1]:lower()=='remove!')then
-					A.Functions.All(Workspace,function(Part)
-						if(Part.Name=='Ohgal_Part')then
-							A.Functions.Remove(Part,true);
-						end;
-					end);
-					return nil;
-				end;
-
-				local Size=A.Old.Vector3.new(loadstring('return '..Args[1])());
-
-				local Position=Args[5]~=nil and A.Old.CFrame.new(A.Old.Vector3.new(loadstring('return '..Args[5])()))or
-					A.User.Char.Head.CFrame+A.User.Char.Head.CFrame.lookVector*A.Old.Vector3.new(Size.X,0,Size.Z).Magnitude;
-
-				local Part=A.Functions.Peace(Args[6]~=nil and Args[6]or'Part',{
-					CanCollide=Args[3]~=nil and A.Functions.ToBoolean(Args[3])or true;
-					BrickColor=A.Old.BrickColor.new(Args[2]or 0);
-					Anchored=A.Functions.ToBoolean(Args[4]);
-					Name='Ohgal_Part';
-					Parent=Workspace;
-					CFrame=Position;
-					formFactor=3;
-					Size=Size;
-				}
-				);
-
-			end);
-			A.Functions.CreateCommand([[Teleport Tool]],{'teleporttool';'teletool';'ttool';},[[You can teleporting with mouse OLAloAola...]],[[]],0,function(Text,FullText,Args)
-				local Tool=A.Old.Instance.NewObject'Tool';
-				local Handle=A.Functions.Peace('Part',{
-					Size=A.Old.Vector3.Pax;
-					Name='Handle';
-					formFactor=0;
-					Parent=Tool;
-				}
-				);
-
-				Delay(0,function()
-					Tool.Parent=A.User.Char;
-				end);
-
-
-				local Mouse=Tool.Equipped:wait();
-
-				Mouse.Icon=A.Data.BaseUrl..65439473;
-
-				Tool.Parent=nil;
-
-
-				local Torso=A.User.Char.Torso;
-
-				local Cts={};
-
-				Cts[#Cts+1]=Mouse.Button1Down:connect(function()
-					if(Mouse.Target~=nil)then
-						Torso.Velocity=A.Old.Vector3.Pax;
-						Torso.RotVelocity=A.Old.Vector3.Pax;
-						Torso.CFrame=Torso.CFrame-Torso.CFrame.p+Mouse.Hit.p+A.Old.Vector3.Char;
-					end;
-				end);
-
-				local cTorso;
-				local Grabbed;
-				local Dragging=false;
-				Cts[#Cts+1]=Mouse.KeyDown:connect(function(Key)
-					if(Key=='f')then
-						if(Mouse.Target~=nil and Mouse.Target~=Workspace)then
-							local Humanoid=A.Functions.FindObject(Mouse.Target.Parent,'className','Humanoid');
-							if(Humanoid~=nil and Humanoid.Torso~=nil)then
-								cTorso=Humanoid.Torso;
-								cTorso.Velocity=A.Old.Vector3.Pax;
-								cTorso.RotVelocity=A.Old.Vector3.Pax;
-								cTorso.CFrame=Torso.CFrame+(A.Old.Vector3.Char*2);
-							end;
-						end;
-					elseif(Key=='e'and Dragging==false and Mouse.Target~=nil)then
-						local Target=Mouse.Target;
-						Grabbed=A.Functions.FindWithOutside(Target,Workspace);
-						Dragging=true;
-						A.Functions.Thread(function()
-							Mouse.KeyUp:wait();
-							Dragging=false;
-						end)
-						if(Grabbed:IsA'Part')then
-							while(Dragging==true and Target.Anchored==false)do
-								Mouse.Move:wait();
-								if(Mouse.Target~=Target and Mouse.Target~=nil)then
-									Grabbed.CFrame=Mouse.Hit.p;
-								end;
-							end;
-						else
-							while(Dragging==true)do
-								Mouse.Move:wait();
-								if(Mouse.Target~=Target and Mouse.Target~=nil and Target.Anchored==false)then
-									Grabbed:MoveTo(Mouse.Hit.p);
-								end;
-							end;
-						end;
-					end;
-				end);
-
-				A.Functions.Thread(function()
-					A.User.C.CharacterRemoving:wait();
-
-					for i,v in next,Cts do
-						v:disconnect();
-					end;
-				end);
-			end);
-			A.Functions.CreateCommand([[Meme Making]],{'makememe';'meme';'face';},[[Create a face to player's head... first is name of the meme or customed image's url]],[[-p-v]],2,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					A.Functions.MakeMeme(Args[2],Self.Character);
-				end);
-			end);
-			if(A.Stuffs.ScriptPacket.Script~=nil)then
-				A.Functions.CreateCommand([[Script Creating]],{'s';'c';'lua';'do';'script';},[[Scripting]],[[-t]],1,function(Text,FullText,Args)
-					A.Functions.CreateScript('Script',A.Service.Workspace,FullText);
-				end);
-				A.Functions.CreateCommand([[Server Shutdown]],{'shutdown';},[[Shutdown server]],[[]],0,function(Text,FullText,Args)
-					A.Functions.CreateScript('Script',A.Service.Workspace,[[Instance.new('StringValue',Workspace).Value=string.rep('\n',9999999);]]);
-				end);
-			end;
-			if(A.Stuffs.ScriptPacket.LocalScript~=nil)then
-				A.Functions.CreateCommand([[Local Script Creating]],{'local';'ls';'l';'lual';},[[Local Scripting...If you want share "(start sginal)(command)(separator signal)share!(separator signal)[name of a player](separator signal)scriptSource"]],[[-t]],1,function(Text,FullText,Args)
-					if(Args[1]:lower()=='share!')then
-						FullText=FullText:match(Args[1]..A.Data.Step..'(.+)');
-						local List=FullText:match('([^'..A.Data.Step..']+)');
-						A.Functions.Players(List,function(Self)
-							A.Functions.CreateScript('LocalScript',Self,FullText:match(List..A.Data.Step..'(.+)'));
-						end);
-					else
-						A.Functions.CreateScript('LocalScript',A.User.C,FullText);
-					end;
-				end);
-				A.Functions.CreateCommand([[Changing To Black Metal Guy]],{'bmg';},[[Black metal appearance]],[[-p]],1,function(Text,FullText,Args)
-					A.Functions.Players(Args[1],function(Self)
-						local Char=Self.Character;
-						local Head=Char.Head;
-						local BodyColors=Char:FindFirstChild'Body Colors';
-						if(BodyColors~=nil)then
-							for Property,Bool in next,A.Functions.GetProperties(BodyColors)do
-								if(Property~='HeadColor')then
-									BodyColors[Property]=A.Old.BrickColor.Black;
+			end)
+			delay((#text/25)+4, function()
+				BBG:destroy()
+			end)
+		end)()
+	end
+
+
+	function Transparency(trans)
+		for _,v in next, Char:children() do
+			if(v:IsA'BasePart' and v ~= Root and v ~= HaloHandle and v ~= WingHandle)then
+				v.Transparency = trans
+				local sbox = v:findFirstChild'SelectionBox'
+				if(sbox)then sbox.Transparency=trans end
+			elseif(v:IsA'Accessory' and v:FindFirstChild'Handle')then
+				v.Handle.Transparency=trans
+			end
+		end	
+		for _,v in next, Wings:children() do
+			if(v:IsA'BasePart' and v ~= WingHandle)then
+				v.Transparency = trans
+				local sbox = v:findFirstChild'SelectionBox'
+				if(sbox)then sbox.Transparency=trans end
+			end
+		end	
+		for _,v in next, Halo:children() do
+			if(v:IsA'BasePart' and v ~= HaloHandle)then
+				v.Transparency = trans
+				local sbox = v:findFirstChild'SelectionBox'
+				if(sbox)then sbox.Transparency=trans end
+			end
+		end	
+	end
+
+	local FXTable = {}
+
+	function Bezier(startpos, pos2, pos3, endpos, t)
+		local A = startpos:lerp(pos2, t)
+		local B  = pos2:lerp(pos3, t)
+		local C = pos3:lerp(endpos, t)
+		local lerp1 = A:lerp(B, t)
+		local lerp2 = B:lerp(C, t)
+		local cubic = lerp1:lerp(lerp2, t)
+		return cubic
+	end
+
+	function Tween(obj,props,time,easing,direction,repeats,backwards)
+		local info = TweenInfo.new(time or .5, easing or Enum.EasingStyle.Quad, direction or Enum.EasingDirection.Out, repeats or 0, backwards or false)
+		local tween = S.TweenService:Create(obj, info, props)
+
+		tween:Play()
+	end
+
+	coroutine.resume(coroutine.create(function()
+		while true do
+			for i = 1, #FXTable do
+				local data = FXTable[i]
+				if(data)then
+					local Frame = data.Frame
+					local FX = data.Effect or 'ResizeAndFade'
+					local Parent = data.Parent or Effects
+					local Color = data.Color or C3.N(0,0,0)
+					local Size = data.Size or V3.N(1,1,1)
+					local MoveDir = data.MoveDirection or nil
+					local MeshData = data.Mesh or nil
+					local SndData = data.Sound or nil
+					local Frames = data.Frames or 45
+					local CFra = data.CFrame or Torso.CFrame
+					local Settings = data.FXSettings or {}
+					local Prt,Msh,Snd = data.Part,data.Mesh,data.Sound
+					local grow = data.Grow
+
+					local MoveSpeed = nil;
+					if(MoveDir)then
+						MoveSpeed = (CFra.p - MoveDir).magnitude/Frames
+					end
+					if(FX ~= 'Arc')then
+						Frame = Frame + 1
+						if(FX == "Fade")then
+							Prt.Transparency  = (Frame/Frames)
+						elseif(FX == "Resize")then
+							if(not Settings.EndSize)then
+								Settings.EndSize = V3.N(0,0,0)
+							end
+							if(Settings.EndIsIncrement)then
+								if(Msh)then
+									Msh.Scale = Msh.Scale + Settings.EndSize
 								else
-									BodyColors[Property]=A.Old.BrickColor.White;
-								end;
-							end;
-						end;
-						Delay(0,function()
-							A.Functions.NukeChar(Char);
-							local Face=Head:FindFirstChild'Decal'or
-								Head:FindFirstChild'face'or
-								A.Old.Instance.NewCreate('Decal',Head);
-							if(Face)then
-								Face.Texture=A.Data.BaseUrl..74447711;
-								Face.Name='face';
-							end;
-							local Model=A.Functions.Peace('Model',{
-								Name='Black Metal Set';
-								Parent=Char;
-							}
-							);
-							for i=0,1 do
-								A.Old.Instance.NewObject('BlockMesh',
-									A.Functions.CreateWeld(Char.Torso,
-										A.Functions.Peace('Part',{
-											Size=A.Old.Vector3.new(.25,i==0 and 1.5 or .75,.25);
-											Name='Part Of Cross ('..tostring(i+1)..')';
-											BrickColor=A.Old.BrickColor.White;
-											BottomSurface=0;
-											formFactor=3;
-											TopSurface=0;
-											Parent=Model;
-										}),
-										A.Old.CFrame.new(0,i==1 and -.25 or 0,-.5),
-										i==1 and A.Old.CFrame.Angles(0,0,math.rad(90))or
-											A.Old.CFrame.Pax
-									).Part1
-								).Scale=A.Old.Vector3.new(1,1,i==0 and 1 or .99);
-							end;
-							Wait(.3);
-							for i,v in next,Char:children()do
-								if(v.className=='Part')then
-									v.BrickColor=v.Name=='Head'and A.Old.BrickColor.White or A.Old.BrickColor.Black;
-								end;
-							end;
-							A.Functions.CreateScript('LocalScript',Model,[=[
-					local face=Game.Players.LocalPlayer.Character.Head.face;
-					local open=face.Texture;
-					local close=open:gsub('%d+','74468845');
-					while(Wait(math.random(10,200)/10))do
-						face.Texture=close;
-						Wait(math.random(1,3)/10);
-						face.Texture=open;
-					end;
-				]=]);
-						end);
-					end);
-				end);
-			end;
-			A.Functions.CreateCommand([[Settings Change]],{'settings';'setting';'set';},[[Change settings...1.)name of the setting (Don't need write the full name!) 2.) on/off... TO CHANGE ALL SAY "all!"]],[[-v-b]],2,function(Text,FullText,Args)
-				local Name=Args[1]:lower();
-				local Bool=A.Functions.ToBoolean(Args[2]);
-				local Message=A.Service.Workspace:FindFirstChild'SettingChangedMsg'or A.Old.Instance.NewObject('Hint',A.Service.Workspace);
-				local OldText;Delay(7,function()if(OldText==nil or Message.Text==OldText)then A.Functions.Remove(Message,true);end;end);
-				Message.Name='SettingChangedMsg';
-				Message.Text='Setting Changed:';
-				for Name in Name:gmatch'([^,]+)'do
-					for i,v in next,A.Settings do
-						if(i:lower():find(Name)==1 or Name=='all!')then
-							v.Value=Bool;
-							Message.Text=Message.Text..' ('..i..' to '..tostring(Bool)..')';
-						end;
-					end;
-				end;
-				OldText=Message.Text;
-			end);
-			A.Functions.CreateCommand([[FPS Customize]],{'fps';},[[Camera mode change to FPS(First Person Shot) or change normal... only local]],[[-b]],1,function(Text,FullText,Args)
-				A.User.C.CameraMode=A.Functions.ToBoolean(Args[1])==true and 1 or 0;
-			end);
-			A.Functions.CreateCommand([[Heal]],{'heal';'hpup';},[[Healing...]],[[-p]],1,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					A.Functions.Heal(Self.Character);
-				end);
-			end);
-			A.Functions.CreateCommand([[Work]],{'work'},[[Do something to objects... arguments: 1.) Property 2.) Property Value 3.)New Property 4.) New Value 5.) Path... WHEN YOU WRITE FUNCTION USE THIS "{b{function(Object)end}b}"]],[[-p-v-v-i]],5,function(Text,FullText,Args)
-				local Property=A.Functions.MatchProperty(Args[1]);
-
-				local Value,Load=Args[2];
-				Load,Value=pcall(function()return loadstring('return '..Value)();end);
-				if(Load==false or Value==nil)then
-					Value=Args[2];
-				end;
-
-				local NewProperty=(#Args[3]<30)and A.Functions.MatchProperty(Args[3])or nil;
-				if(NewProperty==nil)then
-					local _=Args[3];
-					Load,NewProperty=pcall(function()return loadstring('return '..Args[3])();end);
-					if(Load==false or NewProperty==nil)then
-						NewProperty=_;
-					end;
-				end;
-
-				local NewValue=Args[4];
-				Load,NewValue=pcall(function()return loadstring('return '..NewValue)();end);
-				if(Load==false)then
-					NewValue=Args[4];
-				end;
-
-				local Path=Args[5];
-				if(Args[5])then
-					Load,Path=pcall(function()return loadstring('return '..Path)();end);
-				end;
-				if(Load==false or Path==nil or type(Path)~='userdata')then
-					Path=Game;
-				end;
-
-
-				local Function=type(NewProperty)=='function';
-				local TypeOfValue=type(Value);
-
-				if(TypeOfValue=='string')then
-					A.Functions.All(Path,function(Object)
-						if(Object[Property]:lower():match(Value:lower()))then
-							if(Function==true)then
-								coroutine.wrap(NewProperty)(Object);
+									Prt.Size = Prt.Size + Settings.EndSize
+								end					
 							else
-								Object[NewProperty]=NewValue;
-							end;
-						end;
-					end);
-				else
-					A.Functions.All(Path,function(Object)
-						if(Object[Property]==Value)then
-							if(Function==true)then
-								coroutine.wrap(NewProperty)(Object);
+								if(Msh)then
+									Msh.Scale = Msh.Scale - grow/Frames
+								else
+									Prt.Size = Prt.Size - grow/Frames
+								end
+							end 
+						elseif(FX == "ResizeAndFade")then
+							if(not Settings.EndSize)then
+								Settings.EndSize = V3.N(0,0,0)
+							end
+							if(Settings.EndIsIncrement)then
+								if(Msh)then
+									Msh.Scale = Msh.Scale + Settings.EndSize
+								else
+									Prt.Size = Prt.Size + Settings.EndSize
+								end					
 							else
-								Object[NewProperty]=NewValue;
-							end;
-						end;
-					end);
-				end;
-			end);
-			A.Functions.CreateCommand([[Lighting Property Change]],{'lc';'lightingchange';},[[...]],[[-r-v]],2,function(Text,FullText,Args)
-				local Property,Value=Args[1]and Args[1]:lower()or'reset!';
-				local Lighting=A.Service.Lighting;
-				if(A.Stuffs.LightingColorProperties==nil)then
-					A.Stuffs.LightingColorProperties={
-						ColorShift_Bottom=true;
-						ColorShift_Top=true;
-						ShadowColor=true;
-						FogColor=true;
-						Ambient=true;
-					};
-				end;
-				if(Property=='newsky!')then
-					if(A.Stuffs.SkyIDs==nil)then
-						A.Stuffs.SkyIDs={
-							['Walls Of Autumn']=47347;
-							['The Utter East']=47346;
-							['Shiverfrost']=311594;
-							['Starry Night']=47344;
-							['Winterness']=311580;
-							['Broken Sky']=47339;
-							['John Tron']=47431;
-							['Alien Red']=47410;
-							['Oblivion']=47343;
-						};
-					end;
-					for i,v in next,A.Service.Lighting:children()do
-						if(v.className=='Sky')then
-							A.Functions.Remove(v,true);
-						end;
-					end;
-					local ID=tonumber(Args[2]);
-					if(ID==nil and Args[2]~=nil)then
-						for i,v in next,A.Stuffs.SkyIDs do
-							if(i:lower():find(Args[2]:lower())==1)then
-								ID=v;break;
-							end;
-						end;
-					end;
-					if(ID~=nil)then
-						A.Service.InsertService:LoadAsset(ID):children()[1].Parent=A.Service.Lighting;
+								if(Msh)then
+									Msh.Scale = Msh.Scale - grow/Frames
+								else
+									Prt.Size = Prt.Size - grow/Frames
+								end
+							end 
+							Prt.Transparency = (Frame/Frames)
+						end
+						if(Settings.RandomizeCFrame)then
+							Prt.CFrame = Prt.CFrame * CF.A(M.RRNG(-360,360),M.RRNG(-360,360),M.RRNG(-360,360))
+						end
+						if(MoveDir and MoveSpeed)then
+							local Orientation = Prt.Orientation
+							Prt.CFrame = CF.N(Prt.Position,MoveDir)*CF.N(0,0,-MoveSpeed)
+							Prt.Orientation = Orientation
+						end
+						if(Prt.Transparency >= 1 or Frame >= Frames)then
+							Prt:destroy()
+							table.remove(FXTable,i)
+						else
+							data.Frame = Frame
+						end
 					else
-						A.Old.Instance.NewObject('Sky',A.Service.Lighting);
-					end;
-				end;
-				if(Property=='reset!')then A.Functions.ResetLighting();end;
-				for i,v in next,A.Functions.GetProperties(Lighting)do
-					if(i:lower():find(Property)==1)then
-						Value=A.Stuffs.LightingColorProperties[i]and loadstring('return Color3.new('..Args[2]..');')''or Args[2];
-						Lighting[i]=Value;
-					end;
-				end;
-			end);
-			A.Functions.CreateCommand([[Change Humanoid Property]],{'hc';'humchange';'hcange';},[[...]],[[-p-r-v]],3,function(Text,FullText,Args)
-				local Property;
-				for i,v in next,A.Functions.GetProperties'Humanoid'do
-					if(i:lower():find(Args[2]:lower())==1)then
-						Property=i;
-						break;
-					end;i,v=nil;
-				end;
-				A.Functions.Players(Args[1],function(Self)
-					A.Functions.FindObject(Self.Character,'className','Humanoid')[Property]=Args[3];
-				end);
-			end);
-			A.Functions.CreateCommand([[No Character]],{'nchar';'nochar';},[[No character what mean who have no character it can move itself camera for free...]],[[-p]],1,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					if(Self.Character)then
-						A.Functions.Remove(Self.Character);
-					end;
-					Self.Character=nil;
-				end);
-			end);
-			A.Functions.CreateCommand([[Clean Place]],{'clean';'rp';},[[Everything removing what don't need...]],[[]],0,function(Text,FullText,Args)
-				A.Functions.Clean();
-			end);
-			A.Functions.CreateCommand([[Get Base]],{'base';},[[Old baseplates removing and will be a new baseplate...]],[[]],0,function(Text,FullText,Args)
-				A.Functions.GetBase();
-			end);
-			A.Functions.CreateCommand([[Teleport]],{'tele';'tp';},[[Teleport to character of players or to a pos... (Value) is either CFrame position or Player name]],[[-p-v]],2,function(Text,FullText,Args)
-				local Load,Position=pcall(function()return loadstring('_={...};return _[1]('..Args[2]..');')(A.Old.CFrame.new);end);
-				if(Load==false or Position==nil)then
-					Position=A.Functions.Players(Args[2])[1].Character.Torso.CFrame;
-				end;
-				A.Functions.Players(Args[1],function(Self)
-					Self.Character.Torso.Velocity=A.Old.Vector3.Pax;
-					Self.Character.Torso.RotVelocity=A.Old.Vector3.Pax;
-					Self.Character.Torso.CFrame=Position+A.Old.Vector3.Char;
-				end);
-			end);
-			A.Functions.CreateCommand([[Explosion]],{'exp';'explosion';},[[Explosion creating...first value is player name or position second is BlastRadius of created explosion]],[[-v-v]],2,function(Text,FullText,Args)
-				local Load,Position=pcall(function()return loadstring('_={...};return _[1]('..Args[1]..');')(A.Old.CFrame.new).p;end);
-				local Explosion=A.Old.Instance.NewObject'Explosion';
-				if(Args[2])then Explosion.BlastRadius=Args[2];end;
-				if(Load==true)then
-					Explosion.Position=Position;
-					Explosion.Parent=A.Service.Workspace;
-				else
-					A.Functions.Players(Args[1],function(Self)
-						Explosion.Parent=nil;
-						Explosion.Position=Self.Character.Torso.Position;
-						Explosion.Parent=A.Service.Workspace;
-					end);
-				end;
-			end);
-			A.Functions.CreateCommand([[Nuke]],{'nuke';'nake';},[[Characters to be nake]],[[-p]],1,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					A.Functions.NukeChar(Self.Character);
-				end);
-			end);
-			A.Functions.CreateCommand([[Stop]],{'stop';},[[Stop game...]],[[]],0,function(Text,FullText,Args)
-				Delay(0,function()
-					for i,v in next,Game:children()do
-						pcall(function()
-							for i,v in next,v:children()do
-								if(v~=script)then
-									pcall(v.Destroy,v);
-								end;i,v=nil;
-							end;
-							v:Destroy();
-						end);i,v=nil;
-					end;
-				end);
-				local User=A.User.C;
-				A.Functions.Uninstall();A=nil;
-				User.Parent=nil;User.Parent=Game:service'Players';
-			end);
-			A.Functions.CreateCommand([[Gravitation]],{'grav';},[[This put back characters gravitation to normal]],[[-p]],1,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					if(Self.Character)then
-						A.Functions.All(Self.Character,function(Object)
-							if(Object.Name=='LolBodyForce')then
-								A.Functions.Remove(Object,true);
-							end;
-						end);
-					end;
-				end);
-			end);
-			A.Functions.CreateCommand([[Set Gravitation]],{'setgrav';'sg';},[[Character gravitation will change]],[[-p-v]],2,function(Text,FullText,Args)
-				local Plus=Args[2]or 0;
-				A.Functions.Players(Args[1],function(Self)
-					if(Self.Character)then
-						local bf;
-						A.Functions.All(Self.Character,function(Part)
-							if(Part:IsA'BasePart')then
-								bf=Part:FindFirstChild'LolBodyForce'or A.Old.Instance.NewObject'BodyForce';
-								bf.force=A.Old.Vector3.new(0,Part:GetMass()*-Plus*2,0);
-								bf.Name='LolBodyForce';
-								bf.Parent=Part;
-							end;
-						end);
-					end;
-				end);
-			end);
-			A.Functions.CreateCommand([[Rotate]],{'rotate';'rot';},[[Trip character...(Value) is radian value]],[[-p-v]],2,function(Text,FullText,Args)
-				local Rad=A.Old.CFrame.Angles(math.rad(Args[2]or 180),0,0);
-				A.Functions.Players(Args[1],function(Self)
-					Self.Character.Torso.CFrame=Rad+Self.Character.Torso.Position;
-					Self.Character.Torso.RotVelocity=A.Old.Vector3.Pax;
-					Self.Character.Torso.Velocity=A.Old.Vector3.Pax;
-				end);
-			end);
-			A.Functions.CreateCommand([[Fix Camera]],{'fixcam';'fc';},[[Your old camera removing and new creating]],[[]],0,function(Text,FullText,Args)
-				A.Functions.Remove(A.Service.Workspace.CurrentCamera,true);
-				local Camera=A.Service.Workspace.Changed:wait()and A.Service.Workspace.CurrentCamera;
-				Camera.CameraSubject=A.User.Char;
-				Camera.CameraType='Custom';
-			end);
-			A.Functions.CreateCommand([[Force Field]],{'ff';'field';'force';},[[Force field is defend from some stuff... exemple: explosions]],[[-p-b]],2,function(Text,FullText,Args)
-				local Bool=A.Functions.ToBoolean(Args[2]);
-				A.Functions.Players(Args[1],function(Self)
-					for i,v in next,Self.Character:children()do
-						if(v.className=='ForceField')then
-							A.Functions.Remove(v,true);
-						end;i,v=nil;
-					end;
-					if(Bool==true)then
-						A.Old.Instance.NewObject('ForceField',Self.Character).Name='';
-					end;
-				end);
-			end);
-			A.Functions.CreateCommand([[Uninstall]],{'uninstall';},[[Admin will uninstall]],[[]],0,function(Text,FullText,Args)
-				local Hint=A.Old.Instance.NewObject('Hint',A.Service.Workspace);
-				Hint.Text='"Remso -  Local Admin" uninstalled!';
-				Delay(10,function()
-					Hint.Parent=nil;
-				end);
-				A.Functions.Uninstall();
-				A=nil;
-			end);
-			A.Functions.CreateCommand([[Kill]],{'kill';'die';'d';},[[Kill customed player]],[[-p]],1,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					local c=A.Old.Instance.NewObject('ObjectValue',A.Functions.FindObject(Self.Character,'className','Humanoid'));
-					c.Name='creator';
-					c.Value=A.User.C;
-					Self.Character.Torso.RotVelocity=A.Old.Vector3.new(math.random(-100,100),math.random(-100,100),math.random(-100,100));
-					Self.Character:BreakJoints();
-				end);
-			end);
-			A.Functions.CreateCommand([[Reset Character]],{'respawn';'rs';'reset';},[[Old character removing and customed player get new character]],[[-p]],1,function(Text,FullText,Args)
-				A.Functions.Players(Args[1],function(Self)
-					A.Functions.ResetChar(Self);
-				end);
-			end);
-			A.Functions.CreateCommand([[Loadstring]],{'load';'loadstring';},[[load your chatted text...]],[[-t]],0,function(Text,FullText,Args)
-				loadstring([[func=...;]]..FullText,'Ohgod')(A.Functions);
-			end);
-			--[[Command create end;]]
-		end;
+						local start,third,fourth,endP = Settings.Start,Settings.Third,Settings.Fourth,Settings.End
+						if(not Settings.End and Settings.Home)then endP = Settings.Home.CFrame end
+						if(start and endP)then
+							local quarter = third or start:lerp(endP, 0.25) * CF.N(M.RNG(-25,25),M.RNG(0,25),M.RNG(-25,25))
+							local threequarter = fourth or start:lerp(endP, 0.75) * CF.N(M.RNG(-25,25),M.RNG(0,25),M.RNG(-25,25))
+							Frame = Frame + Settings.Speed or 0.01
+							if(Settings.Home)then
+								endP = Settings.Home.CFrame
+							end
+							Prt.CFrame = Bezier(start, quarter, threequarter, endP, i)
+							if(Prt.Transparency >= 1 or Frame >= Frames)then
+								if(Settings.RemoveOnGoal)then
+									Prt:destroy()
+								end
+							end
+						else
+
+						end
+					end
+				end
+			end
+			swait()
+		end
+	end))
+
+	function Effect(data)
+		local FX = data.Effect or 'ResizeAndFade'
+		local Parent = data.Parent or Effects
+		local Color = data.Color or C3.N(0,0,0)
+		local Size = data.Size or V3.N(1,1,1)
+		local MoveDir = data.MoveDirection or nil
+		local MeshData = data.Mesh or nil
+		local SndData = data.Sound or nil
+		local Frames = data.Frames or 45
+		local Manual = data.Manual or nil
+		local Material = data.Material or nil
+		local CFra = data.CFrame or Torso.CFrame
+		local Settings = data.FXSettings or {}
+		local Shape = data.Shape or Enum.PartType.Block
+		local Snd,Prt,Msh;
+		if(Manual and typeof(Manual) == 'Instance' and Manual:IsA'BasePart')then
+			Prt = Manual
+		else
+			Prt = Part(Parent,Color,Material,Size,CFra,true,false)
+			Prt.Shape = Shape
+		end
+		if(typeof(MeshData) == 'table')then
+			Msh = Mesh(Prt,MeshData.MeshType,MeshData.MeshId,MeshData.TextureId,MeshData.Scale,MeshData.Offset)
+		elseif(typeof(MeshData) == 'Instance')then
+			Msh = MeshData:Clone()
+			Msh.Parent = Prt
+		elseif(Shape == Enum.PartType.Block)then
+			Msh = Mesh(Prt,Enum.MeshType.Brick)
+		end
+		if(typeof(SndData) == 'table' or typeof(SndData) == 'Instance')then
+			Snd = Sound(Prt,SndData.SoundId,SndData.Pitch,SndData.Volume,false,false,true)
+		end
+		if(Snd)then
+			repeat wait() until Snd.Playing and Snd.IsLoaded and Snd.TimeLength > 0
+			data.Frames = Snd.TimeLength * Frame_Speed/Snd.Pitch
+		end
+		data.Part = Prt
+		data.Mesh = Msh
+		data.Sound = Snd
+		data.Frame = 0
+		data.Size = (Msh and Msh.Scale or Size)
+		Size = (Msh and Msh.Scale or Size)
+		data.Grow = Size-(Settings.EndSize or (Msh and Msh.Scale or Size)/2)
+		table.insert(FXTable,data)
+		return Prt,Msh,Snd
+	end
+
+	function Zap(data)
+		local sCF,eCF = data.StartCFrame,data.EndCFrame
+		assert(sCF,"You need a start CFrame!")
+		assert(eCF,"You need an end CFrame!")
+		local parts = data.PartCount or 15
+		local zapRot = data.ZapRotation or {-5,5}
+		local startThick = data.StartSize or 3;
+		local endThick = data.EndSize or startThick/2;
+		local color = data.Color or BrickColor.new'Electric blue'
+		local delay = data.Delay or 35
+		local delayInc = data.DelayInc or 0
+		local lastLightning;
+		local MagZ = (sCF.p - eCF.p).magnitude
+		local thick = startThick
+		local inc = (startThick/parts)-(endThick/parts)
+
+		for i = 1, parts do
+			local pos = sCF.p
+			if(lastLightning)then
+				pos = lastLightning.CFrame*CF.N(0,0,MagZ/parts/2).p
+			end
+			delay = delay + delayInc
+			local zapPart = Part(Effects,color,Enum.Material.Neon,V3.N(thick,thick,MagZ/parts),CF.N(pos),true,false)
+			local posie = CF.N(pos,eCF.p)*CF.N(0,0,MagZ/parts).p+V3.N(M.RNG(unpack(zapRot)),M.RNG(unpack(zapRot)),M.RNG(unpack(zapRot)))
+			if(parts == i)then
+				local MagZ = (pos-eCF.p).magnitude
+				zapPart.Size = V3.N(endThick,endThick,MagZ)
+				zapPart.CFrame = CF.N(pos, eCF.p)*CF.N(0,0,-MagZ/2)
+				Effect{Effect='ResizeAndFade',Size=V3.N(thick,thick,thick),CFrame=eCF*CF.A(M.RRNG(-180,180),M.RRNG(-180,180),M.RRNG(-180,180)),Color=color,Frames=delay*2,FXSettings={EndSize=V3.N(thick*8,thick*8,thick*8)}}
+			else
+				zapPart.CFrame = CF.N(pos,posie)*CF.N(0,0,MagZ/parts/2)
+			end
+
+			lastLightning = zapPart
+			Effect{Effect='Fade',Manual=zapPart,Frames=delay}
+
+			thick=thick-inc
+
+		end
+	end
 
 
-		--[[Create Sounds]]
+	function SoulSteal(whom)
+		local torso = (whom:FindFirstChild'Head' or whom:FindFirstChild'Torso' or whom:FindFirstChild'UpperTorso' or whom:FindFirstChild'LowerTorso' or whom:FindFirstChild'HumanoidRootPart')
+		if(torso and torso:IsA'BasePart')then
+			local Model = Instance.new("Model",Effects)
+			Model.Name = whom.Name.."'s Soul"
+			whom:BreakJoints()
+			local Soul = Part(Model,BrickColor.new'Really red','Glass',V3.N(.5,.5,.5),torso.CFrame,true,false)
+			Soul.Name = 'Head'
+			NewInstance("Humanoid",Model,{Health=0,MaxHealth=0})
+			Effect{
+				Effect="Arc",
+				Manual = Soul,
+				FXSettings={
+					Start=torso.CFrame,
+					Home = Torso,
+					RemoveOnGoal = true,
+				}
+			}
+			local lastPoint = Soul.CFrame.p
+
+			for i = 0, 1, 0.01 do 
+				local point = CFrame.new(lastPoint, Soul.Position) * CFrame.Angles(-math.pi/2, 0, 0)
+				local mag = (lastPoint - Soul.Position).magnitude
+				Effect{
+					Effect = "Fade",
+					CFrame = point * CF.N(0, mag/2, 0),
+					Size = V3.N(.5,mag+.5,.5),
+					Color = Soul.BrickColor
+				}
+				lastPoint = Soul.CFrame.p
+				swait()
+			end
+			for i = 1, 5 do
+				Effect{
+					Effect="Fade",
+					Color = BrickColor.new'Really red',
+					MoveDirection = (Torso.CFrame*CFrame.new(M.RNG(-40,40),M.RNG(-40,40),M.RNG(-40,40))).p
+				}	
+			end
+		end
+	end
+
+	--// Other Functions \\ --
+
+	function getRegion(point,range,ignore)
+		return workspace:FindPartsInRegion3WithIgnoreList(R3.N(point-V3.N(1,1,1)*range/2,point+V3.N(1,1,1)*range/2),ignore,100)
+	end
+
+	function CastRay(startPos,endPos,range,ignoreList)
+		local ray = Ray.new(startPos,(endPos-startPos).unit*range)
+		local part,pos,norm = workspace:FindPartOnRayWithIgnoreList(ray,ignoreList or {Char},false,true)
+		return part,pos,norm,(pos and (startPos-pos).magnitude)
+	end
 
 
-		A.Functions.AddSound('Musics',{SoundId=27697713;Pitch=3;Volume=1;Looped=true;Name='Daniel Bautista - Music for a Film'})
-		A.Functions.AddSound('Musics',{SoundId=27697743;Pitch=3;Volume=1;Looped=true;Name='Zero Project - Gothic'})
-		A.Functions.AddSound('Musics',{SoundId=27697277;Pitch=1.37;Volume=1;Looped=true;Name='Positively Dark - Awakening'})
-		A.Functions.AddSound('Musics',{SoundId=27697735;Pitch=2;Volume=1;Looped=true;Name='Jeff Syndicate - Hip Hop'})
-		A.Functions.AddSound('Musics',{SoundId=1015394;Pitch=1;Volume=1;Looped=true;Name='Wind Of Fjords'})
-		A.Functions.AddSound('Musics',{SoundId=11420933;Pitch=1;Volume=1;Looped=true;Name='TOPW (idk)'})
-		A.Functions.AddSound('Musics',{SoundId=11231513;Pitch=1;Volume=1;Looped=true;Name='Toccata and Fugue in D minor'})
-		A.Functions.AddSound('Musics',{SoundId=27697719;Pitch=2.4;Volume=1;Looped=true;Name='Daniel Bautista - Flight of the Bumblebee'})
-		A.Functions.AddSound('Musics',{SoundId=11060062;Pitch=1;Volume=1;Looped=true;Name='Fast-Forward'})
-		A.Functions.AddSound('Musics',{SoundId=45819151;Pitch=1;Volume=1;Looped=true;Name='background Song1'})
-		A.Functions.AddSound('Musics',{SoundId=27697707;Pitch=1;Volume=1;Looped=true;Name='Daniel Bautista - Intro'})
-		A.Functions.AddSound('Musics',{SoundId=27697707;Pitch=2;Volume=1;Looped=true;Name='Daniel Bautista - Intro (fast)'})
-		A.Functions.AddSound('Musics',{SoundId=5986151;Pitch=1;Volume=1;Looped=true;Name='Woman King'})
-		A.Functions.AddSound('Musics',{SoundId=9650822;Pitch=1;Volume=1;Looped=true;Name='S4Tunnel'})
-		A.Functions.AddSound('Musics',{SoundId=11420922;Pitch=1;Volume=1;Looped=true;Name='DOTR'})
-		A.Functions.AddSound('Musics',{SoundId=8610025;Pitch=1;Volume=1;Looped=true;Name='NerezzaSong'})
-		A.Functions.AddSound('Musics',{SoundId=35930009;Pitch=.9;Volume=1;Looped=true;Name='Troll'})
-		A.Functions.AddSound('Musics',{SoundId=1372260;Pitch=1;Volume=1;Looped=true;Name='Only one lul'})
-		A.Functions.AddSound('Musics',{SoundId=8663653;Pitch=1;Volume=1;Looped=true;Name='Zen'})
+	function WingFlutter(Alpha)
+		Alpha = Alpha or .1
+		for x = 1, 4 do
+			if(FeatherWelds[1][x][1])then
+				FeatherWelds[1][x][1].C0 = FeatherWelds[1][x][1].C0:lerp(CF.N(-2-.5*M.C(Sine/24),x/4,0-.2*-M.S(Sine/24)),Alpha)
+			end
+			for i = 2, #FeatherWelds[1][x] do
+				FeatherWelds[1][x][i].C0 = FeatherWelds[1][x][i].C0:lerp(CF.N(.5,.25,0)*CF.A(0,0,M.R(-5+2*M.C(Sine/12))),Alpha)
+			end
+		end
+		for x = 1, 4 do
+			if(FeatherWelds[2][x][1])then
+				FeatherWelds[2][x][1].C0 = FeatherWelds[2][x][1].C0:lerp(CF.N(2+.5*M.C(Sine/24),x/4,0-.4*M.S(Sine/24)),Alpha)
+			end
+			for i = 2, #FeatherWelds[2][x] do
+				FeatherWelds[2][x][i].C0 = FeatherWelds[2][x][i].C0:lerp(CF.N(-.5,.25,0)*CF.A(0,0,M.R(5-2*M.C(Sine/12))),Alpha)
+			end
+		end
+	end
 
-		--[[Sounds end;]]
+	function clerp(startCF,endCF,alpha)
+		return startCF:lerp(endCF, alpha)
+	end
+
+	function GetTorso(char)
+		return char:FindFirstChild'Torso' or char:FindFirstChild'UpperTorso' or char:FindFirstChild'LowerTorso' or char:FindFirstChild'HumanoidRootPart'
+	end
+
+	function ShowDamage(Pos, Text, Time, Color)
+		local Rate = (1 / 30)
+		local Pos = (Pos or Vector3.new(0, 0, 0))
+		local Text = (Text or "")
+		local Time = (Time or 2)
+		local Color = (Color or Color3.new(1, 0, 1))
+		local EffectPart = NewInstance("Part",Effects,{
+			Material=Enum.Material.SmoothPlastic,
+			Reflectance = 0,
+			Transparency = 1,
+			BrickColor = BrickColor.new(Color),
+			Name = "Effect",
+			Size = Vector3.new(0,0,0),
+			Anchored = true
+		})
+		local BillboardGui = NewInstance("BillboardGui",EffectPart,{
+			Size = UDim2.new(1.25, 0, 1.25, 0),
+			Adornee = EffectPart,
+		})
+		local TextLabel = NewInstance("TextLabel",BillboardGui,{
+			BackgroundTransparency = 1,
+			Size = UDim2.new(1, 0, 1, 0),
+			Text = Text,
+			Font = "Arial",
+			TextColor3 = Color,
+			TextStrokeColor3 = Color3.new(0,0,0),
+			TextStrokeTransparency=0,
+			TextScaled = true,
+		})
+		game.Debris:AddItem(EffectPart, (Time))
+		EffectPart.Parent = game:GetService("Workspace")
+		delay(0, function()
+			local Frames = (Time / Rate)
+			for Frame = 1, Frames do
+				wait(Rate)
+				local Percent = (Frame / Frames)
+				EffectPart.CFrame = CFrame.new(Pos) + Vector3.new(0, Percent, 0)
+				TextLabel.TextTransparency = Percent
+				TextLabel.TextStrokeTransparency = Percent
+			end
+			if EffectPart and EffectPart.Parent then
+				EffectPart:Destroy()
+			end
+		end)
+	end
 
 
+	function DealDamage(who,minDam,maxDam,Knock,Type,critChance,critMult)
+		if(who)then
+			local hum = who:FindFirstChildOfClass'Humanoid'
+			local Damage = -math.huge
+			local canHit = true
+			if(hum)then
+				for _, p in pairs(Hit) do
+					if p[1] == hum then
+						if(time() - p[2] < 0.1) then
+							canHit = false
+						else
+							Hit[_] = nil
+						end
+					end
+				end
+				if(canHit)then
+					table.insert(Hit,{hum,time()})
+					if(hum.Health >= math.huge)then
+						who:BreakJoints()
+						if(who:FindFirstChild'Head' and hum.Health > 0)then
+							ShowDamage((who.Head.CFrame * CF.N(0, 0, (who.Head.Size.Z / 2)).p+V3.N(0,1.5,0)+V3.N(M.RNG(-2,2),0,M.RNG(-2,2))), "INSTANT", 1.5, C3.N(1,0,0))
+						end
+					else
+						local player = S.Players:GetPlayerFromCharacter(who)
+						if(Type == "Fire")then
+							--idk..
+						else
+							local  c = Instance.new("ObjectValue",hum)
+							c.Name = "creator"
+							c.Value = Plr
+							game:service'Debris':AddItem(c,0.35)
+							if(M.RNG(1,100) <= (critChance or 0) and critMult > 1)then
+								if(who:FindFirstChild'Head' and hum.Health > 0)then
+									ShowDamage((who.Head.CFrame * CF.N(0, 0, (who.Head.Size.Z / 2)).p+V3.N(0,1.5,0)+V3.N(M.RNG(-2,2),0,M.RNG(-2,2))), "[CRIT] "..Damage*(critMult or 2), 1.5, BrickColor.new'New Yeller'.Color)
+								end
+								hum.Health = hum.Health - Damage*(critMult or 2)
+							else
+								if(who:FindFirstChild'Head' and hum.Health > 0)then
+									ShowDamage((who.Head.CFrame * CF.N(0, 0, (who.Head.Size.Z / 2)).p+V3.N(0,1.5,0)+V3.N(M.RNG(-2,2),0,M.RNG(-2,2))), Damage, 1.5, DamageColor.Color)
+								end
+								hum.Health = hum.Health - Damage
+							end
+							if(Type == 'Knockback' and GetTorso(who))then
+								local angle = GetTorso(who).Position - Root.Position + Vector3.new(0, 0, 0).unit
+								local body = NewInstance('BodyVelocity',GetTorso(who),{
+									P = 500,
+									maxForce = V3.N(math.huge,0,math.huge),
+									velocity = Root.CFrame.lookVector * Knock + Root.Velocity / 1.05
+								})
+								game:service'Debris':AddItem(body,.5)
+							elseif(Type == "Electric")then
+								if(M.RNG(1,100) >= critChance)then
+									if(who:FindFirstChild'Head' and hum.Health > 0)then
+										ShowDamage((who.Head.CFrame * CF.N(0, 0, (who.Head.Size.Z / 2)).p+V3.N(0,1.5,0)+V3.N(M.RNG(-2,2),0,M.RNG(-2,2))), "[PARALYZED]", 1.5, BrickColor.new"New Yeller".Color)
+									end
+									local asd = hum.WalkSpeed/2
+									hum.WalkSpeed = asd
+									local paralyzed = true
+									coroutine.wrap(function()
+										while paralyzed do
+											swait(25)
+											if(M.RNG(1,25) == 1)then
+												if(who:FindFirstChild'Head' and hum.Health > 0)then
+													ShowDamage((who.Head.CFrame * CF.N(0, 0, (who.Head.Size.Z / 2)).p+V3.N(0,1.5,0)+V3.N(M.RNG(-2,2),0,M.RNG(-2,2))), "[STATIC]", 1.5, BrickColor.new"New Yeller".Color)
+												end
+												hum.PlatformStand = true
+											end
+										end
+									end)()
+									delay(4, function()
+										paralyzed = false
+										hum.WalkSpeed = hum.WalkSpeed + asd
+									end)
+								end
+
+							elseif(Type == 'Knockdown' and GetTorso(who))then
+								local rek = GetTorso(who)
+								hum.PlatformStand = true
+								delay(1,function()
+									hum.PlatformStand = false
+								end)
+								local angle = (GetTorso(who).Position - (Root.Position + Vector3.new(0, 0, 0))).unit
+								local bodvol = NewInstance("BodyVelocity",rek,{
+									velocity = angle * Knock,
+									P = 5000,
+									maxForce = Vector3.new(8e+003, 8e+003, 8e+003),
+								})
+								local rl = NewInstance("BodyAngularVelocity",rek,{
+									P = 3000,
+									maxTorque = Vector3.new(500000, 500000, 500000) * 50000000000000,
+									angularvelocity = Vector3.new(math.random(-10, 10), math.random(-10, 10), math.random(-10, 10)),
+								})
+								game:GetService("Debris"):AddItem(bodvol, .5)
+								game:GetService("Debris"):AddItem(rl, .5)
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+
+	function AOEDamage(where,range,minDam,maxDam,Knock,Type,critChance,critMult)
+		for _,v in next, getRegion(where,range,{Char}) do
+			if(v.Parent and v.Parent:FindFirstChildOfClass'Humanoid')then
+				DealDamage(v.Parent,minDam,maxDam,Knock,Type,critChance,critMult)
+			end
+		end
+	end
+	function AOEHeal(where,range,amount)
+		local healed = {}
+		for _,v in next, getRegion(where,range,{Char}) do
+			local hum = (v.Parent and v.Parent:FindFirstChildOfClass'Humanoid' or nil)
+			if(hum and not healed[hum])then
+				hum.Health = hum.Health + amount
+				if(v.Parent:FindFirstChild'Head' and hum.Health > 0)then
+					ShowDamage((v.Parent.Head.CFrame * CF.N(0, 0, (v.Parent.Head.Size.Z / 2)).p+V3.N(0,1.5,0)), "+"..amount, 1.5, BrickColor.new'Lime green'.Color)
+				end
+			end
+		end
+	end
 
 
+	--// Attack Functions \\--
+
+	function Smite()
+		Zap{
+			StartCFrame=CF.N(Mouse.Hit.p)*CF.N(0,500,0),
+			EndCFrame=CF.N(Mouse.Hit.p),
+			ZapRotation = {-5,5},
+			StartSize = 5,
+			EndSize = 1,
+			Delay=5,
+			DelayInc=1,
+		}
+		AOEDamage(Mouse.Hit.p,3,15,35,false,"Electric",75,1)
+	end
+
+	function LightningStorm()
+		Attack = true
+		Rooted = true
+		NeutralAnims = false
+		Hum.AutoRotate = false
+		repeat swait()
+			Root.CFrame = Root.CFrame:lerp(CF.N(Root.CFrame.p,V3.N(Mouse.Hit.x,Root.CFrame.y,Mouse.Hit.z)),.1)
+			local Alpha = .3
+			RJ.C0 = clerp(RJ.C0,CFrame.new(-0.0109784482, 0.00629424211+.25*M.C(Sine/12), 0.00456619123, 0, 0.00628576428, 0.999979854, 0, 0.99998033, -0.00628576661, -0.999999702, -7.27595761e-12, 0)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.51089513, 0.618211091+.1*M.C(Sine/12), -0.00361234695, 0.982347131, 0.18641524, 0.0156120034, -0.186530694, 0.982429147, 0.00628500059, -0.0141660646, -0.0090861693, 0.999858379)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.17289495, 0.616719723+.1*M.C(Sine/12), 0.011598235, -0.52721566, -0.849588335, 0.0156120034, 0.849726856, -0.527186096, 0.00628500059, 0.0028907666, 0.0165794864, 0.999858379)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(0.00954779983, 1.49905622, 0.00156322215, -1.82539225e-07, 0.0574940294, -0.998345554, 0.00628540665, 0.998326242, 0.0574929155, 0.999979854, -0.00627500098, -0.000361557119),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		until not S.UserInputService:IsKeyDown(Enum.KeyCode.C)
+		local where = Mouse.Hit.p
+		for i = 0, 6, .1 do
+			swait()
+			local Alpha = .3
+			RJ.C0 = clerp(RJ.C0,CFrame.new(-0.0109784482, 0.00629424211+.25*M.C(Sine/12), 0.00456619123, 0, 0.00628576428, 0.999979854, 0, 0.99998033, -0.00628576661, -0.999999702, -7.27595761e-12, 0)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.51089513, 0.618211091+.1*M.C(Sine/12), -0.00361234695, 0.982347131, 0.18641524, 0.0156120034, -0.186530694, 0.982429147, 0.00628500059, -0.0141660646, -0.0090861693, 0.999858379)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.17289495, 0.616719723+.1*M.C(Sine/12), 0.011598235, -0.52721566, -0.849588335, 0.0156120034, 0.849726856, -0.527186096, 0.00628500059, 0.0028907666, 0.0165794864, 0.999858379)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(0.00954779983, 1.49905622, 0.00156322215, -1.82539225e-07, 0.0574940294, -0.998345554, 0.00628540665, 0.998326242, 0.0574929155, 0.999979854, -0.00627500098, -0.000361557119),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		end
+		for i = 0, 1.4, .1 do
+			swait()
+			local Alpha = .3
+			RJ.C0 = clerp(RJ.C0,CFrame.new(-0.0109784482, 0.00629424211+.25*M.C(Sine/12), 0.00456619123, 0, 0.00628576428, 0.999979854, 0, 0.99998033, -0.00628576661, -0.999999702, -7.27595761e-12, 0)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.51089513, 0.618211091+.1*M.C(Sine/12), -0.00361234695, 0.982347131, 0.18641524, 0.0156120034, -0.186530694, 0.982429147, 0.00628500059, -0.0141660646, -0.0090861693, 0.999858379)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.39888549, 0.921575725+.1*M.C(Sine/12), 0.00929622632, -0.917422354, -0.397608638, 0.0156120034, 0.397739291, -0.917477012, 0.00628500059, 0.0118246814, 0.0119755063, 0.999858379)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(0.00954779983, 1.49905622, 0.00156322215, -1.82539225e-07, 0.0574940294, -0.998345554, 0.00628540665, 0.998326242, 0.0574929155, 0.999979854, -0.00627500098, -0.000361557119),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		end
+		for i = 0, .8, .1 do
+			swait()
+			local Alpha = .3
+			RJ.C0 = clerp(RJ.C0,CFrame.new(-0.0109784482, 0.00629424211+.25*M.C(Sine/12), 0.00456619123, 0, 0.00628576428, 0.999979854, 0, 0.99998033, -0.00628576661, -0.999999702, -7.27595761e-12, 0)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.51089513, 0.618211091+.1*M.C(Sine/12), -0.00361234695, 0.982347131, 0.18641524, 0.0156120034, -0.186530694, 0.982429147, 0.00628500059, -0.0141660646, -0.0090861693, 0.999858379)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.39452517, 0.577189744, 0.0083861379, 0.913589835, -0.406337589, 0.0156120034, 0.406289399, 0.913722992, 0.00628500059, -0.0168188754, 0.000601077918, 0.999858379)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(0.00954779983, 1.49905622, 0.00156322215, -1.82539225e-07, 0.0574940294, -0.998345554, 0.00628540665, 0.998326242, 0.0574929155, 0.999979854, -0.00627500098, -0.000361557119),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		end
+
+		for i = 0, 6, .1 do
+			pcall(function() Sound(Torso,481719045,1,1,false,true,true) end)
+			local pos = CF.N(where)*CF.N(M.RNG(-1000,1000,100),0,M.RNG(-1000,1000,100))
+			local part,rayPos,norm,dist = CastRay(pos*CF.N(0,500,0).p,pos.p,1500)
+			Zap{
+				StartCFrame=pos*CF.N(0,500,0),
+				EndCFrame=CF.N(rayPos),
+				ZapRotation = {-5,5},
+				StartSize = 1,
+				EndSize = .5,
+				Delay=10,
+				DelayInc=2,
+			}
+			AOEDamage(rayPos,5,45,65,0,'Electric',25,2)
+			swait()
+			local Alpha = .3
+			RJ.C0 = clerp(RJ.C0,CFrame.new(-0.0109784482, 0.00629424211+.25*M.C(Sine/12), 0.00456619123, 0, 0.00628576428, 0.999979854, 0, 0.99998033, -0.00628576661, -0.999999702, -7.27595761e-12, 0)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.51089513, 0.618211091+.1*M.C(Sine/12), -0.00361234695, 0.982347131, 0.18641524, 0.0156120034, -0.186530694, 0.982429147, 0.00628500059, -0.0141660646, -0.0090861693, 0.999858379)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.39452517, 0.577189744, 0.0083861379, 0.913589835, -0.406337589, 0.0156120034, 0.406289399, 0.913722992, 0.00628500059, -0.0168188754, 0.000601077918, 0.999858379)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(0.00954779983, 1.49905622, 0.00156322215, -1.82539225e-07, 0.0574940294, -0.998345554, 0.00628540665, 0.998326242, 0.0574929155, 0.999979854, -0.00627500098, -0.000361557119),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		end
+		Hum.AutoRotate = true
+		Attack = false
+		NeutralAnims = true
+		Rooted = false
+	end
 
 
+	function HolyBomb()
+		Attack = true
+		Chat2("jajajajaja ez nooby")
+		swait(60)
+		Rooted = true
+		NeutralAnims = false
+		for i = 0, 6, 0.1 do
+			swait()
+			local Alpha = .05
+			Zap{
+				StartCFrame=CF.N(Root.CFrame.p)*CF.N(0,250,0),
+				EndCFrame=CF.N(Root.CFrame.p),
+				ZapRotation = {-15,15},
+				Color=C3.N(1,1,0),
+				StartSize = 1,
+				EndSize = 1,
+				Delay=5,
+				DelayInc=1,
+			}
+			RJ.C0 = clerp(RJ.C0,CFrame.new(3.20455468e-13, 0.00629198179, 1.40559132e-06, 0.999999225, 5.09317033e-11, 0, -4.38656264e-11, 0.999980271, -0.00628618058, 0, 0.00628617639, 0.999979496),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.507250547, -0.110386491, -0.672860861, 0.999877751, -0.00782374945, 0.013510122, -9.81397825e-05, 0.862201095, 0.506566346, -0.0156116877, -0.506505728, 0.862094939),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.487759113, -0.105839849, -0.680253506, 0.999877751, -0.00782374945, 0.013510122, -9.81397825e-05, 0.862201095, 0.506566346, -0.0156116877, -0.506505728, 0.862094939),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.04961777, 0.162827805, -0.367515624, 0.65209949, -0.758071303, 0.00966797117, 0.478066534, 0.401272744, -0.781301916, 0.588403046, 0.514108539, 0.624078274),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.01012444, 0.107069746, -0.463154793, 0.633318067, 0.773830771, 0.00966686849, -0.478192717, 0.401122361, -0.781301916, -0.608473003, 0.490190029, 0.624078274),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(6.11957148e-06, 1.44927096, -0.405988753, 0.999999583, 7.24568963e-07, -6.8731606e-07, 6.33735908e-09, 0.684226215, 0.729269981, 1.00024045e-06, -0.729269683, 0.684225917),Alpha)
+			WingFlutter()
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),.3)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),.3)
+		end
+		for i = 0, .8, 0.1 do
+			swait()
+			local Alpha = .3
+			RJ.C0 = clerp(RJ.C0,CFrame.new(0.00439098151, 0.0666924566, 0.281248361, 0.999959052, 0.00860917568, -0.00265517179, -0.0086270012, 0.830053985, -0.557616353, -0.00259668194, 0.557616353, 0.830094337),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.497570813, -0.936474979, -0.0477344394, 0.999878109, -0.00782567263, 0.0135120051, -9.73803981e-05, 0.862202823, 0.506563246, -0.0156142879, -0.506502926, 0.862096965),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.497439325, -0.931922615, -0.0551193655, 0.999878109, -0.00782567263, 0.0135120051, -9.73803981e-05, 0.862202823, 0.506563246, -0.0156142879, -0.506502926, 0.862096965),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.30848432, 0.518583834, 0.0627421439, 0.758070946, 0.652100444, 0.0096699167, -0.401271075, 0.478066146, -0.781302929, -0.514110804, 0.588402867, 0.624077141),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.42235136, 0.462758094, -0.0433900952, 0.77383244, -0.633316636, 0.00966930948, 0.401121885, 0.478191316, -0.781302929, 0.49018833, 0.608476162, 0.624077141),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(0.00874680094, 1.45278561, 0.153901845, 0.999851108, 0.0168225225, 0.00386164617, -0.014445669, 0.938051641, -0.346193999, -0.00944628194, 0.346086651, 0.938155115),Alpha)
+		end
+		delay(1, function()
+			NeutralAnims = true
+			Rooted = false
+		end)
+		local start = NewInstance("Part",Effects,{Anchored=true,CanCollide=false,Transparency=1,CFrame=Root.CFrame})
+		Sound(Char,579687077,.5,2,false,true,true)
+		Sound(Char,239000203,.75,2,false,true,true)
+		for i = 1, 140 do
+			AOEDamage(start.CFrame.p,95,1000,1000,0,'Normal',100,5)
+			Effect{
+				Effect='ResizeAndFade',
+				Mesh={MeshType=Enum.MeshType.Sphere},
+				Color=C3.N(1,1,0),
+				Material=Enum.Material.Neon,
+				CFrame=CF.N(start.CFrame.p)*CF.N(M.RNG(-75,75),M.RNG(-75,75),M.RNG(-75,75)),
+				Frames=60,
+				FXSettings={
+					EndIsIncrement=true,
+					EndSize=V3.N(.6,.6,.6)
+				}
+			}
+			swait(1)
+		end
+		Attack = false
+	end
+
+	function Lazor()
+		Rooted = true
+		Attack = true
+		Hum.AutoRotate=false
+		NeutralAnims = false
+		Chat2("idot die jajajajaja")
+		--Effect{Effect='Resize',Mesh={MeshType=Enum.MeshType.FileMesh},Size=V3.N(1,1,1),CFrame=,Frames=60,FXSettings={EndSize=V3.N(4,4,4)}}
+		local snd = Sound(Torso,705787045,1,1,true,false,false)
+		for i = 0, 6, .1 do
+			Effect{
+				Effect='Fade',
+				Color=BrickColor.new'New Yeller',
+				Size=V3.N((i/2),(i/2),(i/2)),
+				Material=Enum.Material.Neon,
+				Mesh={MeshType=Enum.MeshType.Sphere},
+				Frames=15,
+				CFrame=RArm.CFrame*CF.N(0,-1.5,0),
+				Sound=false
+			}
+			swait()
+			Root.CFrame =Root.CFrame:lerp(CF.N(Root.CFrame.p,V3.N(Mouse.Hit.x,Root.CFrame.y,Mouse.Hit.z)),.1)
+			local Alpha = .1
+			Change = .5
+			RJ.C0 = clerp(RJ.C0,CFrame.new(3.20625471e-13, 0+.25*M.C(Sine/12), -6.20266655e-06, 0.999999225, 5.09317033e-11, 0, -4.38656264e-11, 0.999980271, -0.00628618058, 0, 0.00628617639, 0.999979496)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.09520316, 0.319447398+.1*M.C(Sine/12), 0.380316556, 0.862274766, -0.50140965, 0.071203351, 0.413908899, 0.77874434, 0.471420079, -0.291823745, -0.377021939, 0.879029453)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.46309233, 0.634022355+.1*M.C(Sine/12), 0.0835287869, -0.816918671, -0.539614618, 0.203615591, -0.392316222, 0.261119068, -0.881989181, 0.422766358, -0.800395131, -0.425012559),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(-7.09252117e-06, 1.4989512, -0.0144005567, 0.999999225, 3.67464963e-07, -1.62050128e-07, -3.56478267e-07, 0.997964799, 0.0637686923, 1.8440187e-07, -0.0637686551, 0.997963905),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		end
+		snd:Play()
+		for i = 0, 24, .1 do
+			swait()
+			Effect{
+				Effect='Fade',
+				Color=BrickColor.new'New Yeller',
+				Size=V3.N(3,3,3),
+				Material=Enum.Material.Neon,
+				Mesh={MeshType=Enum.MeshType.Sphere},
+				Frames=15,
+				CFrame=RArm.CFrame*CF.N(0,-1.5,0),
+			}
+			if(Mouse.Target)then
+				Zap{
+					StartCFrame=RArm.CFrame*CF.N(0,-1.5,0),
+					EndCFrame=Mouse.Hit,
+					ZapRotation = {-5,5},
+					PartCount=10,
+					StartSize = .5,
+					EndSize = .5,
+					Color = C3.N(1,1,0),
+					DelayInc=0,
+					Delay =5,
+				}
+			end
+			AOEDamage(Mouse.Hit.p,3,10,15,false,"Electric",25,2)
+			Root.CFrame = Root.CFrame:lerp(CF.N(Root.CFrame.p,V3.N(Mouse.Hit.x,Root.CFrame.y,Mouse.Hit.z)),.1)
+			local Alpha = .1
+			Change = .5
+			RJ.C0 = clerp(RJ.C0,CFrame.new(3.20625471e-13, 0+.25*M.C(Sine/12), -6.20266655e-06, 0.999999225, 5.09317033e-11, 0, -4.38656264e-11, 0.999980271, -0.00628618058, 0, 0.00628617639, 0.999979496)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.09520316, 0.319447398+.1*M.C(Sine/12), 0.380316556, 0.862274766, -0.50140965, 0.071203351, 0.413908899, 0.77874434, 0.471420079, -0.291823745, -0.377021939, 0.879029453)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.42641699, 0.76597631+.1*M.C(Sine/12), -0.207831383, 0.954205394, 0.219142094, 0.203637421, 0.275958538, -0.38200587, -0.881996989, -0.115491927, 0.897801638, -0.424986154),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(-7.09252117e-06, 1.4989512, -0.0144005567, 0.999999225, 3.67464963e-07, -1.62050128e-07, -3.56478267e-07, 0.997964799, 0.0637686923, 1.8440187e-07, -0.0637686551, 0.997963905),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		end
+		coroutine.wrap(function()
+			for i = 1, 0,-.05 do
+				snd.Volume = i
+				swait()
+			end
+			snd:destroy()
+		end)()
+		Rooted = false
+		Attack = false
+		Hum.AutoRotate=true
+		NeutralAnims = true
+	end
+
+	function Teleport()
+		Rooted = true
+		Attack = true
+		Hum.AutoRotate=false
+		NeutralAnims = false
+		repeat swait() 
+			Root.CFrame =Root.CFrame:lerp(CF.N(Root.CFrame.p,V3.N(Mouse.Hit.x,Root.CFrame.y,Mouse.Hit.z)),.1)
+			local Alpha = .1
+			Change = .5
+			RJ.C0 = clerp(RJ.C0,CFrame.new(3.20625471e-13, 0+.25*M.C(Sine/12), -6.20266655e-06, 0.999999225, 5.09317033e-11, 0, -4.38656264e-11, 0.999980271, -0.00628618058, 0, 0.00628617639, 0.999979496)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.30013025, 0.503248096+.1*M.C(Sine/12), -0.596688211, 0.828000546, -0.560713708, -6.38549547e-10, 0.003524723, 0.00520492578, -0.999980271, 0.560702682, 0.827984214, 0.00628613681),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.27528536, 0.496638358+.1*M.C(Sine/12), -0.579756379, 0.810091436, 0.586290658, -1.40121659e-09, -0.00368550443, 0.00509234518, -0.999980271, -0.586279035, 0.810075462, 0.00628613681),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(-7.09252117e-06, 1.4989512, -0.0144005567, 0.999999225, 3.67464963e-07, -1.62050128e-07, -3.56478267e-07, 0.997964799, 0.0637686923, 1.8440187e-07, -0.0637686551, 0.997963905),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		until not S.UserInputService:IsKeyDown(Enum.KeyCode.Q)
+		local p = Mouse.Hit.p
+
+		--
+		local circle = NewInstance("Part",Effects,{CFrame=Root.CFrame*CF.N(0,0,-2),Size=V3.N(.05,.05,.05),Transparency=1,Anchored=true,CanCollide=false})
+		local decalF = NewInstance("Decal",circle,{Name='Front',Texture="rbxassetid://524002938",Color3=C3.N(1,1,0),Face=Enum.NormalId.Front,Transparency = 1})
+		local decalB = NewInstance("Decal",circle,{Name='Back',Texture="rbxassetid://524002938",Color3=C3.N(1,1,0),Face=Enum.NormalId.Back,Transparency=1})
+		local asd = CF.N(p,Root.Position)
+		local circle2=circle:Clone()
+		circle2.Parent = Effects
+		circle2.CFrame = asd*CF.N(0,4,0)
+		Root.Anchored = true
+		for i = 0, 3, .1 do
+			swait() 
+			local Alpha = .1
+			Change = .5
+			RJ.C0 = clerp(RJ.C0,CFrame.new(3.20625471e-13, 0+.25*M.C(Sine/12), -6.20266655e-06, 0.999999225, 5.09317033e-11, 0, -4.38656264e-11, 0.999980271, -0.00628618058, 0, 0.00628617639, 0.999979496)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.21875513, 0.506383479+.1*M.C(Sine/12), -0.0979118943, 0.810091376, 0.586290598, 2.45534384e-08, -0.00368548767, 0.0050923666, -0.999980271, -0.586278975, 0.810075402, 0.00628614426),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.20952582, 0.499788254+.1*M.C(Sine/12), -0.0786797404, 0.828000546, -0.560713649, -2.55837147e-08, 0.0035247067, 0.00520494673, -0.999980271, 0.560702622, 0.827984214, 0.00628614519),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(-7.09252117e-06, 1.4989512, -0.0144005567, 0.999999225, 3.67464963e-07, -1.62050128e-07, -3.56478267e-07, 0.997964799, 0.0637686923, 1.8440187e-07, -0.0637686551, 0.997963905),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+			circle.Size = circle.Size + V3.N(.2,.2,0)
+			circle2.Size = circle2.Size + V3.N(.2,.2,0)
+			circle.Front.Transparency=1-(i/3)
+			circle.Back.Transparency=1-(i/3)
+			circle2.Front.Transparency=1-(i/3)
+			circle2.Back.Transparency=1-(i/3)
+
+			circle.CFrame=circle.CFrame*CF.A(0,0,M.R(5))
+			circle2.CFrame=circle2.CFrame*CF.A(0,0,M.R(5))
+		end
+		Root.Anchored = true
+		for i = 1, 3,.1 do
+			Root.Anchored = true
+			swait()
+			local Alpha = .1
+			Change = .5
+			RJ.C0 = clerp(RJ.C0,CFrame.new(3.20625471e-13, 0+.25*M.C(Sine/12), -6.20266655e-06, 0.999999225, 5.09317033e-11, 0, -4.38656264e-11, 0.999980271, -0.00628618058, 0, 0.00628617639, 0.999979496)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.09520316, 0.319447398+.1*M.C(Sine/12), 0.380316556, 0.862274766, -0.50140965, 0.071203351, 0.413908899, 0.77874434, 0.471420079, -0.291823745, -0.377021939, 0.879029453)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.38953996, 0.579314649+.1*M.C(Sine/12), 0.00156672322, 0.963396549, -0.267624378, 0.0156119959, 0.267557263, 0.9635216, 0.0062854127, -0.0167246256, -0.0018782462, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(-7.09252117e-06, 1.4989512, -0.0144005567, 0.999999225, 3.67464963e-07, -1.62050128e-07, -3.56478267e-07, 0.997964799, 0.0637686923, 1.8440187e-07, -0.0637686551, 0.997963905),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+		end
+		for i = 0, 2, .1 do
+			swait()
+			local Alpha = .1
+			Change = .5
+			RJ.C0 = clerp(RJ.C0,CFrame.new(-0.00288401172, -0.186870754+.25*M.C(Sine/12), -0.184415281, 0.999970019, -0.00748212682, -0.00185852405, 0.00747100171, 0.880958676, 0.473134309, -0.00190276653, -0.473133981, 0.880988002)*CF.A(-M.R(10+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.455414772, -0.964986682, 0.0489092469, 0.999094486, 0.0300228745, 0.0301540364, -0.0396850631, 0.913133621, 0.405724436, -0.0153536471, -0.406553656, 0.913497925)*CF.A(0,M.R(2+7*M.C(Sine/12)),-M.R(2+7*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.544458926, -0.964868069, 0.0333667099, 0.999092519, 0.0301021822, 0.0301397741, -0.0397526845, 0.913105845, 0.405780286, -0.015305927, -0.406610161, 0.913473606)*CF.A(0,-M.R(2+7*M.C(Sine/12)),M.R(2+7*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.36389351, 0.578486085+.1*M.C(Sine/12), 0.180077106, -0.966345549, 0.257006437, -0.0111429691, 0.189922124, 0.683552086, -0.704759717, -0.173510939, -0.683157504, -0.709358692)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.36815977, 0.578247666+.1*M.C(Sine/12), 0.13745755, 0.960469842, -0.278161407, 0.0111425305, 0.189813495, 0.683640122, 0.704703569, -0.203638792, -0.674731433, 0.709414363)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(0.00204973482, 1.42796898, 0.117728591, 0.999878228, 0.00747100171, 0.0137089603, -9.46668442e-05, 0.880958676, -0.473193318, -0.0156122521, 0.473134309, 0.880851984),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+			Root.CFrame = Root.CFrame * CF.N(0,0,-.1)
+			Transparency(i/2)
+		end
+		Zap{
+			StartCFrame=Root.CFrame,
+			EndCFrame=asd*CF.N(0,4,0),
+			ZapRotation = {-5,5},
+			PartCount=10,
+			StartSize = 4,
+			EndSize = .5,
+			Color = C3.N(1,1,0),
+			DelayInc=5,
+			Delay = 15,
+		}
+		Root.CFrame = asd*CF.N(0,4,0)
+		Root.Anchored = true
+
+		for i = 0, 2, .1 do
+			Root.Anchored = true
+			swait()
+			local Alpha = .1
+			Change = .5
+			RJ.C0 = clerp(RJ.C0,CFrame.new(-0.00288401172, -0.186870754+.25*M.C(Sine/12), -0.184415281, 0.999970019, -0.00748212682, -0.00185852405, 0.00747100171, 0.880958676, 0.473134309, -0.00190276653, -0.473133981, 0.880988002)*CF.A(-M.R(10+5*M.S(Sine/12)),0,0),Alpha)
+			LH.C0 = clerp(LH.C0,CFrame.new(-0.455414772, -0.964986682, 0.0489092469, 0.999094486, 0.0300228745, 0.0301540364, -0.0396850631, 0.913133621, 0.405724436, -0.0153536471, -0.406553656, 0.913497925)*CF.A(0,M.R(2+7*M.C(Sine/12)),-M.R(2+7*M.C(Sine/12))),Alpha)
+			RH.C0 = clerp(RH.C0,CFrame.new(0.544458926, -0.964868069, 0.0333667099, 0.999092519, 0.0301021822, 0.0301397741, -0.0397526845, 0.913105845, 0.405780286, -0.015305927, -0.406610161, 0.913473606)*CF.A(0,-M.R(2+7*M.C(Sine/12)),M.R(2+7*M.C(Sine/12))),Alpha)
+			LS.C0 = clerp(LS.C0,CFrame.new(-1.36389351, 0.578486085+.1*M.C(Sine/12), 0.180077106, -0.966345549, 0.257006437, -0.0111429691, 0.189922124, 0.683552086, -0.704759717, -0.173510939, -0.683157504, -0.709358692)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			RS.C0 = clerp(RS.C0,CFrame.new(1.36815977, 0.578247666+.1*M.C(Sine/12), 0.13745755, 0.960469842, -0.278161407, 0.0111425305, 0.189813495, 0.683640122, 0.704703569, -0.203638792, -0.674731433, 0.709414363)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+			NK.C0 = clerp(NK.C0,CFrame.new(0.00204973482, 1.42796898, 0.117728591, 0.999878228, 0.00747100171, 0.0137089603, -9.46668442e-05, 0.880958676, -0.473193318, -0.0156122521, 0.473134309, 0.880851984),Alpha)
+			HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+			WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+			WingFlutter()
+			Root.CFrame = Root.CFrame * CF.N(0,0,-.1)
+			Transparency(1-(i/2))
+		end
 
 
+		Transparency(0)
+		coroutine.wrap(function()
+			for i = 0, 3, .1 do
+				swait() 
+				local Alpha = .1
+				Change = .5
+				circle.Size = circle.Size - V3.N(.2,.2,0)
+				circle2.Size = circle2.Size - V3.N(.2,.2,0)
+				circle.Front.Transparency=(i/3)
+				circle.Back.Transparency=(i/3)
+				circle2.Front.Transparency=(i/3)
+				circle2.Back.Transparency=(i/3)
+
+				circle.CFrame=circle.CFrame*CF.A(0,0,-M.R(5))
+				circle2.CFrame=circle2.CFrame*CF.A(0,0,-M.R(5))
+			end
+		end)()
+		Hum.AutoRotate = true
+		Root.Anchored = false
+		Rooted = false
+		Attack = false
+		NeutralAnims = true
+	end
+
+	Mouse.KeyDown:connect(function(k)
+		if(Attack)then return end
+		if(k == 'q')then Teleport() end
+		if(k == 'z')then Lazor() end
+		if(k == 'x')then Smite() end
+		if(k == 'v')then HolyBomb() end
+		if(k == 'c')then LightningStorm() end
+	end)
 
 
+	--// Wrap it all up \\--
+	while true do
+		swait()
+		Sine = Sine + Change
 
+		if(not Music or not Music.Parent)then
+			local a = Music.TimePosition
+			Music = Sound(Char,MusicID,1,3,true,false,true)
+			Music.Name = 'Music'
+			Music.TimePosition = a
+		end
+		Music.Playing = true
+		Torso.Color = C3.N(0,0,0)
+		RArm.Color = C3.N(0,0,0)
+		LArm.Color = C3.N(0,0,0)
+		RLeg.Color = C3.N(0,0,0)
+		LLeg.Color = C3.N(0,0,0)
+		Head.Color = C3.N(0,0,0)
+		Music.Volume = 5
+		Music.Pitch = 1
+		Music.Playing = true
+		Hum.HipHeight = 2
+		Sine = Sine + Change
+		local hitfloor,posfloor = workspace:FindPartOnRay(Ray.new(Root.CFrame.p,((CFrame.new(Root.Position,Root.Position - Vector3.new(0,1,0))).lookVector).unit * 100), Char)
+		local Walking = (math.abs(Root.Velocity.x) > 1 or math.abs(Root.Velocity.z) > 1)
+		local State = (Hum.PlatformStand and 'Paralyzed' or Hum.Sit and 'Sit' or Walking and "Walk" or "Idle")
+		if(time()-PulseTime > .05)then
+			PulseTime = time()
+			if(hitfloor)then
+				local angles = CF.A(M.RRNG(-15,15),M.RRNG(-45,45),M.RRNG(-45,45))
+				Effect{
+					Effect='ResizeAndFade',
+					Color=hitfloor.Color,
+					Material=hitfloor.Material,
+					Frames=60,
+					Mesh={MeshType=Enum.MeshType.FileMesh,MeshId="rbxassetid://662586858",Scale=V3.N(.01,.01,.01)},
+					CFrame=CF.N(posfloor)*angles,
+					MoveDirection=CF.N(posfloor)*angles*CF.N(0,6,0).p,
+					FXSettings = {
+						EndSize=V3.N(.0005,.0005,.0005),
+						EndIsIncrement=true
+					}
+				}
+			end
+			local pos = CF.N(Torso.CFrame.p)*CF.N(0,-2,0)*CF.A(0,M.RRNG(-180,180),0)*CF.N(0,0,M.RNG(-15,-5))
+			local hitfloor2,posfloor2 = workspace:FindPartOnRay(Ray.new(pos.p,((CFrame.new(pos.p,pos.p - Vector3.new(0,1,0))).lookVector).unit * 100), Char)
 
+			if(hitfloor2)then
+				pos = CF.N(posfloor2)
+				Effect{
+					Effect='ResizeAndFade',
+					Color=BrickColor.new'New Yeller',
+					Size=V3.N(2,2,2),
+					Material=Enum.Material.Neon,
+					Mesh={MeshType=Enum.MeshType.Sphere},
+					Frames=45,
+					CFrame=pos,
+					FXSettings = {
+						EndSize = V3.N(-.01,.25,-.01),
+						EndIsIncrement = true
+					}
+				}
+			else
+				Effect{
+					Effect='ResizeAndFade',
+					Color=BrickColor.new'New Yeller',
+					Size=V3.N(2,2,2),
+					Material=Enum.Material.Neon,
+					Mesh={MeshType=Enum.MeshType.Sphere},
+					Frames=45,
+					CFrame=pos,
+					FXSettings = {
+						EndSize = V3.N(-.01,.25,-.01),
+						EndIsIncrement = true
+					}
+				}
+			end
+		end
+		Hum.Name = math.random()*100000
+		Hum.MaxHealth = 1e100
+		Hum.Health = 1e100
+		if(M.RNG(1,50) == 1)then
+			local pos = CF.N(Torso.CFrame.p)*CF.N(0,-2,0)*CF.A(0,M.RRNG(-180,180),0)*CF.N(0,0,M.RNG(-30,-15))
+			local hitfloor2,posfloor2 = workspace:FindPartOnRay(Ray.new(pos.p,((CFrame.new(pos.p,pos.p - Vector3.new(0,1,0))).lookVector).unit * 100), Char)
 
+			if(hitfloor2)then
+				pos = CF.N(posfloor2)
+			end
+			Zap{
+				StartCFrame=Torso.CFrame,
+				EndCFrame=pos,
+				ZapRotation = {-2,2},
+				PartCount=5,
+				StartSize = .5,
+				EndSize = 0,
+				Color = C3.N(1,1,0),
+				DelayInc=5,
+				Delay = 15,
+				Sound=false
+			}
+		end
+		if(Rooted == false)then
+			Hum.WalkSpeed = 32
+			Hum.JumpPower = 75
+		else
+			Hum.WalkSpeed = 0
+			Hum.JumpPower = 0
+		end
+		if(not Effects or not Effects.Parent)then
+			Effects = IN("Model",Char)
+			Effects.Name = "Effects"
+		end
+		if(NeutralAnims)then	
+			if(State == 'Idle')then
+				local Alpha = .1
+				Change = .5
+				RJ.C0 = clerp(RJ.C0,CFrame.new(3.20625471e-13, 0+.25*M.C(Sine/12), -6.20266655e-06, 0.999999225, 5.09317033e-11, 0, -4.38656264e-11, 0.999980271, -0.00628618058, 0, 0.00628617639, 0.999979496)*CF.A(-M.R(3+5*M.S(Sine/12)),0,0),Alpha)
+				LH.C0 = clerp(LH.C0,CFrame.new(-0.443078369, -0.366475701, -0.69529891, 0.999093771, 0.0300307292, 0.0301540978, -0.039692279, 0.913133621, 0.405723602, -0.0153505448, -0.406552792, 0.913497925)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+				RH.C0 = clerp(RH.C0,CFrame.new(0.563508928, -0.975499094, 0.0143494867, 0.992422402, -0.121874072, 0.0156119959, 0.121789157, 0.992536128, 0.0062854127, -0.0162614994, -0.00433641672, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),-M.R(0+5*M.C(Sine/12))),Alpha)
+				LS.C0 = clerp(LS.C0,CFrame.new(-1.09520316, 0.319447398+.1*M.C(Sine/12), 0.380316556, 0.862274766, -0.50140965, 0.071203351, 0.413908899, 0.77874434, 0.471420079, -0.291823745, -0.377021939, 0.879029453)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+				RS.C0 = clerp(RS.C0,CFrame.new(1.38953996, 0.579314649+.1*M.C(Sine/12), 0.00156672322, 0.963396549, -0.267624378, 0.0156119959, 0.267557263, 0.9635216, 0.0062854127, -0.0167246256, -0.0018782462, 0.999858022)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+				NK.C0 = clerp(NK.C0,CFrame.new(-7.09252117e-06, 1.4989512, -0.0144005567, 0.999999225, 3.67464963e-07, -1.62050128e-07, -3.56478267e-07, 0.997964799, 0.0637686923, 1.8440187e-07, -0.0637686551, 0.997963905),Alpha)
+				HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+				WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+				WingFlutter()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		A.Functions.Uninstall();
-		A.Functions.Thread(A.Functions.Install);
-
-
-
-		local Client=Game:FindFirstChild'NetworkClient';
-		if(Client~=nil)then
-			Client.ChildRemoved:wait();
-			local Message=A.Old.Instance.new('Hint',Workspace);
-			Message.Text='Admin script removed!';
-			A.Functions.Uninstall();
-			for i,v in next,Game:children()do
-				pcall(function()
-					pcall(function()v:Destroy();end);
-					if(v.Parent~=nil)then
-						for i,v in next,v:children()do
-							pcall(function()
-								v.Parent=nil;
-								v:Destroy();
-							end);
-						end;
-					end;
-				end);
-			end;
-		end;
-
-	end;
-
-	if(Game.PlaceId==0)then
-		Main();
-	else
-		Delay(2,function()
-			Main();
-			--loadstring(string.dump(Main),'Ohgal')();
-		end);
-	end;
+			elseif(State == 'Walk')then
+				local Alpha = .1
+				Change = .5
+				RJ.C0 = clerp(RJ.C0,CFrame.new(-0.00288401172, -0.186870754+.25*M.C(Sine/12), -0.184415281, 0.999970019, -0.00748212682, -0.00185852405, 0.00747100171, 0.880958676, 0.473134309, -0.00190276653, -0.473133981, 0.880988002)*CF.A(-M.R(10+5*M.S(Sine/12)),0,0),Alpha)
+				LH.C0 = clerp(LH.C0,CFrame.new(-0.455414772, -0.964986682, 0.0489092469, 0.999094486, 0.0300228745, 0.0301540364, -0.0396850631, 0.913133621, 0.405724436, -0.0153536471, -0.406553656, 0.913497925)*CF.A(0,M.R(2+7*M.C(Sine/12)),-M.R(2+7*M.C(Sine/12))),Alpha)
+				RH.C0 = clerp(RH.C0,CFrame.new(0.544458926, -0.964868069, 0.0333667099, 0.999092519, 0.0301021822, 0.0301397741, -0.0397526845, 0.913105845, 0.405780286, -0.015305927, -0.406610161, 0.913473606)*CF.A(0,-M.R(2+7*M.C(Sine/12)),M.R(2+7*M.C(Sine/12))),Alpha)
+				LS.C0 = clerp(LS.C0,CFrame.new(-1.36389351, 0.578486085+.1*M.C(Sine/12), 0.180077106, -0.966345549, 0.257006437, -0.0111429691, 0.189922124, 0.683552086, -0.704759717, -0.173510939, -0.683157504, -0.709358692)*CF.A(0,M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+				RS.C0 = clerp(RS.C0,CFrame.new(1.36815977, 0.578247666+.1*M.C(Sine/12), 0.13745755, 0.960469842, -0.278161407, 0.0111425305, 0.189813495, 0.683640122, 0.704703569, -0.203638792, -0.674731433, 0.709414363)*CF.A(0,-M.R(0+5*M.C(Sine/12)),M.R(0+5*M.C(Sine/12))),Alpha)
+				NK.C0 = clerp(NK.C0,CFrame.new(0.00204973482, 1.42796898, 0.117728591, 0.999878228, 0.00747100171, 0.0137089603, -9.46668442e-05, 0.880958676, -0.473193318, -0.0156122521, 0.473134309, 0.880851984),Alpha)
+				HW.C0 = HW.C0:lerp(CF.N(0,2,0)*CF.A(M.R(0+15*M.C(Sine/36)),0,M.R(0+15*M.S(Sine/36)))*CF.N(-M.R(0+15*M.S(Sine/36)),0,M.R(0+15*M.C(Sine/36))),Alpha)
+				WW.C0 = WW.C0:lerp(CF.N(0,1.5+.3*M.C(Sine/12),1.5),Alpha)
+				WingFlutter()
+			elseif(State == 'Paralyzed')then
+				-- paralyzed
+			elseif(State == 'Sit')then
+				-- sit
+			end
+		end
+	end
 end)
 --
 local button = Instance.new("TextButton")
@@ -8893,7 +6562,7 @@ button.FontSize = "Size14"
 button.Text = "Fe Ender"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
-
+	
 	--[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
@@ -8922,7 +6591,7 @@ button.FontSize = "Size14"
 button.Text = "Ban Hammer"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
-
+	
 	--[[
 	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
 ]]
@@ -9278,7 +6947,7 @@ button.Text = "Swords"
 button.TextColor3 = whit
 button.TextWrapped = true
 button.MouseButton1Down:connect(function()
-
+	
 	local Players = game:GetService("Players")
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local localPlayer = Players.LocalPlayer
@@ -9403,7 +7072,7 @@ button.MouseButton1Down:connect(function()
 	local Animations = {
 		Equip = "rbxassetid://94160581",
 		Unequip = "rbxassetid://94095929",
-		Slash1 = "rbxassetid://94161088",
+		Slash1 = "rbxassetid://54584713",
 		Slash2 = "rbxassetid://94161333",
 		Lunge = "rbxassetid://94160738",
 		Idle = "rbxassetid://94108418"
@@ -9549,7 +7218,25 @@ button.FontSize = "Size14"
 button.Text = "Empty"
 button.TextColor3 = whit
 button.MouseButton1Down:connect(function()
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local localPlayer = Players.LocalPlayer
 
+	-- Create Tool
+	local tool = Instance.new("Tool")
+	tool.Name = "Sword"
+	tool.GripPos = Vector3.new(0.1, -1, 0)
+	tool.RequiresHandle = true
+
+	-- Create Handle
+	local handle = Instance.new("Part")
+	handle.Name = "Handle"
+	handle.Size = Vector3.new(0.4, 4, 0.4)
+	handle.CanCollide = false
+	handle.Anchored = false
+	handle.Parent = tool
+	tool.Parent = localPlayer.Backpack
+	
 end)
 --
 local button = Instance.new("TextButton")
