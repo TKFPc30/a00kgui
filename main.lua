@@ -1,5 +1,3 @@
--- maaf teman teman aku tidak bisa melanjutkannya kembali. aku hanya bisa memperbaiki bentuknya ku harap kalian dapat menggunakan Script ini untuk melakukan hal baik
-
 Folder = game.Players.LocalPlayer.PlayerGui
 script=Instance.new('LocalScript')
 
